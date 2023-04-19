@@ -1,0 +1,15 @@
+uid2utter = [
+    dict(
+        'Uid',
+        'Text',
+        'Duration',
+        'Phonemes': dict(
+            'phoneme',
+            'duration',
+            'note'
+        )
+    )
+]
+
+
+path of training audio: "segments/wavs/{}.wav".format(uid)
