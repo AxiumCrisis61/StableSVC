@@ -3,12 +3,12 @@ from argparse import ArgumentParser, ArgumentTypeError
 
 # Please configure the path of your downloaded datasets
 dataset2path = {
-    "Opencpop": "/data/Opencpop",
-    "M4Singer": "/data/M4Singer",
+    "Opencpop": "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/data/Opencpop",
+    "M4Singer": "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/data/M4Singer",
 }
 
 # Please configure the root path to save your data and model
-root_path = ""
+root_path = "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code"
 data_path = os.path.join(root_path, "preprocess")
 model_path = os.path.join(root_path, "model")
 
