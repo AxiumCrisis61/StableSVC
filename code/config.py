@@ -5,10 +5,10 @@ from argparse import ArgumentParser, ArgumentTypeError
 dataset2path = {
     "Opencpop": "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/data/Opencpop",
     "M4Singer": "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/data/M4Singer",
-}
+}               # for running on Colab
 
 # Please configure the root path to save your data and model
-root_path = "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code"
+root_path = "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code"        # for running on Colab
 data_path = os.path.join(root_path, "preprocess")
 model_path = os.path.join(root_path, "model")
 
