@@ -8,7 +8,7 @@ from tqdm import tqdm
 import sys
 
 sys.path.append("../")
-from config import data_path, dataset2wavpath, WHISPER_SEQ, WHISPER_DIM
+from config import data_path, dataset2wavpath, WHISPER_SEQ, WHISPER_DIM, WHISPER_MAPPED
 
 
 def whisper_encoder(audio_paths):
@@ -16,6 +16,7 @@ def whisper_encoder(audio_paths):
     batch_mel = torch.zeros((batch, 80, 3000), dtype=torch.float, device=model.device)
 
     for i, audio_path in enumerate(audio_paths):
+        # load audio and pad/trim it to fit 30 seconds
         # (48000,)
         audio = whisper.load_audio(str(audio_path))
         audio = whisper.pad_or_trim(audio)
@@ -81,11 +82,12 @@ def extract_whisper_features(dataset, dataset_type, batch_size=80):
 
         whisper_features[start:end] = whisper_encoder(audio_paths[start:end])
 
-    # Mapping to mcep's lengths
-    print("\nTransform to mapped features...")
-    whisper_features = get_mapped_whisper_features(
-        dataset, dataset_type, whisper_features
-    )
+    # Mapping to MCEP's lengths
+    if WHISPER_MAPPED:
+        print("\nTransform to mapped features...")
+        whisper_features = get_mapped_whisper_features(
+            dataset, dataset_type, whisper_features
+        )
 
     # Save
     output_dir = os.path.join(data_dir, "Whisper")
@@ -107,4 +109,4 @@ if __name__ == "__main__":
 
     extract_whisper_features("Opencpop", "test")
     extract_whisper_features("Opencpop", "train")
-    extract_whisper_features("M4Singer", "test")
+    # extract_whisper_features("M4Singer", "test")

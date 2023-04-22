@@ -5,7 +5,7 @@ from argparse import ArgumentParser, ArgumentTypeError
 dataset2path = {
     "Opencpop": "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/data/Opencpop",
     "M4Singer": "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/data/M4Singer",
-}               # for running on Colab
+}       # for running on Colab
 
 # Please configure the root path to save your data and model
 root_path = "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code"        # for running on Colab
@@ -26,9 +26,17 @@ WORLD_SAMPLE_RATE = 44100
 WORLD_FRAME_SHIFT = 10
 MCEP_DIM = 40
 
-# Whisper hyparameters
+# Acoustic features hyperparameters
+RE_SAMPLE_RATE = 16000
+MEL_FREQ_BINS = 80           # frequency bins for mel-spectrograms
+STFT_N = 1024                # size of FFT in STFT
+STFT_WINDOW_SIZE = 1024      # window size of STFT
+STFT_HOP_SIZE = 240          # hop size of STFT
+
+# Whisper hyperparameters
 WHISPER_SEQ = 1500
 WHISPER_DIM = 1024
+WHISPER_MAPPED = False      # whether to map Whisper features to the length of MCEP
 
 
 def str2bool(v):
