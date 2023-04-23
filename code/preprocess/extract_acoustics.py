@@ -5,7 +5,7 @@ import pickle
 import numpy as np
 import torch
 import torchaudio
-import diffsptk
+import crepe
 import librosa
 from tqdm import tqdm
 
@@ -23,7 +23,7 @@ def extract_acoustic_features(wave_file, pitch_extractor):
                                                            win_length=STFT_WINDOW_SIZE,
                                                            hop_length=STFT_HOP_SIZE,
                                                            n_mels=MEL_FREQ_BINS,
-                                                           normalized=True)(waveform[0])
+                                                           normalized=True)(waveform[0])[0]
     # extract loudness
     power_spectrogram = torchaudio.transforms.Spectrogram(n_fft=STFT_N,
                                                           win_length=STFT_WINDOW_SIZE,
@@ -53,7 +53,7 @@ def extract_acoustic_features_of_datasets(dataset, dataset_type):
     """
     print("-" * 20)
     print("Dataset: {}, {}".format(dataset, dataset_type))
-    crepe = diffsptk.Pitch(STFT_HOP_SIZE, RE_SAMPLE_RATE, out_format='pitch')
+    crepe = diffsptk.Pitch(STFT_HOP_SIZE, RE_SAMPLE_RATE, out_format='pitch', model='tiny')
 
     # handle directories
     data_dir = os.path.join(data_path, dataset)
