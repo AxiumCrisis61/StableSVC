@@ -23,8 +23,7 @@ def whisper_encoder(audio_paths):
         audio = whisper.pad_or_trim(audio)
 
         # (80, 3000)
-        mel = whisper.log_mel_spectrogram(audio).to(model.device)
-        batch_mel[i] = mel
+        batch_mel[i] = whisper.log_mel_spectrogram(audio).to(model.device)
 
     with torch.no_grad():
         # (batch, 1500, 1024)
