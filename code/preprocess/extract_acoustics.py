@@ -13,7 +13,7 @@ sys.path.append("../")
 from config import data_path, dataset2wavpath, RE_SAMPLE_RATE, MEL_FREQ_BINS, STFT_N, STFT_WINDOW_SIZE, STFT_HOP_SIZE
 
 
-def extract_acoustic_features(wave_file):
+def extract_acoustic_features(wave_file, pitch_extractor):
     # waveform: (1, seq)
     waveform, sample_rate = torchaudio.load(wave_file)
     waveform = torchaudio.functional.resample(waveform, orig_freq=sample_rate, new_freq=RE_SAMPLE_RATE)
@@ -34,7 +34,8 @@ def extract_acoustic_features(wave_file):
                                                                                 fmin=librosa.note_to_hz('A1')))
     loudness = np.log(np.mean(np.exp(weighted_spectrogram[0]), axis=0) + 1e-5)
     # extract pitch
-    pitch = diffsptk.Pitch(STFT_HOP_SIZE, RE_SAMPLE_RATE, out_format='pitch')(waveform[0])
+    pitch = pitch_extractor(waveform[0].to(pitch_extractor.device))
+    pitch = pitch.cpu()
 
     return mel_spectrogram, pitch, loudness
 
@@ -53,6 +54,13 @@ def extract_acoustic_features_of_datasets(dataset, dataset_type):
     """
     print("-" * 20)
     print("Dataset: {}, {}".format(dataset, dataset_type))
+    crepe = diffsptk.Pitch(STFT_HOP_SIZE, RE_SAMPLE_RATE, out_format='pitch')
+    print(crepe)
+    if torch.cuda.is_available():
+        print("Using GPU for CREPE...\n")
+        crepe = crepe.cuda()
+    else:
+        print("Using CPU for CREPE...\n")
 
     # handle directories
     data_dir = os.path.join(data_path, dataset)
