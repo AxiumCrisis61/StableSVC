@@ -6,9 +6,10 @@ import numpy as np
 import pickle
 from tqdm import tqdm
 import sys
+from argparse import ArgumentParser, ArgumentTypeError
 
 sys.path.append("../")
-from config import data_path, dataset2wavpath, WHISPER_SEQ, WHISPER_DIM, WHISPER_MAPPED, WHISPER_BATCH_SIZE
+from config import data_path, dataset2wavpath, WHISPER_SEQ, WHISPER_DIM, WHISPER_MAPPED
 
 
 def whisper_encoder(audio_paths):
@@ -53,7 +54,8 @@ def get_mapped_whisper_features(dataset, dataset_type, raw_whisper_features):
     return whisper_features
 
 
-def extract_whisper_features(dataset, dataset_type, batch_size=80):
+def extract_whisper_features(dataset, dataset_type, arguments):
+    batch_size = arguments.batch_size
     print("-" * 20)
     print("Dataset: {}, {}".format(dataset, dataset_type))
 
@@ -97,6 +99,10 @@ def extract_whisper_features(dataset, dataset_type, batch_size=80):
 
 
 if __name__ == "__main__":
+    parser = ArgumentParser(description="Acoustic Mapping")
+    parser.add_argument("--batch-size", type=int, default=80)
+    args = parser.parse_args()
+
     print("Loading Model...")
     model = whisper.load_model("medium")
     if torch.cuda.is_available():
@@ -107,6 +113,6 @@ if __name__ == "__main__":
 
     model = model.eval()
 
-    extract_whisper_features("Opencpop", "test", WHISPER_BATCH_SIZE)
-    extract_whisper_features("Opencpop", "train", WHISPER_BATCH_SIZE)
+    extract_whisper_features("Opencpop", "test", args)
+    extract_whisper_features("Opencpop", "train", args)
     # extract_whisper_features("M4Singer", "test")

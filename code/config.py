@@ -34,7 +34,6 @@ STFT_WINDOW_SIZE = 1024      # window size of STFT
 STFT_HOP_SIZE = 240          # hop size of STFT
 
 # Whisper hyperparameters
-WHISPER_BATCH_SIZE = 50
 WHISPER_SEQ = 1500
 WHISPER_DIM = 1024
 WHISPER_MAPPED = False      # whether to map Whisper features to the length of MCEP
