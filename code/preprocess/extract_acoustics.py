@@ -5,7 +5,7 @@ import pickle
 import numpy as np
 import torch
 import torchaudio
-import crepe
+import diffsptk
 import librosa
 from tqdm import tqdm
 
