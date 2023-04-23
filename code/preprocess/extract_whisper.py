@@ -30,6 +30,10 @@ def whisper_encoder(audio_paths):
         # (batch, 1500, 1024)
         features = model.embed_audio(batch_mel)
 
+    del batch_mel
+    for i in range(5):
+        torch.cuda.empty_cache()
+
     return features.cpu().detach().numpy()
 
 
@@ -115,4 +119,4 @@ if __name__ == "__main__":
 
     extract_whisper_features("Opencpop", "test", args)
     extract_whisper_features("Opencpop", "train", args)
-    # extract_whisper_features("M4Singer", "test")
+    # extract_whisper_features("M4Singer", "test", args)
