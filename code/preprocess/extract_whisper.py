@@ -8,7 +8,7 @@ from tqdm import tqdm
 import sys
 
 sys.path.append("../")
-from config import data_path, dataset2wavpath, WHISPER_SEQ, WHISPER_DIM, WHISPER_MAPPED
+from config import data_path, dataset2wavpath, WHISPER_SEQ, WHISPER_DIM, WHISPER_MAPPED, WHISPER_BATCH_SIZE
 
 
 def whisper_encoder(audio_paths):
@@ -107,6 +107,6 @@ if __name__ == "__main__":
 
     model = model.eval()
 
-    extract_whisper_features("Opencpop", "test")
-    extract_whisper_features("Opencpop", "train")
+    extract_whisper_features("Opencpop", "test", WHISPER_BATCH_SIZE)
+    extract_whisper_features("Opencpop", "train", WHISPER_BATCH_SIZE)
     # extract_whisper_features("M4Singer", "test")
