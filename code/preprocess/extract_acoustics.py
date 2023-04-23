@@ -92,8 +92,7 @@ def extract_acoustic_features_of_datasets(dataset, dataset_type):
     for feature_name, feature in dict_features.items():
         output_dir = os.path.join(data_dir, feature_name)
         os.makedirs(output_dir, exist_ok=True)
-        with open(os.path.join(output_dir, "{}.pkl".format(dataset_type)), "wb") as f:
-            pickle.dump(feature, f)
+        torch.save(feature, os.path.join(output_dir, "{}.pth".format(dataset_type)))
 
 
 if __name__ == '__main__':
