@@ -25,12 +25,12 @@ def extract_acoustic_features(wave_file):
                                                            win_length=STFT_WINDOW_SIZE,
                                                            hop_length=STFT_HOP_SIZE,
                                                            n_mels=MEL_FREQ_BINS,
-                                                           normalized=True)(x)
+                                                           normalized=True)(waveform[0])
     # extract loudness
     power_spectrogram = torchaudio.transforms.Spectrogram(n_fft=STFT_N,
                                                           win_length=STFT_WINDOW_SIZE,
                                                           hop_length=STFT_HOP_SIZE,
-                                                          power=2)(x)
+                                                          power=2)(waveform[0])
     weighted_spectrogram = librosa.perceptual_weighting(power_spectrogram,
                                                         librosa.cqt_frequencies(power_spectrogram.shape[0],
                                                                                 fmin=librosa.note_to_hz('A1')))

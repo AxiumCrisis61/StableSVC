@@ -1,3 +1,4 @@
 /code/data
 /code/.idea
 /code/__pycache__
+*.pkl
