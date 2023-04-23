@@ -8,6 +8,8 @@ import torchaudio
 import diffsptk
 import librosa
 from tqdm import tqdm
+import argparse
+
 
 sys.path.append("../")
 from config import data_path, dataset2wavpath, RE_SAMPLE_RATE, MEL_FREQ_BINS, STFT_N, STFT_WINDOW_SIZE, STFT_HOP_SIZE
@@ -96,6 +98,12 @@ def extract_acoustic_features_of_datasets(dataset, dataset_type):
 
 
 if __name__ == '__main__':
-    extract_acoustic_features_of_datasets("Opencpop", "test")
-    extract_acoustic_features_of_datasets("Opencpop", "train")
+    parser = ArgumentParser(description="Acoustic Mapping")
+    parser.add_argument("--dataset", type=str, choices=('Opencpop', 'M4Singer'))
+    parser.add_argument("--dataset-type", type=str, choices=('train', 'test'))
+    args = parser.parse_args()
+
+    extract_acoustic_features_of_datasets(args.dataset, args.dataset_type)
+    # extract_acoustic_features_of_datasets("Opencpop", "test")
+    # extract_acoustic_features_of_datasets("Opencpop", "train")
     # extract_acoustic_features_of_datasets("M4Singer", "test")
