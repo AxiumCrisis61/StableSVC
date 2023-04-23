@@ -8,7 +8,7 @@ import torchaudio
 import diffsptk
 import librosa
 from tqdm import tqdm
-import argparse
+from argparse import ArgumentParser, ArgumentTypeError
 
 
 sys.path.append("../")
