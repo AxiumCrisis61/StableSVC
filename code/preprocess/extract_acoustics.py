@@ -90,6 +90,7 @@ def extract_acoustic_features_of_datasets(dataset, dataset_type):
 
     # save
     for feature_name, feature in dict_features.items():
+        print('feature_name', feature)
         output_dir = os.path.join(data_dir, feature_name)
         os.makedirs(output_dir, exist_ok=True)
         torch.save(feature, os.path.join(output_dir, "{}.pth".format(dataset_type)))
