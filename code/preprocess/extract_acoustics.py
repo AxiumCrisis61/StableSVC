@@ -17,8 +17,6 @@ def extract_acoustic_features(wave_file):
     # waveform: (1, seq)
     waveform, sample_rate = torchaudio.load(wave_file)
     waveform = torchaudio.functional.resample(waveform, orig_freq=sample_rate, new_freq=RE_SAMPLE_RATE)
-    # x: (seq)
-    x = np.array(waveform[0], dtype=np.double)
 
     # transform to Mel-spectrogram
     mel_spectrogram = torchaudio.transforms.MelSpectrogram(n_fft=STFT_N,
@@ -36,7 +34,7 @@ def extract_acoustic_features(wave_file):
                                                                                 fmin=librosa.note_to_hz('A1')))
     loudness = np.log(np.mean(np.exp(weighted_spectrogram[0]), axis=0) + 1e-5)
     # extract pitch
-    pitch = diffsptk.Pitch(STFT_HOP_SIZE, RE_SAMPLE_RATE, out_format='pitch')
+    pitch = diffsptk.Pitch(STFT_HOP_SIZE, RE_SAMPLE_RATE, out_format='pitch')(waveform[0])
 
     return mel_spectrogram, pitch, loudness
 
@@ -90,7 +88,6 @@ def extract_acoustic_features_of_datasets(dataset, dataset_type):
 
     # save
     for feature_name, feature in dict_features.items():
-        print('feature_name', feature)
         output_dir = os.path.join(data_dir, feature_name)
         os.makedirs(output_dir, exist_ok=True)
         torch.save(feature, os.path.join(output_dir, "{}.pth".format(dataset_type)))
