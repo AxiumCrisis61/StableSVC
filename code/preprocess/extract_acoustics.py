@@ -83,7 +83,7 @@ def extract_acoustic_features_of_datasets(dataset, dataset_type):
         if dataset == "M4Singer":
             wave_file = os.path.join(wave_dir, utt["Path"])
 
-        mel, f0, loudness = extract_acoustic_features(wave_file)
+        mel, f0, loudness = extract_acoustic_features(wave_file, crepe)
 
         mel_spectrograms.append(mel)
         f0_features.append(f0)
