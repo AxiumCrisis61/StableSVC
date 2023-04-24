@@ -69,36 +69,42 @@ def extract_whisper_features(dataset, dataset_type, arguments):
     with open(os.path.join(data_dir, "{}.json".format(dataset_type)), "r") as f:
         datasets = json.load(f)
 
+    # create output directory
+    output_dir = os.path.join(data_dir, "Whisper")
+    os.makedirs(output_dir, exist_ok=True)
+
     # Extract raw features: (sz, 1500, 1024)
+    # load history or initialize
     print("\nExtracting raw whisper features...")
-    whisper_features = np.zeros((len(datasets), WHISPER_SEQ, WHISPER_DIM), dtype=float)
+    if not args.start_point:
+        whisper_features = np.zeros((len(datasets), WHISPER_SEQ, WHISPER_DIM), dtype=float)
+    else:
+        whisper_features = torch.load(os.path.join(output_dir, "{}.pth".format(dataset_type)))
+
     audio_paths = [
         os.path.join(wave_dir, "{}.wav".format(utt["Uid"])) for utt in datasets
     ]
     if dataset == "M4Singer":
         audio_paths = [os.path.join(wave_dir, utt["Path"]) for utt in datasets]
 
-    start = 0
-    end = 0
+    end = args.start_point
     while end <= len(audio_paths):
+        # update progress
         start = end
         end = start + batch_size
         print("{}/{}...".format(min(len(audio_paths), end), len(audio_paths)))
 
+        # extract Whisper features
         whisper_features[start:end] = whisper_encoder(audio_paths[start:end])
+
+        # instantaneous save
+        torch.save(whisper_features, os.path.join(output_dir, "{}.pth".format(dataset_type)))
 
     # Mapping to MCEP's lengths
     if WHISPER_MAPPED:
         print("\nTransform to mapped features...")
-        whisper_features = get_mapped_whisper_features(
-            dataset, dataset_type, whisper_features
-        )
-
-    # Save
-    output_dir = os.path.join(data_dir, "Whisper")
-    os.makedirs(output_dir, exist_ok=True)
-    with open(os.path.join(output_dir, "{}.pkl".format(dataset_type)), "wb") as f:
-        pickle.dump(whisper_features, f)
+        whisper_features = get_mapped_whisper_features(dataset, dataset_type, whisper_features)
+        torch.save(whisper_features, os.path.join(output_dir, "{}.pth".format(dataset_type)))
 
 
 if __name__ == "__main__":
@@ -106,6 +112,7 @@ if __name__ == "__main__":
     parser.add_argument("--batch-size", type=int, default=80)
     parser.add_argument("--dataset", type=str, choices=('Opencpop', 'M4Singer'))
     parser.add_argument("--dataset-type", type=str, choices=('train', 'test'))
+    parser.add_argument("--start-point", type=int, default=0)
     args = parser.parse_args()
 
     print("Loading Model...")
