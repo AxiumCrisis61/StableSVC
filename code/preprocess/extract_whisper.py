@@ -104,6 +104,8 @@ def extract_whisper_features(dataset, dataset_type, arguments):
 if __name__ == "__main__":
     parser = ArgumentParser(description="Acoustic Mapping")
     parser.add_argument("--batch-size", type=int, default=80)
+    parser.add_argument("--dataset", type=str, choices=('Opencpop', 'M4Singer'))
+    parser.add_argument("--dataset-type", type=str, choices=('train', 'test'))
     args = parser.parse_args()
 
     print("Loading Model...")
@@ -116,6 +118,7 @@ if __name__ == "__main__":
 
     model = model.eval()
 
-    extract_whisper_features("Opencpop", "test", args)
-    extract_whisper_features("Opencpop", "train", args)
+    extract_whisper_features(args.dataset, args.dataset_type, args)
+    # extract_whisper_features("Opencpop", "test", args)
+    # extract_whisper_features("Opencpop", "train", args)
     # extract_whisper_features("M4Singer", "test", args)
