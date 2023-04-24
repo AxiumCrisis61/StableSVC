@@ -92,7 +92,7 @@ def extract_whisper_features(dataset, dataset_type, arguments):
         whisper_features = whisper_encoder(audio_paths[start:end])
 
         # save each sample's Whisper embedding respectively
-        for index in range(batch_size):
+        for index in range(min(batch_size, len(audio_paths)-start)):
             torch.save(whisper_features[index], os.path.join(output_dir, "{}.pth".format(start+index)))
 
     # Mapping to MCEP's lengths [WARN: Not maintained.]
