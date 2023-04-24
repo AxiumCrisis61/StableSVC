@@ -62,25 +62,19 @@ def extract_whisper_features(dataset, dataset_type, arguments):
     print("-" * 20)
     print("Dataset: {}, {}".format(dataset, dataset_type))
 
+    # create output directory
     data_dir = os.path.join(data_path, dataset)
     os.makedirs(data_dir, exist_ok=True)
+    output_dir = os.path.join(data_dir, "Whisper", dataset_type)
+    os.makedirs(output_dir, exist_ok=True)
 
+    # load directory for .wav file
     wave_dir = dataset2wavpath[dataset]
     with open(os.path.join(data_dir, "{}.json".format(dataset_type)), "r") as f:
         datasets = json.load(f)
 
-    # create output directory
-    output_dir = os.path.join(data_dir, "Whisper")
-    os.makedirs(output_dir, exist_ok=True)
-
     # Extract raw features: (sz, 1500, 1024)
-    # load history or initialize
     print("\nExtracting raw whisper features...")
-    if not args.start_point:
-        whisper_features = np.zeros((len(datasets), WHISPER_SEQ, WHISPER_DIM), dtype=float)
-    else:
-        whisper_features = torch.load(os.path.join(output_dir, "{}.pth".format(dataset_type)))
-
     audio_paths = [
         os.path.join(wave_dir, "{}.wav".format(utt["Uid"])) for utt in datasets
     ]
@@ -95,12 +89,13 @@ def extract_whisper_features(dataset, dataset_type, arguments):
         print("{}/{}...".format(min(len(audio_paths), end), len(audio_paths)))
 
         # extract Whisper features
-        whisper_features[start:end] = whisper_encoder(audio_paths[start:end])
+        whisper_features = whisper_encoder(audio_paths[start:end])
 
-        # instantaneous save
-        torch.save(whisper_features, os.path.join(output_dir, "{}.pth".format(dataset_type)))
+        # save each sample's Whisper embedding respectively
+        for index in range(batch_size):
+            torch.save(whisper_features[start+index], os.path.join(output_dir, "{}.pth".format(index)))
 
-    # Mapping to MCEP's lengths
+    # Mapping to MCEP's lengths [WARN: Not maintained.]
     if WHISPER_MAPPED:
         print("\nTransform to mapped features...")
         whisper_features = get_mapped_whisper_features(dataset, dataset_type, whisper_features)
