@@ -26,6 +26,7 @@ def load_whisper_features(dataset, dataset_type):
     input_dir = os.path.join(data_dir, "Whisper", dataset_type)
 
     num = len(tuple(os.walk(input_dir)))
+    print(tuple(os.walk(input_dir)))
     whisper_features = np.zeros((num, WHISPER_SEQ, WHISPER_DIM), dtype=float)
 
     print("Loading Whisper features from: ", input_dir)
