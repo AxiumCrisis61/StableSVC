@@ -20,7 +20,7 @@ def whisper_encoder(audio_paths):
         # load audio and pad/trim it to fit 30 seconds (determined by PADDING_LENGTH, seemingly not changeable)
         # (16000*PADDING_LENGTH, ): (480000,)
         audio = whisper.load_audio(str(audio_path))
-        audio = whisper.pad_or_trim(audio, length=PADDING_LENGTH)
+        audio = whisper.pad_or_trim(audio, length=PADDING_LENGTH*16000)
 
         # (80, 100*PADDING_LENGTH): (80, 3000)
         batch_mel[i] = whisper.log_mel_spectrogram(audio).to(model.device)
