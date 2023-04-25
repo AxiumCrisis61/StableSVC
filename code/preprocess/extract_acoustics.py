@@ -36,8 +36,7 @@ def extract_acoustic_features(wave_file, pitch_extractor):
                                                                                 fmin=librosa.note_to_hz('A1')))
     loudness = np.log(np.mean(np.exp(weighted_spectrogram[0]), axis=0) + 1e-5)
     # extract pitch
-    # pitch = pitch_extractor(waveform[0])
-    pitch = None
+    pitch = pitch_extractor(waveform[0])
 
     return mel_spectrogram, pitch, loudness
 
@@ -87,7 +86,7 @@ def extract_acoustic_features_of_datasets(dataset, dataset_type):
 
     dict_features = {
         'Mel': mel_spectrograms,
-        # 'F0': f0_features,
+        'F0': f0_features,
         'Loudness': loudness_features
     }
 
