@@ -9,24 +9,24 @@ import sys
 from argparse import ArgumentParser, ArgumentTypeError
 
 sys.path.append("../")
-from config import data_path, dataset2wavpath, WHISPER_SEQ, WHISPER_DIM, WHISPER_MAPPED, WHISPER_PAD_LENGTH
+from config import data_path, dataset2wavpath, WHISPER_SEQ, WHISPER_DIM, WHISPER_MAPPED, PADDING_LENGTH
 
 
 def whisper_encoder(audio_paths):
     batch = len(audio_paths)
-    batch_mel = torch.zeros((batch, 80, 3000), dtype=torch.float, device=model.device)
+    batch_mel = torch.zeros((batch, 80, PADDING_LENGTH*100), dtype=torch.float, device=model.device)
 
     for i, audio_path in enumerate(audio_paths):
-        # load audio and pad/trim it to fit 8 seconds (determined by WHISPER_PAD_LENGTH)
-        # (48000,)
+        # load audio and pad/trim it to fit 30 seconds (determined by PADDING_LENGTH, seemingly not changeable)
+        # (16000*PADDING_LENGTH, ): (480000,)
         audio = whisper.load_audio(str(audio_path))
-        audio = whisper.pad_or_trim(audio, length=WHISPER_PAD_LENGTH)
+        audio = whisper.pad_or_trim(audio, length=PADDING_LENGTH)
 
-        # (80, 3000)
+        # (80, 100*PADDING_LENGTH): (80, 3000)
         batch_mel[i] = whisper.log_mel_spectrogram(audio).to(model.device)
 
     with torch.no_grad():
-        # (batch, 1500, 1024)
+        # (batch, WHISPER_SEQ, WHISPER_DIM): (batch, 1500, 1024)
         features = model.embed_audio(batch_mel)
 
     del batch_mel
@@ -111,6 +111,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     print("Loading Model...")
+
     model = whisper.load_model("medium")
     if torch.cuda.is_available():
         print("Using GPU...\n")

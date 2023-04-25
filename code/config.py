@@ -27,6 +27,7 @@ WORLD_FRAME_SHIFT = 10
 MCEP_DIM = 40
 
 # Acoustic features hyperparameters
+PADDING_LENGTH = 30           # padding length of the audios
 RE_SAMPLE_RATE = 16000
 MEL_FREQ_BINS = 80           # frequency bins for mel-spectrograms
 STFT_N = 1024                # size of FFT in STFT
@@ -37,7 +38,6 @@ STFT_HOP_SIZE = 240          # hop size of STFT
 WHISPER_SEQ = 1500
 WHISPER_DIM = 1024
 WHISPER_MAPPED = False      # whether to map Whisper features to the length of MCEP
-WHISPER_PAD_LENGTH = 16000 * 8
 
 
 def str2bool(v):
