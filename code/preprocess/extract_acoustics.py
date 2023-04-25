@@ -25,7 +25,7 @@ def extract_acoustic_features(wave_file, pitch_extractor):
                                                            win_length=STFT_WINDOW_SIZE,
                                                            hop_length=STFT_HOP_SIZE,
                                                            n_mels=MEL_FREQ_BINS,
-                                                           normalized=True)(waveform[0])[0]
+                                                           normalized=True)(waveform[0])
     # extract loudness
     power_spectrogram = torchaudio.transforms.Spectrogram(n_fft=STFT_N,
                                                           win_length=STFT_WINDOW_SIZE,
@@ -36,7 +36,8 @@ def extract_acoustic_features(wave_file, pitch_extractor):
                                                                                 fmin=librosa.note_to_hz('A1')))
     loudness = np.log(np.mean(np.exp(weighted_spectrogram[0]), axis=0) + 1e-5)
     # extract pitch
-    pitch = pitch_extractor(waveform[0])
+    # pitch = pitch_extractor(waveform[0])
+    pitch = None
 
     return mel_spectrogram, pitch, loudness
 
@@ -86,7 +87,7 @@ def extract_acoustic_features_of_datasets(dataset, dataset_type):
 
     dict_features = {
         'Mel': mel_spectrograms,
-        'F0': f0_features,
+        # 'F0': f0_features,
         'Loudness': loudness_features
     }
 
