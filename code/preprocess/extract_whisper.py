@@ -9,7 +9,7 @@ import sys
 from argparse import ArgumentParser, ArgumentTypeError
 
 sys.path.append("../")
-from config import data_path, dataset2wavpath, WHISPER_SEQ, WHISPER_DIM, WHISPER_MAPPED
+from config import data_path, dataset2wavpath, WHISPER_SEQ, WHISPER_DIM, WHISPER_MAPPED, WHISPER_PAD_LENGTH
 
 
 def whisper_encoder(audio_paths):
@@ -17,10 +17,10 @@ def whisper_encoder(audio_paths):
     batch_mel = torch.zeros((batch, 80, 3000), dtype=torch.float, device=model.device)
 
     for i, audio_path in enumerate(audio_paths):
-        # load audio and pad/trim it to fit 30 seconds
+        # load audio and pad/trim it to fit 8 seconds (determined by WHISPER_PAD_LENGTH)
         # (48000,)
         audio = whisper.load_audio(str(audio_path))
-        audio = whisper.pad_or_trim(audio)
+        audio = whisper.pad_or_trim(audio, length=WHISPER_PAD_LENGTH)
 
         # (80, 3000)
         batch_mel[i] = whisper.log_mel_spectrogram(audio).to(model.device)

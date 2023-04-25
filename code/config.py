@@ -37,6 +37,7 @@ STFT_HOP_SIZE = 240          # hop size of STFT
 WHISPER_SEQ = 1500
 WHISPER_DIM = 1024
 WHISPER_MAPPED = False      # whether to map Whisper features to the length of MCEP
+WHISPER_PAD_LENGTH = 16000 * 8
 
 
 def str2bool(v):
