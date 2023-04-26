@@ -93,7 +93,7 @@ def extract_whisper_features(dataset, dataset_type, arguments):
 
         # save each sample's Whisper embedding respectively
         for index in range(min(batch_size, len(audio_paths)-start)):
-            torch.save(whisper_features[index], os.path.join(output_dir, "{}.pth".format(start+index)))
+            torch.save(whisper_features[index], os.path.join(output_dir, "{}.pth".format(datasets[start+index]['Uid'])))
 
     # Mapping to MCEP's lengths [WARN: Not maintained.]
     if WHISPER_MAPPED:
