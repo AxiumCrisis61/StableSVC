@@ -86,15 +86,14 @@ def extract_whisper_features(dataset, dataset_type, arguments):
         # update progress
         start = end
         end = start + batch_size
-        if start <= 1209 and end >= 1215:
-            print("{}/{}...".format(min(len(audio_paths), end), len(audio_paths)))
+        print("{}/{}...".format(min(len(audio_paths), end), len(audio_paths)))
 
-            # extract Whisper features
-            whisper_features = whisper_encoder(audio_paths[start:end])
+        # extract Whisper features
+        whisper_features = whisper_encoder(audio_paths[start:end])
 
-            # save each sample's Whisper embedding respectively
-            for index in range(min(batch_size, len(audio_paths)-start)):
-                torch.save(whisper_features[index], os.path.join(output_dir, "{}.pth".format(datasets[start+index]['Uid'])))
+        # save each sample's Whisper embedding respectively
+        for index in range(min(batch_size, len(audio_paths)-start)):
+            torch.save(whisper_features[index], os.path.join(output_dir, "{}.pth".format(datasets[start+index]['Uid'])))
 
     # Mapping to MCEP's lengths [WARN: Not maintained.]
     if WHISPER_MAPPED:
