@@ -1,5 +1,6 @@
 /code/data
 /code/.idea
-/code/__pycache__
+**/__pycache__
 *.pkl
 *.pth
+*.npy
