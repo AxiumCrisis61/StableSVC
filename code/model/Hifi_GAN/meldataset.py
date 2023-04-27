@@ -113,7 +113,19 @@ class MelDataset(torch.utils.data.Dataset):
         filename = self.audio_files[index]
         if self._cache_ref_count == 0:
             audio, old_sample_rate = load_wav(filename)
+            try:
+                print(type(audio))
+                print(audio.shape)
+                print(audio)
+            except Exception as E:
+                pass
             audio = librosa.resample(audio, old_sample_rate, self.sampling_rate)
+            try:
+                print(type(audio))
+                print(audio.shape)
+                print(audio)
+            except Exception as E:
+                pass
             audio = audio / MAX_WAV_VALUE
             if not self.fine_tuning:
                 audio = normalize(audio) * 0.95
