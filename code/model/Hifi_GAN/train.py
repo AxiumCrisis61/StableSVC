@@ -258,7 +258,7 @@ def main():
 
     parser.add_argument('--group_name', default=None)
     parser.add_argument('--input_wavs_dir',
-                        default="/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/data/Opencpop/segments/waves")
+                        default="/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/data/Opencpop/segments/wavs")
     parser.add_argument('--input_mels_dir',
                         default="/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/preprocess/Opencpop/Mel")
     parser.add_argument('--input_training_file',
