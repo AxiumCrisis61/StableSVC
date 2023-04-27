@@ -5,6 +5,7 @@ import os
 import time
 import argparse
 import json
+import numpy as np
 import torch
 import torch.nn.functional as F
 from torch.utils.tensorboard import SummaryWriter
@@ -33,14 +34,22 @@ def train(rank, a, h):
     mpd = MultiPeriodDiscriminator().to(device)
     msd = MultiScaleDiscriminator().to(device)
 
+    # create checkpoints saving path
     if rank == 0:
         print(generator)
         os.makedirs(a.checkpoint_path, exist_ok=True)
-        print("checkpoints directory : ", a.checkpoint_path)
+        print("Checkpoints directory : ", a.checkpoint_path)
 
-    if os.path.isdir(a.checkpoint_path):
-        cp_g = scan_checkpoint(a.checkpoint_path, 'g_')
-        cp_do = scan_checkpoint(a.checkpoint_path, 'do_')
+    # load pretrained checkpoint or continue with the latest checkpoint
+    if a.pretrain_path is not None:
+        if os.path.isdir(a.pretrain_path):
+            print('Using pretrained model : ', a.pretrain_path.split('/')[-1])
+            cp_g = scan_checkpoint(a.pretrain_path, 'g_')
+            cp_do = scan_checkpoint(a.pretrain_path, 'do_')
+    else:
+        if os.path.isdir(a.checkpoint_path):
+            cp_g = scan_checkpoint(a.checkpoint_path, 'g_')
+            cp_do = scan_checkpoint(a.checkpoint_path, 'do_')
 
     steps = 0
     if cp_g is None or cp_do is None:
@@ -154,6 +163,9 @@ def train(rank, a, h):
 
             loss_gen_all.backward()
             optim_g.step()
+            if a.save_best:
+                best_val_error = np.inf
+                os.makedirs(os.path.join(a.checkpoint_path, "best"), exist_ok=True)
 
             if rank == 0:
                 # STDOUT logging
@@ -163,20 +175,6 @@ def train(rank, a, h):
 
                     print('Steps : {:d}, Gen Loss Total : {:4.3f}, Mel-Spec. Error : {:4.3f}, s/b : {:4.3f}'.
                           format(steps, loss_gen_all, mel_error, time.time() - start_b))
-
-                # checkpointing
-                if steps % a.checkpoint_interval == 0 and steps != 0:
-                    checkpoint_path = "{}/g_{:08d}".format(a.checkpoint_path, steps)
-                    save_checkpoint(checkpoint_path,
-                                    {'generator': (generator.module if h.num_gpus > 1 else generator).state_dict()})
-                    checkpoint_path = "{}/do_{:08d}".format(a.checkpoint_path, steps)
-                    save_checkpoint(checkpoint_path, 
-                                    {'mpd': (mpd.module if h.num_gpus > 1
-                                                         else mpd).state_dict(),
-                                     'msd': (msd.module if h.num_gpus > 1
-                                                         else msd).state_dict(),
-                                     'optim_g': optim_g.state_dict(), 'optim_d': optim_d.state_dict(), 'steps': steps,
-                                     'epoch': epoch})
 
                 # Tensorboard summary logging
                 if steps % a.summary_interval == 0:
@@ -215,6 +213,35 @@ def train(rank, a, h):
 
                     generator.train()
 
+                # checkpointing
+                if a.save_best:
+                    if val_err < best_val_error:
+                        best_val_error = val_err
+                        checkpoint_path = "{}/g_{:08d}".format(a.checkpoint_path, steps)
+                        save_checkpoint(checkpoint_path,
+                                        {'generator': (generator.module if h.num_gpus > 1 else generator).state_dict()})
+                        checkpoint_path = "{}/do_{:08d}".format(a.checkpoint_path, steps)
+                        save_checkpoint(checkpoint_path,
+                                        {'mpd': (mpd.module if h.num_gpus > 1
+                                                 else mpd).state_dict(),
+                                         'msd': (msd.module if h.num_gpus > 1
+                                                 else msd).state_dict(),
+                                         'optim_g': optim_g.state_dict(), 'optim_d': optim_d.state_dict(), 'steps': steps,
+                                         'epoch': epoch})
+                else:
+                    if steps % a.checkpoint_interval == 0 and steps != 0:
+                        checkpoint_path = "{}/g_{:08d}".format(a.checkpoint_path, steps)
+                        save_checkpoint(checkpoint_path,
+                                        {'generator': (generator.module if h.num_gpus > 1 else generator).state_dict()})
+                        checkpoint_path = "{}/do_{:08d}".format(a.checkpoint_path, steps)
+                        save_checkpoint(checkpoint_path,
+                                        {'mpd': (mpd.module if h.num_gpus > 1
+                                                             else mpd).state_dict(),
+                                         'msd': (msd.module if h.num_gpus > 1
+                                                             else msd).state_dict(),
+                                         'optim_g': optim_g.state_dict(), 'optim_d': optim_d.state_dict(), 'steps': steps,
+                                         'epoch': epoch})
+
             steps += 1
 
         scheduler_g.step()
@@ -230,11 +257,18 @@ def main():
     parser = argparse.ArgumentParser()
 
     parser.add_argument('--group_name', default=None)
-    parser.add_argument('--input_wavs_dir', default="/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/data/Opencpop/segments/waves")
-    parser.add_argument('--input_mels_dir', default="/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/preprocess/Opencpop/Mel")
-    parser.add_argument('--input_training_file', default="/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/data/Opencpop/segments/train.txt")
-    parser.add_argument('--input_validation_file', default="/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/data/Opencpop/segments/test.txt")
-    parser.add_argument('--checkpoint_path', default='/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/Hifi_GAN/ckpt/UNIVERSAL_V1')
+    parser.add_argument('--input_wavs_dir',
+                        default="/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/data/Opencpop/segments/waves")
+    parser.add_argument('--input_mels_dir',
+                        default="/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/preprocess/Opencpop/Mel")
+    parser.add_argument('--input_training_file',
+                        default="/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/data/Opencpop/segments/train.txt")
+    parser.add_argument('--input_validation_file',
+                        default="/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/data/Opencpop/segments/test.txt")
+    parser.add_argument('--checkpoint_path',
+                        default='/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/Hifi_GAN/ckpt')
+    parser.add_argument('--pretrain_path',
+                        default='/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/Hifi_GAN/ckpt/UNIVERSAL_V1')
     parser.add_argument('--config', default='')
     parser.add_argument('--training_epochs', default=3100, type=int)
     parser.add_argument('--stdout_interval', default=5, type=int)
@@ -242,6 +276,7 @@ def main():
     parser.add_argument('--summary_interval', default=100, type=int)
     parser.add_argument('--validation_interval', default=1000, type=int)
     parser.add_argument('--fine_tuning', default=False, type=bool)
+    parser.add_argument('--save_best', action="store_true")
 
     a = parser.parse_args()
 
