@@ -4,3 +4,4 @@
 *.pkl
 *.pth
 *.npy
+/code/model/Hifi_GAN/ckpt
