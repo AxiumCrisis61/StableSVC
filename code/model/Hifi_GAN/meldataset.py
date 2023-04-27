@@ -6,15 +6,10 @@ import torch.utils.data
 import numpy as np
 import librosa
 from librosa.util import normalize
-from scipy.io.wavfile import read
 from librosa.filters import mel as librosa_mel_fn
 
+
 MAX_WAV_VALUE = 32768.0
-
-
-def load_wav(full_path):
-    sampling_rate, data = read(full_path)
-    return data, sampling_rate
 
 
 def dynamic_range_compression(x, C=1, clip_val=1e-5):
@@ -112,15 +107,14 @@ class MelDataset(torch.utils.data.Dataset):
     def __getitem__(self, index):
         filename = self.audio_files[index]
         if self._cache_ref_count == 0:
-            audio, old_sample_rate = load_wav(filename)
-            audio = librosa.resample(audio, orig_sr=old_sample_rate, target_sr=self.sampling_rate)
+            audio, sampling_rate = librosa.load(filename, sr=self.sampling_rate)    # enable resampling
             audio = audio / MAX_WAV_VALUE
             if not self.fine_tuning:
                 audio = normalize(audio) * 0.95
             self.cached_wav = audio
-            # if sampling_rate != self.sampling_rate:
-            #     raise ValueError("{} SR doesn't match target {} SR".format(
-            #         sampling_rate, self.sampling_rate))
+            if sampling_rate != self.sampling_rate:
+                raise ValueError("{} SR doesn't match target {} SR".format(
+                    sampling_rate, self.sampling_rate))
             self._cache_ref_count = self.n_cache_reuse
         else:
             audio = self.cached_wav
