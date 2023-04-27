@@ -12,7 +12,7 @@ Adjustments to Configuration v1 used in this project (with last four following [
 
 - Modify up-sampling block: decompose 1-d Deconvolution to Resize-Convolution to avoid Checkerboard Artifacts [3]. 
   
-  - Small Notes: number of channels in Conv1d is initial the number of mel-frequency bins, that is to say, channel dimension in the model is essentially the 
+  - Small Notes: number of channels in Conv1d is initial the number of mel-frequency bins, that is to say, channel dimension in the model is essentially the dimension of each STFT frame.
 
 # HiFi-GAN: Generative Adversarial Networks for Efficient and High Fidelity Speech Synthesis
 
