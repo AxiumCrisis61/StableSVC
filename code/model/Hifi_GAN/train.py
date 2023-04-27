@@ -266,9 +266,9 @@ def main():
     parser.add_argument('--input_validation_file',
                         default="/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/data/Opencpop/segments/test.txt")
     parser.add_argument('--checkpoint_path',
-                        default='/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/Hifi_GAN/ckpt')
+                        default='/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt')
     parser.add_argument('--pretrain_path',
-                        default='/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/Hifi_GAN/ckpt/UNIVERSAL_V1')
+                        default='/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/UNIVERSAL_V1')
     parser.add_argument('--config', default='')
     parser.add_argument('--training_epochs', default=3100, type=int)
     parser.add_argument('--stdout_interval', default=5, type=int)
