@@ -3,8 +3,8 @@ import os
 import random
 import torch
 import torch.utils.data
-import torchaudio
 import numpy as np
+import librosa
 from librosa.util import normalize
 from scipy.io.wavfile import read
 from librosa.filters import mel as librosa_mel_fn
@@ -112,8 +112,8 @@ class MelDataset(torch.utils.data.Dataset):
     def __getitem__(self, index):
         filename = self.audio_files[index]
         if self._cache_ref_count == 0:
-            audio, old_sample_rate = torchaudio.load(filename)
-            audio = torchaudio.functional.resample(audio, orig_freq=old_sample_rate, new_freq=self.sampling_rate)
+            audio, old_sample_rate = load_wav(filename)
+            audio = librosa.resample(audio, old_sample_rate, self.sampling_rate)
             audio = audio / MAX_WAV_VALUE
             if not self.fine_tuning:
                 audio = normalize(audio) * 0.95
