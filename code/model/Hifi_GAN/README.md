@@ -1,8 +1,8 @@
+Borrowed from: https://github.com/jik876/hifi-gan
+
 # HiFi-GAN: Generative Adversarial Networks for Efficient and High Fidelity Speech Synthesis
 
 ### Jungil Kong, Jaehyeon Kim, Jaekyoung Bae
-
-Borrowed from: https://codeload.github.com/jik876/hifi-gan/zip/refs/heads/master
 
 In our [paper](https://arxiv.org/abs/2010.05646), 
 we proposed HiFi-GAN: a GAN-based model capable of generating high fidelity speech efficiently.<br/>
