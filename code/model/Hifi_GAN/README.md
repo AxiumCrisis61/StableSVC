@@ -1,5 +1,17 @@
 Borrowed from: https://github.com/jik876/hifi-gan
 
+Adjustments to Configuration v1 used in this project (with last four following [2]):
+
+- Sampling Rate: 22050 to 16000;
+
+- Hop size: 256 to 240;
+
+- Upsample Rate: 8 × 8 × 2 × 2 to 8 × 5 × 3 × 2;
+
+- Upsample Kernel Sizes: [16,16,4,4] to [15, 15, 5, 5];
+
+- Modify up-sampling block: decompose 1-d Deconvolution to Resize-Convolution to avoid Checkerboard Artifacts [3]. 
+
 # HiFi-GAN: Generative Adversarial Networks for Efficient and High Fidelity Speech Synthesis
 
 ### Jungil Kong, Jaehyeon Kim, Jaekyoung Bae
@@ -118,3 +130,11 @@ We provide the universal model with discriminator weights that can be used as a 
 
 We referred to [WaveGlow](https://github.com/NVIDIA/waveglow), [MelGAN](https://github.com/descriptinc/melgan-neurips) 
 and [Tacotron2](https://github.com/NVIDIA/tacotron2) to implement this.
+
+## References
+
+[1] Kong J, Kim J, Bae J. Hifi-gan: Generative adversarial networks for efficient and high fidelity speech synthesis[J]. Advances in Neural Information Processing Systems, 2020, 33: 17022-17033.
+
+[2] S. Liu, Y. Cao, D. Su and H. Meng, "DiffSVC: A Diffusion Probabilistic Model for Singing Voice Conversion," *2021 IEEE Automatic Speech Recognition and Understanding Workshop (ASRU)*, Cartagena, Colombia, 2021, pp. 741-748, doi: 10.1109/ASRU51503.2021.9688219.
+
+[3] Odena, et al., "Deconvolution and Checkerboard Artifacts", Distill, 2016. http://doi.org/10.23915/distill.00003
