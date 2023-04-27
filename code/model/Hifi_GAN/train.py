@@ -30,7 +30,7 @@ def train(rank, a, h):
     torch.cuda.manual_seed(h.seed)
     device = torch.device('cuda:{:d}'.format(rank))
 
-    generator = Generator(h).to(device)
+    generator = Generator(h, a).to(device)
     mpd = MultiPeriodDiscriminator().to(device)
     msd = MultiScaleDiscriminator().to(device)
 
@@ -39,6 +39,14 @@ def train(rank, a, h):
         print(generator)
         os.makedirs(a.checkpoint_path, exist_ok=True)
         print("Checkpoints directory : ", a.checkpoint_path)
+
+    # whether to replace deconvolution with resize-convolution
+    # [NOTE]: If so, pretrained models can not be applied
+    #         Therefore, path for pretrained model will be dispensed and
+    #         fine-tuning mode will be turned off.
+    if a.resize_convolution:
+        a.pretrain_path = None
+        a.fine_tuning = False
 
     # load pretrained checkpoint or continue with the latest checkpoint
     if a.pretrain_path is not None:
@@ -267,6 +275,7 @@ def main():
                         default="/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/data/Opencpop/segments/test.txt")
     parser.add_argument('--checkpoint_path',
                         default='/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt')
+    parser.add_argument('--resize-convolution', action="store_true")
     parser.add_argument('--pretrain_path',
                         default='/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/UNIVERSAL_V1')
     parser.add_argument('--config', default='')

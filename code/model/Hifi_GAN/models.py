@@ -73,9 +73,10 @@ class ResBlock2(torch.nn.Module):
 
 
 class Generator(torch.nn.Module):
-    def __init__(self, h):
+    def __init__(self, h, a):
         super(Generator, self).__init__()
         self.h = h
+        self.a = a
         self.num_kernels = len(h.resblock_kernel_sizes)
         self.num_upsamples = len(h.upsample_rates)
         self.conv_pre = weight_norm(Conv1d(80, h.upsample_initial_channel, 7, 1, padding=3))
@@ -84,15 +85,17 @@ class Generator(torch.nn.Module):
         # up-sampling block
         self.ups = nn.ModuleList()
         # Original: 1-d Deconvolution
-        # for i, (u, k) in enumerate(zip(h.upsample_rates, h.upsample_kernel_sizes)):
-        #     self.ups.append(weight_norm(
-        #         ConvTranspose1d(h.upsample_initial_channel//(2**i), h.upsample_initial_channel//(2**(i+1)),
-        #                         k, u, padding=(k-u)//2)))
+        if a.resize_convolution:
+            for i, (u, k) in enumerate(zip(h.upsample_rates, h.upsample_kernel_sizes)):
+                self.ups.append(weight_norm(
+                    ConvTranspose1d(h.upsample_initial_channel//(2**i), h.upsample_initial_channel//(2**(i+1)),
+                                    k, u, padding=(k-u)//2)))
         # Modified: Size-maintaining 1-d Convolution after temporal nearset-neighbours interpolation (in "forward()")
-        for i, k in enumerate(h.upsample_kernel_sizes):
-            self.ups.append(weight_norm(
-                ConvTranspose1d(h.upsample_initial_channel//(2**i), h.upsample_initial_channel//(2**(i+1)),
-                                k, 1, padding=(k-1)//2)))
+        else:
+            for i, k in enumerate(h.upsample_kernel_sizes):
+                self.ups.append(weight_norm(
+                    ConvTranspose1d(h.upsample_initial_channel//(2**i), h.upsample_initial_channel//(2**(i+1)),
+                                    k, 1, padding=(k-1)//2)))
 
         # MRF module with multiple residual blocks
         self.resblocks = nn.ModuleList()
@@ -109,7 +112,8 @@ class Generator(torch.nn.Module):
         x = self.conv_pre(x)
         for i in range(self.num_upsamples):
             x = F.leaky_relu(x, LRELU_SLOPE)
-            x = F.interpolate(x, scale_factor=(1, 1, 1, self.h.upsample_rates[i]), mode='nearest')
+            if self.a.resize_convolution:
+                x = F.interpolate(x, scale_factor=(1, 1, 1, self.h.upsample_rates[i]), mode='nearest')
             x = self.ups[i](x)
             xs = None
             for j in range(self.num_kernels):
