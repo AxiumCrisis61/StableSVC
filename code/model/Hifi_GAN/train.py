@@ -119,6 +119,9 @@ def train(rank, a, h):
     generator.train()
     mpd.train()
     msd.train()
+    if a.save_best:
+        best_val_error = np.inf
+        os.makedirs(os.path.join(a.checkpoint_path, "best"), exist_ok=True)
     for epoch in range(max(0, last_epoch), a.training_epochs):
         if rank == 0:
             start = time.time()
@@ -171,9 +174,14 @@ def train(rank, a, h):
 
             loss_gen_all.backward()
             optim_g.step()
-            if a.save_best:
-                best_val_error = np.inf
-                os.makedirs(os.path.join(a.checkpoint_path, "best"), exist_ok=True)
+
+            # dumping cuda memory
+            del x, y, y_mel, y_g_hat, y_g_hat_mel, y_df_hat_g, y_df_hat_r, y_ds_hat_g, y_ds_hat_r, loss_disc_f,\
+                losses_disc_f_r, losses_disc_f_g, loss_disc_s, losses_disc_s_r, losses_disc_s_g, loss_disc_all, \
+                loss_mel, fmap_f_r, fmap_f_g, fmap_s_r, fmap_s_g, loss_fm_f, loss_fm_s, loss_gen_f, losses_gen_f, \
+                loss_gen_s, losses_gen_s, loss_gen_all
+            for clear_cuda_memory in range(5):
+                torch.cuda.empty_cache()
 
             if rank == 0:
                 # STDOUT logging
@@ -225,10 +233,10 @@ def train(rank, a, h):
                 if a.save_best:
                     if val_err < best_val_error:
                         best_val_error = val_err
-                        checkpoint_path = "{}/g_{:08d}".format(a.checkpoint_path, steps)
+                        checkpoint_path = "{}/best/g_best".format(a.checkpoint_path)
                         save_checkpoint(checkpoint_path,
                                         {'generator': (generator.module if h.num_gpus > 1 else generator).state_dict()})
-                        checkpoint_path = "{}/do_{:08d}".format(a.checkpoint_path, steps)
+                        checkpoint_path = "{}/best/do_best".format(a.checkpoint_path)
                         save_checkpoint(checkpoint_path,
                                         {'mpd': (mpd.module if h.num_gpus > 1
                                                  else mpd).state_dict(),
