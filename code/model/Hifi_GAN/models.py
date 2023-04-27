@@ -114,7 +114,7 @@ class Generator(torch.nn.Module):
             x = F.leaky_relu(x, LRELU_SLOPE)
             print(x.shape)
             if self.a.resize_convolution:
-                x = F.interpolate(x, scale_factor=(1, 1, self.h.upsample_rates[i]), mode='nearest')
+                x = F.interpolate(x, scale_factor=self.h.upsample_rates[i], mode='nearest')
             x = self.ups[i](x)
             xs = None
             for j in range(self.num_kernels):

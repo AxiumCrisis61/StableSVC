@@ -11,6 +11,8 @@ Adjustments to Configuration v1 used in this project (with last four following [
 - Upsample Kernel Sizes: [16,16,4,4] to [15, 15, 5, 5];
 
 - Modify up-sampling block: decompose 1-d Deconvolution to Resize-Convolution to avoid Checkerboard Artifacts [3]. 
+  
+  - Small Notes: number of channels in Conv1d is initial the number of mel-frequency bins, that is to say, channel dimension in the model is essentially the 
 
 # HiFi-GAN: Generative Adversarial Networks for Efficient and High Fidelity Speech Synthesis
 
