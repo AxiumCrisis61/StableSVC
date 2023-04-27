@@ -99,7 +99,7 @@ def train(rank, a, h):
 
     train_loader = DataLoader(trainset, num_workers=h.num_workers, shuffle=False,
                               sampler=train_sampler,
-                              batch_size=h.batch_size,
+                              batch_size=a.batch_size,
                               pin_memory=True,
                               drop_last=True)
 
@@ -288,6 +288,7 @@ def main():
                         default='/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/UNIVERSAL_V1')
     parser.add_argument('--config', default='')
     parser.add_argument('--training_epochs', default=3100, type=int)
+    parser.add_argument('--batch-size', default=16, type=int)
     parser.add_argument('--stdout_interval', default=5, type=int)
     parser.add_argument('--checkpoint_interval', default=5000, type=int)
     parser.add_argument('--summary_interval', default=100, type=int)
