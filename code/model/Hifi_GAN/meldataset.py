@@ -7,6 +7,8 @@ import numpy as np
 import librosa
 from librosa.util import normalize
 from librosa.filters import mel as librosa_mel_fn
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
 
 
 MAX_WAV_VALUE = 32768.0
