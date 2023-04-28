@@ -99,7 +99,7 @@ def train(rank, a, h):
 
     train_loader = DataLoader(trainset, num_workers=h.num_workers, shuffle=False,
                               sampler=train_sampler,
-                              batch_size=a.batch_size,
+                              batch_size=h.batch_size,
                               pin_memory=True,
                               drop_last=True)
 
@@ -310,6 +310,8 @@ def main():
         torch.cuda.manual_seed(h.seed)
         h.num_gpus = torch.cuda.device_count()
         h.batch_size = int(h.batch_size / h.num_gpus)
+        if a.batch_size is not None:
+            h.batch_size = int(a.batch_size / h.num_gpus)
         print('Batch size per GPU :', h.batch_size)
     else:
         pass
