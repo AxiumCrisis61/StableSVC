@@ -84,13 +84,13 @@ class Generator(torch.nn.Module):
 
         # up-sampling block
         self.ups = nn.ModuleList()
-        # Original: 1-d Deconvolution
+        # Modified: Size-maintaining 1-d Convolution after temporal nearset-neighbours interpolation (in "forward()")
         if a.resize_convolution:
             for i, k in enumerate(h.upsample_kernel_sizes):
                 self.ups.append(weight_norm(
                     ConvTranspose1d(h.upsample_initial_channel//(2**i), h.upsample_initial_channel//(2**(i+1)),
                                     k, 1, padding=(k-1)//2)))
-        # Modified: Size-maintaining 1-d Convolution after temporal nearset-neighbours interpolation (in "forward()")
+        # Original: 1-d Deconvolution
         else:
             for i, (u, k) in enumerate(zip(h.upsample_rates, h.upsample_kernel_sizes)):
                 self.ups.append(weight_norm(
