@@ -1,5 +1,7 @@
 Borrowed from: https://github.com/jik876/hifi-gan
 
+The origin Configuration v1 is adjusted with a sampling rate of 16000 and pretrained model UNIVERSAL_V1.
+
 Adjustments to Configuration v1 used in this project (with last four following [2]):
 
 - Sampling Rate: 22050 to 16000;

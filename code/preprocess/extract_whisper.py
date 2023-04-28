@@ -9,7 +9,8 @@ import sys
 from argparse import ArgumentParser, ArgumentTypeError
 
 sys.path.append("../")
-from config import data_path, dataset2wavpath, WHISPER_SEQ, WHISPER_DIM, WHISPER_MAPPED, PADDING_LENGTH
+from config import data_path, dataset2wavpath, WHISPER_SEQ, WHISPER_DIM, WHISPER_MAPPED, WHISPER_MODEL_SIZE, \
+                   PADDING_LENGTH
 
 
 def whisper_encoder(audio_paths):
@@ -112,7 +113,7 @@ if __name__ == "__main__":
 
     print("Loading Model...")
 
-    model = whisper.load_model("medium")
+    model = whisper.load_model(WHISPER_MODEL_SIZE)
     if torch.cuda.is_available():
         print("Using GPU...\n")
         model = model.cuda()

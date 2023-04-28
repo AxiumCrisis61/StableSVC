@@ -27,17 +27,19 @@ WORLD_FRAME_SHIFT = 10
 MCEP_DIM = 40
 
 # Acoustic features hyperparameters
-PADDING_LENGTH = 30           # padding length of the audios
+PADDING_LENGTH = 30           # padding length of the audios, not changeable due to the fixed input length of Whisper being 30s
 RE_SAMPLE_RATE = 16000
 MEL_FREQ_BINS = 80           # frequency bins for mel-spectrograms
 STFT_N = 1024                # size of FFT in STFT
 STFT_WINDOW_SIZE = 1024      # window size of STFT
-STFT_HOP_SIZE = 240          # hop size of STFT
+STFT_HOP_SIZE = 256          # hop size of STFT
+MEL_PAD_LENGTH = 496         # 8s of audio under the above settings
 
 # Whisper hyperparameters
 WHISPER_SEQ = 1500
-WHISPER_DIM = 1024
+WHISPER_DIM = 512
 WHISPER_MAPPED = False      # whether to map Whisper features to the length of MCEP
+WHISPER_MODEL_SIZE = 'base'
 
 
 def str2bool(v):
