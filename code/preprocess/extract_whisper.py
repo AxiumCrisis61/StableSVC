@@ -14,7 +14,7 @@ from config import data_path, dataset2wavpath, WHISPER_SEQ, WHISPER_DIM, WHISPER
                    PADDING_LENGTH
 
 
-def whisper_encoder(audio_paths):
+def whisper_encoder(audio_paths, arguments):
     batch = len(audio_paths)
     batch_mel = torch.zeros((batch, 80, PADDING_LENGTH*100), dtype=torch.float, device=model.device)
 
@@ -30,6 +30,7 @@ def whisper_encoder(audio_paths):
     with torch.no_grad():
         # (batch, WHISPER_SEQ, WHISPER_DIM): (batch, 1500, 1024)
         features = model.embed_audio(batch_mel)
+        features = F.avg_pool1d(features, kernel_size=args.ave_rate, stride=args.ave_rate)
 
     del batch_mel
     for i in range(5):
@@ -95,8 +96,7 @@ def extract_whisper_features(dataset, dataset_type, arguments):
         print("{}/{}...".format(min(len(audio_paths), end), len(audio_paths)))
 
         # extract Whisper features
-        whisper_features = F.avg_pool1d(whisper_encoder(audio_paths[start:end]),
-                                        kernel_size=args.ave_rate, stride=args.ave_rate)
+        whisper_features = whisper_encoder(audio_paths[start:end], arguments)
 
         # save each sample's Whisper embedding respectively
         if arguments.save_separate:
