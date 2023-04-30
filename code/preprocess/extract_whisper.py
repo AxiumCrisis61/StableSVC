@@ -28,8 +28,9 @@ def whisper_encoder(audio_paths, arguments):
         batch_mel[i] = whisper.log_mel_spectrogram(audio).to(model.device)
 
     with torch.no_grad():
-        # (batch, WHISPER_SEQ, WHISPER_DIM): (batch, 1500, 1024)
+        # (batch, WHISPER_SEQ, WHISPER_DIM): (batch, 1500, 512)
         features = model.embed_audio(batch_mel)
+        # (batch, WHISPER_SEQ/ave-rate, WHISPER_DIM): (batch, 500, 512)
         features = F.avg_pool1d(features, kernel_size=args.ave_rate, stride=args.ave_rate)
 
     del batch_mel
