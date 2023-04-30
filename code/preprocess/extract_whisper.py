@@ -1,5 +1,6 @@
 import whisper
 import torch
+import torch.nn.functional as F
 import os
 import json
 import numpy as np
@@ -74,6 +75,10 @@ def extract_whisper_features(dataset, dataset_type, arguments):
     with open(os.path.join(data_dir, "{}.json".format(dataset_type)), "r") as f:
         datasets = json.load(f)
 
+    # create saving list
+    if not arguments.save_separate:
+        whisper_feature_list = np.zeros((len(datasets), WHISPER_SEQ, WHISPER_DIM), dtype=float)
+
     # Extract raw features: (sz, 1500, 1024)
     print("\nExtracting raw whisper features...")
     audio_paths = [
@@ -90,11 +95,15 @@ def extract_whisper_features(dataset, dataset_type, arguments):
         print("{}/{}...".format(min(len(audio_paths), end), len(audio_paths)))
 
         # extract Whisper features
-        whisper_features = whisper_encoder(audio_paths[start:end])
+        whisper_features = F.avg_pool1d(whisper_encoder(audio_paths[start:end]),
+                                        kernel_size=args.ave_rate, stride=args.ave_rate)
 
         # save each sample's Whisper embedding respectively
-        for index in range(min(batch_size, len(audio_paths)-start)):
-            torch.save(whisper_features[index], os.path.join(output_dir, "{}.pth".format(datasets[start+index]['Uid'])))
+        if arguments.save_separate:
+            for index in range(min(batch_size, len(audio_paths)-start)):
+                torch.save(whisper_features[index], os.path.join(output_dir, "{}.pth".format(datasets[start+index]['Uid'])))
+        else:
+            whisper_feature_list[start:end] = whisper_features
 
     # Mapping to MCEP's lengths [WARN: Not maintained.]
     if WHISPER_MAPPED:
@@ -109,6 +118,10 @@ if __name__ == "__main__":
     parser.add_argument("--dataset", type=str, choices=('Opencpop', 'M4Singer'))
     parser.add_argument("--dataset-type", type=str, choices=('train', 'test'))
     parser.add_argument("--start-point", type=int, default=0)
+    parser.add_argument("--ave-rate", type=int, default=1,
+                        help='kernel size of temporal average pooling to the Whisper feature maps')
+    parser.add_argument("--save-separate", type=bool, default=True,
+                        help='whether to save each feature map of the audio as separate file')
     args = parser.parse_args()
 
     print("Loading Model...")
