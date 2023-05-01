@@ -60,7 +60,7 @@ parser = ArgumentParser(description="Acoustic Mapping")
 parser.add_argument("--dataset", type=str, default="Opencpop")
 parser.add_argument("--converse", type=str2bool, default=False)
 parser.add_argument("--whisper_dim", type=int, default=WHISPER_DIM)
-parser.add_argument("--output_dim", type=int, default=MCEP_DIM)
+# parser.add_argument("--output_dim", type=int, default=MCEP_DIM)
 parser.add_argument(
     "--save", type=str, default="ckpts/debug", help="folder to save the final model"
 )
