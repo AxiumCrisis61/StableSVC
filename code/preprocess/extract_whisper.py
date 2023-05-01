@@ -30,35 +30,17 @@ def whisper_encoder(audio_paths, arguments):
     with torch.no_grad():
         # (batch, WHISPER_SEQ, WHISPER_DIM): (batch, 1500, 512)
         features = model.embed_audio(batch_mel)
-        # (batch, WHISPER_SEQ/ave-rate, WHISPER_DIM): (batch, 500, 512)
-        features = F.avg_pool1d(features, kernel_size=args.ave_rate, stride=args.ave_rate)
+        # transpose the feature maps to align with mel-spectrograms
+        # (batch, WHISPER_DIM, WHISPER_SEQ): (batch, 512, 1500)
+        features = torch.transpose(features, 1, 2)
+        # (batch, WHISPER_DIM, WHISPER_SEQ/ave_rate): (batch, 512, 500)
+        features = F.avg_pool1d(features, kernel_size=arguments.ave_rate, stride=arguments.ave_rate)
 
     del batch_mel
     for i in range(5):
         torch.cuda.empty_cache()
 
     return features.cpu().detach().numpy()
-
-
-def get_mapped_whisper_features(dataset, dataset_type, raw_whisper_features):
-    MCEP_dir = os.path.join(data_path, dataset, "MCEP")
-    with open(os.path.join(MCEP_dir, "{}.pkl".format(dataset_type)), "rb") as f:
-        mceps = pickle.load(f)
-    print("MCEPs: {}, mceps[0] = {}".format(len(mceps), mceps[0].shape))
-
-    whisper_features = []
-    for index, mcep in enumerate(tqdm(mceps)):
-        sz = len(mcep)
-
-        # (1500, 1024)
-        raw_feats = raw_whisper_features[index]
-
-        feats = np.zeros((sz, WHISPER_DIM), dtype=float)
-        for i in range(sz):
-            feats[i] = raw_feats[int(i / 2)]
-        whisper_features.append(feats)
-
-    return whisper_features
 
 
 def extract_whisper_features(dataset, dataset_type, arguments):
@@ -79,13 +61,11 @@ def extract_whisper_features(dataset, dataset_type, arguments):
 
     # create saving list
     if not arguments.save_separate:
-        whisper_feature_list = np.zeros((len(datasets), WHISPER_SEQ, WHISPER_DIM), dtype=float)
+        whisper_feature_list = np.zeros((len(datasets), WHISPER_DIM, WHISPER_SEQ/arguments.ave_rate), dtype=float)
 
-    # Extract raw features: (sz, 1500, 1024)
+    # Extract raw features: (batch, WHISPER_DIM, WHISPER_SEQ/ave_rate)
     print("\nExtracting raw whisper features...")
-    audio_paths = [
-        os.path.join(wave_dir, "{}.wav".format(utt["Uid"])) for utt in datasets
-    ]
+    audio_paths = [os.path.join(wave_dir, "{}.wav".format(utt["Uid"])) for utt in datasets]
     if dataset == "M4Singer":
         audio_paths = [os.path.join(wave_dir, utt["Path"]) for utt in datasets]
 
@@ -105,12 +85,6 @@ def extract_whisper_features(dataset, dataset_type, arguments):
                 torch.save(whisper_features[index], os.path.join(output_dir, "{}.pth".format(datasets[start+index]['Uid'])))
         else:
             whisper_feature_list[start:end] = whisper_features
-
-    # Mapping to MCEP's lengths [WARN: Not maintained.]
-    if WHISPER_MAPPED:
-        print("\nTransform to mapped features...")
-        whisper_features = get_mapped_whisper_features(dataset, dataset_type, whisper_features)
-        torch.save(whisper_features, os.path.join(output_dir, "{}.pth".format(dataset_type)))
 
 
 if __name__ == "__main__":
