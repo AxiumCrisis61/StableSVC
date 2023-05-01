@@ -21,10 +21,10 @@ dataset2wavpath = {
 # We select 5 utterances randomly for every singer
 NUMS_OF_SINGER = 5
 
-# WORLD hyparameters
-WORLD_SAMPLE_RATE = 44100
-WORLD_FRAME_SHIFT = 10
-MCEP_DIM = 40
+# Hifi_GAN Vocoder settings
+
+
+
 
 # Acoustic features hyperparameters
 PADDING_LENGTH = 30           # padding length of the audios, not changeable due to the fixed input length of Whisper being 30s

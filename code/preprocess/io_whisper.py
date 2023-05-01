@@ -17,8 +17,8 @@ def load_whisper_features(dataset, dataset_type):
     for root, dirs, files in os.walk(input_dir):
         num = len(tuple(files))
         whisper_features = np.zeros((num, WHISPER_SEQ, WHISPER_DIM), dtype=float)
-        for index in tqdm(range(num)):
-            whisper_features[index] = torch.load(os.path.join(input_dir, "{}.pth".format(index)))
+        for index, file in enumerate(tqdm(files)):
+            whisper_features[index] = torch.load(os.path.join(input_dir, file))
 
     if whisper_features is None:
         raise ValueError('Cannot find Whisper features!')

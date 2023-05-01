@@ -48,7 +48,7 @@ def inference(a):
     generator.remove_weight_norm()
     with torch.no_grad():
         for i, filname in enumerate(filelist):
-            wav, sr = load_wav(os.path.join(a.input_wavs_dir, filname))
+            wav, sr = librosa.load(os.path.join(a.input_wavs_dir, filname), sr=h.sampling_rate)    # enable resampling
             wav = wav / MAX_WAV_VALUE
             wav = torch.FloatTensor(wav).to(device)
             x = get_mel(wav.unsqueeze(0))
@@ -60,6 +60,11 @@ def inference(a):
             output_file = os.path.join(a.output_dir, os.path.splitext(filname)[0] + '_generated.wav')
             write(output_file, h.sampling_rate, audio)
             print(output_file)
+
+
+def hifi_gan_vocoder(mel):
+    pass
+
 
 
 def main():
