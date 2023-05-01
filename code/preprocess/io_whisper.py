@@ -5,7 +5,7 @@ from tqdm import tqdm
 import sys
 
 sys.path.append("../")
-from config import data_path, WHISPER_SEQ, WHISPER_DIM
+from config import data_path
 
 
 def load_whisper_features(dataset, dataset_type):
@@ -16,7 +16,8 @@ def load_whisper_features(dataset, dataset_type):
 
     for root, dirs, files in os.walk(input_dir):
         num = len(tuple(files))
-        whisper_features = np.zeros((num, WHISPER_SEQ, WHISPER_DIM), dtype=float)
+        whisper_feature_shape = torch.load(os.path.join(input_dir, files[0])).shape
+        whisper_features = np.zeros((num, whisper_feature_shape[0], whisper_feature_shape[1]), dtype=float)
         for index, file in enumerate(tqdm(files)):
             whisper_features[index] = torch.load(os.path.join(input_dir, file))
 
