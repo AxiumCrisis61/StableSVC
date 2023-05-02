@@ -18,7 +18,8 @@ def load_whisper_features(dataset, dataset_type):
         num = len(tuple(files))
         whisper_feature_shape = torch.load(os.path.join(input_dir, files[0])).shape
         whisper_features = np.zeros((num, whisper_feature_shape[0], whisper_feature_shape[1]), dtype=float)
-        for index, file in enumerate(tqdm(files)):
+        for index, file in enumerate(files):
+            print(index)
             whisper_features[index] = torch.load(os.path.join(input_dir, file))
 
     if whisper_features is None:
