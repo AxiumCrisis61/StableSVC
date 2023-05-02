@@ -72,17 +72,17 @@ def mel_spectrogram(y, n_fft, num_mels, sampling_rate, hop_size, win_size, fmin,
 
 def get_dataset_filelist(a):
     with open(a.input_training_file, 'r', encoding='utf-8') as fi:
-        training_files = [os.path.join(a.input_wavs_dir, 'train', x.split('|')[0] + '.wav')
+        training_files = [os.path.join(a.input_wavs_dir, x.split('|')[0] + '.wav')
                           for x in fi.read().split('\n') if len(x) > 0]
 
     with open(a.input_validation_file, 'r', encoding='utf-8') as fi:
-        validation_files = [os.path.join(a.input_wavs_dir, 'test', x.split('|')[0] + '.wav')
+        validation_files = [os.path.join(a.input_wavs_dir, x.split('|')[0] + '.wav')
                             for x in fi.read().split('\n') if len(x) > 0]
     return training_files, validation_files
 
 
 class MelDataset(torch.utils.data.Dataset):
-    def __init__(self, training_files, segment_size, n_fft, num_mels,
+    def __init__(self, training_files, dataset_type, segment_size, n_fft, num_mels,
                  hop_size, win_size, sampling_rate,  fmin, fmax, split=True, shuffle=True, n_cache_reuse=1,
                  device=None, fmax_loss=None, fine_tuning=False, base_mels_path=None):
         self.audio_files = training_files
@@ -105,6 +105,13 @@ class MelDataset(torch.utils.data.Dataset):
         self.device = device
         self.fine_tuning = fine_tuning
         self.base_mels_path = base_mels_path
+        if dataset_type not in ("train", "val", "test"):
+            raise ValueError("Invalid dataset type input!")
+        else:
+            self.dataset_type = dataset_type
+        # if test dataset type received, turn off fine-tuning mode
+        if dataset_type == "test":
+            self.fine_tuning = False
 
     def __getitem__(self, index):
         filename = self.audio_files[index]
@@ -139,7 +146,8 @@ class MelDataset(torch.utils.data.Dataset):
                                   center=False)
         else:
             mel = np.load(
-                os.path.join(self.base_mels_path, os.path.splitext(os.path.split(filename)[-1])[0] + '.npy'))
+                os.path.join(self.base_mels_path, self.dataset_type,
+                             os.path.splitext(os.path.split(filename)[-1])[0] + '.npy'))
             mel = torch.from_numpy(mel)
 
             if len(mel.shape) < 3:
@@ -160,7 +168,7 @@ class MelDataset(torch.utils.data.Dataset):
                                    self.sampling_rate, self.hop_size, self.win_size, self.fmin, self.fmax_loss,
                                    center=False)
 
-        return (mel.squeeze(), audio.squeeze(0), filename, mel_loss.squeeze())
+        return mel.squeeze(), audio.squeeze(0), filename, mel_loss.squeeze()
 
     def __len__(self):
         return len(self.audio_files)
