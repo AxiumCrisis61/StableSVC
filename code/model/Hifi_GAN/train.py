@@ -143,16 +143,9 @@ def train(rank, a, h):
             y = y.unsqueeze(1)
 
             y_g_hat = generator(x)
-            # y_g_hat_mel = mel_spectrogram(y_g_hat.squeeze(1), h.n_fft, h.num_mels, h.sampling_rate, h.hop_size,
-            #                               h.win_size,
-            #                               h.fmin, h.fmax_for_loss)
-            y_g_hat_mel = torchaudio.transforms.MelSpectrogram(sample_rate=h.sampling_rate,
-                                                               n_fft=h.n_fft,
-                                                               n_mels=h.num_mels,
-                                                               hop_length=h.hop_size,
-                                                               win_length=h.win_size,
-                                                               f_min=h.fmin,
-                                                               f_max=h.fmax_for_loss)(y_g_hat.squeeze(1))
+            y_g_hat_mel = mel_spectrogram(y_g_hat.squeeze(1), h.n_fft, h.num_mels, h.sampling_rate, h.hop_size,
+                                          h.win_size,
+                                          h.fmin, h.fmax_for_loss, center=True)
 
             optim_d.zero_grad()
 
@@ -218,16 +211,9 @@ def train(rank, a, h):
                             x, y, _, y_mel = batch
                             y_g_hat = generator(x.to(device))
                             y_mel = torch.autograd.Variable(y_mel.to(device, non_blocking=True))
-                            # y_g_hat_mel = mel_spectrogram(y_g_hat.squeeze(1), h.n_fft, h.num_mels, h.sampling_rate,
-                            #                               h.hop_size, h.win_size,
-                            #                               h.fmin, h.fmax_for_loss)
-                            y_g_hat_mel = torchaudio.transforms.MelSpectrogram(sample_rate=h.sampling_rate,
-                                                                               n_fft=h.n_fft,
-                                                                               n_mels=h.num_mels,
-                                                                               hop_length=h.hop_size,
-                                                                               win_length=h.win_size,
-                                                                               f_min=h.fmin,
-                                                                               f_max=h.fmax_for_loss)(y_g_hat.squeeze(1))
+                            y_g_hat_mel = mel_spectrogram(y_g_hat.squeeze(1), h.n_fft, h.num_mels, h.sampling_rate,
+                                                          h.hop_size, h.win_size,
+                                                          h.fmin, h.fmax_for_loss, center=True)
                             val_err_tot += F.l1_loss(y_mel, y_g_hat_mel).item()
 
                             if j <= 4:
@@ -236,16 +222,9 @@ def train(rank, a, h):
                                     sw.add_figure('gt/y_spec_{}'.format(j), plot_spectrogram(x[0]), steps)
 
                                 sw.add_audio('generated/y_hat_{}'.format(j), y_g_hat[0], steps, h.sampling_rate)
-                                # y_hat_spec = mel_spectrogram(y_g_hat.squeeze(1), h.n_fft, h.num_mels,
-                                #                              h.sampling_rate, h.hop_size, h.win_size,
-                                #                              h.fmin, h.fmax)
-                                y_hat_spec = torchaudio.transforms.MelSpectrogram(sample_rate=h.sampling_rate,
-                                                                                  n_fft=h.n_fft,
-                                                                                  n_mels=h.num_mels,
-                                                                                  hop_length=h.hop_size,
-                                                                                  win_length=h.win_size,
-                                                                                  f_min=h.fmin,
-                                                                                  f_max=h.fmax)(y_g_hat.squeeze(1))
+                                y_hat_spec = mel_spectrogram(y_g_hat.squeeze(1), h.n_fft, h.num_mels,
+                                                             h.sampling_rate, h.hop_size, h.win_size,
+                                                             h.fmin, h.fmax, center=True)
                                 sw.add_figure('generated/y_hat_spec_{}'.format(j),
                                               plot_spectrogram(y_hat_spec.squeeze(0).cpu().numpy()), steps)
 

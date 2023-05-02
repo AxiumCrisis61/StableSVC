@@ -1,10 +1,8 @@
 Borrowed from: https://github.com/jik876/hifi-gan
 
-The origin Configuration v1 is adjusted with a sampling rate of 16000 and pretrained model UNIVERSAL_V1.
+The origin Configuration v1 is adjusted with a sampling rate of 16000 and pretrained model UNIVERSAL_V1. And Mel-spectrogram is calculated with "center=True".
 
 [NOTE]: input mel-spectrograms for the Hifi-GAN need to have maximal frequency of 8000.
-
-Modification to the codes: replace original function for calculating mel-spectrograms with the function from torchaudio.
 
 Adjustments to Configuration v1 tried in this project (with last four following [2]):
 

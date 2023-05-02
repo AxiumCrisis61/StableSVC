@@ -146,16 +146,9 @@ class MelDataset(torch.utils.data.Dataset):
                 else:
                     audio = torch.nn.functional.pad(audio, (0, self.segment_size - audio.size(1)), 'constant')
 
-            # mel = mel_spectrogram(audio, self.n_fft, self.num_mels,
-            #                       self.sampling_rate, self.hop_size, self.win_size, self.fmin, self.fmax,
-            #                       center=False)
-            mel = torchaudio.transforms.MelSpectrogram(sample_rate=self.sampling_rate,
-                                                       n_fft=self.n_fft,
-                                                       n_mels=self.num_mels,
-                                                       hop_length=self.hop_size,
-                                                       win_length=self.win_size,
-                                                       f_min=self.fmin,
-                                                       f_max=self.fmax)(audio)
+            mel = mel_spectrogram(audio, self.n_fft, self.num_mels,
+                                  self.sampling_rate, self.hop_size, self.win_size, self.fmin, self.fmax,
+                                  center=True)
         else:
             mel = np.load(
                 os.path.join(self.base_mels_path, self.dataset_type,
@@ -177,16 +170,9 @@ class MelDataset(torch.utils.data.Dataset):
                     mel = torch.nn.functional.pad(mel, (0, frames_per_seg - mel.size(2)), 'constant')
                     audio = torch.nn.functional.pad(audio, (0, self.segment_size - audio.size(1)), 'constant')
 
-        # mel_loss = mel_spectrogram(audio, self.n_fft, self.num_mels,
-        #                            self.sampling_rate, self.hop_size, self.win_size, self.fmin, self.fmax_loss,
-        #                            center=False)
-        mel_loss = torchaudio.transforms.MelSpectrogram(sample_rate=self.sampling_rate,
-                                                        n_fft=self.n_fft,
-                                                        n_mels=self.num_mels,
-                                                        hop_length=self.hop_size,
-                                                        win_length=self.win_size,
-                                                        f_min=self.fmin,
-                                                        f_max=self.fmax)(audio)
+        mel_loss = mel_spectrogram(audio, self.n_fft, self.num_mels,
+                                   self.sampling_rate, self.hop_size, self.win_size, self.fmin, self.fmax_loss,
+                                   center=True)
 
         return mel.squeeze(), audio.squeeze(0), filename, mel_loss.squeeze()
 
