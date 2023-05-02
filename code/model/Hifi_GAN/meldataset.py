@@ -105,13 +105,16 @@ class MelDataset(torch.utils.data.Dataset):
         self.device = device
         self.fine_tuning = fine_tuning
         self.base_mels_path = base_mels_path
-        if dataset_type not in ("train", "val", "test"):
-            raise ValueError("Invalid dataset type input!")
-        else:
-            self.dataset_type = dataset_type
-        # if test dataset type received, turn off fine-tuning mode
-        if dataset_type == "test":
+        if dataset_type == "train":
+            self.dataset_type = "train"
+        elif dataset_type == "val":
+            self.dataset_type = "test"
+        elif dataset_type == "test":
+            # if test dataset type received, turn off fine-tuning mode
             self.fine_tuning = False
+            self.dataset_type = "test"
+        else:
+            raise ValueError("Invalid dataset type input!")
 
     def __getitem__(self, index):
         filename = self.audio_files[index]
