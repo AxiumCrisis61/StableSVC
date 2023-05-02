@@ -177,10 +177,10 @@ def train(rank, a, h):
             optim_g.step()
 
             # dumping cuda memory
-            del x, y, y_mel, y_g_hat, y_g_hat_mel, y_df_hat_g, y_df_hat_r, y_ds_hat_g, y_ds_hat_r, loss_disc_f,\
+            del x, y, y_g_hat, y_df_hat_g, y_df_hat_r, y_ds_hat_g, y_ds_hat_r, loss_disc_f,\
                 losses_disc_f_r, losses_disc_f_g, loss_disc_s, losses_disc_s_r, losses_disc_s_g, loss_disc_all, \
                 loss_mel, fmap_f_r, fmap_f_g, fmap_s_r, fmap_s_g, loss_fm_f, loss_fm_s, loss_gen_f, losses_gen_f, \
-                loss_gen_s, losses_gen_s, loss_gen_all
+                loss_gen_s, losses_gen_s
             for clear_cuda_memory in range(5):
                 torch.cuda.empty_cache()
 
