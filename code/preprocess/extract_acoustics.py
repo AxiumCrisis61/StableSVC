@@ -15,7 +15,8 @@ import warnings
 warnings.simplefilter(action='ignore', category=UserWarning)
 
 sys.path.append("../")
-from config import data_path, dataset2wavpath, RE_SAMPLE_RATE, MEL_FREQ_BINS, STFT_N, STFT_WINDOW_SIZE, STFT_HOP_SIZE
+from config import data_path, dataset2wavpath, RE_SAMPLE_RATE, MEL_FREQ_BINS, STFT_N, STFT_WINDOW_SIZE, STFT_HOP_SIZE, \
+    F_MIN, F_MAX
 
 MAX_WAV_VALUE = 32768.0
 
@@ -86,7 +87,7 @@ def extract_acoustic_features(wave_file, pitch_extractor):
 
     # transform to Mel-spectrogram
     mel_spectrogram = transform_mel_spectrogram(waveform[0], STFT_N, MEL_FREQ_BINS,
-                                                RE_SAMPLE_RATE, STFT_HOP_SIZE, STFT_WINDOW_SIZE, self.fmin, self.fmax,
+                                                RE_SAMPLE_RATE, STFT_HOP_SIZE, STFT_WINDOW_SIZE, F_MIN, F_MAX,
                                                 center=False)
     # mel_spectrogram = torchaudio.transforms.MelSpectrogram(n_fft=STFT_N,
     #                                                        win_length=STFT_WINDOW_SIZE,
