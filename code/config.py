@@ -24,8 +24,6 @@ NUMS_OF_SINGER = 5
 # Hifi_GAN Vocoder settings
 
 
-
-
 # Acoustic features hyperparameters
 PADDING_LENGTH = 30           # padding length of the audios, not changeable due to the fixed input length of Whisper being 30s
 RE_SAMPLE_RATE = 16000
@@ -34,6 +32,8 @@ STFT_N = 1024                # size of FFT in STFT
 STFT_WINDOW_SIZE = 1024      # window size of STFT
 STFT_HOP_SIZE = 256          # hop size of STFT
 MEL_PAD_LENGTH = 496         # 8s of audio under the above settings
+F_MAX = 8000                 # maximal frequency for Mel filter banks (inherited from Hifi-GAN configuration v1)
+F_MIN = 0
 
 # Whisper hyperparameters
 WHISPER_SEQ = 1500
