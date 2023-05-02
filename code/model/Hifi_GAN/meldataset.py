@@ -5,11 +5,12 @@ import torch
 import torch.utils.data
 import numpy as np
 import librosa
+import torchaudio.transforms
 from librosa.util import normalize
 from librosa.filters import mel as librosa_mel_fn
 import warnings
-warnings.simplefilter(action='ignore', category=UserWarning)
 
+warnings.simplefilter(action='ignore', category=UserWarning)
 
 MAX_WAV_VALUE = 32768.0
 
@@ -53,18 +54,19 @@ def mel_spectrogram(y, n_fft, num_mels, sampling_rate, hop_size, win_size, fmin,
     global mel_basis, hann_window
     if fmax not in mel_basis:
         mel = librosa_mel_fn(sr=sampling_rate, n_fft=n_fft, n_mels=num_mels, fmin=fmin, fmax=fmax)
-        mel_basis[str(fmax)+'_'+str(y.device)] = torch.from_numpy(mel).float().to(y.device)
+        mel_basis[str(fmax) + '_' + str(y.device)] = torch.from_numpy(mel).float().to(y.device)
         hann_window[str(y.device)] = torch.hann_window(win_size).to(y.device)
 
-    y = torch.nn.functional.pad(y.unsqueeze(1), (int((n_fft-hop_size)/2), int((n_fft-hop_size)/2)), mode='reflect')
+    y = torch.nn.functional.pad(y.unsqueeze(1), (int((n_fft - hop_size) / 2), int((n_fft - hop_size) / 2)),
+                                mode='reflect')
     y = y.squeeze(1)
 
     spec = torch.stft(y, n_fft, hop_length=hop_size, win_length=win_size, window=hann_window[str(y.device)],
                       center=center, pad_mode='reflect', normalized=False, onesided=True, return_complex=False)
 
-    spec = torch.sqrt(spec.pow(2).sum(-1)+(1e-9))
+    spec = torch.sqrt(spec.pow(2).sum(-1) + (1e-9))
 
-    spec = torch.matmul(mel_basis[str(fmax)+'_'+str(y.device)], spec)
+    spec = torch.matmul(mel_basis[str(fmax) + '_' + str(y.device)], spec)
     spec = spectral_normalize_torch(spec)
 
     return spec
@@ -83,7 +85,7 @@ def get_dataset_filelist(a):
 
 class MelDataset(torch.utils.data.Dataset):
     def __init__(self, training_files, dataset_type, segment_size, n_fft, num_mels,
-                 hop_size, win_size, sampling_rate,  fmin, fmax, split=True, shuffle=True, n_cache_reuse=1,
+                 hop_size, win_size, sampling_rate, fmin, fmax, split=True, shuffle=True, n_cache_reuse=1,
                  device=None, fmax_loss=None, fine_tuning=False, base_mels_path=None):
         self.audio_files = training_files
         random.seed(1234)
@@ -119,7 +121,7 @@ class MelDataset(torch.utils.data.Dataset):
     def __getitem__(self, index):
         filename = self.audio_files[index]
         if self._cache_ref_count == 0:
-            audio, sampling_rate = librosa.load(filename, sr=self.sampling_rate)    # enable resampling
+            audio, sampling_rate = librosa.load(filename, sr=self.sampling_rate)  # enable resampling
             audio = audio / MAX_WAV_VALUE
             if not self.fine_tuning:
                 audio = normalize(audio) * 0.95
@@ -140,17 +142,25 @@ class MelDataset(torch.utils.data.Dataset):
                 if audio.size(1) >= self.segment_size:
                     max_audio_start = audio.size(1) - self.segment_size
                     audio_start = random.randint(0, max_audio_start)
-                    audio = audio[:, audio_start:audio_start+self.segment_size]
+                    audio = audio[:, audio_start:audio_start + self.segment_size]
                 else:
                     audio = torch.nn.functional.pad(audio, (0, self.segment_size - audio.size(1)), 'constant')
 
-            mel = mel_spectrogram(audio, self.n_fft, self.num_mels,
-                                  self.sampling_rate, self.hop_size, self.win_size, self.fmin, self.fmax,
-                                  center=False)
+            # mel = mel_spectrogram(audio, self.n_fft, self.num_mels,
+            #                       self.sampling_rate, self.hop_size, self.win_size, self.fmin, self.fmax,
+            #                       center=False)
+            mel = torchaudio.transforms.MelSpectrogram(sample_rate=self.sampling_rate,
+                                                       n_fft=self.n_fft,
+                                                       n_mels=self.num_mels,
+                                                       hop_length=self.hop_size,
+                                                       win_length=self.win_size,
+                                                       f_min=self.fmin,
+                                                       f_max=self.fmax)(audio)
         else:
             mel = np.load(
                 os.path.join(self.base_mels_path, self.dataset_type,
                              os.path.splitext(os.path.split(filename)[-1])[0] + '.npy'))
+            mel = np.fmin(mel, self.fmax)        # cap maximal frequency according ot the configuration
             mel = torch.from_numpy(mel)
 
             if len(mel.shape) < 3:
@@ -167,9 +177,16 @@ class MelDataset(torch.utils.data.Dataset):
                     mel = torch.nn.functional.pad(mel, (0, frames_per_seg - mel.size(2)), 'constant')
                     audio = torch.nn.functional.pad(audio, (0, self.segment_size - audio.size(1)), 'constant')
 
-        mel_loss = mel_spectrogram(audio, self.n_fft, self.num_mels,
-                                   self.sampling_rate, self.hop_size, self.win_size, self.fmin, self.fmax_loss,
-                                   center=False)
+        # mel_loss = mel_spectrogram(audio, self.n_fft, self.num_mels,
+        #                            self.sampling_rate, self.hop_size, self.win_size, self.fmin, self.fmax_loss,
+        #                            center=False)
+        mel_loss = torchaudio.transforms.MelSpectrogram(sample_rate=self.sampling_rate,
+                                                        n_fft=self.n_fft,
+                                                        n_mels=self.num_mels,
+                                                        hop_length=self.hop_size,
+                                                        win_length=self.win_size,
+                                                        f_min=self.fmin,
+                                                        f_max=self.fmax)(audio)
 
         return mel.squeeze(), audio.squeeze(0), filename, mel_loss.squeeze()
 
