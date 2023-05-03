@@ -1,8 +1,8 @@
 Borrowed from: https://github.com/jik876/hifi-gan
 
-The origin Configuration v1 is adjusted with a sampling rate of 16000 and pretrained model UNIVERSAL_V1. And Mel-spectrogram is calculated with "center=True".
+The origin Configuration v1 is adjusted with a sampling rate of 16000 and pretrained model UNIVERSAL_V1. 
 
-[NOTE]: input mel-spectrograms for the Hifi-GAN need to have maximal frequency of 8000.
+[NOTE]: input mel-spectrograms for the Hifi-GAN need to have maximal frequency of 8000, and need to be calculated with center=False.
 
 Adjustments to Configuration v1 tried in this project (with last four following [2]):
 
@@ -17,6 +17,8 @@ Adjustments to Configuration v1 tried in this project (with last four following 
 - Modify up-sampling block: decompose 1-d Deconvolution to Resize-Convolution to avoid Checkerboard Artifacts [3]. 
   
   - Small Notes: number of channels in Conv1d is initial the number of mel-frequency bins, that is to say, channel dimension in the model is essentially the dimension of each STFT frame.
+
+
 
 # HiFi-GAN: Generative Adversarial Networks for Efficient and High Fidelity Speech Synthesis
 
