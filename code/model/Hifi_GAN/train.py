@@ -233,8 +233,9 @@ def train(rank, a, h):
                     generator.train()
 
                 # checkpointing
-                # save latest checkpoint
                 if steps % a.checkpoint_interval == 0 and steps != 0:
+                    # save the latest checkpoint
+                    # (checkpoints need to be constantly saved to cope with any possible breakdown)
                     checkpoint_path = "{}/g_{:08d}".format(a.checkpoint_path, steps)
                     save_checkpoint(checkpoint_path,
                                     {'generator': (generator.module if h.num_gpus > 1 else generator).state_dict()})
@@ -246,6 +247,9 @@ def train(rank, a, h):
                                              else msd).state_dict(),
                                      'optim_g': optim_g.state_dict(), 'optim_d': optim_d.state_dict(), 'steps': steps,
                                      'epoch': epoch})
+                    # delete last checkpoint
+                    os.remove("{}/g_{:08d}".format(a.checkpoint_path, steps - a.checkpoint_interval))
+                    os.remove("{}/do_{:08d}".format(a.checkpoint_path, steps - a.checkpoint_interval))
                     # save best checkpoint
                     if a.save_best:
                         if val_err < best_val_error:
