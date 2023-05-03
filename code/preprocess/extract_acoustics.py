@@ -1,15 +1,13 @@
 import os
 import sys
 import json
-import pickle
 import numpy as np
 import torch
 import torchaudio
 import diffsptk
 from tqdm import tqdm
-from argparse import ArgumentParser, ArgumentTypeError
+from argparse import ArgumentParser
 import librosa
-from librosa.util import normalize
 from librosa.filters import mel as librosa_mel_fn
 import warnings
 warnings.simplefilter(action='ignore', category=UserWarning)
@@ -156,19 +154,9 @@ def extract_acoustic_features_of_datasets(dataset, dataset_type, arguments):
 
     # save
     for feature_name, feature in dict_features.items():
-        if feature_name == 'Mel':
-            if arguments.hifi_gan:
-                output_dir = os.path.join(data_dir, feature_name)
-                os.makedirs(output_dir, exist_ok=True)
-                torch.save(feature, os.path.join(output_dir, "{}_hifi_gan.pth".format(dataset_type)))
-            else:
-                output_dir = os.path.join(data_dir, feature_name)
-                os.makedirs(output_dir, exist_ok=True)
-                torch.save(feature, os.path.join(output_dir, "{}.pth".format(dataset_type)))
-        else:
-            output_dir = os.path.join(data_dir, feature_name)
-            os.makedirs(output_dir, exist_ok=True)
-            torch.save(feature, os.path.join(output_dir, "{}.pth".format(dataset_type)))
+        output_dir = os.path.join(data_dir, feature_name)
+        os.makedirs(output_dir, exist_ok=True)
+        torch.save(feature, os.path.join(output_dir, "{}.pth".format(dataset_type)))
 
 
 if __name__ == '__main__':
