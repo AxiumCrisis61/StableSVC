@@ -50,13 +50,15 @@ def train(rank, a, h):
         a.fine_tuning = False
 
     # load pretrained checkpoint or continue with the latest checkpoint
-    if a.pretrain_path is not None:
+    if a.pretrained:
+        a.fine_tuning = True
         if os.path.isdir(a.pretrain_path):
             print('Using pretrained model : ', a.pretrain_path.split('/')[-1])
             cp_g = scan_checkpoint(a.pretrain_path, 'g_')
             cp_do = scan_checkpoint(a.pretrain_path, 'do_')
+        else:
+            raise ValueError("No pretrained model found")
     else:
-        print('Trying to loading from latest checkpoint...')
         if os.path.isdir(a.checkpoint_path):
             print('Loading from latest checkpoint...')
             cp_g = scan_checkpoint(a.checkpoint_path, 'g_')
@@ -305,6 +307,7 @@ def main():
     parser.add_argument('--summary_interval', default=100, type=int)
     parser.add_argument('--validation_interval', default=1000, type=int)
     parser.add_argument('--fine_tuning', default=False, type=bool)
+    parser.add_argument('--pretrained', default=False, type=bool)
     parser.add_argument('--save_best', default=True, type=bool)
 
     a = parser.parse_args()
