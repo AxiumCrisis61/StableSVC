@@ -56,6 +56,7 @@ def train(rank, a, h):
             cp_g = scan_checkpoint(a.pretrain_path, 'g_')
             cp_do = scan_checkpoint(a.pretrain_path, 'do_')
     else:
+        print('Trying to loading from latest checkpoint...')
         if os.path.isdir(a.checkpoint_path):
             print('Loading from latest checkpoint...')
             cp_g = scan_checkpoint(a.checkpoint_path, 'g_')
