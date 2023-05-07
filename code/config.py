@@ -34,15 +34,14 @@ NUMS_OF_SINGER = 5
 
 
 # Acoustic features hyperparameters
-PADDING_LENGTH = 8               # padding length of the audios
-MEL_PADDING_LENGTH = 512         # 8s of audio under the above settings
+MEL_PADDING_LENGTH = 512         # roughly 8s of audio under the above settings
 WHISPER_PADDING_LENGTH = 30      # padding length of the Whisper input audios, not changeable
 RE_SAMPLE_RATE = 16000
 MEL_FREQ_BINS = 80               # frequency bins for mel-spectrograms
 STFT_N = 1024                    # size of FFT in STFT
 STFT_WINDOW_SIZE = 1024          # window size of STFT
 STFT_HOP_SIZE = 256              # hop size of STFT
-F_MAX = 8000                    # maximal frequency for Mel filter banks (inherited from Hifi-GAN configuration v1)
+F_MAX = 8000                     # maximal frequency for Mel filter banks (inherited from Hifi-GAN configuration v1)
 F_MIN = 0
 # For standardizing mel-spectrograms in order to fit the input of DDPM (obtained from Opencpop dataset)
 MEL_MAX = 1.3106
@@ -70,17 +69,26 @@ PRETRAIN_PATH = "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_G
 VAE_DIMENSIONS = {}
 
 
-# Acoustic model: DDPM settings
+# Acoustic model settings
+# UNet
 CHANNELS_INPUT = 4                              # Mel + Whisper + F0 + Loudness
 CHANNELS_OUTPUT = 1                             # Mel
 CHANNELS_BASE = 80                              # base channel for UNet (the output channel for the first block)
-CHANNELS_MULT_FACTORS = (2, 4, 8, 16)            # from official DDPM, (320, 640, 1280, 1280) channels for 'AUDIT'
+CHANNELS_MULT_FACTORS = (2, 4, 8, 16)           # from official DDPM, (320, 640, 1280, 1280) channels for 'AUDIT'
+BASIC_BLOCK = 'convnext'                        # basic block of the denoising UNet: ('resnet', 'convnext')
+POSITION_EMBED_DIM = 128                        # dimension of raw time embedding, same as 'DiffSVC'
+# DDPM
 DIFFUSION_STEPS = 100
 LINEAR_BETA_1 = 0.9                             # same as 'AUDIT'
 LINEAR_BETA_T = 0.9999
 MEAN_PARAMETERIZATION = 'eps'
-BASIC_BLOCK = 'convnext'                        # basic block of the denoising UNet: ('resnet', 'convnext')
-POSITION_EMBED_DIM = 128                            # dimension of raw time embedding, same as 'DiffSVC'
+# Cross-attention
+ATTN_DIM_WHISPER = 320
+ATTN_HEADS_WHISPER = 4
+ATTN_DIM_F0 = 80
+ATTN_HEADS_F0 = 1
+ATTN_DIM_LOUDNESS = 80
+ATTN_HEADS_LOUDNESS = 1
 
 
 def str2bool(v):
