@@ -20,6 +20,12 @@ import warnings
 
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
+import sys
+
+sys.path.append("../")
+from config import INPUT_WAVS_DIR, INPUT_MELS_DIR, INPUT_TRAINING_FILE, INPUT_VALIDATION_FILE,\
+    CHECKPOINT_PATH, PRETRAIN_PATH
+
 torch.backends.cudnn.benchmark = True
 
 
@@ -286,19 +292,12 @@ def main():
     parser = argparse.ArgumentParser()
 
     parser.add_argument('--group_name', default=None)
-    parser.add_argument('--input_wavs_dir',
-                        default="/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/data/Opencpop/segments/wavs")
-    parser.add_argument('--input_mels_dir',
-                        default="/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/preprocess/Opencpop/Mel")
-    parser.add_argument('--input_training_file',
-                        default="/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/data/Opencpop/segments/train.txt")
-    parser.add_argument('--input_validation_file',
-                        default="/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/data/Opencpop/segments/test.txt")
-    parser.add_argument('--checkpoint_path',
-                        default='/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt')
-    parser.add_argument('--resize-convolution', action="store_true")
-    parser.add_argument('--pretrain_path',
-                        default='/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/UNIVERSAL_V1')
+    parser.add_argument('--input_wavs_dir', default=INPUT_WAVS_DIR)
+    parser.add_argument('--input_mels_dir', default=INPUT_MELS_DIR)
+    parser.add_argument('--input_training_file', default=INPUT_TRAINING_FILE)
+    parser.add_argument('--input_validation_file', default=INPUT_VALIDATION_FILE)
+    parser.add_argument('--checkpoint_path', default=CHECKPOINT_PATH)
+    parser.add_argument('--pretrain_path', default=PRETRAIN_PATH)
     parser.add_argument('--config', default='')
     parser.add_argument('--training_epochs', default=3100, type=int)
     parser.add_argument('--batch_size', default=16, type=int)
@@ -309,6 +308,7 @@ def main():
     parser.add_argument('--fine_tuning', default=False, type=bool)
     parser.add_argument('--pretrained', default=False, type=bool)
     parser.add_argument('--save_best', default=True, type=bool)
+    parser.add_argument('--resize-convolution', action="store_true")
 
     a = parser.parse_args()
 

@@ -1,28 +1,25 @@
 import whisper
+import numpy as np
 import torch
 import torch.nn.functional as F
 import os
 import json
-import numpy as np
-import pickle
-from tqdm import tqdm
+from argparse import ArgumentParser
 import sys
-from argparse import ArgumentParser, ArgumentTypeError
-
 sys.path.append("../")
-from config import data_path, dataset2wavpath, WHISPER_SEQ, WHISPER_DIM, WHISPER_MAPPED, WHISPER_MODEL_SIZE, \
-                   PADDING_LENGTH
+from config import data_path, dataset2wavpath, WHISPER_SEQ, WHISPER_DIM, WHISPER_MODEL_SIZE, WHISPER_PADDING_LENGTH, \
+    WHISPER_MAPPED_RATE
 
 
 def whisper_encoder(audio_paths, arguments):
     batch = len(audio_paths)
-    batch_mel = torch.zeros((batch, 80, PADDING_LENGTH*100), dtype=torch.float, device=model.device)
+    batch_mel = torch.zeros((batch, 80, WHISPER_PADDING_LENGTH*100), dtype=torch.float, device=model.device)
 
     for i, audio_path in enumerate(audio_paths):
         # load audio and pad/trim it to fit 30 seconds (determined by PADDING_LENGTH, seemingly not changeable)
         # (16000*PADDING_LENGTH, ): (480000,)
         audio = whisper.load_audio(str(audio_path))
-        audio = whisper.pad_or_trim(audio, length=PADDING_LENGTH*16000)
+        audio = whisper.pad_or_trim(audio, length=WHISPER_PADDING_LENGTH*16000)
 
         # (80, 100*PADDING_LENGTH): (80, 3000)
         batch_mel[i] = whisper.log_mel_spectrogram(audio).to(model.device)
@@ -93,7 +90,7 @@ if __name__ == "__main__":
     parser.add_argument("--dataset", type=str, choices=('Opencpop', 'M4Singer'))
     parser.add_argument("--dataset-type", type=str, choices=('train', 'test'))
     parser.add_argument("--start-point", type=int, default=0)
-    parser.add_argument("--ave-rate", type=int, default=1,
+    parser.add_argument("--ave-rate", type=int, default=WHISPER_MAPPED_RATE,
                         help='kernel size of temporal average pooling to the Whisper feature maps')
     parser.add_argument("--save-separate", type=bool, default=True,
                         help='whether to save each feature map of the audio as separate file')
