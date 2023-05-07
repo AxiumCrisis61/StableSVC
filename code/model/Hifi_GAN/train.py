@@ -24,7 +24,7 @@ import sys
 
 sys.path.append("../")
 from config import INPUT_WAVS_DIR, INPUT_MELS_DIR, INPUT_TRAINING_FILE, INPUT_VALIDATION_FILE,\
-    CHECKPOINT_PATH, PRETRAIN_PATH
+    CHECKPOINT_PATH_HIFI, PRETRAIN_PATH
 
 torch.backends.cudnn.benchmark = True
 
@@ -296,7 +296,7 @@ def main():
     parser.add_argument('--input_mels_dir', default=INPUT_MELS_DIR)
     parser.add_argument('--input_training_file', default=INPUT_TRAINING_FILE)
     parser.add_argument('--input_validation_file', default=INPUT_VALIDATION_FILE)
-    parser.add_argument('--checkpoint_path', default=CHECKPOINT_PATH)
+    parser.add_argument('--checkpoint_path', default=CHECKPOINT_PATH_HIFI)
     parser.add_argument('--pretrain_path', default=PRETRAIN_PATH)
     parser.add_argument('--config', default='')
     parser.add_argument('--training_epochs', default=3100, type=int)

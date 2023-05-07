@@ -34,7 +34,7 @@ NUMS_OF_SINGER = 5
 
 
 # Acoustic features hyperparameters
-MEL_PADDING_LENGTH = 512         # roughly 8s of audio under the above settings
+MEL_PADDING_LENGTH = 496         # roughly 8s of audio under the above settings
 WHISPER_PADDING_LENGTH = 30      # padding length of the Whisper input audios, not changeable
 RE_SAMPLE_RATE = 16000
 MEL_FREQ_BINS = 80               # frequency bins for mel-spectrograms
@@ -58,7 +58,7 @@ WHISPER_MODEL_SIZE = 'base'
 # Hifi-GAN training settings (for default)
 INPUT_TRAINING_FILE = "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/data/Opencpop/segments/train.txt"
 INPUT_VALIDATION_FILE = "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/data/Opencpop/segments/test.txt"
-CHECKPOINT_PATH = "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt"
+CHECKPOINT_PATH_HIFI = "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt"
 PRETRAIN_PATH = "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/UNIVERSAL_V1"
 
 
@@ -70,6 +70,7 @@ VAE_DIMENSIONS = {}
 
 
 # Acoustic model settings
+CHECKPOINT_PATH_ACOUSTIC = "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt"
 # UNet
 CHANNELS_INPUT = 4                              # Mel + Whisper + F0 + Loudness
 CHANNELS_OUTPUT = 1                             # Mel

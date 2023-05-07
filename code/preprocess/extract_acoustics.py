@@ -80,7 +80,7 @@ def extract_acoustic_features(wave_file, pitch_extractor, arguments):
         weighted_spectrogram = librosa.perceptual_weighting(power_spectrogram,
                                                             librosa.cqt_frequencies(power_spectrogram.shape[0],
                                                                                     fmin=librosa.note_to_hz('A1')))
-        loudness = np.log(np.mean(np.exp(weighted_spectrogram[0]), axis=0) + 1e-5)
+        loudness = np.log(np.mean(np.exp(weighted_spectrogram), axis=0) + 1e-5)
     else:
         loudness = None
 
