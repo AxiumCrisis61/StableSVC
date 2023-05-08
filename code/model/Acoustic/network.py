@@ -39,7 +39,7 @@ def get_norm(norm, num_channels=None, num_groups=None, layer_shape=None):
         return nn.LayerNorm(layer_shape)
     # simple layer normalization layer with bias and scale shared across all location
     elif norm == 'simple_layer':
-        assert exists(layer_shape), 'num_channels of the Simple LayerNorm is not specified.'
+        assert exists(num_channels), 'num_channels of the Simple LayerNorm is not specified.'
         return nn.GroupNorm(1, num_channels)
     elif norm is None:
         return nn.Identity()
