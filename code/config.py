@@ -1,5 +1,5 @@
 import os
-from argparse import ArgumentParser, ArgumentTypeError
+from argparse import ArgumentTypeError
 
 
 # Please configure the path of your downloaded datasets
@@ -20,6 +20,7 @@ dataset2wavpath = {
     "Opencpop": os.path.join(dataset2path["Opencpop"], "segments/wavs"),
     "M4Singer": dataset2path["M4Singer"],
 }
+
 
 # Training features paths
 INPUT_WAVS_DIR = "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/data/Opencpop/segments/wavs"
@@ -43,9 +44,14 @@ STFT_WINDOW_SIZE = 1024          # window size of STFT
 STFT_HOP_SIZE = 256              # hop size of STFT
 F_MAX = 8000                     # maximal frequency for Mel filter banks (inherited from Hifi-GAN configuration v1)
 F_MIN = 0
-# For standardizing mel-spectrograms in order to fit the input of DDPM (obtained from Opencpop dataset)
+# For standardizing acoustic features in order to fit the input of DDPM
+# (obtained from Opencpop training dataset as estimation)
 MEL_MAX = 1.3106
 MEL_MIN = -9.2947
+F0_MAX = 508.5507
+F0_MIN = 0
+LOUDNESS_MAX = 33.35714916562806
+LOUDNESS_MIN = -11.512925464970229
 
 
 # Whisper hyperparameters
@@ -101,46 +107,3 @@ def str2bool(v):
         return False
     else:
         raise ArgumentTypeError("Boolean value expected.")
-
-
-parser = ArgumentParser(description="Acoustic Mapping")
-
-# ======================== Dataset ========================
-
-parser.add_argument("--dataset", type=str, default="Opencpop")
-parser.add_argument("--converse", type=str2bool, default=False)
-parser.add_argument("--whisper_dim", type=int, default=WHISPER_DIM)
-# parser.add_argument("--output_dim", type=int, default=MCEP_DIM)
-parser.add_argument(
-    "--save", type=str, default="ckpts/debug", help="folder to save the final model"
-)
-
-# ======================== Accoutic Models ========================
-parser.add_argument("--model", type=str, default="Transformer")
-
-parser.add_argument("--transformer_input_length", type=int, default=800)
-parser.add_argument("--transformer_dropout", type=float, default=0.1)
-parser.add_argument("--transformer_d_model", type=int, default=768)
-parser.add_argument("--transformer_nhead", type=int, default=8)
-parser.add_argument("--transformer_nlayers", type=int, default=6)
-
-# ======================== Training ========================
-
-parser.add_argument("--lr", type=float, default=1e-4, help="initial learning rate")
-parser.add_argument("--epochs", type=int, default=500, help="upper epoch limit")
-parser.add_argument(
-    "--batch_size", type=int, default=32, metavar="N", help="batch size"
-)
-parser.add_argument(
-    "--start_epoch", type=int, default=0, help="No. of the epoch to start training"
-)
-parser.add_argument("--resume", type=str, default="", help="path to load trained model")
-parser.add_argument(
-    "--evaluate", type=str2bool, default=False, help="only use for evaluating"
-)
-parser.add_argument("--debug", type=str2bool, default=False)
-
-# ======================== Devices ========================
-
-parser.add_argument("--seed", type=int, default=9, help="random seed")
-parser.add_argument("--device", default="cpu")

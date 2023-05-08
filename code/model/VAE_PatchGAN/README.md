@@ -1,4 +1,4 @@
-# TODO: Variational AutoEncoder - PatchGAN
+### TODO: Variational AutoEncoder - PatchGAN for moving DDPM into Latent Space (Perceptual Encoder of LDM)
 
 - Loss: L1 reconstruction loss + L2 reconstruction loss + VAE KL loss + PatchGAN Discriminator loss
 
