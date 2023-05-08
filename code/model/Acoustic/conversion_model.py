@@ -3,7 +3,7 @@ from torch import nn
 from network import UNet
 import sys
 sys.path.append("../../")
-from config import ATTN_HEADS_WHISPER, ATTN_HEADS_F0, ATTN_HEADS_LOUDNESS, MEL_FREQ_BINS, WHISPER_DIM
+from config import ATTN_HEADS_WHISPER, ATTN_HEADS_F0, ATTN_HEADS_LOUDNESS, MEL_FREQ_BINS, MEL_PADDING_LENGTH, WHISPER_DIM
 
 
 def transpose(x: torch.Tensor) -> torch.Tensor:
@@ -59,7 +59,7 @@ class DiffusionConverter(nn.Module):
 
         xt = xt.unsqueeze(1)
         whisper = whisper.unsqueeze(1)
-        f0 = f0.unsqueeze(1).repeat(2, MEL_FREQ_BINS)
-        loudness = loudness.unsqueeze(1).repeat(2, MEL_FREQ_BINS)
+        f0 = f0.unsqueeze(1).repeat(1, 1, MEL_FREQ_BINS, 1)
+        loudness = loudness.unsqueeze(1).repeat(1, 1, MEL_FREQ_BINS, 1)
 
         return UNet(torch.concat((xt, whisper, f0, loudness), dim=1), t)
