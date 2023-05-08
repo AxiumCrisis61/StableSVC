@@ -3,8 +3,7 @@ from torch import nn
 from network import UNet
 import sys
 sys.path.append("../../")
-from config import ATTN_DIM_WHISPER, ATTN_HEADS_WHISPER, ATTN_DIM_F0, ATTN_HEADS_F0, ATTN_HEADS_LOUDNESS, \
-    ATTN_DIM_LOUDNESS, MEL_FREQ_BINS, WHISPER_DIM
+from config import ATTN_HEADS_WHISPER, ATTN_HEADS_F0, ATTN_HEADS_LOUDNESS, MEL_FREQ_BINS, WHISPER_DIM
 
 
 def transpose(x: torch.Tensor) -> torch.Tensor:
@@ -23,20 +22,17 @@ class DiffusionConverter(nn.Module):
     """
     def __init__(self,
                  cross_attention=True,
-                 whisper_attn_dim=ATTN_DIM_WHISPER,
                  whisper_attn_heads=ATTN_HEADS_WHISPER,
-                 f0_attn_dim=ATTN_DIM_F0,
                  f0_attn_heads=ATTN_HEADS_F0,
-                 loudness_attn_dim=ATTN_DIM_LOUDNESS,
                  loudness_attn_heads=ATTN_HEADS_LOUDNESS,
                  ):
         super().__init__()
         self.unet = UNet()
         self.cross_attention = cross_attention
         if cross_attention:
-            self.cross_attention_whisper = nn.MultiheadAttention(whisper_attn_dim, whisper_attn_heads, batch_first=True)
-            self.cross_attention_f0 = nn.MultiheadAttention(f0_attn_dim, f0_attn_heads, batch_first=True)
-            self.cross_attention_loudness = nn.MultiheadAttention(loudness_attn_dim, loudness_attn_heads, batch_first=True)
+            self.cross_attention_whisper = nn.MultiheadAttention(WHISPER_DIM, whisper_attn_heads, batch_first=True)
+            self.cross_attention_f0 = nn.MultiheadAttention(1, f0_attn_heads, batch_first=True)
+            self.cross_attention_loudness = nn.MultiheadAttention(1, loudness_attn_heads, batch_first=True)
         self.whisper_conv = nn.Conv1d(WHISPER_DIM, MEL_FREQ_BINS, 3, 1, 1)
 
     def forward(self, xt, t, whisper, f0, loudness):
