@@ -48,7 +48,10 @@ def extract_whisper_features(dataset, dataset_type, arguments):
     # create output directory
     data_dir = os.path.join(data_path, dataset)
     os.makedirs(data_dir, exist_ok=True)
-    output_dir = os.path.join(data_dir, "Whisper", dataset_type)
+    if arguments.save_separate:
+        output_dir = os.path.join(data_dir, "Whisper", dataset_type)
+    else:
+        output_dir = os.path.join(data_dir, "Whisper")
     os.makedirs(output_dir, exist_ok=True)
 
     # load directory for .wav file
@@ -59,6 +62,8 @@ def extract_whisper_features(dataset, dataset_type, arguments):
     # create saving list
     if not arguments.save_separate:
         whisper_feature_list = np.zeros((len(datasets), WHISPER_DIM, WHISPER_SEQ/arguments.ave_rate), dtype=float)
+    else:
+        whisper_feature_list = None
 
     # Extract raw features: (batch, WHISPER_DIM, WHISPER_SEQ/ave_rate)
     print("\nExtracting raw whisper features...")
@@ -83,6 +88,9 @@ def extract_whisper_features(dataset, dataset_type, arguments):
                         whisper_features[index])
         else:
             whisper_feature_list[start:end] = whisper_features
+
+        if not arguments.save_separate:
+            np.savez(os.path.join(output_dir, "{}.npz".format(dataset_type)))
 
 
 if __name__ == "__main__":
