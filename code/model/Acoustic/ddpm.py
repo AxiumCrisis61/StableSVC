@@ -7,7 +7,7 @@ sys.path.append("../../")
 from config import DIFFUSION_STEPS, LINEAR_BETA_1, LINEAR_BETA_T
 
 
-# ################################# Denoising Diffusion Probabilistic Model #################################
+# ################################# Basic Denoising Diffusion Probabilistic Model #################################
 # Borrowed, modified and annotated from: https://github.com/w86763777/pytorch-ddpm
 
 def get_cosine_noise_schedule(steps, s=0.008):

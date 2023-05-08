@@ -54,15 +54,15 @@ if __name__ == '__main__':
     # AdamW optimizer hyper-parameters
     arg_parser.add_argument("--lr", type=float, default=5e-5,
                             help="initial learning rate")
-    arg_parser.add_argument('--beta1', type=float, deault=0.9,
+    arg_parser.add_argument('--beta1', type=float, default=0.9,
                             help='beta_1 for AdamW optimizer')
-    arg_parser.add_argument('--beta2', type=float, deault=0.999,
+    arg_parser.add_argument('--beta2', type=float, default=0.999,
                             help='beta_2 for ')
-    arg_parser.add_argument('--weight-decay', type=float, deault=1e-2,
+    arg_parser.add_argument('--weight-decay', type=float, default=1e-2,
                             help='weight decay coefficient for AdamW optimizer')
-    arg_parser.add_argument('--use-grad-clip', type=bool, deault=True,
+    arg_parser.add_argument('--use-grad-clip', type=bool, default=True,
                             help='gradient clip ceiling')
-    arg_parser.add_argument('--grad-clip', type=float, deault=1,
+    arg_parser.add_argument('--grad-clip', type=float, default=1,
                             help='gradient clip ceiling')
 
     args = arg_parser.parse_args()
