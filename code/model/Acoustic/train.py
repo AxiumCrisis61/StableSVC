@@ -86,18 +86,18 @@ if __name__ == '__main__':
     # models and optimizer
     model = DiffusionConverter().to(device)
     if args.use_ema:
-        ema = EMA(model)
+        ema = EMA(model).to(device)
     else:
         ema = None
     optimizer = AdamW(model.parameters(), lr=args.lr, betas=(args.beta1, args.beta2), weight_decay=args.weight_decay)
 
     # create diffusion framework
     if args.framework == 'simple_diffusion':
-        ddpm_trainer = GaussianDiffusionTrainer(model)
+        ddpm_trainer = GaussianDiffusionTrainer(model).to(device)
         if args.use_ema:
-            ddpm_sampler = GaussianDiffusionSampler(ema.shadow)
+            ddpm_sampler = GaussianDiffusionSampler(ema.shadow).to(device)
         else:
-            ddpm_sampler = GaussianDiffusionSampler(model)
+            ddpm_sampler = GaussianDiffusionSampler(model).to(device)
     else:
         raise ValueError("Unsupported conversion framework")
 
