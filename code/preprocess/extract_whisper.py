@@ -79,8 +79,8 @@ def extract_whisper_features(dataset, dataset_type, arguments):
         # save each sample's Whisper embedding respectively
         if arguments.save_separate:
             for index in range(min(batch_size, len(audio_paths)-start)):
-                np.save(whisper_features[index],
-                        os.path.join(output_dir, "{}.npy".format(datasets[start+index]['Uid'])))
+                np.save(os.path.join(output_dir, "{}.npy".format(datasets[start+index]['Uid'])),
+                        whisper_features[index])
         else:
             whisper_feature_list[start:end] = whisper_features
 
