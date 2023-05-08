@@ -1,5 +1,4 @@
 import numpy as np
-import torch
 import os
 from tqdm import tqdm
 import sys
@@ -16,7 +15,7 @@ def load_whisper_features(dataset, dataset_type) -> np.ndarray:
 
     for root, dirs, files in os.walk(input_dir):
         num = len(tuple(files))
-        whisper_feature_shape = torch.load(os.path.join(input_dir, files[0])).shape
+        whisper_feature_shape = np.load(os.path.join(input_dir, files[0])).shape
         whisper_features = np.zeros((num, whisper_feature_shape[0], whisper_feature_shape[1]), dtype=float)
         for index, file in enumerate(tqdm(files)):
             whisper_features[index] = np.load(os.path.join(input_dir, file))
