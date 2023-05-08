@@ -86,7 +86,7 @@ if __name__ == '__main__':
     mel_standardizer, _, _ = get_standardizer()
 
     # models and optimizer
-    model = DiffusionConverter().to(device)
+    model = DiffusionConverter(cross_attention=args.use_cross_attn).to(device)
     if args.use_ema:
         ema = EMA(model).to(device)
     else:
