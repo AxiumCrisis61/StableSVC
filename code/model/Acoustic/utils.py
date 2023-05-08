@@ -110,8 +110,8 @@ class SVCDataset(Dataset):
         uid = self.transcription[index]["Uid"]
 
         # load
-        mel = self.mel_standardizer(torch.load(os.path.join(self.mel_path, "{}.npy".format(uid))))
-        whisper = torch.load(os.path.join(self.whisper_path, "{}.pth".format(uid)))
+        mel = self.mel_standardizer(torch.Tensor(torch.load(os.path.join(self.mel_path, "{}.npy".format(uid)))))
+        whisper = torch.Tensor(torch.load(os.path.join(self.whisper_path, "{}.npy".format(uid))))
         f0 = self.f0_standardizer(self.f0[index])
         loudness = self.loudness_standardizer(self.loudness[index])
 
