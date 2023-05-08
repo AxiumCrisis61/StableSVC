@@ -136,6 +136,9 @@ class SVCDataset(Dataset):
 
         return mel, whisper, f0, loudness
 
+    def __len__(self):
+        return len(self.transcription)
+
 
 class EMA(nn.Module):
     """
