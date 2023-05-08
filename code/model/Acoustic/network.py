@@ -399,6 +399,8 @@ class UNet(nn.Module):
 
         # initial convolution
         init_channels = default(init_channels, base_channels // 3 * 2)
+        print(in_channels)
+        print(init_channels)
         self.init_conv = nn.Conv2d(in_channels, init_channels, 7, padding=3)
 
         # calculate output channel dimensions for each block
