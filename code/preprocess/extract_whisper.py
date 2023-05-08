@@ -89,8 +89,8 @@ def extract_whisper_features(dataset, dataset_type, arguments):
         else:
             whisper_feature_list[start:end] = whisper_features
 
-        if not arguments.save_separate:
-            np.savez(os.path.join(output_dir, "{}.npz".format(dataset_type)))
+    if not arguments.save_separate:
+        np.savez(os.path.join(output_dir, "{}.npz".format(dataset_type)), whisper_feature_list)
 
 
 if __name__ == "__main__":
