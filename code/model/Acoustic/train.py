@@ -27,6 +27,8 @@ if __name__ == '__main__':
                             help='choice of conversion framework')
     arg_parser.add_argument('--use-ema', type=bool, default=True,
                             help='whether to use Exponential Moving Average to the model')
+    arg_parser.add_argument('-use-cross-attn', type=bool, default=True,
+                            help='whether to use MSA layer to project conditioning features to mel feature space')
 
     # training settings
     arg_parser.add_argument('--resume', type=bool, default=True,

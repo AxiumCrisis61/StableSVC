@@ -47,15 +47,18 @@ class DiffusionConverter(nn.Module):
         Returns:
             denoised mel-spectrograms
         """
+        f0 = f0.unsqueeze(1)
+        loudness = loudness.unsqueeze(1)
+
         if self.cross_attention:
-            whisper = transpose(self.cross_attention_whisper(transpose(whisper), transpose(xt), transpose(xt)))
-            f0 = transpose(self.cross_attention_f0(transpose(f0), transpose(xt), transpose(xt)))
-            loudness = transpose(self.cross_attention_loudness(transpose(loudness), transpose(xt), transpose(xt)))
+            whisper, _ = transpose(self.cross_attention_whisper(transpose(whisper), transpose(xt), transpose(xt)))
+            f0, _ = transpose(self.cross_attention_f0(transpose(f0), transpose(xt), transpose(xt)))
+            loudness, _ = transpose(self.cross_attention_loudness(transpose(loudness), transpose(xt), transpose(xt)))
         whisper = self.whisper_conv(whisper)
 
         xt = xt.unsqueeze(1)
         whisper = whisper.unsqueeze(1)
-        f0 = f0.unsqueeze(1).unsqueeze(1).repeat(2, MEL_FREQ_BINS)
-        loudness = loudness.unsqueeze(1).unsqueeze(1).repeat(2, MEL_FREQ_BINS)
+        f0 = f0.unsqueeze(1).repeat(2, MEL_FREQ_BINS)
+        loudness = loudness.unsqueeze(1).repeat(2, MEL_FREQ_BINS)
 
         return UNet(torch.concat((xt, whisper, f0, loudness), dim=1), t)
