@@ -2,7 +2,7 @@ import torch
 from torch import nn
 from network import UNet
 import sys
-sys.path.append("../")
+sys.path.append("../../")
 from config import ATTN_DIM_WHISPER, ATTN_HEADS_WHISPER, ATTN_DIM_F0, ATTN_HEADS_F0, ATTN_HEADS_LOUDNESS, \
     ATTN_DIM_LOUDNESS, MEL_FREQ_BINS, WHISPER_DIM
 

@@ -3,7 +3,7 @@ import torch
 from torch import nn
 import torch.nn.functional as F
 import sys
-sys.path.append("../")
+sys.path.append("../../")
 from config import DIFFUSION_STEPS, LINEAR_BETA_1, LINEAR_BETA_T
 
 

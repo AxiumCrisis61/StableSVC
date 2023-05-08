@@ -9,7 +9,7 @@ from torch import nn
 from torch.utils.data import Dataset
 import sys
 
-sys.path.append("../")
+sys.path.append("../../")
 from config import data_path, dataset2wavpath, RE_SAMPLE_RATE, MEL_PADDING_LENGTH, \
     MEL_MIN, MEL_MAX, F0_MAX, F0_MIN, LOUDNESS_MAX, LOUDNESS_MIN
 

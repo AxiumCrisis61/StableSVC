@@ -11,7 +11,7 @@ from argparse import ArgumentParser
 import warnings
 import os
 import sys
-sys.path.append("../")
+sys.path.append("../../")
 from config import CHECKPOINT_PATH_ACOUSTIC
 
 

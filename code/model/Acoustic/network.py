@@ -6,7 +6,7 @@ from torch import nn, einsum
 import torch.nn.functional as F
 from einops import rearrange
 import sys
-sys.path.append("../")
+sys.path.append("../../")
 from config import CHANNELS_BASE, CHANNELS_MULT_FACTORS, CHANNELS_INPUT, CHANNELS_OUTPUT, \
     BASIC_BLOCK, POSITION_EMBED_DIM
 
