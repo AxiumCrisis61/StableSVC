@@ -37,8 +37,6 @@ if __name__ == '__main__':
                             help='checkpoint interval (steps); set as 0 to cancel checkpointing')
     arg_parser.add_argument('--print-interval', type=int, default=5,
                             help='checkpoint interval (steps); set as 0 to cancel printing training information')
-    arg_parser.add_argument('--num-workers', type=int, default=2,
-                            help='number of DataLoader workers')
 
     # training and validations set, and checkpoint
     arg_parser.add_argument('--training-set', type=str, choices=('Opencpop', 'M4Singer'), default='Opencpop',
@@ -81,10 +79,8 @@ if __name__ == '__main__':
     # dataset
     train_set = SVCDataset(args.training_set, 'train')
     val_set = SVCDataset(args.validation_set, 'test')
-    train_loader = DataLoader(train_set, batch_size=args.batch_size, shuffle=True,
-                              num_workers=args.num_workers, drop_last=True)
-    val_loader = DataLoader(val_set, batch_size=args.batch_size, shuffle=False,
-                            num_workers=args.num_workers, drop_last=True)
+    train_loader = DataLoader(train_set, batch_size=args.batch_size, shuffle=True, drop_last=True)
+    val_loader = DataLoader(val_set, batch_size=args.batch_size, shuffle=False, drop_last=True)
     mel_standardizer, _, _ = get_standardizer()
 
     # models and optimizer
