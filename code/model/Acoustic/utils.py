@@ -119,17 +119,23 @@ class SVCDataset(Dataset):
         # TODO: modify the input
         # Mels extracted by codes from Hifi-GAN will be have the temporal dimension less than f0 and loudness
         # extracted by torchaudio than 1
+        # Different lengths of f0 and loudness ?
         length = mel.shape[-1]
         if length <= MEL_PADDING_LENGTH:
             mel = F.pad(mel, (0, MEL_PADDING_LENGTH - length), 'constant', 0)
         else:
             mel = mel[:, :MEL_PADDING_LENGTH]
+
         length = f0.shape[-1]
         if length <= MEL_PADDING_LENGTH:
             f0 = F.pad(f0, (0, MEL_PADDING_LENGTH - length), 'constant', 0)
-            loudness = F.pad(loudness, (0, MEL_PADDING_LENGTH - length), 'constant', 0)
         else:
             f0 = f0[:MEL_PADDING_LENGTH]
+
+        length = loudness.shape[-1]
+        if length <= MEL_PADDING_LENGTH:
+            loudness = F.pad(loudness, (0, MEL_PADDING_LENGTH - length), 'constant', 0)
+        else:
             loudness = loudness[:MEL_PADDING_LENGTH]
 
         if whisper.shape[1] > MEL_PADDING_LENGTH:
