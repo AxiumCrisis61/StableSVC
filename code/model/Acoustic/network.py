@@ -1,3 +1,4 @@
+import warnings
 from inspect import isfunction
 from functools import partial
 import math
@@ -407,9 +408,11 @@ class UNet(nn.Module):
 
         # basic feature extraction block connecting down-sampling blocks, middle blocks and up-sampling blocks
         if basic_block == 'convnext':
-            block_klass = partial(ConvNeXtBlock, mult=convnext_mult, activation=activation_klass)
+            block_klass = partial(ConvNeXtBlock, mult=convnext_mult,
+                                  activation_extraction=activation_klass, activation_time=activation_time)
         elif basic_block == 'resnet':
             block_klass = partial(ResnetBlock, groups=resnet_block_groups)
+            warnings.warn('ResNet backbone for the UNet is not maintained', DeprecationWarning)
         else:
             raise ValueError("Unsupported basic block type for UNet! ('resnet', 'convnext')")
 
