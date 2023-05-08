@@ -485,7 +485,6 @@ class UNet(nn.Module):
         Returns:
             Approximated target variable (e.g., epsilon)
         """
-        print(x.shape)
         x = self.init_conv(x)
 
         t = self.time_mlp(time) if exists(self.time_mlp) else None

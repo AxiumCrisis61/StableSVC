@@ -62,4 +62,4 @@ class DiffusionConverter(nn.Module):
         f0 = f0.unsqueeze(1).repeat(1, 1, MEL_FREQ_BINS, 1)
         loudness = loudness.unsqueeze(1).repeat(1, 1, MEL_FREQ_BINS, 1)
 
-        return UNet(torch.concat((xt, whisper, f0, loudness), dim=1), t)
+        return self.unet(torch.concat((xt, whisper, f0, loudness), dim=1), t)
