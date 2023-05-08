@@ -8,6 +8,7 @@ from torch.utils.data import DataLoader
 from torch.nn.utils import clip_grad_norm
 from torch.optim import AdamW
 from argparse import ArgumentParser
+import time
 import warnings
 import os
 import sys
@@ -34,6 +35,8 @@ if __name__ == '__main__':
                             help='validation interval (steps); set as 0 to cancel validation')
     arg_parser.add_argument('--checkpoint-interval', type=int, default=100,
                             help='checkpoint interval (steps); set as 0 to cancel checkpointing')
+    arg_parser.add_argument('--print-interval', type=int, default=5,
+                            help='checkpoint interval (steps); set as 0 to cancel printing training information')
     arg_parser.add_argument('--num-workers', type=int, default=4,
                             help='number of DataLoader workers')
 
@@ -129,7 +132,8 @@ if __name__ == '__main__':
     # train
     ddpm_trainer.train()
     for epoch in range(args.epochs):
-        print('-'*15 + f'epoch {epoch}' + '-'*15)
+        start = time.time()
+        print('-'*15 + f'epoch {epoch + 1}' + '-'*15)
         for x, whisper, f0, loudness in train_loader:
             model.train()
             ema.train()
@@ -152,6 +156,10 @@ if __name__ == '__main__':
             optimizer.step()
             # update EMA model
             ema.update()
+
+            # print training information
+            if args.print_interval > 0 and step % args.print_interval == 0:
+                print('Step: {}, loss: {}'.format(step, loss.item()))
 
             # dumping cuda memory
             del x, whisper, f0, loudness
@@ -181,11 +189,16 @@ if __name__ == '__main__':
                     f0_val.to(device)
                     loudness_val.to(device)
 
-                    noise = torch.randn_like(y_val)
+                    noise = torch.randn_like(y_val).to(device)
 
-                    x_val = ddpm_sampler(noise, whisper=whisper_val, f0=f0_val, loudness=loudness_val)
+                    x_val = ddpm_sampler(noise, whisper=whisper_val, f0=f0_val, loudness=loudness_val).to(device)
 
-                    val_error_list.append(F.mse_loss(x_val, y_val))
+                    with torch.no_grad():
+                        val_error_list.append(F.mse_loss(x_val, y_val).cpu().to_numpy())
+
+                    del y_val, whisper_val, f0_val, loudness_val, noise, x_val
+                    for i in range(5):
+                        torch.cuda.empty_cache()
 
                 val_error = np.mean(val_error_list)
 
@@ -197,3 +210,5 @@ if __name__ == '__main__':
                         'epoch': epoch,
                         'step': step,
                     })
+
+        print('Time taken for epoch {} is {} sec\n'.format(epoch + 1, int(time.time() - start)))

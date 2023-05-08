@@ -121,7 +121,7 @@ class GaussianDiffusionSampler(nn.Module):
             alphas_bar = torch.cumprod(alphas, dim=0)
         else:
             raise ValueError("Unsupported noise scheduling scheme! Choose from ('linear', 'cosine').")
-        alphas_bar_prev = F.pad(alphas_bar, [1, 0], value=1)[:T]  # alphas_bar from last time step
+        alphas_bar_prev = F.pad(alphas_bar, [1, 0], value=1)[:T+1]  # alphas_bar from last time step
 
         # calculations for diffusion q(x_t | x_{t-1}) and others
         self.register_buffer('sqrt_recip_alphas_bar', torch.sqrt(1. / alphas_bar))
@@ -245,3 +245,7 @@ if __name__ == '__main__':
     alpha[0] = alpha_bar[0]
     print('alpha_bar', alpha_bar)
     print('alpha', alpha)
+
+    alpha_bar_prev = F.pad(alpha_bar, [1, 0], value=1)[:DIFFUSION_STEPS+1]
+    print('alpha_bar_prev', alpha_bar_prev)
+    print(alpha.shape == alpha_bar_prev.shape)
