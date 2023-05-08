@@ -113,7 +113,7 @@ class SVCDataset(Dataset):
         mel = self.mel_standardizer(torch.Tensor(np.load(os.path.join(self.mel_path, "{}.npy".format(uid)))))
         whisper = torch.Tensor(np.load(os.path.join(self.whisper_path, "{}.npy".format(uid))))
         f0 = self.f0_standardizer(self.f0[index])
-        loudness = self.loudness_standardizer(self.loudness[index])
+        loudness = self.loudness_standardizer(torch.Tensor(self.loudness[index]))
 
         # temporally pad or trim
         length = mel.shape[-1]

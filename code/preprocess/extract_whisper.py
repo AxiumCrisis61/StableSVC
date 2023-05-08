@@ -101,7 +101,7 @@ if __name__ == "__main__":
     parser.add_argument("--start-point", type=int, default=0)
     parser.add_argument("--ave-rate", type=int, default=WHISPER_MAPPED_RATE,
                         help='kernel size of temporal average pooling to the Whisper feature maps')
-    parser.add_argument("--save-separate", type=bool, default=False,
+    parser.add_argument("--save-separate", type=bool, default=True,
                         help='whether to save each feature map of the audio as separate file')
     args = parser.parse_args()
 
