@@ -37,7 +37,7 @@ if __name__ == '__main__':
                             help='checkpoint interval (steps); set as 0 to cancel checkpointing')
     arg_parser.add_argument('--print-interval', type=int, default=5,
                             help='checkpoint interval (steps); set as 0 to cancel printing training information')
-    arg_parser.add_argument('--num-workers', type=int, default=4,
+    arg_parser.add_argument('--num-workers', type=int, default=2,
                             help='number of DataLoader workers')
 
     # training and validations set, and checkpoint

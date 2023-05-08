@@ -110,7 +110,6 @@ class SVCDataset(Dataset):
         uid = self.transcription[index]["Uid"]
 
         # load
-        print('Loading data')
         mel = self.mel_standardizer(torch.load(os.path.join(self.mel_path, "{}.npy".format(uid))))
         whisper = torch.load(os.path.join(self.whisper_path, "{}.pth".format(uid)))
         f0 = self.f0_standardizer(self.f0[index])
@@ -118,7 +117,6 @@ class SVCDataset(Dataset):
 
         # temporally pad or trim
         length = mel.shape[-1]
-        print('padding acoustics')
         if length <= MEL_PADDING_LENGTH:
             mel = F.pad(mel, (0, MEL_PADDING_LENGTH - length), 'constant', 0)
             f0 = F.pad(f0, (0, MEL_PADDING_LENGTH - length), 'constant', 0)
@@ -128,7 +126,6 @@ class SVCDataset(Dataset):
             f0 = f0[:MEL_PADDING_LENGTH]
             loudness = loudness[:MEL_PADDING_LENGTH]
 
-        print('padding whisper embedding')
         if whisper.shape[1] > MEL_PADDING_LENGTH:
             pad_len_whisper = whisper.shape[1] - MEL_PADDING_LENGTH // 2
             whisper = whisper[:, pad_len_whisper:]
