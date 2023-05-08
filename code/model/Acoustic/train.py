@@ -32,7 +32,7 @@ if __name__ == '__main__':
                             help='whether to resume training from the latest checkpoint')
     arg_parser.add_argument('--val-interval', type=int, default=200,
                             help='validation interval (steps); set as 0 to cancel validation')
-    arg_parser.add_argument('--checkpoint-interval', type=int, default=200,
+    arg_parser.add_argument('--checkpoint-interval', type=int, default=100,
                             help='checkpoint interval (steps); set as 0 to cancel checkpointing')
     arg_parser.add_argument('--num-workers', type=int, default=4,
                             help='number of DataLoader workers')
