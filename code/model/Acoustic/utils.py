@@ -92,8 +92,8 @@ class SVCDataset(Dataset):
         self.wav_path = dataset2wavpath[dataset]
         self.mel_path = os.path.join(self.data_dir, 'Mel', dataset_type)
         self.whisper_path = os.path.join(self.data_dir, 'Whisper', dataset_type)
-        self.f0_path = os.path.join(self.data_dir, 'F0', dataset_type)
-        self.loudness_path = os.path.join(self.data_dir, 'Loudness', dataset_type)
+        self.f0_path = os.path.join(self.data_dir, 'F0', '{}.pth'.format(dataset_type))
+        self.loudness_path = os.path.join(self.data_dir, 'Loudness', '{}.pth'.format(dataset_type))
 
         # load and save small features
         self.f0 = torch.load(self.f0_path)
