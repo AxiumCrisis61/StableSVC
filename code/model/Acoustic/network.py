@@ -454,7 +454,8 @@ class UNet(nn.Module):
         self.mid_block2 = block_klass(mid_dim, mid_dim, time_emb_dim=time_emd_dim)
 
         # up-sampling blocks
-        for ind, (dim_in, dim_out) in enumerate(reversed(in_out[1:])):
+        # for ind, (dim_in, dim_out) in enumerate(reversed(in_out[1:])):        # why abandon the last block?
+        for ind, (dim_in, dim_out) in enumerate(reversed(in_out)):
             is_last = ind >= (num_resolutions - 1)
             self.ups.append(
                 nn.ModuleList(
@@ -517,4 +518,6 @@ class UNet(nn.Module):
 if __name__ == '__main__':
     channel_dimensions = [CHANNELS_BASE, *map(lambda m: CHANNELS_BASE * m, CHANNELS_MULT_FACTORS)]
     print(channel_dimensions)
-    print(list(zip(channel_dimensions[:-1], channel_dimensions[1:])))
+    in_out = list(zip(channel_dimensions[:-1], channel_dimensions[1:]))
+    print(in_out)
+    print(list(reversed(in_out)))
