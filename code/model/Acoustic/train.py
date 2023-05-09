@@ -35,7 +35,7 @@ if __name__ == '__main__':
     # training settings
     arg_parser.add_argument('--resume', type=bool, default=True,
                             help='whether to resume training from the latest checkpoint')
-    arg_parser.add_argument('--val-interval', type=int, default=2200,
+    arg_parser.add_argument('--val-interval', type=int, default=4400,
                             help='validation interval (steps); set as 0 to cancel validation')
     arg_parser.add_argument('--checkpoint-interval', type=int, default=20,
                             help='checkpoint interval (steps); set as 0 to cancel checkpointing')
