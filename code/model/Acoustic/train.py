@@ -90,6 +90,7 @@ if __name__ == '__main__':
     model = DiffusionConverter(cross_attention=args.use_cross_attn).to(device)
     if args.use_ema:
         ema = EMA(model).to(device)
+        ema.shadow.to(device)
     else:
         ema = None
     optimizer = AdamW(model.parameters(), lr=args.lr, betas=(args.beta1, args.beta2), weight_decay=args.weight_decay)
@@ -202,6 +203,7 @@ if __name__ == '__main__':
                         torch.cuda.empty_cache()
 
                 val_error = np.mean(val_error_list)
+                print('Validation error at step {}: {}'.format(step, val_error))
 
                 if val_error < best_val_error:
                     save_checkpoint(os.path.join(ckpt_path, 'best'), {
