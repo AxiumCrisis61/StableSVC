@@ -98,9 +98,9 @@ if __name__ == '__main__':
     if args.framework == 'simple_diffusion':
         ddpm_trainer = GaussianDiffusionTrainer(model, noise_schedule=args.noise_schedule).to(device)
         if args.use_ema:
-            ddpm_sampler = GaussianDiffusionSampler(ema.shadow, noise_schedule=args.noise_schedule, device=device).to(device)
+            ddpm_sampler = GaussianDiffusionSampler(ema.shadow, noise_schedule=args.noise_schedule).to(device)
         else:
-            ddpm_sampler = GaussianDiffusionSampler(model, noise_schedule=args.noise_schedule, device=device).to(device)
+            ddpm_sampler = GaussianDiffusionSampler(model, noise_schedule=args.noise_schedule).to(device)
     else:
         raise ValueError("Unsupported conversion framework")
 
