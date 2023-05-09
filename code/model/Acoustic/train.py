@@ -5,7 +5,7 @@ import numpy as np
 import torch
 import torch.nn.functional as F
 from torch.utils.data import DataLoader
-from torch.nn.utils import clip_grad_norm
+from torch.nn.utils import clip_grad_norm_
 from torch.optim import AdamW
 from argparse import ArgumentParser
 import time
@@ -151,7 +151,7 @@ if __name__ == '__main__':
             loss.backward()
             # gradient norm clipping
             if args.use_grad_clip:
-                clip_grad_norm(model.parameters(), args.grad_clip)
+                clip_grad_norm_(model.parameters(), args.grad_clip)
             # optimization
             optimizer.step()
             # update EMA model

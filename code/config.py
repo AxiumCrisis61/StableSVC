@@ -84,7 +84,7 @@ USE_EMA = True                                  # Exponential Moving Average of 
 # UNet
 CHANNELS_INPUT = 4                              # Mel + Whisper + F0 + Loudness
 CHANNELS_OUTPUT = 1                             # Mel
-CHANNELS_BASE = 40                              # base channel for UNet (the output channel for the first block)
+CHANNELS_BASE = 80                              # base channel for UNet (the output channel for the first block)
 CHANNELS_MULT_FACTORS = (2, 4, 8, 8)            # from official DDPM, (320, 640, 1280, 1280) channels for 'AUDIT'
 BASIC_BLOCK = 'convnext'                        # basic block of the denoising UNet: ('resnet', 'convnext')
 POSITION_EMBED_DIM = 128                        # dimension of raw time embedding, same as 'DiffSVC'
