@@ -1002,3 +1002,69 @@ Step: 4420, loss: 0.08862224221229553
 Step: 4425, loss: 0.03534727916121483
 Step: 4430, loss: 0.08168411254882812
 Time taken for epoch 10 is 831 sec
+
+
+Loading '/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest'
+Complete.
+Resuming training from epoch 12, step4601...
+---------------epoch 12---------------
+Step: 4605, loss: 0.016725393012166023
+Step: 4610, loss: 0.0164195466786623
+Step: 4615, loss: 0.035463228821754456
+Step: 4620, loss: 0.018977180123329163
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4625, loss: 0.09543931484222412
+Step: 4630, loss: 0.025681564584374428
+Step: 4635, loss: 0.03189213573932648
+Step: 4640, loss: 0.10663927346467972
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4645, loss: 0.15318021178245544
+Step: 4650, loss: 0.02833077870309353
+Step: 4655, loss: 0.04938812181353569
+Step: 4660, loss: 0.0708523616194725
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4665, loss: 0.03653797134757042
+Step: 4670, loss: 0.026803409680724144
+Step: 4675, loss: 0.05857372656464577
+Step: 4680, loss: 0.08253080397844315
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4685, loss: 0.021553050726652145
+Step: 4690, loss: 0.02466786839067936
+Step: 4695, loss: 0.10252629965543747
+Step: 4700, loss: 0.04155978187918663
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4705, loss: 0.06219515576958656
+Step: 4710, loss: 0.08381157368421555
+Step: 4715, loss: 0.07984565943479538
+Step: 4720, loss: 0.09271198511123657
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4725, loss: 0.0755913257598877
+Step: 4730, loss: 0.016131406649947166
+Step: 4735, loss: 0.03453325852751732
+Step: 4740, loss: 0.032701894640922546
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4745, loss: 0.017235441133379936
+Step: 4750, loss: 0.05812569335103035
+Step: 4755, loss: 0.04886699095368385
+Step: 4760, loss: 0.060200463980436325
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4765, loss: 0.016981836408376694
+Step: 4770, loss: 0.09309811890125275
+Step: 4775, loss: 0.0449528694152832
+Step: 4780, loss: 0.037864331156015396
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4785, loss: 0.03426084294915199
+Step: 4790, loss: 0.0428566113114357
+Step: 4795, loss: 0.04834720119833946
+Step: 4800, loss: 0.07739047706127167
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.

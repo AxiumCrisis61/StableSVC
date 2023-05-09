@@ -90,7 +90,6 @@ if __name__ == '__main__':
     model = DiffusionConverter(cross_attention=args.use_cross_attn).to(device)
     if args.use_ema:
         ema = EMA(model).to(device)
-        ema.shadow.to(device)
     else:
         ema = None
     optimizer = AdamW(model.parameters(), lr=args.lr, betas=(args.beta1, args.beta2), weight_decay=args.weight_decay)
@@ -99,9 +98,9 @@ if __name__ == '__main__':
     if args.framework == 'simple_diffusion':
         ddpm_trainer = GaussianDiffusionTrainer(model, noise_schedule=args.noise_schedule).to(device)
         if args.use_ema:
-            ddpm_sampler = GaussianDiffusionSampler(ema.shadow, noise_schedule=args.noise_schedule).to(device)
+            ddpm_sampler = GaussianDiffusionSampler(ema.shadow, noise_schedule=args.noise_schedule, device=device).to(device)
         else:
-            ddpm_sampler = GaussianDiffusionSampler(model, noise_schedule=args.noise_schedule).to(device)
+            ddpm_sampler = GaussianDiffusionSampler(model, noise_schedule=args.noise_schedule, device=device).to(device)
     else:
         raise ValueError("Unsupported conversion framework")
 
@@ -186,14 +185,14 @@ if __name__ == '__main__':
                 val_error_list = []
 
                 for y_val, whisper_val, f0_val, loudness_val in val_loader:
-                    y_val.to(device)
-                    whisper_val.to(device)
-                    f0_val.to(device)
-                    loudness_val.to(device)
+                    y_val = y_val.to(device)
+                    whisper_val = whisper_val.to(device)
+                    f0_val = f0_val.to(device)
+                    loudness_val = loudness_val.to(device)
 
                     noise = torch.randn_like(y_val).to(device)
 
-                    x_val = ddpm_sampler(noise, whisper=whisper_val, f0=f0_val, loudness=loudness_val).to(device)
+                    x_val = ddpm_sampler(noise, whisper=whisper_val, f0=f0_val, loudness=loudness_val)
 
                     with torch.no_grad():
                         val_error_list.append(F.mse_loss(x_val, y_val).cpu().to_numpy())
