@@ -13,7 +13,7 @@ import warnings
 import os
 import sys
 sys.path.append("../../")
-from config import CHECKPOINT_PATH_ACOUSTIC, USE_CROSS_ATTN, USE_EMA
+from config import CHECKPOINT_PATH_ACOUSTIC, FRAMEWORK, USE_CROSS_ATTN, USE_EMA, NOISE_SCHEDULE
 
 
 if __name__ == '__main__':
@@ -23,13 +23,14 @@ if __name__ == '__main__':
     arg_parser = ArgumentParser(description='arguments for training DDPM')
 
     # framework settings
-    arg_parser.add_argument('--framework', type=str, choices=('simple_diffusion',), default='simple_diffusion',
+    arg_parser.add_argument('--framework', type=str, choices=('simple_diffusion',), default=FRAMEWORK,
                             help='choice of conversion framework')
-    arg_parser.add_argument('--use-ema', type=bool, default=EMA,
+    arg_parser.add_argument('--use-ema', type=bool, default=USE_EMA,
                             help='whether to use Exponential Moving Average to the model')
     arg_parser.add_argument('--use-cross-attn', type=bool, default=USE_CROSS_ATTN,
                             help='whether to use MSA layer to project conditioning features to mel feature space')
-    arg_parser.add_argument('--noise-schedule',type=str, choices=('linear', 'cosine'), de)
+    arg_parser.add_argument('--noise-schedule', type=str, choices=('linear', 'cosine'), default=NOISE_SCHEDULE,
+                            help='noise scheduling strategy for the DDPM')
 
     # training settings
     arg_parser.add_argument('--resume', type=bool, default=True,

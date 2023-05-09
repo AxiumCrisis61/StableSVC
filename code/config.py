@@ -78,16 +78,18 @@ VAE_DIMENSIONS = {}
 # Acoustic model settings
 CHECKPOINT_PATH_ACOUSTIC = "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt"
 # Framework
-USE_CROSS_ATTN = False
-USE_EMA = False
+FRAMEWORK = 'simple_diffusion'                  # conversion framework, ('simple diffusion', )
+USE_CROSS_ATTN = False                          # cross-attention mechanism to project conditioning features
+USE_EMA = True                                  # Exponential Moving Average of the model
 # UNet
 CHANNELS_INPUT = 4                              # Mel + Whisper + F0 + Loudness
 CHANNELS_OUTPUT = 1                             # Mel
 CHANNELS_BASE = 40                              # base channel for UNet (the output channel for the first block)
-CHANNELS_MULT_FACTORS = (2, 4, 8, 8)           # from official DDPM, (320, 640, 1280, 1280) channels for 'AUDIT'
+CHANNELS_MULT_FACTORS = (2, 4, 8, 8)            # from official DDPM, (320, 640, 1280, 1280) channels for 'AUDIT'
 BASIC_BLOCK = 'convnext'                        # basic block of the denoising UNet: ('resnet', 'convnext')
 POSITION_EMBED_DIM = 128                        # dimension of raw time embedding, same as 'DiffSVC'
 # DDPM
+NOISE_SCHEDULE = 'cosine'
 DIFFUSION_STEPS = 100
 LINEAR_BETA_1 = 0.9                             # same as 'AUDIT'
 LINEAR_BETA_T = 0.9999
