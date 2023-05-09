@@ -112,7 +112,7 @@ if __name__ == '__main__':
             if args.use_ema:
                 ema.load_state_dict(state_dict['ema'])
             optimizer.load_state_dict(state_dict['optimizer'])
-            last_epoch = state_dict['epoch'] + 1
+            last_epoch = state_dict['epoch']
             step = state_dict['step'] + 1
             best_val_error = state_dict['best_val_error']
             print('Resuming training from epoch {}, step{}...'.format(last_epoch, step))

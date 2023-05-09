@@ -1006,8 +1006,8 @@ Time taken for epoch 10 is 831 sec
 
 Loading '/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest'
 Complete.
-Resuming training from epoch 12, step4601...
----------------epoch 12---------------
+Resuming training from epoch 11, step4601...
+---------------epoch 11---------------
 Step: 4605, loss: 0.016725393012166023
 Step: 4610, loss: 0.0164195466786623
 Step: 4615, loss: 0.035463228821754456
