@@ -112,25 +112,27 @@ if __name__ == '__main__':
             if args.use_ema:
                 ema.load_state_dict(state_dict['ema'])
             optimizer.load_state_dict(state_dict['optimizer'])
-            epoch = state_dict['epoch'] + 1
+            last_epoch = state_dict['epoch'] + 1
             step = state_dict['step'] + 1
             best_val_error = state_dict['best_val_error']
-            print('Resuming training from epoch {}, step{}...'.format(epoch, step))
+            print('Resuming training from epoch {}, step{}...'.format(last_epoch, step))
             flag_continue = True
         else:
             flag_continue = False
             print('Starting training from scratch...')
             step = 0
+            last_epoch = 0
             best_val_error = np.inf
     else:
         flag_continue = False
         print('Starting training from scratch...')
         step = 0
+        last_epoch = 0
         best_val_error = np.inf
 
     # train
     ddpm_trainer.train()
-    for epoch in range(args.epochs):
+    for epoch in range(last_epoch, args.epochs):
         start = time.time()
         print('-'*15 + f'epoch {epoch + 1}' + '-'*15)
         for x, whisper, f0, loudness in train_loader:
