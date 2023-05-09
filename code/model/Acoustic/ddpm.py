@@ -74,7 +74,7 @@ class GaussianDiffusionTrainer(nn.Module):
         noise = torch.randn_like(x_0)
         x_t = (extract(self.sqrt_alphas_bar, t, x_0.shape) * x_0 +
                extract(self.sqrt_one_minus_alphas_bar, t, x_0.shape) * noise)
-        loss = F.mse_loss(self.model(x_t, t, **features), noise, reduction='none')
+        loss = F.mse_loss(self.model(x_t, t, **features), noise, reduction='none').mean()
         return loss
 
 
