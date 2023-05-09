@@ -50,10 +50,10 @@ class DiffusionConverter(nn.Module):
         f0 = f0.unsqueeze(1)
         loudness = loudness.unsqueeze(1)
 
-        # if self.cross_attention:
-        #     whisper, _ = transpose(self.cross_attention_whisper(transpose(whisper), transpose(xt), transpose(xt)))
-        #     f0, _ = transpose(self.cross_attention_f0(transpose(f0), transpose(xt), transpose(xt)))
-        #     loudness, _ = transpose(self.cross_attention_loudness(transpose(loudness), transpose(xt), transpose(xt)))
+        if self.cross_attention:
+            whisper, _ = transpose(self.cross_attention_whisper(transpose(whisper), transpose(xt), transpose(xt)))
+            f0, _ = transpose(self.cross_attention_f0(transpose(f0), transpose(xt), transpose(xt)))
+            loudness, _ = transpose(self.cross_attention_loudness(transpose(loudness), transpose(xt), transpose(xt)))
 
         whisper = self.whisper_conv(whisper)
 

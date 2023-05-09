@@ -1,4 +1,4 @@
-from utils import SVCDataset, EMA, get_standardizer, save_checkpoint, load_checkpoint
+from utils import SVCDataset, EMA, save_checkpoint, load_checkpoint
 from ddpm import GaussianDiffusionTrainer, GaussianDiffusionSampler
 from conversion_model import DiffusionConverter
 import numpy as np
@@ -85,7 +85,6 @@ if __name__ == '__main__':
     val_set = SVCDataset(args.validation_set, 'test')
     train_loader = DataLoader(train_set, batch_size=args.batch_size, shuffle=True, drop_last=True)
     val_loader = DataLoader(val_set, batch_size=args.batch_size, shuffle=False, drop_last=True)
-    mel_standardizer, _, _ = get_standardizer()
 
     # models and optimizer
     model = DiffusionConverter(cross_attention=args.use_cross_attn).to(device)
@@ -108,7 +107,7 @@ if __name__ == '__main__':
     # load checkpoints
     if args.resume:
         if os.path.isfile(os.path.join(ckpt_path, 'latest')):
-            state_dict = load_checkpoint(ckpt_path, device)
+            state_dict = load_checkpoint(os.path.join(ckpt_path, 'latest'), device)
             model.load_state_dict(state_dict['model'])
             if args.use_ema:
                 ema.load_state_dict(state_dict['ema'])
