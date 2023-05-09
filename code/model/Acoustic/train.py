@@ -41,6 +41,9 @@ if __name__ == '__main__':
                             help='checkpoint interval (steps); set as 0 to cancel checkpointing')
     arg_parser.add_argument('--print-interval', type=int, default=5,
                             help='checkpoint interval (steps); set as 0 to cancel printing training information')
+    arg_parser.add_argument('--val-batch-num', type=int, default=2,
+                            help='number of batches for one time of validation. set as 0 to use full val set,'
+                                 '[NOTE] the validation process of DDPM is slow')
 
     # training and validations set, and checkpoint
     arg_parser.add_argument('--training-set', type=str, choices=('Opencpop', 'M4Singer'), default='Opencpop',
@@ -183,8 +186,12 @@ if __name__ == '__main__':
                 model.eval()
                 ema.eval()
                 val_error_list = []
+                iter_val = 0
 
                 for y_val, whisper_val, f0_val, loudness_val in val_loader:
+                    iter_val += 1
+                    if iter_val > args.val_batch_num:
+                        break
                     y_val = y_val.to(device)
                     whisper_val = whisper_val.to(device)
                     f0_val = f0_val.to(device)

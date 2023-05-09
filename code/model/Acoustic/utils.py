@@ -204,3 +204,4 @@ class EMA(nn.Module):
 # for testing functionality
 if __name__ == '__main__':
     print(torch.Tensor(torch.Tensor(torch.zeros((5, 5)))))
+    print(3 == 2 > 0)
