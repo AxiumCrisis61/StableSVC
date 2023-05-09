@@ -147,7 +147,7 @@ if __name__ == '__main__':
             loudness = torch.autograd.Variable(loudness.to(device, non_blocking=True))
 
             # calculate loss
-            loss = ddpm_trainer(x, whisper=whisper, f0=f0, loudness=loudness)
+            loss = ddpm_trainer(x, whisper=whisper, f0=f0, loudness=loudness).mean()
             loss.backward()
             # gradient norm clipping
             if args.use_grad_clip:
