@@ -195,7 +195,7 @@ if __name__ == '__main__':
                     x_val = ddpm_sampler(noise, whisper=whisper_val, f0=f0_val, loudness=loudness_val)
 
                     with torch.no_grad():
-                        val_error_list.append(F.mse_loss(x_val, y_val).cpu().to_numpy())
+                        val_error_list.append(F.mse_loss(x_val, y_val).cpu().numpy())
 
                     del y_val, whisper_val, f0_val, loudness_val, noise, x_val
                     for i in range(5):
