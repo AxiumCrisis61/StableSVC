@@ -37,7 +37,7 @@ if __name__ == '__main__':
                             help='whether to resume training from the latest checkpoint')
     arg_parser.add_argument('--val-interval', type=int, default=200,
                             help='validation interval (steps); set as 0 to cancel validation')
-    arg_parser.add_argument('--checkpoint-interval', type=int, default=100,
+    arg_parser.add_argument('--checkpoint-interval', type=int, default=20,
                             help='checkpoint interval (steps); set as 0 to cancel checkpointing')
     arg_parser.add_argument('--print-interval', type=int, default=5,
                             help='checkpoint interval (steps); set as 0 to cancel printing training information')
@@ -97,11 +97,11 @@ if __name__ == '__main__':
 
     # create diffusion framework
     if args.framework == 'simple_diffusion':
-        ddpm_trainer = GaussianDiffusionTrainer(model).to(device)
+        ddpm_trainer = GaussianDiffusionTrainer(model, noise_schedule=args.noise_schedule).to(device)
         if args.use_ema:
-            ddpm_sampler = GaussianDiffusionSampler(ema.shadow).to(device)
+            ddpm_sampler = GaussianDiffusionSampler(ema.shadow, noise_schedule=args.noise_schedule).to(device)
         else:
-            ddpm_sampler = GaussianDiffusionSampler(model).to(device)
+            ddpm_sampler = GaussianDiffusionSampler(model, noise_schedule=args.noise_schedule).to(device)
     else:
         raise ValueError("Unsupported conversion framework")
 
