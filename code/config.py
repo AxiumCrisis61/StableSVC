@@ -77,6 +77,9 @@ VAE_DIMENSIONS = {}
 
 # Acoustic model settings
 CHECKPOINT_PATH_ACOUSTIC = "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt"
+# Framework
+USE_CROSS_ATTN = False
+USE_EMA = False
 # UNet
 CHANNELS_INPUT = 4                              # Mel + Whisper + F0 + Loudness
 CHANNELS_OUTPUT = 1                             # Mel

@@ -13,7 +13,7 @@ import warnings
 import os
 import sys
 sys.path.append("../../")
-from config import CHECKPOINT_PATH_ACOUSTIC
+from config import CHECKPOINT_PATH_ACOUSTIC, USE_CROSS_ATTN, USE_EMA
 
 
 if __name__ == '__main__':
@@ -25,10 +25,11 @@ if __name__ == '__main__':
     # framework settings
     arg_parser.add_argument('--framework', type=str, choices=('simple_diffusion',), default='simple_diffusion',
                             help='choice of conversion framework')
-    arg_parser.add_argument('--use-ema', type=bool, default=True,
+    arg_parser.add_argument('--use-ema', type=bool, default=EMA,
                             help='whether to use Exponential Moving Average to the model')
-    arg_parser.add_argument('--use-cross-attn', type=bool, default=True,
+    arg_parser.add_argument('--use-cross-attn', type=bool, default=USE_CROSS_ATTN,
                             help='whether to use MSA layer to project conditioning features to mel feature space')
+    arg_parser.add_argument('--noise-schedule',type=str, choices=('linear', 'cosine'), de)
 
     # training settings
     arg_parser.add_argument('--resume', type=bool, default=True,
