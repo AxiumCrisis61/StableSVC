@@ -121,20 +121,20 @@ if __name__ == '__main__':
             flag_continue = False
             print('Starting training from scratch...')
             step = 0
-            last_epoch = 0
+            last_epoch = 1
             best_val_error = np.inf
     else:
         flag_continue = False
         print('Starting training from scratch...')
         step = 0
-        last_epoch = 0
+        last_epoch = 1
         best_val_error = np.inf
 
     # train
     ddpm_trainer.train()
-    for epoch in range(last_epoch, args.epochs):
+    for epoch in range(last_epoch, args.epochs + 1):
         start = time.time()
-        print('-'*15 + f'epoch {epoch + 1}' + '-'*15)
+        print('-'*15 + f'epoch {epoch}' + '-'*15)
         for x, whisper, f0, loudness in train_loader:
             model.train()
             ema.train()
