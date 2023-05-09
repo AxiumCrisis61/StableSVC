@@ -212,12 +212,14 @@ if __name__ == '__main__':
                 print('Validation error at step {}: {}'.format(step, val_error))
 
                 if val_error < best_val_error:
+                    best_val_error = val_error
                     save_checkpoint(os.path.join(ckpt_path, 'best'), {
                         'model': model.state_dict(),
                         'ema': ema.state_dict(),
                         'optimizer': optimizer.state_dict(),
                         'epoch': epoch,
                         'step': step,
+                        'best_val_error': best_val_error,
                     })
 
         print('Time taken for epoch {} is {} sec\n'.format(epoch + 1, int(time.time() - start)))
