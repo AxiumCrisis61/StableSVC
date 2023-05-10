@@ -2,9 +2,7 @@ import os
 import json
 from copy import deepcopy
 from argparse import ArgumentParser
-
 import numpy as np
-
 from preprocess.extract_acoustics import extract_acoustic_features
 from model.Acoustic.ddpm import GaussianDiffusionSampler
 from model.Acoustic.conversion_model import DiffusionConverter
@@ -136,7 +134,8 @@ class InferenceDataset(Dataset):
         return self.num_samples
 
 
-def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, plot_interval=0, evaluation=True, arguments=None):
+def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, plot_interval=0, evaluation=True, plot_nums=10,
+              arguments=None):
     """
     Args:
         input_dir: path containing source audios (stored as wav files)
@@ -144,6 +143,7 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, plot_interval
         output_dir: directory to store converted output
         plot_interval: intervals to plot the noise mel-spectrograms during reverse diffusion process
         evaluation: whether to evaluate the results
+        plot_nums: numbers of the plots in the denoising demonstration plot
         arguments: arguments for the model
 
     Returns:
@@ -192,16 +192,16 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, plot_interval
             backbone = shadow
 
         # load converter
-        converter = GaussianDiffusionSampler(backbone, T=DIFFUSION_STEPS, noise_schedule=NOISE_SCHEDULE,
-                                             plot_interval=plot_interval)
+        converter = GaussianDiffusionSampler(backbone, T=DIFFUSION_STEPS,
+                                             noise_schedule=NOISE_SCHEDULE, plot_nums=plot_nums)
     else:
         raise ValueError('Other types of SVC framework not supported')
+
+    # conversion
     backbone.to(device)
     backbone.eval()
     converter.to(device)
     converter.eval()
-
-    # inference
     num_samples = inference_dataset.num_samples
     converted_mels = torch.zeros((num_samples, 80, MEL_PADDING_LENGTH), dtype=torch.float, device=device)
     start = end = 0
@@ -293,6 +293,8 @@ if __name__ == '__main__':
                                      help='intervals to plot the noise mel-spectrograms during reverse diffusion process')
     arg_parser_settings.add_argument('--evaluation', type=bool, default=True,
                                      help='whether to evaluate the results')
+    arg_parser_settings.add_argument('--plot-nums', type=int, default=10,
+                                     help='numbers of the plots in the denoising demonstration plot')
 
     # models configuration
     arg_parser_model = ArgumentParser(description='Arguments for inference model')

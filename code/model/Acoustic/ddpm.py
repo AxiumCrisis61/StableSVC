@@ -3,9 +3,10 @@ import torch
 from torch import nn
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
+import os
 import sys
 sys.path.append("../../")
-from config import DIFFUSION_STEPS, LINEAR_BETA_1, LINEAR_BETA_T
+from config import DIFFUSION_STEPS, LINEAR_BETA_1, LINEAR_BETA_T, OUTPUT_DIR
 
 
 # ################################# Basic Denoising Diffusion Probabilistic Model #################################
@@ -83,7 +84,7 @@ class GaussianDiffusionSampler(nn.Module):
     """ Reverse Acoustic Process with Gaussian Noise """
 
     def __init__(self, model, T=DIFFUSION_STEPS, noise_schedule='cosine', beta_1=LINEAR_BETA_1, beta_T=LINEAR_BETA_T,
-                 mean_type='epsilon', var_type='fixedlarge', plot_interval=0):
+                 mean_type='epsilon', var_type='fixedlarge', plot_nums=0):
         """
         Initializing a DDPM inference process, based on Langevin Dynamics for reverse diffusion
         Args:
@@ -94,7 +95,7 @@ class GaussianDiffusionSampler(nn.Module):
             beta_T: end of linear noise scheduling scheme
             mean_type: elements for the denoising network to parameterize, ('xprev' 'xstart', 'epsilon')
             var_type: types of variance
-            plot_interval: interval to plot the Denoising process
+            plot_nums: interval to plot the Denoising process
         """
         assert noise_schedule in ['linear', 'cosine'], \
             "Unsupported noise scheduling scheme! Choose from ('linear', 'cosine')."
@@ -108,7 +109,7 @@ class GaussianDiffusionSampler(nn.Module):
         self.T = T
         self.mean_type = mean_type
         self.var_type = var_type
-        self.plot_interval = plot_interval
+        self.plot_nums = plot_nums
 
         # register parameters for noise scheduling
         if noise_schedule == 'cosine':
@@ -222,7 +223,14 @@ class GaussianDiffusionSampler(nn.Module):
         Returns:
             sampled diffusion generation
         """
+        if self.plot_nums > 0:
+            plt.figure()
+            plot_times = np.linspace(0, 100, 10).astype(int)
+        else:
+            plot_times = None
+
         x_t = x_T
+        plot_index = 0
         for time_step in reversed(range(self.T)):
             t = x_t.new_ones([x_T.shape[0], ], dtype=torch.long) * time_step
             mean, log_var = self.p_mean_variance(x_t=x_t, t=t, **features)
@@ -232,7 +240,21 @@ class GaussianDiffusionSampler(nn.Module):
             else:
                 noise = 0
             x_t = mean + torch.exp(0.5 * log_var) * noise
+
+            # plot the Diffusion Reverse process
+            if self.plot_nums > 0:
+                if time_step == plot_times[plot_index]:
+                    plt.subplot(5, 2, plot_index + 1)
+                    plt.title('T={}'.format(plot_times[plot_index]), fontsize='small')
+                    plt.imshow(x_t[0].cpu().numpy())
+                    plt.axis('off')
+
         x_0 = x_t
+
+        if self.plot_nums > 0:
+            plt.suptitle('Denoising Process')
+            plt.tight_layout()
+            plt.savefig(os.path.join(OUTPUT_DIR, 'denoising_process.jpg'), dpi=1600)
 
         # Clipped to [-1, 1] in the  original DDPM paper.
         # The authors assume that the image input is already rescaled to [-1, 1] to better fit standard Gaussian noise.
