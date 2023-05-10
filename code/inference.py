@@ -88,7 +88,6 @@ class InferenceDataset(Dataset):
         for wav_path in wav_path_list:
             waveform, sample_rate = torchaudio.load(wav_path)
             waveform = torchaudio.functional.resample(waveform, orig_freq=sample_rate, new_freq=RE_SAMPLE_RATE)
-            waveform = waveform / MAX_WAV_VALUE
             waveform_list.append(waveform)
 
         # get whisper embedding
@@ -234,14 +233,16 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, plot_interval
         vocoder = get_vocoder(VOCODER_CONFIG_PATH, device)
         vocoder.to(device)
 
-        converted_audios = vocoder(torch.Tensor(converted_mels).to(device))
+        with torch.no_grad():
+            converted_audios = vocoder(torch.Tensor(converted_mels).to(device))
+
         converted_audios = converted_audios.squeeze()
         converted_audios = converted_audios * MAX_WAV_VALUE
         converted_audios = converted_audios.cpu()
 
         for index, wav_name in enumerate(inference_dataset.wav_name_list):
             torchaudio.save(os.path.join(output_dir_audio, '{}_converted.wav'.format(wav_name[:-4])),
-                            converted_audios[index])
+                            converted_audios[index], sample_rate=RE_SAMPLE_RATE)
 
 
 if __name__ == '__main__':
