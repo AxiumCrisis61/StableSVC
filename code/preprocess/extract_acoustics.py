@@ -50,8 +50,9 @@ def transform_mel_spectrogram(y, n_fft, num_mels, sampling_rate, hop_size, win_s
 
 def extract_acoustic_features(wave_file, pitch_extractor, arguments):
     # waveform: (1, seq)
-    waveform, sample_rate = torchaudio.load(wave_file)
-    waveform = torchaudio.functional.resample(waveform, orig_freq=sample_rate, new_freq=RE_SAMPLE_RATE)
+    if isinstance(wave_file, str):
+        waveform, sample_rate = torchaudio.load(wave_file)
+        waveform = torchaudio.functional.resample(waveform, orig_freq=sample_rate, new_freq=RE_SAMPLE_RATE)
 
     # transform to Mel-spectrogram
     if arguments.mel:

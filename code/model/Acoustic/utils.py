@@ -30,7 +30,7 @@ def load_checkpoint(filepath, device):
 
 def get_standardizer():
     """
-        Standardizes for Mel-spectrograms, f0 and loudness
+        Standardizer for Mel-spectrograms, f0 and loudness
 
     Returns:
         mel_standardizer, f0_standardizer, loudness_standardizer

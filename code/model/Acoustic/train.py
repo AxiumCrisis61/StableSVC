@@ -13,7 +13,7 @@ import warnings
 import os
 import sys
 sys.path.append("../../")
-from config import CHECKPOINT_PATH_ACOUSTIC, FRAMEWORK, USE_CROSS_ATTN, USE_EMA, NOISE_SCHEDULE
+from config import CKPT_ACOUSTIC, FRAMEWORK, USE_CROSS_ATTN, USE_EMA, NOISE_SCHEDULE
 
 
 if __name__ == '__main__':
@@ -50,7 +50,7 @@ if __name__ == '__main__':
                             help='the training set of the model')
     arg_parser.add_argument('--validation-set', type=str, choices=('Opencpop', 'M4Singer'), default='Opencpop',
                             help='the validation set of the model')
-    arg_parser.add_argument('--ckpt-dir', type=str, default=CHECKPOINT_PATH_ACOUSTIC,
+    arg_parser.add_argument('--ckpt-dir', type=str, default=CKPT_ACOUSTIC,
                             help='checkpoint path for the acoustic model')
 
     # training hyper-parameters

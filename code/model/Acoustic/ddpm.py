@@ -2,6 +2,7 @@ import numpy as np
 import torch
 from torch import nn
 import torch.nn.functional as F
+import matplotlib.pyplot as plt
 import sys
 sys.path.append("../../")
 from config import DIFFUSION_STEPS, LINEAR_BETA_1, LINEAR_BETA_T
