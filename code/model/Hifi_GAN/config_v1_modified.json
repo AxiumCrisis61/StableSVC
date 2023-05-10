@@ -1,4 +1,5 @@
-{
+{   "resize_convolution": 1,
+    
     "resblock": "1",
     "num_gpus": 0,
     "batch_size": 16,

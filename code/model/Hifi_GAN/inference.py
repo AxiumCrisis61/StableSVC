@@ -62,11 +62,6 @@ def inference(a):
             print(output_file)
 
 
-def hifi_gan_vocoder(mel):
-    pass
-
-
-
 def main():
     print('Initializing Inference Process..')
 

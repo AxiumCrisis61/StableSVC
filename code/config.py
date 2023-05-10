@@ -2,6 +2,19 @@ import os
 from argparse import ArgumentTypeError
 
 
+# Inference settings
+INFERENCE_DATA_PATH = "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/data/M4Singer"
+VOCODER_CONFIG_PATH = "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/config_v1_modified.json"
+
+
+# Acoustic model settings
+CHECKPOINT_PATH_ACOUSTIC = "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt"
+# Framework
+FRAMEWORK = 'simple_diffusion'                  # conversion framework, ('simple diffusion', )
+USE_CROSS_ATTN = False                          # cross-attention mechanism to project conditioning features
+USE_EMA = True                                  # Exponential Moving Average of the model
+
+
 # Please configure the path of your downloaded datasets
 dataset2path = {
     "Opencpop": "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/data/Opencpop",
@@ -75,12 +88,7 @@ PRETRAIN_PATH = "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_G
 VAE_DIMENSIONS = {}
 
 
-# Acoustic model settings
-CHECKPOINT_PATH_ACOUSTIC = "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt"
-# Framework
-FRAMEWORK = 'simple_diffusion'                  # conversion framework, ('simple diffusion', )
-USE_CROSS_ATTN = False                          # cross-attention mechanism to project conditioning features
-USE_EMA = True                                  # Exponential Moving Average of the model
+# Acoustic Model settings
 # UNet
 CHANNELS_INPUT = 4                              # Mel + Whisper + F0 + Loudness
 CHANNELS_OUTPUT = 1                             # Mel

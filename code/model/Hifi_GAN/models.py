@@ -73,10 +73,9 @@ class ResBlock2(torch.nn.Module):
 
 
 class Generator(torch.nn.Module):
-    def __init__(self, h, a):
+    def __init__(self, h):
         super(Generator, self).__init__()
         self.h = h
-        self.a = a
         self.num_kernels = len(h.resblock_kernel_sizes)
         self.num_upsamples = len(h.upsample_rates)
         self.conv_pre = weight_norm(Conv1d(80, h.upsample_initial_channel, 7, 1, padding=3))
@@ -85,7 +84,7 @@ class Generator(torch.nn.Module):
         # up-sampling block
         self.ups = nn.ModuleList()
         # Modified: Size-maintaining 1-d Convolution after temporal nearset-neighbours interpolation (in "forward()")
-        if a.resize_convolution:
+        if h.resize_convolution:
             for i, k in enumerate(h.upsample_kernel_sizes):
                 self.ups.append(weight_norm(
                     ConvTranspose1d(h.upsample_initial_channel//(2**i), h.upsample_initial_channel//(2**(i+1)),

@@ -82,7 +82,7 @@ class GaussianDiffusionSampler(nn.Module):
     """ Reverse Acoustic Process with Gaussian Noise """
 
     def __init__(self, model, T=DIFFUSION_STEPS, noise_schedule='cosine', beta_1=LINEAR_BETA_1, beta_T=LINEAR_BETA_T,
-                 mean_type='epsilon', var_type='fixedlarge'):
+                 mean_type='epsilon', var_type='fixedlarge', plot_interval=0):
         """
         Initializing a DDPM inference process, based on Langevin Dynamics for reverse diffusion
         Args:
@@ -93,6 +93,7 @@ class GaussianDiffusionSampler(nn.Module):
             beta_T: end of linear noise scheduling scheme
             mean_type: elements for the denoising network to parameterize, ('xprev' 'xstart', 'epsilon')
             var_type: types of variance
+            plot_interval: interval to plot the Denoising process
         """
         assert noise_schedule in ['linear', 'cosine'], \
             "Unsupported noise scheduling scheme! Choose from ('linear', 'cosine')."
@@ -106,6 +107,7 @@ class GaussianDiffusionSampler(nn.Module):
         self.T = T
         self.mean_type = mean_type
         self.var_type = var_type
+        self.plot_interval = plot_interval
 
         # register parameters for noise scheduling
         if noise_schedule == 'cosine':

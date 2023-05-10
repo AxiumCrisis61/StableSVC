@@ -37,7 +37,7 @@ def train(rank, a, h):
     torch.cuda.manual_seed(h.seed)
     device = torch.device('cuda:{:d}'.format(rank))
 
-    generator = Generator(h, a).to(device)
+    generator = Generator(h).to(device)
     mpd = MultiPeriodDiscriminator().to(device)
     msd = MultiScaleDiscriminator().to(device)
 
@@ -51,7 +51,7 @@ def train(rank, a, h):
     # [NOTE]: If so, pretrained models can not be applied
     #         Therefore, path for pretrained model will be dispensed and
     #         fine-tuning mode will be turned off.
-    if a.resize_convolution:
+    if h.resize_convolution:
         a.pretrain_path = None
         a.fine_tuning = False
 
