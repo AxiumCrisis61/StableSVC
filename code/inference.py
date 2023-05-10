@@ -89,6 +89,7 @@ class InferenceDataset(Dataset):
             waveform, sample_rate = torchaudio.load(wav_path)
             waveform = torchaudio.functional.resample(waveform, orig_freq=sample_rate, new_freq=RE_SAMPLE_RATE)
             waveform_list.append(waveform)
+        self.waveform_list = waveform_list
 
         # get whisper embedding
         self.whisper_features = whisper_encoder(waveform_list)
@@ -150,6 +151,8 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, plot_interval
     """
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     mel_standardizer, _, _ = get_standardizer()
+    if evaluation:
+        output_type = 'all'
 
     # create output directory
     if output_type == 'audio':
@@ -243,6 +246,38 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, plot_interval
         for index, wav_name in enumerate(inference_dataset.wav_name_list):
             torchaudio.save(os.path.join(output_dir_audio, '{}_converted.wav'.format(wav_name[:-4])),
                             converted_audios[index], sample_rate=RE_SAMPLE_RATE)
+    else:
+        converted_audios = None
+
+    # evaluate the conversion result with Mel-Cepstral Distortion (MCD) and F0-Pearson-Correlation (FPC)
+    if evaluation:
+        # pad original wav
+        wav_pad_length = converted_audios.shape[1]
+        original_audios = torch.zeros((num_samples, wav_pad_length))
+        for i in range(num_samples):
+            wav = inference_dataset.waveform_list[i]
+            if len(wav) >= wav_pad_length:
+                wav = wav[:wav_pad_length]
+            else:
+                wav = F.pad(wav, (0, wav_pad_length - len(wav)), mode='constant', value=0)
+            original_audios[i] = wav
+        del wav
+
+        # FPC evaluation
+        f0_converted = diffsptk.Pitch(STFT_HOP_SIZE, RE_SAMPLE_RATE, out_format='f0', model='tiny')(converted_audios)
+        f0_origin = diffsptk.Pitch(STFT_HOP_SIZE, RE_SAMPLE_RATE, out_format='f0', model='tiny')(original_audios)
+        fpc = np.zeros(num_samples)
+        for i in range(num_samples):
+            fpc[i] = torch.dot(f0_origin[i], f0_converted[i]).numpy()
+
+        # MCD evaluation
+        mfcc_converted = torchaudio.transforms.MFCC(RE_SAMPLE_RATE)(converted_audios)
+        mfcc_origin = torchaudio.transforms.MFCC(RE_SAMPLE_RATE)(original_audios)
+        mcd = np.zeros(num_samples)
+        for i in range(num_samples):
+            mcd[i] = torch.dot(mfcc_origin[i], mfcc_converted[i]).numpy()
+
+        pd.DataFrame({'MCD': mcd, 'FPC': fpc}).to_csv(os.path.join(output_dir, 'evaluation_results.csv'))
 
 
 if __name__ == '__main__':
