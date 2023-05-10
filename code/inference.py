@@ -134,8 +134,7 @@ class InferenceDataset(Dataset):
         return self.num_samples
 
 
-def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, plot_interval=0, evaluation=True, plot_nums=10,
-              arguments=None):
+def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=True, plot_nums=10, arguments=None):
     """
     Args:
         input_dir: path containing source audios (stored as wav files)
@@ -304,12 +303,12 @@ if __name__ == '__main__':
     arg_parser_model.add_argument('--framework', type=str, choices=('simple_diffusion', ))
 
     settings = arg_parser_settings.parse_args()
-    arguments = arg_parser_model.parse_args()
+    arguments_model = arg_parser_model.parse_args()
 
     # inference
     inference(settings.input_dir,
               settings.output_type,
               settings.output_dir,
-              settings.plot_interval,
               settings.evaluation,
-              arguments)
+              settings.plot_nums,
+              arguments_model)
