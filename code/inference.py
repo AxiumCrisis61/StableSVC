@@ -256,7 +256,7 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=Tr
 
         for index, wav_name in enumerate(inference_dataset.wav_name_list):
             save_audio(os.path.join(output_dir_audio, '{}_converted.wav'.format(wav_name[:-4])),
-                       converted_audios[index].astype(np.int16), 'wav')
+                       converted_audios[index], 'wav')
 
     else:
         converted_audios = None
