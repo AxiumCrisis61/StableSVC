@@ -251,6 +251,7 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=Tr
             converted_audios = vocoder(torch.Tensor(converted_mels).to(device))
 
         converted_audios = converted_audios.squeeze()
+        print(converted_audios[0])
         converted_audios = converted_audios * MAX_WAV_VALUE
         converted_audios = converted_audios.cpu()
 
@@ -271,8 +272,7 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=Tr
         wav_pad_length = converted_audios.shape[1]
         original_audios = torch.zeros((num_samples, wav_pad_length))
         for i in range(num_samples):
-            wav = inference_dataset.waveform_list[i]
-            print(wav.shape)
+            wav = inference_dataset.waveform_list[i][0]
             if len(wav) >= wav_pad_length:
                 wav = wav[:wav_pad_length]
             else:
