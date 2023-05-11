@@ -7,6 +7,7 @@ from preprocess.extract_acoustics import extract_acoustic_features
 from model.Acoustic.ddpm import GaussianDiffusionSampler
 from model.Acoustic.conversion_model import DiffusionConverter
 from model.Hifi_GAN.models import Generator
+from model.Hifi_GAN.env import AttrDict
 from model.Acoustic.utils import load_checkpoint, get_standardizer, EMA
 import torch
 import torch.nn.functional as F
@@ -26,6 +27,7 @@ MAX_WAV_VALUE = 32768.0
 def get_vocoder(vocoder_config_path, device):
     with open(vocoder_config_path, "r") as f:
         h = json.load(f)
+    h = AttrDict(h)
     vocoder = Generator(h)
     vocoder.load_state_dict(load_checkpoint(CKPT_VOCODER, device)['generator'])
     vocoder.eval()

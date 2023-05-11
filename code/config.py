@@ -4,7 +4,7 @@ from argparse import ArgumentTypeError
 
 # Inference settings
 INFERENCE_DATA_PATH = "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/data/M4Singer"
-VOCODER_CONFIG_PATH = "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/config_v1_modified.json"
+VOCODER_CONFIG_PATH = "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/config_v1.json"
 CKPT_VOCODER = "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best"
 CKPT_ACOUSTIC = "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt"
 OUTPUT_DIR = "/content/drive/MyDrive/MDS_6002_SVC/StableSVC/output/"
