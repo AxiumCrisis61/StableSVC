@@ -98,8 +98,8 @@ class InferenceDataset(Dataset):
         crepe = diffsptk.Pitch(STFT_HOP_SIZE, RE_SAMPLE_RATE, out_format='pitch', model='tiny')
         for waveform in waveform_list:
             acoustic_feature = extract_acoustic_features(waveform,  crepe, acoustic_arguments)
-            f0_list.append(acoustic_feature[1])
-            loudness_list.append(acoustic_feature[2])
+            f0_list.append(torch.Tensor(acoustic_feature[1]))
+            loudness_list.append(torch.Tensor(acoustic_feature[2]))
         del crepe, acoustic_feature
 
         # pad or trim
