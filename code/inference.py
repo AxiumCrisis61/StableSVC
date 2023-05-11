@@ -247,7 +247,7 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=Tr
 
         for index, wav_name in enumerate(inference_dataset.wav_name_list):
             torchaudio.save(os.path.join(output_dir_audio, '{}_converted.wav'.format(wav_name[:-4])),
-                            converted_audios[index], sample_rate=RE_SAMPLE_RATE)
+                            converted_audios[index].squeeze(0), sample_rate=RE_SAMPLE_RATE)
     else:
         converted_audios = None
 
