@@ -19,7 +19,7 @@ import whisper
 import diffsptk
 from config import CKPT_ACOUSTIC, CKPT_VOCODER, VOCODER_CONFIG_PATH, INFERENCE_DATA_PATH, OUTPUT_DIR, \
     DIFFUSION_STEPS, NOISE_SCHEDULE, MEL_FREQ_BINS, MEL_PADDING_LENGTH, RE_SAMPLE_RATE, WHISPER_MODEL_SIZE, \
-    WHISPER_PADDING_LENGTH, WHISPER_MAPPED_RATE, STFT_HOP_SIZE, FRAMEWORK
+    WHISPER_PADDING_LENGTH, WHISPER_MAPPED_RATE, STFT_HOP_SIZE, STFT_WINDOW_SIZE, STFT_N, FRAMEWORK
 
 
 MAX_WAV_VALUE = 32768.0
@@ -253,12 +253,10 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=Tr
             converted_audios = vocoder(torch.Tensor(converted_mels).to(device))
 
         converted_audios = converted_audios.squeeze()
-        print(converted_audios[0])
-        converted_audios = converted_audios * MAX_WAV_VALUE
+        converted_audios = converted_audios * MAX_WAV_VALUE * MAX_WAV_VALUE
         converted_audios = converted_audios.cpu().numpy().astype('int16')
 
         # debug
-        print(converted_audios.shape)
         print(converted_audios[0])
 
         for index, wav_name in enumerate(inference_dataset.wav_name_list):
@@ -290,11 +288,14 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=Tr
             fpc[i] = torch.dot(f0_origin[i], f0_converted[i]).numpy()
 
         # MCD evaluation
-        mfcc_converted = torchaudio.transforms.MFCC(RE_SAMPLE_RATE)(converted_audios)
-        mfcc_origin = torchaudio.transforms.MFCC(RE_SAMPLE_RATE)(original_audios)
-        mcd = np.zeros(num_samples)
-        for i in range(num_samples):
-            mcd[i] = torch.dot(mfcc_origin[i], mfcc_converted[i]).numpy()
+        stft = torchaudio.transforms.Spectrogram(n_fft=STFT_N,
+                                                 win_length=STFT_WINDOW_SIZE,
+                                                 hop_length=STFT_HOP_SIZE,
+                                                 power=2)
+        mcep = diffsptk.MelCepstralAnalysis(cep_order=40, fft_length=STFT_N, alpha=0.58, n_iter=1)
+        mcep_converted = mcep(stft(converted_audios)).numpy()
+        mcep_origin = mcep(stft(original_audios)).numpy()
+        mcd = np.linalg.norm(mcep_origin - mcep_converted, axis=1) * np.sqrt(2) * 10 / np.log(10)
 
         pd.DataFrame({'MCD': mcd, 'FPC': fpc}).to_csv(os.path.join(output_dir, 'evaluation_results.csv'))
 

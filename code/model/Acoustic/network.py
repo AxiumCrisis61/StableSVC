@@ -525,17 +525,4 @@ if __name__ == '__main__':
     print(in_out)
     print(list(reversed(in_out)))
 
-    plt.figure()
-    plot_times = np.array(tuple(reversed(np.linspace(0, 100, 10).astype(int))))
-    print(plot_times)
-    plot_index = 0
-    for time_step in reversed(range(100 + 1)):
-        if time_step == plot_times[plot_index]:
-            plt.subplot(5, 2, plot_index + 1)
-            plt.imshow(np.random.rand(40, 496))
-            plt.title('T={}'.format(plot_times[plot_index]), fontsize='small')
-            plt.axis('off')
-            plot_index += 1
-    plt.suptitle('Denoising Process (Reverse Diffusion Process)')
-    plt.tight_layout()
-    plt.show()
+    print(-5.5674e-06 * 32768.0 * 32768.0)
