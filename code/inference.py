@@ -239,6 +239,7 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=Tr
 
     # save the converted Mel-spectrograms
     np.save(os.path.join(output_dir_mel, 'mels.npy'), converted_mels.cpu().numpy())
+    print(converted_mels[0])
 
     # converting to waveform
     del backbone, converter
@@ -281,8 +282,9 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=Tr
         del wav
 
         # FPC evaluation
-        f0_converted = diffsptk.Pitch(STFT_HOP_SIZE, RE_SAMPLE_RATE, out_format='f0', model='tiny')(converted_audios)
-        f0_origin = diffsptk.Pitch(STFT_HOP_SIZE, RE_SAMPLE_RATE, out_format='f0', model='tiny')(original_audios)
+        crepe = diffsptk.Pitch(STFT_HOP_SIZE, RE_SAMPLE_RATE, out_format='f0', model='tiny')
+        f0_converted = crepe(torch.Tensor(converted_audios))
+        f0_origin = crepe(torch.Tensor(original_audios))
         fpc = np.zeros(num_samples)
         for i in range(num_samples):
             fpc[i] = torch.dot(f0_origin[i], f0_converted[i]).numpy()
