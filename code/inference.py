@@ -98,7 +98,7 @@ class InferenceDataset(Dataset):
         for waveform in waveform_list:
             acoustic_features.append(extract_acoustic_features(waveform,  crepe, acoustic_arguments))
         del crepe
-        f0_list, loudness_list = zip(acoustic_features)
+        _, f0_list, loudness_list = zip(acoustic_features)
         del acoustic_features
 
         # pad or trim
