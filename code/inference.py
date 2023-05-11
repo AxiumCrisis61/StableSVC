@@ -226,7 +226,7 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=Tr
                 torch.cuda.empty_cache()
 
     # save the converted Mel-spectrograms
-    np.save(os.path.join(output_dir_mel, 'mels.npy'), converted_mels)
+    np.save(os.path.join(output_dir_mel, 'mels.npy'), converted_mels.cpu().numpy())
 
     # converting to waveform
     del backbone, converter
