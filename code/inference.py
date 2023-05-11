@@ -13,6 +13,7 @@ import torch
 import torch.nn.functional as F
 from torch.utils.data import Dataset, DataLoader
 import torchaudio
+from scipy.io.wavfile import write as scipy_write
 import pandas as pd
 import whisper
 import diffsptk
@@ -243,11 +244,11 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=Tr
 
         converted_audios = converted_audios.squeeze()
         converted_audios = converted_audios * MAX_WAV_VALUE
-        converted_audios = converted_audios.cpu()
+        converted_audios = converted_audios.cpu().numpy()
 
         for index, wav_name in enumerate(inference_dataset.wav_name_list):
-            torchaudio.save(os.path.join(output_dir_audio, '{}_converted.wav'.format(wav_name[:-4])),
-                            converted_audios[index].squeeze(0), sample_rate=RE_SAMPLE_RATE)
+            scipy_write(os.path.join(output_dir_audio, '{}_converted.wav'.format(wav_name[:-4])), RE_SAMPLE_RATE,
+                        converted_audios[index].astype(np.int16))
     else:
         converted_audios = None
 

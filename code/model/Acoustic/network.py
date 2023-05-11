@@ -518,7 +518,6 @@ class UNet(nn.Module):
 if __name__ == '__main__':
     import matplotlib.pyplot as plt
     import numpy as np
-    import torchaudio
 
     channel_dimensions = [CHANNELS_BASE, *map(lambda m: CHANNELS_BASE * m, CHANNELS_MULT_FACTORS)]
     print(channel_dimensions)
@@ -528,7 +527,6 @@ if __name__ == '__main__':
 
     plt.figure()
     plot_times = np.array(tuple(reversed(np.linspace(0, 100, 10).astype(int))))
-    torchaudio.save('test.wav', torch.Tensor(plot_times), sample_rate=1)
     print(plot_times)
     plot_index = 0
     for time_step in reversed(range(100 + 1)):
