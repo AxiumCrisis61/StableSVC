@@ -293,7 +293,6 @@ if __name__ == '__main__':
     arg_parser_settings.add_argument('--evaluation', type=bool, default=True,
                                      help='whether to evaluate the results')
 
-
     # models configuration
     arg_parser_model = ArgumentParser(description='Arguments for inference model')
     arg_parser_model.add_argument('--batch-size', type=int, default=8, help='inference batch size')
