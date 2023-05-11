@@ -225,7 +225,7 @@ class GaussianDiffusionSampler(nn.Module):
         """
         if self.plot_nums > 0:
             plt.figure()
-            plot_times = np.linspace(0, 100, 10).astype(int)
+            plot_times = np.linspace(0, DIFFUSION_STEPS, self.plot_nums).astype(int)
         else:
             plot_times = None
 
@@ -248,6 +248,7 @@ class GaussianDiffusionSampler(nn.Module):
                     plt.title('T={}'.format(plot_times[plot_index]), fontsize='small')
                     plt.imshow(x_t[0].cpu().numpy())
                     plt.axis('off')
+                    plot_index += 1
 
         x_0 = x_t
 
