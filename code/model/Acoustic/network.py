@@ -526,3 +526,5 @@ if __name__ == '__main__':
     print(list(reversed(in_out)))
 
     print(-5.5674e-06 * 32768.0)
+
+    print('114514.wav'[:-3])
