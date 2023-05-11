@@ -13,7 +13,6 @@ import torch
 import torch.nn.functional as F
 from torch.utils.data import Dataset, DataLoader
 import torchaudio
-from scipy.io.wavfile import write as scipy_write
 import pandas as pd
 import whisper
 import diffsptk
@@ -138,6 +137,15 @@ class InferenceDataset(Dataset):
         return self.num_samples
 
 
+def save_audio(path, waveform, fs):
+    """ Borrowed from baseline model """
+    waveform = torch.as_tensor(waveform, dtype=torch.float32)
+    if len(waveform.size()) == 1:
+        waveform = waveform[None, :]
+    # print("HERE: waveform", waveform.shape, waveform.dtype, waveform)
+    torchaudio.save(path, waveform, fs, encoding="PCM_S", bits_per_sample=16)
+
+
 def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=True, plot_nums=10, arguments=None):
     """
     Args:
@@ -244,13 +252,18 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=Tr
 
         converted_audios = converted_audios.squeeze()
         converted_audios = converted_audios * MAX_WAV_VALUE
-        converted_audios = converted_audios.cpu().numpy()
+        converted_audios = converted_audios.cpu()
 
         for index, wav_name in enumerate(inference_dataset.wav_name_list):
-            scipy_write(os.path.join(output_dir_audio, '{}_converted.wav'.format(wav_name[:-4])), RE_SAMPLE_RATE,
-                        converted_audios[index].astype(np.int16))
+            save_audio(os.path.join(output_dir_audio, '{}_converted.wav'.format(wav_name[:-4])),
+                       converted_audios[index].astype(np.int16), 'wav')
+
     else:
         converted_audios = None
+
+    # debug
+    print(converted_audios.shape)
+    print(converted_audios[0])
 
     # evaluate the conversion result with Mel-Cepstral Distortion (MCD) and F0-Pearson-Correlation (FPC)
     if evaluation:
@@ -259,6 +272,7 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=Tr
         original_audios = torch.zeros((num_samples, wav_pad_length))
         for i in range(num_samples):
             wav = inference_dataset.waveform_list[i]
+            print(wav.shape)
             if len(wav) >= wav_pad_length:
                 wav = wav[:wav_pad_length]
             else:
