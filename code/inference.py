@@ -254,10 +254,7 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=Tr
 
         converted_audios = converted_audios.squeeze()
         converted_audios = converted_audios * MAX_WAV_VALUE * MAX_WAV_VALUE
-        converted_audios = converted_audios.cpu().numpy().astype('int16')
-
-        # debug
-        print(converted_audios[0])
+        converted_audios = converted_audios.cpu().numpy().astype('float32')
 
         for index, wav_name in enumerate(inference_dataset.wav_name_list):
             write_audio(os.path.join(output_dir_audio, '{}_converted.wav'.format(wav_name[:-4])),
