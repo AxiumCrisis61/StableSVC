@@ -1,6 +1,6 @@
 import torch
 from torch import nn
-from network import UNet
+from model.Acoustic.network import UNet
 import sys
 sys.path.append("../../")
 from config import ATTN_HEADS_WHISPER, ATTN_HEADS_F0, ATTN_HEADS_LOUDNESS, MEL_FREQ_BINS, MEL_PADDING_LENGTH, WHISPER_DIM
