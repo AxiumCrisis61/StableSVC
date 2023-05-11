@@ -239,7 +239,6 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=Tr
 
     # save the converted Mel-spectrograms
     np.save(os.path.join(output_dir_mel, 'mels.npy'), converted_mels.cpu().numpy())
-    print(converted_mels[0])
 
     # converting to waveform
     del backbone, converter
@@ -253,8 +252,9 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=Tr
             converted_audios = vocoder(torch.Tensor(converted_mels).to(device))
 
         converted_audios = converted_audios.squeeze()
-        converted_audios = converted_audios * MAX_WAV_VALUE * MAX_WAV_VALUE
+        converted_audios = converted_audios * MAX_WAV_VALUE
         converted_audios = converted_audios.cpu().numpy().astype('float32')
+        print(converted_audios[0])
 
         for index, wav_name in enumerate(inference_dataset.wav_name_list):
             write_audio(os.path.join(output_dir_audio, '{}_converted.wav'.format(wav_name[:-4])),
@@ -290,8 +290,8 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=Tr
                                                  hop_length=STFT_HOP_SIZE,
                                                  power=2)
         mcep = diffsptk.MelCepstralAnalysis(cep_order=40, fft_length=STFT_N, alpha=0.58, n_iter=1)
-        mcep_converted = mcep(stft(converted_audios)).numpy()
-        mcep_origin = mcep(stft(original_audios)).numpy()
+        mcep_converted = mcep(stft(torch.Tensor(converted_audios))).numpy()
+        mcep_origin = mcep(stft(torch.Tensor(original_audios))).numpy()
         mcd = np.linalg.norm(mcep_origin - mcep_converted, axis=1) * np.sqrt(2) * 10 / np.log(10)
 
         pd.DataFrame({'MCD': mcd, 'FPC': fpc}).to_csv(os.path.join(output_dir, 'evaluation_results.csv'))
