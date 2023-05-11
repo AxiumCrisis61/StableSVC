@@ -22,7 +22,7 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 
 import sys
 
-sys.path.append("../")
+sys.path.append("../../")
 from config import INPUT_WAVS_DIR, INPUT_MELS_DIR, INPUT_TRAINING_FILE, INPUT_VALIDATION_FILE,\
     CHECKPOINT_PATH_HIFI, PRETRAIN_PATH
 
