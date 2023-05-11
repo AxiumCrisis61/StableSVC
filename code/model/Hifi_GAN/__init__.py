@@ -1,3 +1,3 @@
 import sys
 sys.path.append("../")
-from model.Acoustic import *
+from model.Hifi_GAN import *
