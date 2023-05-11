@@ -38,6 +38,15 @@ def whisper_encoder(waveform_list):
     """
         Modified from preprocess.extract_whisper/whisper_encoder to adapt to waveform input
     """
+    # load Wisper Encoder
+    whisper_model = whisper.load_model(WHISPER_MODEL_SIZE)
+    if torch.cuda.is_available():
+        print("Using GPU...\n")
+        whisper_model = whisper_model.cuda()
+    else:
+        print("Using CPU...\n")
+    whisper_model = whisper_model.eval()
+
     batch = len(waveform_list)
     batch_mel = torch.zeros((batch, 80, WHISPER_PADDING_LENGTH*100), dtype=torch.float, device=whisper_model.device)
 
@@ -50,7 +59,7 @@ def whisper_encoder(waveform_list):
         features = torch.transpose(features, 1, 2)
         features = F.avg_pool1d(features, kernel_size=WHISPER_MAPPED_RATE, stride=WHISPER_MAPPED_RATE)
 
-    del batch_mel
+    del batch_mel, whisper_model
     for i in range(5):
         torch.cuda.empty_cache()
 
@@ -293,15 +302,6 @@ if __name__ == '__main__':
 
     settings = arg_parser_settings.parse_args()
     arguments_model = arg_parser_model.parse_args()
-
-    # load Wisper Encoder
-    whisper_model = whisper.load_model(WHISPER_MODEL_SIZE)
-    if torch.cuda.is_available():
-        print("Using GPU...\n")
-        whisper_model = whisper_model.cuda()
-    else:
-        print("Using CPU...\n")
-    whisper_model = whisper_model.eval()
 
     # inference
     inference(settings.input_dir,
