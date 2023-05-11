@@ -93,13 +93,14 @@ class InferenceDataset(Dataset):
         self.whisper_features = whisper_encoder(waveform_list)
 
         # get acoustic features: f0 and loudness
-        acoustic_features = []
+        f0_list = []
+        loudness_list = []
         crepe = diffsptk.Pitch(STFT_HOP_SIZE, RE_SAMPLE_RATE, out_format='pitch', model='tiny')
         for waveform in waveform_list:
-            acoustic_features.append(extract_acoustic_features(waveform,  crepe, acoustic_arguments))
-        del crepe
-        _, f0_list, loudness_list = zip(acoustic_features)
-        del acoustic_features
+            acoustic_feature = extract_acoustic_features(waveform,  crepe, acoustic_arguments)
+            f0_list.append(acoustic_feature[1])
+            loudness_list.append(acoustic_feature[2])
+        del crepe, acoustic_feature
 
         # pad or trim
         self.f0_list = []
