@@ -219,7 +219,7 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=Tr
             x = converter(noise, whisper=whisper, f0=f0, loudness=loudness)
 
             # scale the converted Mel-spectrograms back from [-1, 1] and store
-            converted_mels[start:end] = mel_standardizer.scale_back(x.cpu().numpy())
+            converted_mels[start:end] = mel_standardizer.scale_back(x.cpu())
 
             del whisper, f0, loudness, x
             for i in range(5):
