@@ -11,7 +11,7 @@ import warnings
 
 warnings.simplefilter(action='ignore', category=UserWarning)
 
-MAX_WAV_VALUE = 32768.0
+MAX_WAV_VALUE = 32768.0   # the
 
 
 def dynamic_range_compression(x, C=1, clip_val=1e-5):
