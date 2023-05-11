@@ -516,15 +516,10 @@ class UNet(nn.Module):
 
 # for testing functionality
 if __name__ == '__main__':
-    import matplotlib.pyplot as plt
-    import numpy as np
-
     channel_dimensions = [CHANNELS_BASE, *map(lambda m: CHANNELS_BASE * m, CHANNELS_MULT_FACTORS)]
     print(channel_dimensions)
     in_out = list(zip(channel_dimensions[:-1], channel_dimensions[1:]))
     print(in_out)
     print(list(reversed(in_out)))
-
-    print(-5.5674e-06 * 32768.0)
 
     print('114514.wav'[:-3])

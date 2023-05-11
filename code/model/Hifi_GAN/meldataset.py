@@ -11,7 +11,7 @@ import warnings
 
 warnings.simplefilter(action='ignore', category=UserWarning)
 
-MAX_WAV_VALUE = 32768.0
+MAX_WAV_VALUE = 32768   # since we are using wav file, set normalization scale as 1
 
 
 def dynamic_range_compression(x, C=1, clip_val=1e-5):
@@ -121,7 +121,7 @@ class MelDataset(torch.utils.data.Dataset):
         filename = self.audio_files[index]
         if self._cache_ref_count == 0:
             audio, sampling_rate = librosa.load(filename, sr=self.sampling_rate)  # enable resampling
-            audio = audio / MAX_WAV_VALUE
+            # audio = audio / MAX_WAV_VALUE     # input already in the range of [-1, 1] (float32)
             if not self.fine_tuning:
                 audio = normalize(audio) * 0.95
             self.cached_wav = audio

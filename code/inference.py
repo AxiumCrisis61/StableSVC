@@ -22,7 +22,7 @@ from config import CKPT_ACOUSTIC, CKPT_VOCODER, VOCODER_CONFIG_PATH, INFERENCE_D
     WHISPER_PADDING_LENGTH, WHISPER_MAPPED_RATE, STFT_HOP_SIZE, STFT_WINDOW_SIZE, STFT_N, FRAMEWORK
 
 
-MAX_WAV_VALUE = 32768.0
+MAX_WAV_VALUE = 32768
 
 
 def get_vocoder(vocoder_config_path, device):
@@ -253,7 +253,7 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=Tr
 
         converted_audios = converted_audios.squeeze()
         converted_audios = converted_audios * MAX_WAV_VALUE
-        converted_audios = converted_audios.cpu().numpy().astype('float32')
+        converted_audios = converted_audios.cpu().numpy().astype('int16')
 
         for index, wav_name in enumerate(inference_dataset.wav_name_list):
             write_audio(os.path.join(output_dir_audio, '{}_converted.wav'.format(wav_name[:-4])),
