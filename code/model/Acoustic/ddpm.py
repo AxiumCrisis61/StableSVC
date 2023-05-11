@@ -225,7 +225,7 @@ class GaussianDiffusionSampler(nn.Module):
         """
         if self.plot_nums > 0:
             plt.figure()
-            plot_times = np.linspace(0, DIFFUSION_STEPS, self.plot_nums).astype(int)
+            plot_times = np.array(tuple(reversed(np.linspace(0, 100, 10).astype(int))))
         else:
             plot_times = None
 
