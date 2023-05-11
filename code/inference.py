@@ -203,12 +203,13 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=Tr
     converter.eval()
     num_samples = inference_dataset.num_samples
     converted_mels = torch.zeros((num_samples, 80, MEL_PADDING_LENGTH), dtype=torch.float, device=device)
-    start = end = 0
+    end = 0
     with torch.no_grad():
         for whisper, f0, loudness in data_loader:
             # create noise
-            end += num
             num = whisper.shape[0]
+            start = end
+            end += num
             noise = torch.randn((num, MEL_FREQ_BINS, MEL_PADDING_LENGTH)).to(device)
             whisper = whisper.to(device)
             f0 = f0.to(device)
