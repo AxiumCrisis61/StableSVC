@@ -225,13 +225,13 @@ class GaussianDiffusionSampler(nn.Module):
         """
         if self.plot_nums > 0:
             plt.figure()
-            plot_times = np.array(tuple(reversed(np.linspace(0, 100, 10).astype(int))))
+            plot_times = np.array(tuple(reversed(np.linspace(0, self.T, self.plot_nums).astype(int))))
         else:
             plot_times = None
 
         x_t = x_T
         plot_index = 0
-        for time_step in reversed(range(self.T)):
+        for time_step in reversed(range(self.T + 1)):
             t = x_t.new_ones([x_T.shape[0], ], dtype=torch.long) * time_step
             mean, log_var = self.p_mean_variance(x_t=x_t, t=t, **features)
             # no noise when t == 0
@@ -245,15 +245,16 @@ class GaussianDiffusionSampler(nn.Module):
             if self.plot_nums > 0:
                 if time_step == plot_times[plot_index]:
                     plt.subplot(5, 2, plot_index + 1)
-                    plt.title('T={}'.format(plot_times[plot_index]), fontsize='small')
+                    print(x_t.shape)
                     plt.imshow(x_t[0].cpu().numpy())
+                    plt.title('T={}'.format(plot_times[plot_index]), fontsize='small')
                     plt.axis('off')
                     plot_index += 1
 
         x_0 = x_t
 
         if self.plot_nums > 0:
-            plt.suptitle('Denoising Process')
+            plt.suptitle('Denoising Process (Reverse Diffusion Process)')
             plt.tight_layout()
             plt.savefig(os.path.join(OUTPUT_DIR, 'denoising_process.jpg'), dpi=1600)
 
