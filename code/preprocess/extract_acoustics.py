@@ -53,6 +53,8 @@ def extract_acoustic_features(wave_file, pitch_extractor, arguments):
     if isinstance(wave_file, str):
         waveform, sample_rate = torchaudio.load(wave_file)
         waveform = torchaudio.functional.resample(waveform, orig_freq=sample_rate, new_freq=RE_SAMPLE_RATE)
+    else:
+        waveform = wave_file
 
     # transform to Mel-spectrogram
     if arguments.mel:
