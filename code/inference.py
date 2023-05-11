@@ -83,8 +83,8 @@ class InferenceDataset(Dataset):
 
         # load waveform
         waveform_list = []
-        for wav_path in wav_path_list:
-            waveform, sample_rate = torchaudio.load(wav_path)
+        for wav_name in wav_path_list:
+            waveform, sample_rate = torchaudio.load(os.path.join(input_dir, wav_name))
             waveform = torchaudio.functional.resample(waveform, orig_freq=sample_rate, new_freq=RE_SAMPLE_RATE)
             waveform_list.append(waveform)
         self.waveform_list = waveform_list
