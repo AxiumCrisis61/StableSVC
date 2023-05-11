@@ -288,12 +288,11 @@ if __name__ == '__main__':
                                      help='contents to output')
     arg_parser_settings.add_argument('--output-dir', type=str, default=OUTPUT_DIR,
                                      help='output directory')
-    arg_parser_settings.add_argument('--plot-interval', type=int, default=10,
-                                     help='intervals to plot the noise mel-spectrograms during reverse diffusion process')
-    arg_parser_settings.add_argument('--evaluation', type=bool, default=True,
-                                     help='whether to evaluate the results')
     arg_parser_settings.add_argument('--plot-nums', type=int, default=10,
                                      help='numbers of the plots in the denoising demonstration plot')
+    arg_parser_settings.add_argument('--evaluation', type=bool, default=True,
+                                     help='whether to evaluate the results')
+
 
     # models configuration
     arg_parser_model = ArgumentParser(description='Arguments for inference model')
