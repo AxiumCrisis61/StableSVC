@@ -245,7 +245,6 @@ class GaussianDiffusionSampler(nn.Module):
             if self.plot_nums > 0:
                 if time_step == plot_times[plot_index]:
                     plt.subplot(5, 2, plot_index + 1)
-                    print(x_t.shape)
                     plt.imshow(x_t[0].cpu().numpy())
                     plt.title('T={}'.format(plot_times[plot_index]), fontsize='small')
                     plt.axis('off')
