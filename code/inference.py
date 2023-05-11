@@ -38,24 +38,15 @@ def whisper_encoder(waveform_list):
     """
         Modified from preprocess.extract_whisper/whisper_encoder to adapt to waveform input
     """
-    # load Wisper Encoder
-    model = whisper.load_model(WHISPER_MODEL_SIZE)
-    if torch.cuda.is_available():
-        print("Using GPU...\n")
-        model = model.cuda()
-    else:
-        print("Using CPU...\n")
-    model = model.eval()
-
     batch = len(waveform_list)
-    batch_mel = torch.zeros((batch, 80, WHISPER_PADDING_LENGTH*100), dtype=torch.float, device=model.device)
+    batch_mel = torch.zeros((batch, 80, WHISPER_PADDING_LENGTH*100), dtype=torch.float, device=whisper_model.device)
 
     for i, audio in enumerate(waveform_list):
         audio = whisper.pad_or_trim(audio, length=WHISPER_PADDING_LENGTH*16000)
-        batch_mel[i] = whisper.log_mel_spectrogram(audio).to(model.device)
+        batch_mel[i] = whisper.log_mel_spectrogram(audio).to(whisper_model.device)
 
     with torch.no_grad():
-        features = model.embed_audio(batch_mel)
+        features = whisper_model.embed_audio(batch_mel)
         features = torch.transpose(features, 1, 2)
         features = F.avg_pool1d(features, kernel_size=WHISPER_MAPPED_RATE, stride=WHISPER_MAPPED_RATE)
 
@@ -140,10 +131,9 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=Tr
         input_dir: path containing source audios (stored as wav files)
         output_type: whether to output converted mel-spectrograms or audios (if yes, Hifi-GAN vocoder will be called)
         output_dir: directory to store converted output
-        plot_interval: intervals to plot the noise mel-spectrograms during reverse diffusion process
         evaluation: whether to evaluate the results
         plot_nums: numbers of the plots in the denoising demonstration plot
-        arguments: arguments for the model
+        arguments: arguments for the whisper_model
 
     Returns:
         Converted audios / mel-spectrograms
@@ -182,9 +172,9 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=Tr
             arguments.use_ema = 'ema'
             backbone = EMA(backbone)
         else:
-            arguments.use_ema = 'model'
+            arguments.use_ema = 'whisper_model'
         backbone.load_state_dict(load_checkpoint(os.path.join(CKPT_ACOUSTIC, arguments.framework, arguments.epoch),
-                                                  device)[arguments.use_ema])
+                                                 device)[arguments.use_ema])
         if arguments.use_ema == 'ema':
             shadow = deepcopy(backbone.shadow)
             del backbone
@@ -294,8 +284,8 @@ if __name__ == '__main__':
                                      help='whether to evaluate the results')
 
     # models configuration
-    arg_parser_model = ArgumentParser(description='Arguments for inference model')
-    arg_parser_model.add_argument('--batch-size', type=int, default=8, help='inference batch size')
+    arg_parser_model = ArgumentParser(description='Arguments for inference whisper_model')
+    arg_parser_model.add_argument('--batch-size', type=int, default=4, help='inference batch size')
     arg_parser_model.add_argument('--epoch', type=str, choices=('latest', 'best'), default='best')
     arg_parser_model.add_argument('--use-ema', type=bool, default=True)
     arg_parser_model.add_argument('--framework', type=str, choices=('simple_diffusion', ),
@@ -303,6 +293,15 @@ if __name__ == '__main__':
 
     settings = arg_parser_settings.parse_args()
     arguments_model = arg_parser_model.parse_args()
+
+    # load Wisper Encoder
+    whisper_model = whisper.load_model(WHISPER_MODEL_SIZE)
+    if torch.cuda.is_available():
+        print("Using GPU...\n")
+        whisper_model = whisper_model.cuda()
+    else:
+        print("Using CPU...\n")
+    whisper_model = whisper_model.eval()
 
     # inference
     inference(settings.input_dir,
