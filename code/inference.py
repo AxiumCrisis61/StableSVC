@@ -298,7 +298,8 @@ if __name__ == '__main__':
     arg_parser_model.add_argument('--batch-size', type=int, default=8, help='inference batch size')
     arg_parser_model.add_argument('--epoch', type=str, choices=('latest', 'best'), default='best')
     arg_parser_model.add_argument('--use-ema', type=bool, default=True)
-    arg_parser_model.add_argument('--framework', type=str, choices=('simple_diffusion', ))
+    arg_parser_model.add_argument('--framework', type=str, choices=('simple_diffusion', ),
+                                  help='conversion framework')
 
     settings = arg_parser_settings.parse_args()
     arguments_model = arg_parser_model.parse_args()
