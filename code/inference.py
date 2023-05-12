@@ -303,7 +303,7 @@ if __name__ == '__main__':
                                      help='input wav files directory')
     arg_parser.add_argument('--output-type', type=str, choices=('audio', 'mel', 'all'), default='all',
                                      help='contents to output')
-    arg_parseradd_argument('--output-dir', type=str, default=OUTPUT_DIR,
+    arg_parser.add_argument('--output-dir', type=str, default=OUTPUT_DIR,
                                      help='output directory')
     arg_parser.add_argument('--plot-nums', type=int, default=10,
                                      help='numbers of the plots in the denoising demonstration plot')
