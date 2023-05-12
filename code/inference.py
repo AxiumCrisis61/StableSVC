@@ -3,6 +3,7 @@ import json
 from copy import deepcopy
 from argparse import ArgumentParser
 import numpy as np
+import random
 from preprocess.extract_acoustics import extract_acoustic_features
 from model.Acoustic.ddpm import GaussianDiffusionSampler
 from model.Acoustic.conversion_model import DiffusionConverter
@@ -23,6 +24,14 @@ from config import CKPT_ACOUSTIC, CKPT_VOCODER, VOCODER_CONFIG_PATH, INFERENCE_D
 
 
 MAX_WAV_VALUE = 32768
+
+
+def setup_seed(seed):
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+    np.random.seed(seed)
+    random.seed(seed)
+    torch.backends.cudnn.deterministic = True
 
 
 def get_vocoder(vocoder_config_path, device):
@@ -284,10 +293,7 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=Tr
             fpc[i] = torch.dot(f0_origin[i], f0_converted[i]).numpy()
 
         # MCD evaluation
-        stft = torchaudio.transforms.Spectrogram(n_fft=STFT_N,
-                                                 win_length=STFT_WINDOW_SIZE,
-                                                 hop_length=STFT_HOP_SIZE,
-                                                 power=2)
+        stft = diffsptk.STFT(frame_length=STFT_WINDOW_SIZE, frame_period=STFT_HOP_SIZE, fft_length=STFT_N)
         mcep = diffsptk.MelCepstralAnalysis(cep_order=40, fft_length=STFT_N, alpha=0.58, n_iter=1)
         mcep_converted = mcep(stft(torch.Tensor(converted_audios))).numpy()
         mcep_origin = mcep(stft(torch.Tensor(original_audios))).numpy()
@@ -311,6 +317,7 @@ if __name__ == '__main__':
                                      help='whether to evaluate the results')
 
     # models configuration
+    arg_parser.add_argument('--seed', type=int, default=0, help='random seed')
     arg_parser.add_argument('--batch-size', type=int, default=4, help='inference batch size')
     arg_parser.add_argument('--epoch', type=str, choices=('latest', 'best'), default='best')
     arg_parser.add_argument('--use-ema', type=bool, default=True)
@@ -320,6 +327,7 @@ if __name__ == '__main__':
     arguments = arg_parser.parse_args()
 
     # inference
+    setup_seed(arguments.seed)
     inference(arguments.input_dir,
               arguments.output_type,
               arguments.output_dir,
