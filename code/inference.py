@@ -297,9 +297,9 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=Tr
         mcep = diffsptk.MelCepstralAnalysis(cep_order=40, fft_length=STFT_N, alpha=0.58, n_iter=1)
         mcep_converted = mcep(stft(torch.Tensor(converted_audios))).numpy()
         mcep_origin = mcep(stft(torch.Tensor(original_audios))).numpy()
-        mcd = np.linalg.norm(mcep_origin - mcep_converted, axis=1) * np.sqrt(2) * 10 / np.log(10)
-        print(mcep_converted.shape)
-        print(mcd.shape)
+        mcd = np.zeros(num_samples)
+        for i in range(num_samples):
+            mcd[i] = np.linalg.norm(mcep_origin[i] - mcep_converted[i]) * np.sqrt(2) * 10 / np.log(10)
 
         pd.DataFrame({'MCD': mcd, 'FPC': fpc}).to_csv(os.path.join(output_dir, 'evaluation_results.csv'))
 
