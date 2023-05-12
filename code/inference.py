@@ -286,11 +286,12 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=Tr
 
         # FPC evaluation
         crepe = diffsptk.Pitch(STFT_HOP_SIZE, RE_SAMPLE_RATE, out_format='f0', model='tiny')
-        f0_converted = crepe(torch.Tensor(converted_audios))
-        f0_origin = crepe(torch.Tensor(original_audios))
+        f0_converted = crepe(torch.Tensor(converted_audios)).numpy()
+        f0_origin = crepe(torch.Tensor(original_audios)).numpy()
         fpc = np.zeros(num_samples)
         for i in range(num_samples):
-            fpc[i] = torch.dot(f0_origin[i], f0_converted[i]).numpy()
+            fpc[i] = np.dot(f0_origin[i], f0_converted[i]) \
+                     / np.linalg.norm(f0_origin[i]) / np.linalg.norm(f0_converted[i])
 
         # MCD evaluation
         stft = diffsptk.STFT(frame_length=STFT_WINDOW_SIZE, frame_period=STFT_HOP_SIZE, fft_length=STFT_N)
