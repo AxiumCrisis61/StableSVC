@@ -298,6 +298,7 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=Tr
         mcep_converted = mcep(stft(torch.Tensor(converted_audios))).numpy()
         mcep_origin = mcep(stft(torch.Tensor(original_audios))).numpy()
         mcd = np.linalg.norm(mcep_origin - mcep_converted, axis=1) * np.sqrt(2) * 10 / np.log(10)
+        print(mcep_converted.shape)
         print(mcd.shape)
 
         pd.DataFrame({'MCD': mcd, 'FPC': fpc}).to_csv(os.path.join(output_dir, 'evaluation_results.csv'))
