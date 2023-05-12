@@ -311,7 +311,6 @@ if __name__ == '__main__':
                                      help='whether to evaluate the results')
 
     # models configuration
-    arg_parser = ArgumentParser(description='Arguments for inference whisper_model')
     arg_parser.add_argument('--batch-size', type=int, default=4, help='inference batch size')
     arg_parser.add_argument('--epoch', type=str, choices=('latest', 'best'), default='best')
     arg_parser.add_argument('--use-ema', type=bool, default=True)
