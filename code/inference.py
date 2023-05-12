@@ -298,33 +298,32 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=Tr
 
 if __name__ == '__main__':
     # inference settings
-    arg_parser_settings = ArgumentParser(description='Settings for inference')
-    arg_parser_settings.add_argument('--input-dir', type=str, default=INFERENCE_DATA_PATH,
+    arg_parser = ArgumentParser(description='Settings for inference')
+    arg_parser.add_argument('--input-dir', type=str, default=INFERENCE_DATA_PATH,
                                      help='input wav files directory')
-    arg_parser_settings.add_argument('--output-type', type=str, choices=('audio', 'mel', 'all'), default='all',
+    arg_parser.add_argument('--output-type', type=str, choices=('audio', 'mel', 'all'), default='all',
                                      help='contents to output')
-    arg_parser_settings.add_argument('--output-dir', type=str, default=OUTPUT_DIR,
+    arg_parseradd_argument('--output-dir', type=str, default=OUTPUT_DIR,
                                      help='output directory')
-    arg_parser_settings.add_argument('--plot-nums', type=int, default=10,
+    arg_parser.add_argument('--plot-nums', type=int, default=10,
                                      help='numbers of the plots in the denoising demonstration plot')
-    arg_parser_settings.add_argument('--evaluation', type=bool, default=True,
+    arg_parser.add_argument('--evaluation', type=bool, default=True,
                                      help='whether to evaluate the results')
 
     # models configuration
-    arg_parser_model = ArgumentParser(description='Arguments for inference whisper_model')
-    arg_parser_model.add_argument('--batch-size', type=int, default=4, help='inference batch size')
-    arg_parser_model.add_argument('--epoch', type=str, choices=('latest', 'best'), default='best')
-    arg_parser_model.add_argument('--use-ema', type=bool, default=True)
-    arg_parser_model.add_argument('--framework', type=str, choices=('simple_diffusion', ), default=FRAMEWORK,
+    arg_parser = ArgumentParser(description='Arguments for inference whisper_model')
+    arg_parser.add_argument('--batch-size', type=int, default=4, help='inference batch size')
+    arg_parser.add_argument('--epoch', type=str, choices=('latest', 'best'), default='best')
+    arg_parser.add_argument('--use-ema', type=bool, default=True)
+    arg_parser.add_argument('--framework', type=str, choices=('simple_diffusion', ), default=FRAMEWORK,
                                   help='conversion framework')
 
-    settings = arg_parser_settings.parse_args()
-    arguments_model = arg_parser_model.parse_args()
+    arguments = arg_parser.parse_args()
 
     # inference
-    inference(settings.input_dir,
-              settings.output_type,
-              settings.output_dir,
-              settings.evaluation,
-              settings.plot_nums,
-              arguments_model)
+    inference(arguments.input_dir,
+              arguments.output_type,
+              arguments.output_dir,
+              arguments.evaluation,
+              arguments.plot_nums,
+              arguments)
