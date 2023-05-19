@@ -1,0 +1,2361 @@
+Epoch: 93
+Steps : 2500005, Gen Loss Total : 64.135, Mel-Spec. Error : 1.108, s/b : 0.695
+Steps : 2500010, Gen Loss Total : 57.956, Mel-Spec. Error : 0.908, s/b : 0.699
+Steps : 2500015, Gen Loss Total : 63.527, Mel-Spec. Error : 0.977, s/b : 0.700
+Steps : 2500020, Gen Loss Total : 73.123, Mel-Spec. Error : 1.091, s/b : 0.696
+Steps : 2500025, Gen Loss Total : 66.247, Mel-Spec. Error : 1.023, s/b : 0.722
+Steps : 2500030, Gen Loss Total : 57.373, Mel-Spec. Error : 0.921, s/b : 0.703
+Steps : 2500035, Gen Loss Total : 61.840, Mel-Spec. Error : 0.918, s/b : 0.696
+Steps : 2500040, Gen Loss Total : 59.223, Mel-Spec. Error : 0.825, s/b : 0.697
+Steps : 2500045, Gen Loss Total : 55.497, Mel-Spec. Error : 0.783, s/b : 0.727
+Steps : 2500050, Gen Loss Total : 60.339, Mel-Spec. Error : 0.870, s/b : 0.693
+Steps : 2500055, Gen Loss Total : 56.540, Mel-Spec. Error : 0.811, s/b : 0.701
+Steps : 2500060, Gen Loss Total : 50.514, Mel-Spec. Error : 0.724, s/b : 0.707
+Steps : 2500065, Gen Loss Total : 56.646, Mel-Spec. Error : 0.818, s/b : 0.708
+Steps : 2500070, Gen Loss Total : 51.361, Mel-Spec. Error : 0.749, s/b : 0.705
+Steps : 2500075, Gen Loss Total : 56.287, Mel-Spec. Error : 0.802, s/b : 0.699
+Steps : 2500080, Gen Loss Total : 49.974, Mel-Spec. Error : 0.695, s/b : 0.698
+Steps : 2500085, Gen Loss Total : 55.085, Mel-Spec. Error : 0.758, s/b : 0.699
+Steps : 2500090, Gen Loss Total : 41.858, Mel-Spec. Error : 0.581, s/b : 0.697
+Steps : 2500095, Gen Loss Total : 51.050, Mel-Spec. Error : 0.717, s/b : 0.702
+Steps : 2500100, Gen Loss Total : 45.163, Mel-Spec. Error : 0.628, s/b : 0.700
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02500100
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02500100
+Complete.
+
+Epoch: 93
+Steps : 2500105, Gen Loss Total : 47.210, Mel-Spec. Error : 0.644, s/b : 0.704
+Steps : 2500110, Gen Loss Total : 42.263, Mel-Spec. Error : 0.593, s/b : 0.711
+Steps : 2500115, Gen Loss Total : 45.732, Mel-Spec. Error : 0.636, s/b : 0.721
+Steps : 2500120, Gen Loss Total : 51.647, Mel-Spec. Error : 0.705, s/b : 0.722
+Steps : 2500125, Gen Loss Total : 50.252, Mel-Spec. Error : 0.699, s/b : 0.706
+Steps : 2500130, Gen Loss Total : 47.006, Mel-Spec. Error : 0.650, s/b : 0.717
+Steps : 2500135, Gen Loss Total : 45.647, Mel-Spec. Error : 0.641, s/b : 0.712
+Steps : 2500140, Gen Loss Total : 41.910, Mel-Spec. Error : 0.576, s/b : 0.717
+Steps : 2500145, Gen Loss Total : 41.191, Mel-Spec. Error : 0.566, s/b : 0.719
+Steps : 2500150, Gen Loss Total : 45.870, Mel-Spec. Error : 0.636, s/b : 0.716
+Steps : 2500155, Gen Loss Total : 44.409, Mel-Spec. Error : 0.588, s/b : 0.718
+Steps : 2500160, Gen Loss Total : 41.196, Mel-Spec. Error : 0.547, s/b : 0.715
+Steps : 2500165, Gen Loss Total : 44.742, Mel-Spec. Error : 0.619, s/b : 0.710
+Steps : 2500170, Gen Loss Total : 43.551, Mel-Spec. Error : 0.592, s/b : 0.713
+Steps : 2500175, Gen Loss Total : 43.317, Mel-Spec. Error : 0.590, s/b : 0.718
+Steps : 2500180, Gen Loss Total : 41.311, Mel-Spec. Error : 0.550, s/b : 0.710
+Steps : 2500185, Gen Loss Total : 45.849, Mel-Spec. Error : 0.605, s/b : 0.720
+Steps : 2500190, Gen Loss Total : 33.687, Mel-Spec. Error : 0.451, s/b : 0.731
+Steps : 2500195, Gen Loss Total : 44.803, Mel-Spec. Error : 0.594, s/b : 0.714
+Steps : 2500200, Gen Loss Total : 37.410, Mel-Spec. Error : 0.497, s/b : 0.713
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02500200
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02500200
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2500205, Gen Loss Total : 47.006, Mel-Spec. Error : 0.622, s/b : 0.718
+Steps : 2500210, Gen Loss Total : 43.203, Mel-Spec. Error : 0.574, s/b : 0.706
+Steps : 2500215, Gen Loss Total : 40.405, Mel-Spec. Error : 0.531, s/b : 0.706
+Steps : 2500220, Gen Loss Total : 41.920, Mel-Spec. Error : 0.580, s/b : 0.709
+Steps : 2500225, Gen Loss Total : 45.084, Mel-Spec. Error : 0.577, s/b : 0.710
+Steps : 2500230, Gen Loss Total : 48.044, Mel-Spec. Error : 0.617, s/b : 0.705
+Steps : 2500235, Gen Loss Total : 42.965, Mel-Spec. Error : 0.566, s/b : 0.709
+Steps : 2500240, Gen Loss Total : 40.505, Mel-Spec. Error : 0.510, s/b : 0.700
+Steps : 2500245, Gen Loss Total : 48.384, Mel-Spec. Error : 0.635, s/b : 0.708
+Steps : 2500250, Gen Loss Total : 44.827, Mel-Spec. Error : 0.584, s/b : 0.717
+Steps : 2500255, Gen Loss Total : 40.774, Mel-Spec. Error : 0.516, s/b : 0.721
+Steps : 2500260, Gen Loss Total : 43.747, Mel-Spec. Error : 0.562, s/b : 0.716
+Steps : 2500265, Gen Loss Total : 44.651, Mel-Spec. Error : 0.565, s/b : 0.717
+Steps : 2500270, Gen Loss Total : 46.575, Mel-Spec. Error : 0.583, s/b : 0.710
+Steps : 2500275, Gen Loss Total : 42.371, Mel-Spec. Error : 0.540, s/b : 0.710
+Steps : 2500280, Gen Loss Total : 39.701, Mel-Spec. Error : 0.529, s/b : 0.704
+Steps : 2500285, Gen Loss Total : 43.089, Mel-Spec. Error : 0.545, s/b : 0.704
+Steps : 2500290, Gen Loss Total : 41.083, Mel-Spec. Error : 0.530, s/b : 0.709
+Steps : 2500295, Gen Loss Total : 41.874, Mel-Spec. Error : 0.556, s/b : 0.712
+Steps : 2500300, Gen Loss Total : 38.890, Mel-Spec. Error : 0.486, s/b : 0.710
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02500300
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02500300
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2500305, Gen Loss Total : 44.608, Mel-Spec. Error : 0.571, s/b : 0.735
+Steps : 2500310, Gen Loss Total : 43.333, Mel-Spec. Error : 0.543, s/b : 0.709
+Steps : 2500315, Gen Loss Total : 46.578, Mel-Spec. Error : 0.590, s/b : 0.716
+Steps : 2500320, Gen Loss Total : 44.394, Mel-Spec. Error : 0.571, s/b : 0.705
+Time taken for epoch 93 is 680 sec
+
+Epoch: 94
+Steps : 2500325, Gen Loss Total : 38.983, Mel-Spec. Error : 0.490, s/b : 0.719
+Steps : 2500330, Gen Loss Total : 42.162, Mel-Spec. Error : 0.541, s/b : 0.719
+Steps : 2500335, Gen Loss Total : 40.771, Mel-Spec. Error : 0.518, s/b : 0.720
+Steps : 2500340, Gen Loss Total : 42.705, Mel-Spec. Error : 0.528, s/b : 0.712
+Steps : 2500345, Gen Loss Total : 46.138, Mel-Spec. Error : 0.582, s/b : 0.715
+Steps : 2500350, Gen Loss Total : 37.404, Mel-Spec. Error : 0.468, s/b : 0.705
+Steps : 2500355, Gen Loss Total : 36.977, Mel-Spec. Error : 0.476, s/b : 0.715
+Steps : 2500360, Gen Loss Total : 42.864, Mel-Spec. Error : 0.534, s/b : 0.705
+Steps : 2500365, Gen Loss Total : 39.706, Mel-Spec. Error : 0.522, s/b : 0.715
+Steps : 2500370, Gen Loss Total : 44.550, Mel-Spec. Error : 0.556, s/b : 0.723
+Steps : 2500375, Gen Loss Total : 43.013, Mel-Spec. Error : 0.526, s/b : 0.729
+Steps : 2500380, Gen Loss Total : 38.985, Mel-Spec. Error : 0.515, s/b : 0.717
+Steps : 2500385, Gen Loss Total : 36.233, Mel-Spec. Error : 0.450, s/b : 0.714
+Steps : 2500390, Gen Loss Total : 45.298, Mel-Spec. Error : 0.564, s/b : 0.722
+Steps : 2500395, Gen Loss Total : 38.777, Mel-Spec. Error : 0.477, s/b : 0.739
+Steps : 2500400, Gen Loss Total : 39.295, Mel-Spec. Error : 0.497, s/b : 0.723
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02500400
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02500400
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2500405, Gen Loss Total : 43.626, Mel-Spec. Error : 0.522, s/b : 0.722
+Steps : 2500410, Gen Loss Total : 39.242, Mel-Spec. Error : 0.489, s/b : 0.726
+Steps : 2500415, Gen Loss Total : 39.154, Mel-Spec. Error : 0.523, s/b : 0.715
+Steps : 2500420, Gen Loss Total : 39.731, Mel-Spec. Error : 0.518, s/b : 0.717
+Steps : 2500425, Gen Loss Total : 32.174, Mel-Spec. Error : 0.440, s/b : 0.709
+Steps : 2500430, Gen Loss Total : 44.020, Mel-Spec. Error : 0.545, s/b : 0.716
+Steps : 2500435, Gen Loss Total : 37.416, Mel-Spec. Error : 0.476, s/b : 0.720
+Steps : 2500440, Gen Loss Total : 37.667, Mel-Spec. Error : 0.460, s/b : 0.725
+Steps : 2500445, Gen Loss Total : 38.104, Mel-Spec. Error : 0.488, s/b : 0.724
+Steps : 2500450, Gen Loss Total : 39.877, Mel-Spec. Error : 0.504, s/b : 0.721
+Steps : 2500455, Gen Loss Total : 43.087, Mel-Spec. Error : 0.541, s/b : 0.725
+Steps : 2500460, Gen Loss Total : 40.432, Mel-Spec. Error : 0.510, s/b : 0.723
+Steps : 2500465, Gen Loss Total : 40.473, Mel-Spec. Error : 0.493, s/b : 0.717
+Steps : 2500470, Gen Loss Total : 37.351, Mel-Spec. Error : 0.472, s/b : 0.715
+Steps : 2500475, Gen Loss Total : 39.493, Mel-Spec. Error : 0.490, s/b : 0.728
+Steps : 2500480, Gen Loss Total : 40.656, Mel-Spec. Error : 0.516, s/b : 0.722
+Steps : 2500485, Gen Loss Total : 39.537, Mel-Spec. Error : 0.506, s/b : 0.735
+Steps : 2500490, Gen Loss Total : 33.660, Mel-Spec. Error : 0.444, s/b : 0.715
+Steps : 2500495, Gen Loss Total : 42.447, Mel-Spec. Error : 0.520, s/b : 0.713
+Steps : 2500500, Gen Loss Total : 36.422, Mel-Spec. Error : 0.454, s/b : 0.719
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02500500
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02500500
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2500505, Gen Loss Total : 41.438, Mel-Spec. Error : 0.511, s/b : 0.718
+Steps : 2500510, Gen Loss Total : 36.000, Mel-Spec. Error : 0.441, s/b : 0.714
+Steps : 2500515, Gen Loss Total : 39.036, Mel-Spec. Error : 0.486, s/b : 0.707
+Steps : 2500520, Gen Loss Total : 40.331, Mel-Spec. Error : 0.496, s/b : 0.723
+Steps : 2500525, Gen Loss Total : 41.223, Mel-Spec. Error : 0.512, s/b : 0.713
+Steps : 2500530, Gen Loss Total : 39.297, Mel-Spec. Error : 0.491, s/b : 0.727
+Steps : 2500535, Gen Loss Total : 38.933, Mel-Spec. Error : 0.489, s/b : 0.719
+Steps : 2500540, Gen Loss Total : 40.858, Mel-Spec. Error : 0.508, s/b : 0.717
+Time taken for epoch 94 is 192 sec
+
+Epoch: 95
+Steps : 2500545, Gen Loss Total : 37.633, Mel-Spec. Error : 0.452, s/b : 0.732
+Steps : 2500550, Gen Loss Total : 32.376, Mel-Spec. Error : 0.391, s/b : 0.741
+Steps : 2500555, Gen Loss Total : 38.305, Mel-Spec. Error : 0.469, s/b : 0.730
+Steps : 2500560, Gen Loss Total : 36.295, Mel-Spec. Error : 0.453, s/b : 0.709
+Steps : 2500565, Gen Loss Total : 32.336, Mel-Spec. Error : 0.410, s/b : 0.715
+Steps : 2500570, Gen Loss Total : 43.172, Mel-Spec. Error : 0.542, s/b : 0.712
+Steps : 2500575, Gen Loss Total : 40.020, Mel-Spec. Error : 0.494, s/b : 0.717
+Steps : 2500580, Gen Loss Total : 41.613, Mel-Spec. Error : 0.505, s/b : 0.720
+Steps : 2500585, Gen Loss Total : 38.526, Mel-Spec. Error : 0.443, s/b : 0.713
+Steps : 2500590, Gen Loss Total : 37.823, Mel-Spec. Error : 0.471, s/b : 0.717
+Steps : 2500595, Gen Loss Total : 42.519, Mel-Spec. Error : 0.504, s/b : 0.714
+Steps : 2500600, Gen Loss Total : 40.644, Mel-Spec. Error : 0.494, s/b : 0.727
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02500600
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02500600
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2500605, Gen Loss Total : 39.976, Mel-Spec. Error : 0.477, s/b : 0.727
+Steps : 2500610, Gen Loss Total : 41.500, Mel-Spec. Error : 0.515, s/b : 0.719
+Steps : 2500615, Gen Loss Total : 37.552, Mel-Spec. Error : 0.443, s/b : 0.728
+Steps : 2500620, Gen Loss Total : 35.003, Mel-Spec. Error : 0.439, s/b : 0.710
+Steps : 2500625, Gen Loss Total : 37.096, Mel-Spec. Error : 0.446, s/b : 0.724
+Steps : 2500630, Gen Loss Total : 39.752, Mel-Spec. Error : 0.505, s/b : 0.716
+Steps : 2500635, Gen Loss Total : 34.974, Mel-Spec. Error : 0.443, s/b : 0.739
+Steps : 2500640, Gen Loss Total : 39.240, Mel-Spec. Error : 0.487, s/b : 0.710
+Steps : 2500645, Gen Loss Total : 38.790, Mel-Spec. Error : 0.484, s/b : 0.720
+Steps : 2500650, Gen Loss Total : 38.401, Mel-Spec. Error : 0.469, s/b : 0.724
+Steps : 2500655, Gen Loss Total : 38.101, Mel-Spec. Error : 0.476, s/b : 0.727
+Steps : 2500660, Gen Loss Total : 41.245, Mel-Spec. Error : 0.485, s/b : 0.722
+Steps : 2500665, Gen Loss Total : 39.525, Mel-Spec. Error : 0.485, s/b : 0.726
+Steps : 2500670, Gen Loss Total : 36.355, Mel-Spec. Error : 0.438, s/b : 0.717
+Steps : 2500675, Gen Loss Total : 41.267, Mel-Spec. Error : 0.497, s/b : 0.722
+Steps : 2500680, Gen Loss Total : 31.546, Mel-Spec. Error : 0.385, s/b : 0.719
+Steps : 2500685, Gen Loss Total : 39.010, Mel-Spec. Error : 0.479, s/b : 0.715
+Steps : 2500690, Gen Loss Total : 40.459, Mel-Spec. Error : 0.499, s/b : 0.713
+Steps : 2500695, Gen Loss Total : 36.334, Mel-Spec. Error : 0.457, s/b : 0.720
+Steps : 2500700, Gen Loss Total : 32.805, Mel-Spec. Error : 0.407, s/b : 0.726
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02500700
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02500700
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2500705, Gen Loss Total : 41.484, Mel-Spec. Error : 0.517, s/b : 0.735
+Steps : 2500710, Gen Loss Total : 40.306, Mel-Spec. Error : 0.476, s/b : 0.716
+Steps : 2500715, Gen Loss Total : 38.869, Mel-Spec. Error : 0.457, s/b : 0.720
+Steps : 2500720, Gen Loss Total : 41.183, Mel-Spec. Error : 0.501, s/b : 0.721
+Steps : 2500725, Gen Loss Total : 40.996, Mel-Spec. Error : 0.499, s/b : 0.734
+Steps : 2500730, Gen Loss Total : 37.147, Mel-Spec. Error : 0.451, s/b : 0.718
+Steps : 2500735, Gen Loss Total : 37.681, Mel-Spec. Error : 0.469, s/b : 0.731
+Steps : 2500740, Gen Loss Total : 35.329, Mel-Spec. Error : 0.443, s/b : 0.727
+Steps : 2500745, Gen Loss Total : 34.736, Mel-Spec. Error : 0.430, s/b : 0.729
+Steps : 2500750, Gen Loss Total : 38.949, Mel-Spec. Error : 0.455, s/b : 0.720
+Steps : 2500755, Gen Loss Total : 39.499, Mel-Spec. Error : 0.462, s/b : 0.714
+Steps : 2500760, Gen Loss Total : 35.703, Mel-Spec. Error : 0.441, s/b : 0.722
+Time taken for epoch 95 is 192 sec
+
+Epoch: 96
+Steps : 2500765, Gen Loss Total : 34.561, Mel-Spec. Error : 0.429, s/b : 0.720
+Steps : 2500770, Gen Loss Total : 37.298, Mel-Spec. Error : 0.475, s/b : 0.711
+Steps : 2500775, Gen Loss Total : 38.801, Mel-Spec. Error : 0.467, s/b : 0.721
+Steps : 2500780, Gen Loss Total : 38.492, Mel-Spec. Error : 0.471, s/b : 0.712
+Steps : 2500785, Gen Loss Total : 34.124, Mel-Spec. Error : 0.415, s/b : 0.715
+Steps : 2500790, Gen Loss Total : 42.056, Mel-Spec. Error : 0.491, s/b : 0.720
+Steps : 2500795, Gen Loss Total : 39.209, Mel-Spec. Error : 0.459, s/b : 0.720
+Steps : 2500800, Gen Loss Total : 42.373, Mel-Spec. Error : 0.481, s/b : 0.709
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02500800
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02500800
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2500805, Gen Loss Total : 35.557, Mel-Spec. Error : 0.430, s/b : 0.728
+Steps : 2500810, Gen Loss Total : 40.704, Mel-Spec. Error : 0.475, s/b : 0.719
+Steps : 2500815, Gen Loss Total : 36.832, Mel-Spec. Error : 0.439, s/b : 0.727
+Steps : 2500820, Gen Loss Total : 35.844, Mel-Spec. Error : 0.439, s/b : 0.735
+Steps : 2500825, Gen Loss Total : 36.978, Mel-Spec. Error : 0.449, s/b : 0.715
+Steps : 2500830, Gen Loss Total : 36.776, Mel-Spec. Error : 0.438, s/b : 0.727
+Steps : 2500835, Gen Loss Total : 35.508, Mel-Spec. Error : 0.438, s/b : 0.722
+Steps : 2500840, Gen Loss Total : 35.078, Mel-Spec. Error : 0.425, s/b : 0.737
+Steps : 2500845, Gen Loss Total : 35.876, Mel-Spec. Error : 0.433, s/b : 0.712
+Steps : 2500850, Gen Loss Total : 36.071, Mel-Spec. Error : 0.445, s/b : 0.719
+Steps : 2500855, Gen Loss Total : 41.337, Mel-Spec. Error : 0.488, s/b : 0.722
+Steps : 2500860, Gen Loss Total : 41.372, Mel-Spec. Error : 0.492, s/b : 0.724
+Steps : 2500865, Gen Loss Total : 36.591, Mel-Spec. Error : 0.437, s/b : 0.743
+Steps : 2500870, Gen Loss Total : 31.056, Mel-Spec. Error : 0.378, s/b : 0.730
+Steps : 2500875, Gen Loss Total : 35.475, Mel-Spec. Error : 0.423, s/b : 0.715
+Steps : 2500880, Gen Loss Total : 38.061, Mel-Spec. Error : 0.441, s/b : 0.723
+Steps : 2500885, Gen Loss Total : 38.703, Mel-Spec. Error : 0.473, s/b : 0.724
+Steps : 2500890, Gen Loss Total : 34.583, Mel-Spec. Error : 0.421, s/b : 0.717
+Steps : 2500895, Gen Loss Total : 37.170, Mel-Spec. Error : 0.451, s/b : 0.725
+Steps : 2500900, Gen Loss Total : 35.144, Mel-Spec. Error : 0.420, s/b : 0.713
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02500900
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02500900
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2500905, Gen Loss Total : 39.164, Mel-Spec. Error : 0.470, s/b : 0.719
+Steps : 2500910, Gen Loss Total : 36.381, Mel-Spec. Error : 0.441, s/b : 0.725
+Steps : 2500915, Gen Loss Total : 33.741, Mel-Spec. Error : 0.407, s/b : 0.733
+Steps : 2500920, Gen Loss Total : 39.018, Mel-Spec. Error : 0.462, s/b : 0.719
+Steps : 2500925, Gen Loss Total : 34.070, Mel-Spec. Error : 0.418, s/b : 0.728
+Steps : 2500930, Gen Loss Total : 38.029, Mel-Spec. Error : 0.447, s/b : 0.715
+Steps : 2500935, Gen Loss Total : 39.831, Mel-Spec. Error : 0.466, s/b : 0.723
+Steps : 2500940, Gen Loss Total : 38.125, Mel-Spec. Error : 0.467, s/b : 0.726
+Steps : 2500945, Gen Loss Total : 38.656, Mel-Spec. Error : 0.451, s/b : 0.726
+Steps : 2500950, Gen Loss Total : 37.894, Mel-Spec. Error : 0.463, s/b : 0.720
+Steps : 2500955, Gen Loss Total : 32.496, Mel-Spec. Error : 0.395, s/b : 0.718
+Steps : 2500960, Gen Loss Total : 39.070, Mel-Spec. Error : 0.461, s/b : 0.731
+Steps : 2500965, Gen Loss Total : 40.195, Mel-Spec. Error : 0.470, s/b : 0.723
+Steps : 2500970, Gen Loss Total : 33.027, Mel-Spec. Error : 0.418, s/b : 0.709
+Steps : 2500975, Gen Loss Total : 32.699, Mel-Spec. Error : 0.406, s/b : 0.707
+Steps : 2500980, Gen Loss Total : 34.327, Mel-Spec. Error : 0.420, s/b : 0.708
+Time taken for epoch 96 is 193 sec
+
+Epoch: 97
+Steps : 2500985, Gen Loss Total : 36.362, Mel-Spec. Error : 0.456, s/b : 0.752
+Steps : 2500990, Gen Loss Total : 40.662, Mel-Spec. Error : 0.482, s/b : 0.718
+Steps : 2500995, Gen Loss Total : 32.359, Mel-Spec. Error : 0.406, s/b : 0.729
+Steps : 2501000, Gen Loss Total : 37.293, Mel-Spec. Error : 0.458, s/b : 0.704
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02501000
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02501000
+Complete.
+Steps : 2501005, Gen Loss Total : 26.872, Mel-Spec. Error : 0.335, s/b : 0.730
+Steps : 2501010, Gen Loss Total : 37.946, Mel-Spec. Error : 0.473, s/b : 0.726
+Steps : 2501015, Gen Loss Total : 34.946, Mel-Spec. Error : 0.416, s/b : 0.724
+Steps : 2501020, Gen Loss Total : 39.470, Mel-Spec. Error : 0.480, s/b : 0.720
+Steps : 2501025, Gen Loss Total : 34.299, Mel-Spec. Error : 0.421, s/b : 0.711
+Steps : 2501030, Gen Loss Total : 31.255, Mel-Spec. Error : 0.383, s/b : 0.724
+Steps : 2501035, Gen Loss Total : 33.513, Mel-Spec. Error : 0.414, s/b : 0.718
+Steps : 2501040, Gen Loss Total : 37.198, Mel-Spec. Error : 0.450, s/b : 0.724
+Steps : 2501045, Gen Loss Total : 35.642, Mel-Spec. Error : 0.403, s/b : 0.710
+Steps : 2501050, Gen Loss Total : 41.176, Mel-Spec. Error : 0.500, s/b : 0.717
+Steps : 2501055, Gen Loss Total : 32.914, Mel-Spec. Error : 0.400, s/b : 0.714
+Steps : 2501060, Gen Loss Total : 37.054, Mel-Spec. Error : 0.461, s/b : 0.724
+Steps : 2501065, Gen Loss Total : 43.633, Mel-Spec. Error : 0.516, s/b : 0.712
+Steps : 2501070, Gen Loss Total : 30.403, Mel-Spec. Error : 0.359, s/b : 0.704
+Steps : 2501075, Gen Loss Total : 41.544, Mel-Spec. Error : 0.488, s/b : 0.713
+Steps : 2501080, Gen Loss Total : 33.059, Mel-Spec. Error : 0.402, s/b : 0.722
+Steps : 2501085, Gen Loss Total : 39.884, Mel-Spec. Error : 0.458, s/b : 0.703
+Steps : 2501090, Gen Loss Total : 32.671, Mel-Spec. Error : 0.394, s/b : 0.732
+Steps : 2501095, Gen Loss Total : 35.308, Mel-Spec. Error : 0.428, s/b : 0.709
+Steps : 2501100, Gen Loss Total : 37.856, Mel-Spec. Error : 0.450, s/b : 0.714
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02501100
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02501100
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2501105, Gen Loss Total : 35.947, Mel-Spec. Error : 0.442, s/b : 0.725
+Steps : 2501110, Gen Loss Total : 34.811, Mel-Spec. Error : 0.444, s/b : 0.713
+Steps : 2501115, Gen Loss Total : 35.344, Mel-Spec. Error : 0.424, s/b : 0.714
+Steps : 2501120, Gen Loss Total : 32.641, Mel-Spec. Error : 0.410, s/b : 0.709
+Steps : 2501125, Gen Loss Total : 33.544, Mel-Spec. Error : 0.412, s/b : 0.736
+Steps : 2501130, Gen Loss Total : 31.539, Mel-Spec. Error : 0.385, s/b : 0.714
+Steps : 2501135, Gen Loss Total : 33.058, Mel-Spec. Error : 0.406, s/b : 0.716
+Steps : 2501140, Gen Loss Total : 34.567, Mel-Spec. Error : 0.412, s/b : 0.702
+Steps : 2501145, Gen Loss Total : 33.075, Mel-Spec. Error : 0.395, s/b : 0.719
+Steps : 2501150, Gen Loss Total : 40.288, Mel-Spec. Error : 0.467, s/b : 0.719
+Steps : 2501155, Gen Loss Total : 39.028, Mel-Spec. Error : 0.453, s/b : 0.702
+Steps : 2501160, Gen Loss Total : 36.491, Mel-Spec. Error : 0.429, s/b : 0.740
+Steps : 2501165, Gen Loss Total : 36.365, Mel-Spec. Error : 0.431, s/b : 0.708
+Steps : 2501170, Gen Loss Total : 30.838, Mel-Spec. Error : 0.369, s/b : 0.717
+Steps : 2501175, Gen Loss Total : 36.123, Mel-Spec. Error : 0.420, s/b : 0.711
+Steps : 2501180, Gen Loss Total : 30.646, Mel-Spec. Error : 0.369, s/b : 0.720
+Steps : 2501185, Gen Loss Total : 34.118, Mel-Spec. Error : 0.411, s/b : 0.712
+Steps : 2501190, Gen Loss Total : 35.977, Mel-Spec. Error : 0.422, s/b : 0.709
+Steps : 2501195, Gen Loss Total : 32.028, Mel-Spec. Error : 0.394, s/b : 0.717
+Steps : 2501200, Gen Loss Total : 35.983, Mel-Spec. Error : 0.432, s/b : 0.712
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02501200
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02501200
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2501205, Gen Loss Total : 30.228, Mel-Spec. Error : 0.395, s/b : 0.706
+Time taken for epoch 97 is 202 sec
+
+Epoch: 98
+Steps : 2501210, Gen Loss Total : 34.668, Mel-Spec. Error : 0.436, s/b : 0.748
+Steps : 2501215, Gen Loss Total : 31.676, Mel-Spec. Error : 0.384, s/b : 0.722
+Steps : 2501220, Gen Loss Total : 30.669, Mel-Spec. Error : 0.393, s/b : 0.714
+Steps : 2501225, Gen Loss Total : 35.522, Mel-Spec. Error : 0.439, s/b : 0.742
+Steps : 2501230, Gen Loss Total : 36.650, Mel-Spec. Error : 0.461, s/b : 0.713
+Steps : 2501235, Gen Loss Total : 33.896, Mel-Spec. Error : 0.431, s/b : 0.724
+Steps : 2501240, Gen Loss Total : 35.153, Mel-Spec. Error : 0.436, s/b : 0.717
+Steps : 2501245, Gen Loss Total : 31.737, Mel-Spec. Error : 0.394, s/b : 0.728
+Steps : 2501250, Gen Loss Total : 34.446, Mel-Spec. Error : 0.414, s/b : 0.718
+Steps : 2501255, Gen Loss Total : 32.384, Mel-Spec. Error : 0.413, s/b : 0.719
+Steps : 2501260, Gen Loss Total : 33.516, Mel-Spec. Error : 0.405, s/b : 0.714
+Steps : 2501265, Gen Loss Total : 34.157, Mel-Spec. Error : 0.423, s/b : 0.719
+Steps : 2501270, Gen Loss Total : 33.858, Mel-Spec. Error : 0.420, s/b : 0.711
+Steps : 2501275, Gen Loss Total : 35.511, Mel-Spec. Error : 0.418, s/b : 0.722
+Steps : 2501280, Gen Loss Total : 30.457, Mel-Spec. Error : 0.396, s/b : 0.713
+Steps : 2501285, Gen Loss Total : 36.784, Mel-Spec. Error : 0.458, s/b : 0.726
+Steps : 2501290, Gen Loss Total : 35.391, Mel-Spec. Error : 0.444, s/b : 0.707
+Steps : 2501295, Gen Loss Total : 34.022, Mel-Spec. Error : 0.424, s/b : 0.716
+Steps : 2501300, Gen Loss Total : 34.050, Mel-Spec. Error : 0.417, s/b : 0.718
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02501300
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02501300
+Complete.
+Steps : 2501305, Gen Loss Total : 29.058, Mel-Spec. Error : 0.364, s/b : 0.715
+Steps : 2501310, Gen Loss Total : 33.999, Mel-Spec. Error : 0.425, s/b : 0.720
+Steps : 2501315, Gen Loss Total : 34.924, Mel-Spec. Error : 0.436, s/b : 0.724
+Steps : 2501320, Gen Loss Total : 30.813, Mel-Spec. Error : 0.374, s/b : 0.715
+Steps : 2501325, Gen Loss Total : 32.335, Mel-Spec. Error : 0.405, s/b : 0.708
+Steps : 2501330, Gen Loss Total : 36.671, Mel-Spec. Error : 0.452, s/b : 0.722
+Steps : 2501335, Gen Loss Total : 37.334, Mel-Spec. Error : 0.440, s/b : 0.722
+Steps : 2501340, Gen Loss Total : 33.891, Mel-Spec. Error : 0.416, s/b : 0.717
+Steps : 2501345, Gen Loss Total : 33.277, Mel-Spec. Error : 0.398, s/b : 0.706
+Steps : 2501350, Gen Loss Total : 34.855, Mel-Spec. Error : 0.428, s/b : 0.714
+Steps : 2501355, Gen Loss Total : 36.999, Mel-Spec. Error : 0.448, s/b : 0.728
+Steps : 2501360, Gen Loss Total : 34.860, Mel-Spec. Error : 0.420, s/b : 0.732
+Steps : 2501365, Gen Loss Total : 34.853, Mel-Spec. Error : 0.417, s/b : 0.722
+Steps : 2501370, Gen Loss Total : 36.823, Mel-Spec. Error : 0.444, s/b : 0.716
+Steps : 2501375, Gen Loss Total : 37.500, Mel-Spec. Error : 0.446, s/b : 0.716
+Steps : 2501380, Gen Loss Total : 33.066, Mel-Spec. Error : 0.407, s/b : 0.713
+Steps : 2501385, Gen Loss Total : 31.488, Mel-Spec. Error : 0.387, s/b : 0.721
+Steps : 2501390, Gen Loss Total : 34.609, Mel-Spec. Error : 0.428, s/b : 0.729
+Steps : 2501395, Gen Loss Total : 31.035, Mel-Spec. Error : 0.384, s/b : 0.713
+Steps : 2501400, Gen Loss Total : 35.033, Mel-Spec. Error : 0.431, s/b : 0.713
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02501400
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02501400
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2501405, Gen Loss Total : 34.182, Mel-Spec. Error : 0.420, s/b : 0.724
+Steps : 2501410, Gen Loss Total : 31.872, Mel-Spec. Error : 0.402, s/b : 0.725
+Steps : 2501415, Gen Loss Total : 37.401, Mel-Spec. Error : 0.455, s/b : 0.719
+Steps : 2501420, Gen Loss Total : 29.764, Mel-Spec. Error : 0.367, s/b : 0.724
+Steps : 2501425, Gen Loss Total : 34.944, Mel-Spec. Error : 0.411, s/b : 0.716
+Time taken for epoch 98 is 188 sec
+
+Epoch: 99
+Steps : 2501430, Gen Loss Total : 32.219, Mel-Spec. Error : 0.387, s/b : 0.718
+Steps : 2501435, Gen Loss Total : 36.538, Mel-Spec. Error : 0.449, s/b : 0.720
+Steps : 2501440, Gen Loss Total : 29.395, Mel-Spec. Error : 0.367, s/b : 0.729
+Steps : 2501445, Gen Loss Total : 36.042, Mel-Spec. Error : 0.428, s/b : 0.716
+Steps : 2501450, Gen Loss Total : 30.097, Mel-Spec. Error : 0.365, s/b : 0.727
+Steps : 2501455, Gen Loss Total : 32.351, Mel-Spec. Error : 0.408, s/b : 0.719
+Steps : 2501460, Gen Loss Total : 31.011, Mel-Spec. Error : 0.401, s/b : 0.723
+Steps : 2501465, Gen Loss Total : 34.899, Mel-Spec. Error : 0.442, s/b : 0.714
+Steps : 2501470, Gen Loss Total : 33.292, Mel-Spec. Error : 0.415, s/b : 0.718
+Steps : 2501475, Gen Loss Total : 35.795, Mel-Spec. Error : 0.432, s/b : 0.725
+Steps : 2501480, Gen Loss Total : 34.516, Mel-Spec. Error : 0.418, s/b : 0.714
+Steps : 2501485, Gen Loss Total : 35.588, Mel-Spec. Error : 0.432, s/b : 0.715
+Steps : 2501490, Gen Loss Total : 33.641, Mel-Spec. Error : 0.409, s/b : 0.719
+Steps : 2501495, Gen Loss Total : 36.140, Mel-Spec. Error : 0.444, s/b : 0.723
+Steps : 2501500, Gen Loss Total : 32.058, Mel-Spec. Error : 0.398, s/b : 0.724
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02501500
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02501500
+Complete.
+Steps : 2501505, Gen Loss Total : 39.832, Mel-Spec. Error : 0.468, s/b : 0.715
+Steps : 2501510, Gen Loss Total : 35.891, Mel-Spec. Error : 0.434, s/b : 0.732
+Steps : 2501515, Gen Loss Total : 34.936, Mel-Spec. Error : 0.421, s/b : 0.721
+Steps : 2501520, Gen Loss Total : 33.933, Mel-Spec. Error : 0.436, s/b : 0.727
+Steps : 2501525, Gen Loss Total : 34.245, Mel-Spec. Error : 0.424, s/b : 0.721
+Steps : 2501530, Gen Loss Total : 27.425, Mel-Spec. Error : 0.351, s/b : 0.738
+Steps : 2501535, Gen Loss Total : 30.963, Mel-Spec. Error : 0.384, s/b : 0.725
+Steps : 2501540, Gen Loss Total : 33.608, Mel-Spec. Error : 0.407, s/b : 0.713
+Steps : 2501545, Gen Loss Total : 32.782, Mel-Spec. Error : 0.409, s/b : 0.715
+Steps : 2501550, Gen Loss Total : 34.548, Mel-Spec. Error : 0.439, s/b : 0.737
+Steps : 2501555, Gen Loss Total : 32.790, Mel-Spec. Error : 0.395, s/b : 0.714
+Steps : 2501560, Gen Loss Total : 28.825, Mel-Spec. Error : 0.357, s/b : 0.720
+Steps : 2501565, Gen Loss Total : 39.499, Mel-Spec. Error : 0.462, s/b : 0.712
+Steps : 2501570, Gen Loss Total : 34.434, Mel-Spec. Error : 0.418, s/b : 0.714
+Steps : 2501575, Gen Loss Total : 32.164, Mel-Spec. Error : 0.382, s/b : 0.715
+Steps : 2501580, Gen Loss Total : 33.800, Mel-Spec. Error : 0.410, s/b : 0.714
+Steps : 2501585, Gen Loss Total : 33.746, Mel-Spec. Error : 0.408, s/b : 0.748
+Steps : 2501590, Gen Loss Total : 32.481, Mel-Spec. Error : 0.411, s/b : 0.714
+Steps : 2501595, Gen Loss Total : 32.270, Mel-Spec. Error : 0.399, s/b : 0.719
+Steps : 2501600, Gen Loss Total : 33.788, Mel-Spec. Error : 0.404, s/b : 0.710
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02501600
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02501600
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2501605, Gen Loss Total : 30.402, Mel-Spec. Error : 0.387, s/b : 0.733
+Steps : 2501610, Gen Loss Total : 37.085, Mel-Spec. Error : 0.441, s/b : 0.727
+Steps : 2501615, Gen Loss Total : 33.248, Mel-Spec. Error : 0.399, s/b : 0.711
+Steps : 2501620, Gen Loss Total : 31.895, Mel-Spec. Error : 0.395, s/b : 0.736
+Steps : 2501625, Gen Loss Total : 34.147, Mel-Spec. Error : 0.414, s/b : 0.726
+Steps : 2501630, Gen Loss Total : 38.370, Mel-Spec. Error : 0.455, s/b : 0.726
+Steps : 2501635, Gen Loss Total : 31.755, Mel-Spec. Error : 0.394, s/b : 0.729
+Steps : 2501640, Gen Loss Total : 32.444, Mel-Spec. Error : 0.415, s/b : 0.708
+Steps : 2501645, Gen Loss Total : 33.465, Mel-Spec. Error : 0.415, s/b : 0.707
+Time taken for epoch 99 is 187 sec
+
+Epoch: 100
+Steps : 2501650, Gen Loss Total : 34.124, Mel-Spec. Error : 0.431, s/b : 0.729
+Steps : 2501655, Gen Loss Total : 28.779, Mel-Spec. Error : 0.361, s/b : 0.727
+Steps : 2501660, Gen Loss Total : 34.479, Mel-Spec. Error : 0.428, s/b : 0.706
+Steps : 2501665, Gen Loss Total : 34.957, Mel-Spec. Error : 0.431, s/b : 0.719
+Steps : 2501670, Gen Loss Total : 28.532, Mel-Spec. Error : 0.363, s/b : 0.729
+Steps : 2501675, Gen Loss Total : 32.197, Mel-Spec. Error : 0.407, s/b : 0.717
+Steps : 2501680, Gen Loss Total : 36.940, Mel-Spec. Error : 0.431, s/b : 0.705
+Steps : 2501685, Gen Loss Total : 37.646, Mel-Spec. Error : 0.474, s/b : 0.723
+Steps : 2501690, Gen Loss Total : 27.927, Mel-Spec. Error : 0.352, s/b : 0.718
+Steps : 2501695, Gen Loss Total : 31.871, Mel-Spec. Error : 0.400, s/b : 0.723
+Steps : 2501700, Gen Loss Total : 36.747, Mel-Spec. Error : 0.434, s/b : 0.733
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02501700
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02501700
+Complete.
+Steps : 2501705, Gen Loss Total : 33.409, Mel-Spec. Error : 0.427, s/b : 0.733
+Steps : 2501710, Gen Loss Total : 31.771, Mel-Spec. Error : 0.387, s/b : 0.726
+Steps : 2501715, Gen Loss Total : 34.227, Mel-Spec. Error : 0.420, s/b : 0.720
+Steps : 2501720, Gen Loss Total : 32.318, Mel-Spec. Error : 0.395, s/b : 0.713
+Steps : 2501725, Gen Loss Total : 33.204, Mel-Spec. Error : 0.433, s/b : 0.726
+Steps : 2501730, Gen Loss Total : 33.259, Mel-Spec. Error : 0.413, s/b : 0.727
+Steps : 2501735, Gen Loss Total : 32.871, Mel-Spec. Error : 0.423, s/b : 0.711
+Steps : 2501740, Gen Loss Total : 28.559, Mel-Spec. Error : 0.365, s/b : 0.714
+Steps : 2501745, Gen Loss Total : 29.244, Mel-Spec. Error : 0.371, s/b : 0.718
+Steps : 2501750, Gen Loss Total : 33.094, Mel-Spec. Error : 0.425, s/b : 0.722
+Steps : 2501755, Gen Loss Total : 30.271, Mel-Spec. Error : 0.393, s/b : 0.719
+Steps : 2501760, Gen Loss Total : 28.655, Mel-Spec. Error : 0.349, s/b : 0.711
+Steps : 2501765, Gen Loss Total : 31.378, Mel-Spec. Error : 0.374, s/b : 0.718
+Steps : 2501770, Gen Loss Total : 31.151, Mel-Spec. Error : 0.403, s/b : 0.707
+Steps : 2501775, Gen Loss Total : 29.625, Mel-Spec. Error : 0.370, s/b : 0.716
+Steps : 2501780, Gen Loss Total : 29.880, Mel-Spec. Error : 0.367, s/b : 0.730
+Steps : 2501785, Gen Loss Total : 30.510, Mel-Spec. Error : 0.379, s/b : 0.716
+Steps : 2501790, Gen Loss Total : 34.193, Mel-Spec. Error : 0.408, s/b : 0.720
+Steps : 2501795, Gen Loss Total : 34.054, Mel-Spec. Error : 0.438, s/b : 0.712
+Steps : 2501800, Gen Loss Total : 32.972, Mel-Spec. Error : 0.427, s/b : 0.720
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02501800
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02501800
+Complete.
+Steps : 2501805, Gen Loss Total : 31.064, Mel-Spec. Error : 0.392, s/b : 0.727
+Steps : 2501810, Gen Loss Total : 37.047, Mel-Spec. Error : 0.463, s/b : 0.734
+Steps : 2501815, Gen Loss Total : 33.885, Mel-Spec. Error : 0.418, s/b : 0.722
+Steps : 2501820, Gen Loss Total : 32.155, Mel-Spec. Error : 0.397, s/b : 0.733
+Steps : 2501825, Gen Loss Total : 31.364, Mel-Spec. Error : 0.405, s/b : 0.719
+Steps : 2501830, Gen Loss Total : 33.397, Mel-Spec. Error : 0.407, s/b : 0.729
+Steps : 2501835, Gen Loss Total : 33.131, Mel-Spec. Error : 0.400, s/b : 0.729
+Steps : 2501840, Gen Loss Total : 29.588, Mel-Spec. Error : 0.388, s/b : 0.706
+Steps : 2501845, Gen Loss Total : 30.385, Mel-Spec. Error : 0.396, s/b : 0.716
+Steps : 2501850, Gen Loss Total : 30.742, Mel-Spec. Error : 0.387, s/b : 0.727
+Steps : 2501855, Gen Loss Total : 29.177, Mel-Spec. Error : 0.371, s/b : 0.718
+Steps : 2501860, Gen Loss Total : 31.842, Mel-Spec. Error : 0.375, s/b : 0.721
+Steps : 2501865, Gen Loss Total : 34.545, Mel-Spec. Error : 0.430, s/b : 0.718
+Time taken for epoch 100 is 185 sec
+
+Epoch: 101
+Steps : 2501870, Gen Loss Total : 32.456, Mel-Spec. Error : 0.435, s/b : 0.755
+Steps : 2501875, Gen Loss Total : 35.224, Mel-Spec. Error : 0.444, s/b : 0.720
+Steps : 2501880, Gen Loss Total : 26.569, Mel-Spec. Error : 0.339, s/b : 0.721
+Steps : 2501885, Gen Loss Total : 32.947, Mel-Spec. Error : 0.414, s/b : 0.713
+Steps : 2501890, Gen Loss Total : 34.726, Mel-Spec. Error : 0.424, s/b : 0.712
+Steps : 2501895, Gen Loss Total : 31.680, Mel-Spec. Error : 0.394, s/b : 0.716
+Steps : 2501900, Gen Loss Total : 31.321, Mel-Spec. Error : 0.386, s/b : 0.729
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02501900
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02501900
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2501905, Gen Loss Total : 36.771, Mel-Spec. Error : 0.431, s/b : 0.731
+Steps : 2501910, Gen Loss Total : 29.450, Mel-Spec. Error : 0.357, s/b : 0.718
+Steps : 2501915, Gen Loss Total : 29.295, Mel-Spec. Error : 0.374, s/b : 0.727
+Steps : 2501920, Gen Loss Total : 28.015, Mel-Spec. Error : 0.374, s/b : 0.738
+Steps : 2501925, Gen Loss Total : 29.215, Mel-Spec. Error : 0.372, s/b : 0.719
+Steps : 2501930, Gen Loss Total : 35.455, Mel-Spec. Error : 0.434, s/b : 0.717
+Steps : 2501935, Gen Loss Total : 32.437, Mel-Spec. Error : 0.409, s/b : 0.714
+Steps : 2501940, Gen Loss Total : 29.606, Mel-Spec. Error : 0.363, s/b : 0.743
+Steps : 2501945, Gen Loss Total : 33.635, Mel-Spec. Error : 0.428, s/b : 0.729
+Steps : 2501950, Gen Loss Total : 33.591, Mel-Spec. Error : 0.403, s/b : 0.724
+Steps : 2501955, Gen Loss Total : 31.788, Mel-Spec. Error : 0.417, s/b : 0.720
+Steps : 2501960, Gen Loss Total : 34.977, Mel-Spec. Error : 0.434, s/b : 0.719
+Steps : 2501965, Gen Loss Total : 33.392, Mel-Spec. Error : 0.406, s/b : 0.714
+Steps : 2501970, Gen Loss Total : 31.255, Mel-Spec. Error : 0.394, s/b : 0.711
+Steps : 2501975, Gen Loss Total : 32.957, Mel-Spec. Error : 0.412, s/b : 0.711
+Steps : 2501980, Gen Loss Total : 32.832, Mel-Spec. Error : 0.411, s/b : 0.728
+Steps : 2501985, Gen Loss Total : 31.601, Mel-Spec. Error : 0.386, s/b : 0.715
+Steps : 2501990, Gen Loss Total : 29.811, Mel-Spec. Error : 0.375, s/b : 0.714
+Steps : 2501995, Gen Loss Total : 35.265, Mel-Spec. Error : 0.427, s/b : 0.714
+Steps : 2502000, Gen Loss Total : 33.252, Mel-Spec. Error : 0.417, s/b : 0.722
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02502000
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02502000
+Complete.
+Steps : 2502005, Gen Loss Total : 31.848, Mel-Spec. Error : 0.390, s/b : 0.722
+Steps : 2502010, Gen Loss Total : 33.455, Mel-Spec. Error : 0.416, s/b : 0.714
+Steps : 2502015, Gen Loss Total : 32.826, Mel-Spec. Error : 0.413, s/b : 0.725
+Steps : 2502020, Gen Loss Total : 32.451, Mel-Spec. Error : 0.396, s/b : 0.714
+Steps : 2502025, Gen Loss Total : 32.697, Mel-Spec. Error : 0.413, s/b : 0.719
+Steps : 2502030, Gen Loss Total : 30.245, Mel-Spec. Error : 0.391, s/b : 0.710
+Steps : 2502035, Gen Loss Total : 29.794, Mel-Spec. Error : 0.363, s/b : 0.727
+Steps : 2502040, Gen Loss Total : 35.797, Mel-Spec. Error : 0.433, s/b : 0.719
+Steps : 2502045, Gen Loss Total : 32.627, Mel-Spec. Error : 0.401, s/b : 0.705
+Steps : 2502050, Gen Loss Total : 33.945, Mel-Spec. Error : 0.416, s/b : 0.722
+Steps : 2502055, Gen Loss Total : 29.128, Mel-Spec. Error : 0.379, s/b : 0.715
+Steps : 2502060, Gen Loss Total : 28.949, Mel-Spec. Error : 0.358, s/b : 0.716
+Steps : 2502065, Gen Loss Total : 33.147, Mel-Spec. Error : 0.404, s/b : 0.715
+Steps : 2502070, Gen Loss Total : 33.080, Mel-Spec. Error : 0.414, s/b : 0.719
+Steps : 2502075, Gen Loss Total : 30.327, Mel-Spec. Error : 0.361, s/b : 0.722
+Steps : 2502080, Gen Loss Total : 28.572, Mel-Spec. Error : 0.375, s/b : 0.727
+Steps : 2502085, Gen Loss Total : 31.195, Mel-Spec. Error : 0.379, s/b : 0.701
+Time taken for epoch 101 is 187 sec
+
+Epoch: 102
+Steps : 2502090, Gen Loss Total : 31.560, Mel-Spec. Error : 0.419, s/b : 0.733
+Steps : 2502095, Gen Loss Total : 34.091, Mel-Spec. Error : 0.420, s/b : 0.709
+Steps : 2502100, Gen Loss Total : 32.184, Mel-Spec. Error : 0.417, s/b : 0.715
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02502100
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02502100
+Complete.
+Steps : 2502105, Gen Loss Total : 29.682, Mel-Spec. Error : 0.367, s/b : 0.717
+Steps : 2502110, Gen Loss Total : 32.981, Mel-Spec. Error : 0.426, s/b : 0.718
+Steps : 2502115, Gen Loss Total : 31.729, Mel-Spec. Error : 0.406, s/b : 0.716
+Steps : 2502120, Gen Loss Total : 32.391, Mel-Spec. Error : 0.407, s/b : 0.705
+Steps : 2502125, Gen Loss Total : 36.047, Mel-Spec. Error : 0.428, s/b : 0.717
+Steps : 2502130, Gen Loss Total : 27.475, Mel-Spec. Error : 0.343, s/b : 0.710
+Steps : 2502135, Gen Loss Total : 32.316, Mel-Spec. Error : 0.404, s/b : 0.727
+Steps : 2502140, Gen Loss Total : 32.442, Mel-Spec. Error : 0.411, s/b : 0.719
+Steps : 2502145, Gen Loss Total : 29.776, Mel-Spec. Error : 0.364, s/b : 0.718
+Steps : 2502150, Gen Loss Total : 30.634, Mel-Spec. Error : 0.374, s/b : 0.713
+Steps : 2502155, Gen Loss Total : 40.874, Mel-Spec. Error : 0.470, s/b : 0.711
+Steps : 2502160, Gen Loss Total : 28.882, Mel-Spec. Error : 0.350, s/b : 0.718
+Steps : 2502165, Gen Loss Total : 34.488, Mel-Spec. Error : 0.416, s/b : 0.705
+Steps : 2502170, Gen Loss Total : 34.368, Mel-Spec. Error : 0.435, s/b : 0.715
+Steps : 2502175, Gen Loss Total : 27.535, Mel-Spec. Error : 0.336, s/b : 0.729
+Steps : 2502180, Gen Loss Total : 36.132, Mel-Spec. Error : 0.453, s/b : 0.717
+Steps : 2502185, Gen Loss Total : 32.102, Mel-Spec. Error : 0.395, s/b : 0.720
+Steps : 2502190, Gen Loss Total : 35.101, Mel-Spec. Error : 0.423, s/b : 0.729
+Steps : 2502195, Gen Loss Total : 30.169, Mel-Spec. Error : 0.367, s/b : 0.712
+Steps : 2502200, Gen Loss Total : 33.013, Mel-Spec. Error : 0.400, s/b : 0.712
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02502200
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02502200
+Complete.
+Steps : 2502205, Gen Loss Total : 33.384, Mel-Spec. Error : 0.408, s/b : 0.706
+Steps : 2502210, Gen Loss Total : 33.524, Mel-Spec. Error : 0.418, s/b : 0.717
+Steps : 2502215, Gen Loss Total : 34.465, Mel-Spec. Error : 0.419, s/b : 0.716
+Steps : 2502220, Gen Loss Total : 30.645, Mel-Spec. Error : 0.377, s/b : 0.714
+Steps : 2502225, Gen Loss Total : 31.853, Mel-Spec. Error : 0.403, s/b : 0.730
+Steps : 2502230, Gen Loss Total : 29.282, Mel-Spec. Error : 0.372, s/b : 0.729
+Steps : 2502235, Gen Loss Total : 30.213, Mel-Spec. Error : 0.378, s/b : 0.725
+Steps : 2502240, Gen Loss Total : 31.012, Mel-Spec. Error : 0.397, s/b : 0.722
+Steps : 2502245, Gen Loss Total : 32.235, Mel-Spec. Error : 0.397, s/b : 0.710
+Steps : 2502250, Gen Loss Total : 29.570, Mel-Spec. Error : 0.375, s/b : 0.717
+Steps : 2502255, Gen Loss Total : 32.570, Mel-Spec. Error : 0.392, s/b : 0.709
+Steps : 2502260, Gen Loss Total : 34.176, Mel-Spec. Error : 0.412, s/b : 0.709
+Steps : 2502265, Gen Loss Total : 32.148, Mel-Spec. Error : 0.383, s/b : 0.710
+Steps : 2502270, Gen Loss Total : 32.253, Mel-Spec. Error : 0.390, s/b : 0.717
+Steps : 2502275, Gen Loss Total : 30.493, Mel-Spec. Error : 0.372, s/b : 0.723
+Steps : 2502280, Gen Loss Total : 29.661, Mel-Spec. Error : 0.366, s/b : 0.721
+Steps : 2502285, Gen Loss Total : 28.543, Mel-Spec. Error : 0.361, s/b : 0.716
+Steps : 2502290, Gen Loss Total : 34.169, Mel-Spec. Error : 0.425, s/b : 0.717
+Steps : 2502295, Gen Loss Total : 33.208, Mel-Spec. Error : 0.411, s/b : 0.709
+Steps : 2502300, Gen Loss Total : 29.626, Mel-Spec. Error : 0.375, s/b : 0.714
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02502300
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02502300
+Complete.
+Steps : 2502305, Gen Loss Total : 28.161, Mel-Spec. Error : 0.374, s/b : 0.713
+Steps : 2502310, Gen Loss Total : 30.658, Mel-Spec. Error : 0.382, s/b : 0.725
+Time taken for epoch 102 is 195 sec
+
+Epoch: 103
+Steps : 2502315, Gen Loss Total : 32.944, Mel-Spec. Error : 0.408, s/b : 0.719
+Steps : 2502320, Gen Loss Total : 32.898, Mel-Spec. Error : 0.408, s/b : 0.712
+Steps : 2502325, Gen Loss Total : 35.154, Mel-Spec. Error : 0.439, s/b : 0.730
+Steps : 2502330, Gen Loss Total : 31.877, Mel-Spec. Error : 0.383, s/b : 0.713
+Steps : 2502335, Gen Loss Total : 34.221, Mel-Spec. Error : 0.419, s/b : 0.709
+Steps : 2502340, Gen Loss Total : 35.255, Mel-Spec. Error : 0.435, s/b : 0.711
+Steps : 2502345, Gen Loss Total : 29.354, Mel-Spec. Error : 0.367, s/b : 0.701
+Steps : 2502350, Gen Loss Total : 33.121, Mel-Spec. Error : 0.390, s/b : 0.714
+Steps : 2502355, Gen Loss Total : 28.873, Mel-Spec. Error : 0.377, s/b : 0.712
+Steps : 2502360, Gen Loss Total : 29.188, Mel-Spec. Error : 0.364, s/b : 0.730
+Steps : 2502365, Gen Loss Total : 31.282, Mel-Spec. Error : 0.378, s/b : 0.718
+Steps : 2502370, Gen Loss Total : 36.725, Mel-Spec. Error : 0.428, s/b : 0.713
+Steps : 2502375, Gen Loss Total : 33.483, Mel-Spec. Error : 0.413, s/b : 0.724
+Steps : 2502380, Gen Loss Total : 31.564, Mel-Spec. Error : 0.379, s/b : 0.708
+Steps : 2502385, Gen Loss Total : 35.089, Mel-Spec. Error : 0.426, s/b : 0.728
+Steps : 2502390, Gen Loss Total : 29.949, Mel-Spec. Error : 0.381, s/b : 0.707
+Steps : 2502395, Gen Loss Total : 29.682, Mel-Spec. Error : 0.374, s/b : 0.709
+Steps : 2502400, Gen Loss Total : 28.914, Mel-Spec. Error : 0.354, s/b : 0.722
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02502400
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02502400
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2502405, Gen Loss Total : 32.233, Mel-Spec. Error : 0.409, s/b : 0.717
+Steps : 2502410, Gen Loss Total : 30.101, Mel-Spec. Error : 0.364, s/b : 0.727
+Steps : 2502415, Gen Loss Total : 30.370, Mel-Spec. Error : 0.381, s/b : 0.724
+Steps : 2502420, Gen Loss Total : 30.774, Mel-Spec. Error : 0.390, s/b : 0.718
+Steps : 2502425, Gen Loss Total : 28.745, Mel-Spec. Error : 0.356, s/b : 0.719
+Steps : 2502430, Gen Loss Total : 29.388, Mel-Spec. Error : 0.385, s/b : 0.725
+Steps : 2502435, Gen Loss Total : 35.600, Mel-Spec. Error : 0.422, s/b : 0.721
+Steps : 2502440, Gen Loss Total : 34.831, Mel-Spec. Error : 0.433, s/b : 0.714
+Steps : 2502445, Gen Loss Total : 31.350, Mel-Spec. Error : 0.384, s/b : 0.715
+Steps : 2502450, Gen Loss Total : 29.542, Mel-Spec. Error : 0.354, s/b : 0.720
+Steps : 2502455, Gen Loss Total : 29.307, Mel-Spec. Error : 0.379, s/b : 0.727
+Steps : 2502460, Gen Loss Total : 27.576, Mel-Spec. Error : 0.352, s/b : 0.720
+Steps : 2502465, Gen Loss Total : 33.002, Mel-Spec. Error : 0.399, s/b : 0.726
+Steps : 2502470, Gen Loss Total : 34.458, Mel-Spec. Error : 0.429, s/b : 0.721
+Steps : 2502475, Gen Loss Total : 31.197, Mel-Spec. Error : 0.398, s/b : 0.718
+Steps : 2502480, Gen Loss Total : 31.465, Mel-Spec. Error : 0.382, s/b : 0.714
+Steps : 2502485, Gen Loss Total : 31.260, Mel-Spec. Error : 0.383, s/b : 0.727
+Steps : 2502490, Gen Loss Total : 28.171, Mel-Spec. Error : 0.359, s/b : 0.723
+Steps : 2502495, Gen Loss Total : 30.487, Mel-Spec. Error : 0.381, s/b : 0.733
+Steps : 2502500, Gen Loss Total : 26.224, Mel-Spec. Error : 0.331, s/b : 0.721
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02502500
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02502500
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2502505, Gen Loss Total : 31.094, Mel-Spec. Error : 0.385, s/b : 0.711
+Steps : 2502510, Gen Loss Total : 28.394, Mel-Spec. Error : 0.347, s/b : 0.724
+Steps : 2502515, Gen Loss Total : 27.323, Mel-Spec. Error : 0.340, s/b : 0.713
+Steps : 2502520, Gen Loss Total : 32.515, Mel-Spec. Error : 0.401, s/b : 0.717
+Steps : 2502525, Gen Loss Total : 30.040, Mel-Spec. Error : 0.366, s/b : 0.707
+Steps : 2502530, Gen Loss Total : 31.091, Mel-Spec. Error : 0.390, s/b : 0.711
+Time taken for epoch 103 is 193 sec
+
+Epoch: 104
+Steps : 2502535, Gen Loss Total : 33.449, Mel-Spec. Error : 0.415, s/b : 0.715
+Steps : 2502540, Gen Loss Total : 30.921, Mel-Spec. Error : 0.395, s/b : 0.726
+Steps : 2502545, Gen Loss Total : 29.423, Mel-Spec. Error : 0.386, s/b : 0.722
+Steps : 2502550, Gen Loss Total : 30.421, Mel-Spec. Error : 0.352, s/b : 0.728
+Steps : 2502555, Gen Loss Total : 27.436, Mel-Spec. Error : 0.352, s/b : 0.716
+Steps : 2502560, Gen Loss Total : 27.829, Mel-Spec. Error : 0.333, s/b : 0.721
+Steps : 2502565, Gen Loss Total : 32.811, Mel-Spec. Error : 0.402, s/b : 0.712
+Steps : 2502570, Gen Loss Total : 32.076, Mel-Spec. Error : 0.390, s/b : 0.728
+Steps : 2502575, Gen Loss Total : 26.758, Mel-Spec. Error : 0.332, s/b : 0.724
+Steps : 2502580, Gen Loss Total : 34.491, Mel-Spec. Error : 0.415, s/b : 0.723
+Steps : 2502585, Gen Loss Total : 27.347, Mel-Spec. Error : 0.348, s/b : 0.720
+Steps : 2502590, Gen Loss Total : 31.175, Mel-Spec. Error : 0.393, s/b : 0.716
+Steps : 2502595, Gen Loss Total : 30.795, Mel-Spec. Error : 0.378, s/b : 0.710
+Steps : 2502600, Gen Loss Total : 28.591, Mel-Spec. Error : 0.345, s/b : 0.728
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02502600
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02502600
+Complete.
+Steps : 2502605, Gen Loss Total : 31.288, Mel-Spec. Error : 0.378, s/b : 0.723
+Steps : 2502610, Gen Loss Total : 28.881, Mel-Spec. Error : 0.372, s/b : 0.709
+Steps : 2502615, Gen Loss Total : 38.071, Mel-Spec. Error : 0.444, s/b : 0.719
+Steps : 2502620, Gen Loss Total : 32.663, Mel-Spec. Error : 0.396, s/b : 0.714
+Steps : 2502625, Gen Loss Total : 34.573, Mel-Spec. Error : 0.431, s/b : 0.711
+Steps : 2502630, Gen Loss Total : 32.914, Mel-Spec. Error : 0.415, s/b : 0.715
+Steps : 2502635, Gen Loss Total : 25.777, Mel-Spec. Error : 0.343, s/b : 0.717
+Steps : 2502640, Gen Loss Total : 29.748, Mel-Spec. Error : 0.387, s/b : 0.724
+Steps : 2502645, Gen Loss Total : 34.049, Mel-Spec. Error : 0.397, s/b : 0.722
+Steps : 2502650, Gen Loss Total : 29.870, Mel-Spec. Error : 0.380, s/b : 0.708
+Steps : 2502655, Gen Loss Total : 27.975, Mel-Spec. Error : 0.363, s/b : 0.729
+Steps : 2502660, Gen Loss Total : 30.384, Mel-Spec. Error : 0.371, s/b : 0.717
+Steps : 2502665, Gen Loss Total : 29.070, Mel-Spec. Error : 0.369, s/b : 0.718
+Steps : 2502670, Gen Loss Total : 36.420, Mel-Spec. Error : 0.446, s/b : 0.708
+Steps : 2502675, Gen Loss Total : 31.998, Mel-Spec. Error : 0.374, s/b : 0.714
+Steps : 2502680, Gen Loss Total : 25.133, Mel-Spec. Error : 0.300, s/b : 0.712
+Steps : 2502685, Gen Loss Total : 26.636, Mel-Spec. Error : 0.334, s/b : 0.719
+Steps : 2502690, Gen Loss Total : 28.749, Mel-Spec. Error : 0.365, s/b : 0.710
+Steps : 2502695, Gen Loss Total : 30.105, Mel-Spec. Error : 0.398, s/b : 0.740
+Steps : 2502700, Gen Loss Total : 30.955, Mel-Spec. Error : 0.386, s/b : 0.712
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02502700
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02502700
+Complete.
+Steps : 2502705, Gen Loss Total : 26.639, Mel-Spec. Error : 0.343, s/b : 0.707
+Steps : 2502710, Gen Loss Total : 29.731, Mel-Spec. Error : 0.383, s/b : 0.716
+Steps : 2502715, Gen Loss Total : 32.156, Mel-Spec. Error : 0.391, s/b : 0.726
+Steps : 2502720, Gen Loss Total : 31.269, Mel-Spec. Error : 0.384, s/b : 0.707
+Steps : 2502725, Gen Loss Total : 33.202, Mel-Spec. Error : 0.392, s/b : 0.732
+Steps : 2502730, Gen Loss Total : 30.610, Mel-Spec. Error : 0.373, s/b : 0.728
+Steps : 2502735, Gen Loss Total : 30.479, Mel-Spec. Error : 0.370, s/b : 0.720
+Steps : 2502740, Gen Loss Total : 27.065, Mel-Spec. Error : 0.344, s/b : 0.724
+Steps : 2502745, Gen Loss Total : 30.889, Mel-Spec. Error : 0.388, s/b : 0.707
+Steps : 2502750, Gen Loss Total : 32.016, Mel-Spec. Error : 0.382, s/b : 0.717
+Time taken for epoch 104 is 183 sec
+
+Epoch: 105
+Steps : 2502755, Gen Loss Total : 32.155, Mel-Spec. Error : 0.395, s/b : 0.726
+Steps : 2502760, Gen Loss Total : 26.972, Mel-Spec. Error : 0.327, s/b : 0.717
+Steps : 2502765, Gen Loss Total : 28.277, Mel-Spec. Error : 0.358, s/b : 0.734
+Steps : 2502770, Gen Loss Total : 27.347, Mel-Spec. Error : 0.353, s/b : 0.715
+Steps : 2502775, Gen Loss Total : 24.491, Mel-Spec. Error : 0.300, s/b : 0.723
+Steps : 2502780, Gen Loss Total : 29.283, Mel-Spec. Error : 0.356, s/b : 0.706
+Steps : 2502785, Gen Loss Total : 29.233, Mel-Spec. Error : 0.365, s/b : 0.713
+Steps : 2502790, Gen Loss Total : 35.797, Mel-Spec. Error : 0.425, s/b : 0.721
+Steps : 2502795, Gen Loss Total : 35.566, Mel-Spec. Error : 0.393, s/b : 0.713
+Steps : 2502800, Gen Loss Total : 32.156, Mel-Spec. Error : 0.393, s/b : 0.715
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02502800
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02502800
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2502805, Gen Loss Total : 33.023, Mel-Spec. Error : 0.400, s/b : 0.719
+Steps : 2502810, Gen Loss Total : 26.569, Mel-Spec. Error : 0.363, s/b : 0.720
+Steps : 2502815, Gen Loss Total : 31.600, Mel-Spec. Error : 0.378, s/b : 0.730
+Steps : 2502820, Gen Loss Total : 29.418, Mel-Spec. Error : 0.377, s/b : 0.725
+Steps : 2502825, Gen Loss Total : 25.809, Mel-Spec. Error : 0.334, s/b : 0.717
+Steps : 2502830, Gen Loss Total : 31.980, Mel-Spec. Error : 0.385, s/b : 0.715
+Steps : 2502835, Gen Loss Total : 30.642, Mel-Spec. Error : 0.369, s/b : 0.720
+Steps : 2502840, Gen Loss Total : 31.452, Mel-Spec. Error : 0.420, s/b : 0.715
+Steps : 2502845, Gen Loss Total : 32.426, Mel-Spec. Error : 0.398, s/b : 0.721
+Steps : 2502850, Gen Loss Total : 32.452, Mel-Spec. Error : 0.380, s/b : 0.736
+Steps : 2502855, Gen Loss Total : 34.588, Mel-Spec. Error : 0.420, s/b : 0.710
+Steps : 2502860, Gen Loss Total : 32.242, Mel-Spec. Error : 0.389, s/b : 0.728
+Steps : 2502865, Gen Loss Total : 24.573, Mel-Spec. Error : 0.303, s/b : 0.715
+Steps : 2502870, Gen Loss Total : 32.179, Mel-Spec. Error : 0.387, s/b : 0.723
+Steps : 2502875, Gen Loss Total : 28.570, Mel-Spec. Error : 0.361, s/b : 0.712
+Steps : 2502880, Gen Loss Total : 30.472, Mel-Spec. Error : 0.366, s/b : 0.716
+Steps : 2502885, Gen Loss Total : 31.596, Mel-Spec. Error : 0.381, s/b : 0.716
+Steps : 2502890, Gen Loss Total : 30.604, Mel-Spec. Error : 0.385, s/b : 0.715
+Steps : 2502895, Gen Loss Total : 27.760, Mel-Spec. Error : 0.341, s/b : 0.710
+Steps : 2502900, Gen Loss Total : 27.860, Mel-Spec. Error : 0.359, s/b : 0.713
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02502900
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02502900
+Complete.
+Steps : 2502905, Gen Loss Total : 31.430, Mel-Spec. Error : 0.397, s/b : 0.720
+Steps : 2502910, Gen Loss Total : 30.321, Mel-Spec. Error : 0.375, s/b : 0.715
+Steps : 2502915, Gen Loss Total : 33.766, Mel-Spec. Error : 0.420, s/b : 0.717
+Steps : 2502920, Gen Loss Total : 34.722, Mel-Spec. Error : 0.422, s/b : 0.709
+Steps : 2502925, Gen Loss Total : 28.597, Mel-Spec. Error : 0.343, s/b : 0.726
+Steps : 2502930, Gen Loss Total : 30.449, Mel-Spec. Error : 0.391, s/b : 0.712
+Steps : 2502935, Gen Loss Total : 30.911, Mel-Spec. Error : 0.379, s/b : 0.718
+Steps : 2502940, Gen Loss Total : 31.028, Mel-Spec. Error : 0.369, s/b : 0.704
+Steps : 2502945, Gen Loss Total : 30.783, Mel-Spec. Error : 0.391, s/b : 0.720
+Steps : 2502950, Gen Loss Total : 28.142, Mel-Spec. Error : 0.357, s/b : 0.712
+Steps : 2502955, Gen Loss Total : 32.494, Mel-Spec. Error : 0.379, s/b : 0.716
+Steps : 2502960, Gen Loss Total : 32.035, Mel-Spec. Error : 0.403, s/b : 0.728
+Steps : 2502965, Gen Loss Total : 32.833, Mel-Spec. Error : 0.391, s/b : 0.708
+Steps : 2502970, Gen Loss Total : 29.875, Mel-Spec. Error : 0.393, s/b : 0.705
+Time taken for epoch 105 is 186 sec
+
+Epoch: 106
+Steps : 2502975, Gen Loss Total : 27.180, Mel-Spec. Error : 0.347, s/b : 0.712
+Steps : 2502980, Gen Loss Total : 28.446, Mel-Spec. Error : 0.363, s/b : 0.725
+Steps : 2502985, Gen Loss Total : 24.467, Mel-Spec. Error : 0.309, s/b : 0.712
+Steps : 2502990, Gen Loss Total : 30.701, Mel-Spec. Error : 0.369, s/b : 0.731
+Steps : 2502995, Gen Loss Total : 29.906, Mel-Spec. Error : 0.380, s/b : 0.723
+Steps : 2503000, Gen Loss Total : 34.677, Mel-Spec. Error : 0.419, s/b : 0.709
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02503000
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02503000
+Complete.
+Steps : 2503005, Gen Loss Total : 33.084, Mel-Spec. Error : 0.407, s/b : 0.707
+Steps : 2503010, Gen Loss Total : 33.076, Mel-Spec. Error : 0.402, s/b : 0.713
+Steps : 2503015, Gen Loss Total : 27.625, Mel-Spec. Error : 0.349, s/b : 0.717
+Steps : 2503020, Gen Loss Total : 30.634, Mel-Spec. Error : 0.384, s/b : 0.705
+Steps : 2503025, Gen Loss Total : 32.015, Mel-Spec. Error : 0.398, s/b : 0.736
+Steps : 2503030, Gen Loss Total : 30.975, Mel-Spec. Error : 0.378, s/b : 0.727
+Steps : 2503035, Gen Loss Total : 32.602, Mel-Spec. Error : 0.414, s/b : 0.726
+Steps : 2503040, Gen Loss Total : 25.135, Mel-Spec. Error : 0.321, s/b : 0.709
+Steps : 2503045, Gen Loss Total : 31.787, Mel-Spec. Error : 0.399, s/b : 0.711
+Steps : 2503050, Gen Loss Total : 28.857, Mel-Spec. Error : 0.361, s/b : 0.721
+Steps : 2503055, Gen Loss Total : 30.369, Mel-Spec. Error : 0.385, s/b : 0.715
+Steps : 2503060, Gen Loss Total : 28.066, Mel-Spec. Error : 0.349, s/b : 0.712
+Steps : 2503065, Gen Loss Total : 32.576, Mel-Spec. Error : 0.380, s/b : 0.710
+Steps : 2503070, Gen Loss Total : 34.072, Mel-Spec. Error : 0.411, s/b : 0.719
+Steps : 2503075, Gen Loss Total : 30.618, Mel-Spec. Error : 0.384, s/b : 0.720
+Steps : 2503080, Gen Loss Total : 27.580, Mel-Spec. Error : 0.357, s/b : 0.720
+Steps : 2503085, Gen Loss Total : 29.940, Mel-Spec. Error : 0.370, s/b : 0.710
+Steps : 2503090, Gen Loss Total : 30.458, Mel-Spec. Error : 0.373, s/b : 0.720
+Steps : 2503095, Gen Loss Total : 31.627, Mel-Spec. Error : 0.385, s/b : 0.722
+Steps : 2503100, Gen Loss Total : 29.756, Mel-Spec. Error : 0.357, s/b : 0.711
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02503100
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02503100
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2503105, Gen Loss Total : 30.013, Mel-Spec. Error : 0.381, s/b : 0.724
+Steps : 2503110, Gen Loss Total : 30.715, Mel-Spec. Error : 0.372, s/b : 0.717
+Steps : 2503115, Gen Loss Total : 31.582, Mel-Spec. Error : 0.391, s/b : 0.726
+Steps : 2503120, Gen Loss Total : 32.470, Mel-Spec. Error : 0.393, s/b : 0.720
+Steps : 2503125, Gen Loss Total : 32.151, Mel-Spec. Error : 0.395, s/b : 0.719
+Steps : 2503130, Gen Loss Total : 32.146, Mel-Spec. Error : 0.400, s/b : 0.715
+Steps : 2503135, Gen Loss Total : 27.220, Mel-Spec. Error : 0.344, s/b : 0.719
+Steps : 2503140, Gen Loss Total : 30.681, Mel-Spec. Error : 0.382, s/b : 0.720
+Steps : 2503145, Gen Loss Total : 31.608, Mel-Spec. Error : 0.378, s/b : 0.725
+Steps : 2503150, Gen Loss Total : 28.959, Mel-Spec. Error : 0.365, s/b : 0.714
+Steps : 2503155, Gen Loss Total : 31.724, Mel-Spec. Error : 0.377, s/b : 0.721
+Steps : 2503160, Gen Loss Total : 33.969, Mel-Spec. Error : 0.417, s/b : 0.719
+Steps : 2503165, Gen Loss Total : 26.501, Mel-Spec. Error : 0.317, s/b : 0.725
+Steps : 2503170, Gen Loss Total : 32.190, Mel-Spec. Error : 0.386, s/b : 0.704
+Steps : 2503175, Gen Loss Total : 31.889, Mel-Spec. Error : 0.384, s/b : 0.718
+Steps : 2503180, Gen Loss Total : 27.427, Mel-Spec. Error : 0.352, s/b : 0.724
+Steps : 2503185, Gen Loss Total : 30.435, Mel-Spec. Error : 0.381, s/b : 0.712
+Steps : 2503190, Gen Loss Total : 27.844, Mel-Spec. Error : 0.352, s/b : 0.710
+Time taken for epoch 106 is 186 sec
+
+Epoch: 107
+Steps : 2503195, Gen Loss Total : 32.716, Mel-Spec. Error : 0.403, s/b : 0.769
+Steps : 2503200, Gen Loss Total : 34.225, Mel-Spec. Error : 0.416, s/b : 0.717
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02503200
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02503200
+Complete.
+Steps : 2503205, Gen Loss Total : 30.305, Mel-Spec. Error : 0.380, s/b : 0.723
+Steps : 2503210, Gen Loss Total : 30.113, Mel-Spec. Error : 0.386, s/b : 0.717
+Steps : 2503215, Gen Loss Total : 26.506, Mel-Spec. Error : 0.325, s/b : 0.729
+Steps : 2503220, Gen Loss Total : 30.603, Mel-Spec. Error : 0.374, s/b : 0.720
+Steps : 2503225, Gen Loss Total : 31.202, Mel-Spec. Error : 0.380, s/b : 0.717
+Steps : 2503230, Gen Loss Total : 29.427, Mel-Spec. Error : 0.352, s/b : 0.713
+Steps : 2503235, Gen Loss Total : 29.423, Mel-Spec. Error : 0.360, s/b : 0.729
+Steps : 2503240, Gen Loss Total : 29.911, Mel-Spec. Error : 0.375, s/b : 0.703
+Steps : 2503245, Gen Loss Total : 31.347, Mel-Spec. Error : 0.414, s/b : 0.717
+Steps : 2503250, Gen Loss Total : 28.922, Mel-Spec. Error : 0.361, s/b : 0.719
+Steps : 2503255, Gen Loss Total : 27.274, Mel-Spec. Error : 0.325, s/b : 0.721
+Steps : 2503260, Gen Loss Total : 35.744, Mel-Spec. Error : 0.430, s/b : 0.704
+Steps : 2503265, Gen Loss Total : 29.949, Mel-Spec. Error : 0.369, s/b : 0.720
+Steps : 2503270, Gen Loss Total : 30.248, Mel-Spec. Error : 0.369, s/b : 0.720
+Steps : 2503275, Gen Loss Total : 34.677, Mel-Spec. Error : 0.427, s/b : 0.717
+Steps : 2503280, Gen Loss Total : 29.734, Mel-Spec. Error : 0.362, s/b : 0.717
+Steps : 2503285, Gen Loss Total : 35.407, Mel-Spec. Error : 0.436, s/b : 0.710
+Steps : 2503290, Gen Loss Total : 29.167, Mel-Spec. Error : 0.357, s/b : 0.721
+Steps : 2503295, Gen Loss Total : 33.460, Mel-Spec. Error : 0.396, s/b : 0.710
+Steps : 2503300, Gen Loss Total : 25.639, Mel-Spec. Error : 0.323, s/b : 0.709
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02503300
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02503300
+Complete.
+Steps : 2503305, Gen Loss Total : 34.083, Mel-Spec. Error : 0.415, s/b : 0.719
+Steps : 2503310, Gen Loss Total : 32.044, Mel-Spec. Error : 0.373, s/b : 0.710
+Steps : 2503315, Gen Loss Total : 32.533, Mel-Spec. Error : 0.395, s/b : 0.724
+Steps : 2503320, Gen Loss Total : 30.252, Mel-Spec. Error : 0.360, s/b : 0.724
+Steps : 2503325, Gen Loss Total : 28.931, Mel-Spec. Error : 0.339, s/b : 0.726
+Steps : 2503330, Gen Loss Total : 31.240, Mel-Spec. Error : 0.372, s/b : 0.729
+Steps : 2503335, Gen Loss Total : 31.935, Mel-Spec. Error : 0.385, s/b : 0.726
+Steps : 2503340, Gen Loss Total : 27.110, Mel-Spec. Error : 0.349, s/b : 0.720
+Steps : 2503345, Gen Loss Total : 30.278, Mel-Spec. Error : 0.382, s/b : 0.729
+Steps : 2503350, Gen Loss Total : 32.319, Mel-Spec. Error : 0.396, s/b : 0.720
+Steps : 2503355, Gen Loss Total : 25.614, Mel-Spec. Error : 0.323, s/b : 0.718
+Steps : 2503360, Gen Loss Total : 29.541, Mel-Spec. Error : 0.365, s/b : 0.720
+Steps : 2503365, Gen Loss Total : 26.122, Mel-Spec. Error : 0.335, s/b : 0.726
+Steps : 2503370, Gen Loss Total : 31.643, Mel-Spec. Error : 0.383, s/b : 0.713
+Steps : 2503375, Gen Loss Total : 28.347, Mel-Spec. Error : 0.340, s/b : 0.707
+Steps : 2503380, Gen Loss Total : 27.742, Mel-Spec. Error : 0.368, s/b : 0.733
+Steps : 2503385, Gen Loss Total : 27.280, Mel-Spec. Error : 0.339, s/b : 0.710
+Steps : 2503390, Gen Loss Total : 28.175, Mel-Spec. Error : 0.331, s/b : 0.714
+Steps : 2503395, Gen Loss Total : 32.131, Mel-Spec. Error : 0.403, s/b : 0.715
+Steps : 2503400, Gen Loss Total : 31.154, Mel-Spec. Error : 0.389, s/b : 0.716
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02503400
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02503400
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2503405, Gen Loss Total : 30.184, Mel-Spec. Error : 0.365, s/b : 0.723
+Steps : 2503410, Gen Loss Total : 28.312, Mel-Spec. Error : 0.356, s/b : 0.711
+Steps : 2503415, Gen Loss Total : 25.762, Mel-Spec. Error : 0.321, s/b : 0.711
+Time taken for epoch 107 is 198 sec
+
+Epoch: 108
+Steps : 2503420, Gen Loss Total : 31.099, Mel-Spec. Error : 0.384, s/b : 0.713
+Steps : 2503425, Gen Loss Total : 30.679, Mel-Spec. Error : 0.369, s/b : 0.714
+Steps : 2503430, Gen Loss Total : 30.131, Mel-Spec. Error : 0.384, s/b : 0.718
+Steps : 2503435, Gen Loss Total : 31.201, Mel-Spec. Error : 0.386, s/b : 0.727
+Steps : 2503440, Gen Loss Total : 30.394, Mel-Spec. Error : 0.386, s/b : 0.718
+Steps : 2503445, Gen Loss Total : 31.063, Mel-Spec. Error : 0.383, s/b : 0.729
+Steps : 2503450, Gen Loss Total : 32.219, Mel-Spec. Error : 0.387, s/b : 0.714
+Steps : 2503455, Gen Loss Total : 33.747, Mel-Spec. Error : 0.388, s/b : 0.725
+Steps : 2503460, Gen Loss Total : 30.777, Mel-Spec. Error : 0.385, s/b : 0.708
+Steps : 2503465, Gen Loss Total : 33.285, Mel-Spec. Error : 0.410, s/b : 0.732
+Steps : 2503470, Gen Loss Total : 30.182, Mel-Spec. Error : 0.364, s/b : 0.708
+Steps : 2503475, Gen Loss Total : 32.559, Mel-Spec. Error : 0.397, s/b : 0.720
+Steps : 2503480, Gen Loss Total : 30.013, Mel-Spec. Error : 0.385, s/b : 0.715
+Steps : 2503485, Gen Loss Total : 29.180, Mel-Spec. Error : 0.361, s/b : 0.710
+Steps : 2503490, Gen Loss Total : 28.579, Mel-Spec. Error : 0.354, s/b : 0.720
+Steps : 2503495, Gen Loss Total : 30.066, Mel-Spec. Error : 0.385, s/b : 0.725
+Steps : 2503500, Gen Loss Total : 31.813, Mel-Spec. Error : 0.384, s/b : 0.715
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02503500
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02503500
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2503505, Gen Loss Total : 29.522, Mel-Spec. Error : 0.341, s/b : 0.724
+Steps : 2503510, Gen Loss Total : 32.555, Mel-Spec. Error : 0.400, s/b : 0.711
+Steps : 2503515, Gen Loss Total : 31.181, Mel-Spec. Error : 0.366, s/b : 0.743
+Steps : 2503520, Gen Loss Total : 29.867, Mel-Spec. Error : 0.357, s/b : 0.717
+Steps : 2503525, Gen Loss Total : 31.865, Mel-Spec. Error : 0.374, s/b : 0.720
+Steps : 2503530, Gen Loss Total : 26.128, Mel-Spec. Error : 0.324, s/b : 0.709
+Steps : 2503535, Gen Loss Total : 31.346, Mel-Spec. Error : 0.400, s/b : 0.721
+Steps : 2503540, Gen Loss Total : 33.452, Mel-Spec. Error : 0.399, s/b : 0.713
+Steps : 2503545, Gen Loss Total : 33.154, Mel-Spec. Error : 0.409, s/b : 0.718
+Steps : 2503550, Gen Loss Total : 25.808, Mel-Spec. Error : 0.333, s/b : 0.711
+Steps : 2503555, Gen Loss Total : 26.052, Mel-Spec. Error : 0.333, s/b : 0.721
+Steps : 2503560, Gen Loss Total : 31.639, Mel-Spec. Error : 0.409, s/b : 0.709
+Steps : 2503565, Gen Loss Total : 31.029, Mel-Spec. Error : 0.372, s/b : 0.716
+Steps : 2503570, Gen Loss Total : 30.889, Mel-Spec. Error : 0.371, s/b : 0.728
+Steps : 2503575, Gen Loss Total : 31.263, Mel-Spec. Error : 0.368, s/b : 0.719
+Steps : 2503580, Gen Loss Total : 30.966, Mel-Spec. Error : 0.388, s/b : 0.710
+Steps : 2503585, Gen Loss Total : 31.954, Mel-Spec. Error : 0.391, s/b : 0.716
+Steps : 2503590, Gen Loss Total : 28.951, Mel-Spec. Error : 0.363, s/b : 0.722
+Steps : 2503595, Gen Loss Total : 30.425, Mel-Spec. Error : 0.379, s/b : 0.722
+Steps : 2503600, Gen Loss Total : 31.209, Mel-Spec. Error : 0.378, s/b : 0.714
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02503600
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02503600
+Complete.
+Steps : 2503605, Gen Loss Total : 27.675, Mel-Spec. Error : 0.359, s/b : 0.719
+Steps : 2503610, Gen Loss Total : 29.213, Mel-Spec. Error : 0.367, s/b : 0.737
+Steps : 2503615, Gen Loss Total : 27.749, Mel-Spec. Error : 0.332, s/b : 0.725
+Steps : 2503620, Gen Loss Total : 33.100, Mel-Spec. Error : 0.390, s/b : 0.732
+Steps : 2503625, Gen Loss Total : 31.841, Mel-Spec. Error : 0.401, s/b : 0.720
+Steps : 2503630, Gen Loss Total : 29.873, Mel-Spec. Error : 0.369, s/b : 0.718
+Steps : 2503635, Gen Loss Total : 27.831, Mel-Spec. Error : 0.353, s/b : 0.711
+Time taken for epoch 108 is 187 sec
+
+Epoch: 109
+Steps : 2503640, Gen Loss Total : 26.090, Mel-Spec. Error : 0.338, s/b : 0.717
+Steps : 2503645, Gen Loss Total : 29.446, Mel-Spec. Error : 0.356, s/b : 0.712
+Steps : 2503650, Gen Loss Total : 27.620, Mel-Spec. Error : 0.359, s/b : 0.724
+Steps : 2503655, Gen Loss Total : 28.692, Mel-Spec. Error : 0.372, s/b : 0.715
+Steps : 2503660, Gen Loss Total : 26.184, Mel-Spec. Error : 0.343, s/b : 0.730
+Steps : 2503665, Gen Loss Total : 25.640, Mel-Spec. Error : 0.316, s/b : 0.714
+Steps : 2503670, Gen Loss Total : 27.571, Mel-Spec. Error : 0.347, s/b : 0.711
+Steps : 2503675, Gen Loss Total : 32.413, Mel-Spec. Error : 0.387, s/b : 0.714
+Steps : 2503680, Gen Loss Total : 29.483, Mel-Spec. Error : 0.346, s/b : 0.716
+Steps : 2503685, Gen Loss Total : 32.738, Mel-Spec. Error : 0.384, s/b : 0.712
+Steps : 2503690, Gen Loss Total : 27.313, Mel-Spec. Error : 0.337, s/b : 0.702
+Steps : 2503695, Gen Loss Total : 33.124, Mel-Spec. Error : 0.392, s/b : 0.719
+Steps : 2503700, Gen Loss Total : 31.076, Mel-Spec. Error : 0.382, s/b : 0.717
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02503700
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02503700
+Complete.
+Steps : 2503705, Gen Loss Total : 32.095, Mel-Spec. Error : 0.401, s/b : 0.712
+Steps : 2503710, Gen Loss Total : 27.438, Mel-Spec. Error : 0.349, s/b : 0.719
+Steps : 2503715, Gen Loss Total : 32.055, Mel-Spec. Error : 0.386, s/b : 0.721
+Steps : 2503720, Gen Loss Total : 34.880, Mel-Spec. Error : 0.408, s/b : 0.737
+Steps : 2503725, Gen Loss Total : 32.344, Mel-Spec. Error : 0.396, s/b : 0.730
+Steps : 2503730, Gen Loss Total : 29.996, Mel-Spec. Error : 0.382, s/b : 0.718
+Steps : 2503735, Gen Loss Total : 30.647, Mel-Spec. Error : 0.389, s/b : 0.720
+Steps : 2503740, Gen Loss Total : 29.477, Mel-Spec. Error : 0.354, s/b : 0.720
+Steps : 2503745, Gen Loss Total : 29.912, Mel-Spec. Error : 0.367, s/b : 0.743
+Steps : 2503750, Gen Loss Total : 32.027, Mel-Spec. Error : 0.389, s/b : 0.710
+Steps : 2503755, Gen Loss Total : 30.579, Mel-Spec. Error : 0.389, s/b : 0.721
+Steps : 2503760, Gen Loss Total : 26.030, Mel-Spec. Error : 0.338, s/b : 0.715
+Steps : 2503765, Gen Loss Total : 26.862, Mel-Spec. Error : 0.330, s/b : 0.725
+Steps : 2503770, Gen Loss Total : 32.234, Mel-Spec. Error : 0.364, s/b : 0.736
+Steps : 2503775, Gen Loss Total : 36.249, Mel-Spec. Error : 0.422, s/b : 0.715
+Steps : 2503780, Gen Loss Total : 28.703, Mel-Spec. Error : 0.355, s/b : 0.719
+Steps : 2503785, Gen Loss Total : 29.009, Mel-Spec. Error : 0.356, s/b : 0.716
+Steps : 2503790, Gen Loss Total : 28.159, Mel-Spec. Error : 0.343, s/b : 0.713
+Steps : 2503795, Gen Loss Total : 32.992, Mel-Spec. Error : 0.398, s/b : 0.710
+Steps : 2503800, Gen Loss Total : 31.330, Mel-Spec. Error : 0.375, s/b : 0.720
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02503800
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02503800
+Complete.
+Steps : 2503805, Gen Loss Total : 27.653, Mel-Spec. Error : 0.341, s/b : 0.716
+Steps : 2503810, Gen Loss Total : 30.256, Mel-Spec. Error : 0.375, s/b : 0.738
+Steps : 2503815, Gen Loss Total : 30.709, Mel-Spec. Error : 0.373, s/b : 0.726
+Steps : 2503820, Gen Loss Total : 31.570, Mel-Spec. Error : 0.374, s/b : 0.714
+Steps : 2503825, Gen Loss Total : 32.562, Mel-Spec. Error : 0.390, s/b : 0.712
+Steps : 2503830, Gen Loss Total : 30.062, Mel-Spec. Error : 0.372, s/b : 0.717
+Steps : 2503835, Gen Loss Total : 26.792, Mel-Spec. Error : 0.346, s/b : 0.708
+Steps : 2503840, Gen Loss Total : 31.222, Mel-Spec. Error : 0.390, s/b : 0.724
+Steps : 2503845, Gen Loss Total : 28.515, Mel-Spec. Error : 0.358, s/b : 0.733
+Steps : 2503850, Gen Loss Total : 30.137, Mel-Spec. Error : 0.373, s/b : 0.721
+Steps : 2503855, Gen Loss Total : 32.959, Mel-Spec. Error : 0.393, s/b : 0.706
+Time taken for epoch 109 is 183 sec
+
+Epoch: 110
+Steps : 2503860, Gen Loss Total : 31.215, Mel-Spec. Error : 0.382, s/b : 0.712
+Steps : 2503865, Gen Loss Total : 28.304, Mel-Spec. Error : 0.353, s/b : 0.714
+Steps : 2503870, Gen Loss Total : 25.424, Mel-Spec. Error : 0.321, s/b : 0.715
+Steps : 2503875, Gen Loss Total : 27.225, Mel-Spec. Error : 0.364, s/b : 0.723
+Steps : 2503880, Gen Loss Total : 28.535, Mel-Spec. Error : 0.362, s/b : 0.713
+Steps : 2503885, Gen Loss Total : 28.707, Mel-Spec. Error : 0.352, s/b : 0.721
+Steps : 2503890, Gen Loss Total : 27.252, Mel-Spec. Error : 0.333, s/b : 0.719
+Steps : 2503895, Gen Loss Total : 33.677, Mel-Spec. Error : 0.401, s/b : 0.717
+Steps : 2503900, Gen Loss Total : 29.664, Mel-Spec. Error : 0.381, s/b : 0.720
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02503900
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02503900
+Complete.
+Steps : 2503905, Gen Loss Total : 29.157, Mel-Spec. Error : 0.368, s/b : 0.713
+Steps : 2503910, Gen Loss Total : 34.649, Mel-Spec. Error : 0.408, s/b : 0.723
+Steps : 2503915, Gen Loss Total : 28.705, Mel-Spec. Error : 0.374, s/b : 0.743
+Steps : 2503920, Gen Loss Total : 30.573, Mel-Spec. Error : 0.372, s/b : 0.712
+Steps : 2503925, Gen Loss Total : 26.878, Mel-Spec. Error : 0.347, s/b : 0.730
+Steps : 2503930, Gen Loss Total : 29.903, Mel-Spec. Error : 0.370, s/b : 0.718
+Steps : 2503935, Gen Loss Total : 31.693, Mel-Spec. Error : 0.392, s/b : 0.732
+Steps : 2503940, Gen Loss Total : 30.577, Mel-Spec. Error : 0.355, s/b : 0.711
+Steps : 2503945, Gen Loss Total : 30.826, Mel-Spec. Error : 0.387, s/b : 0.716
+Steps : 2503950, Gen Loss Total : 30.668, Mel-Spec. Error : 0.375, s/b : 0.713
+Steps : 2503955, Gen Loss Total : 29.272, Mel-Spec. Error : 0.355, s/b : 0.714
+Steps : 2503960, Gen Loss Total : 28.830, Mel-Spec. Error : 0.351, s/b : 0.725
+Steps : 2503965, Gen Loss Total : 28.071, Mel-Spec. Error : 0.355, s/b : 0.721
+Steps : 2503970, Gen Loss Total : 25.007, Mel-Spec. Error : 0.324, s/b : 0.722
+Steps : 2503975, Gen Loss Total : 30.269, Mel-Spec. Error : 0.382, s/b : 0.704
+Steps : 2503980, Gen Loss Total : 29.686, Mel-Spec. Error : 0.380, s/b : 0.720
+Steps : 2503985, Gen Loss Total : 30.064, Mel-Spec. Error : 0.388, s/b : 0.713
+Steps : 2503990, Gen Loss Total : 32.320, Mel-Spec. Error : 0.368, s/b : 0.710
+Steps : 2503995, Gen Loss Total : 30.415, Mel-Spec. Error : 0.384, s/b : 0.720
+Steps : 2504000, Gen Loss Total : 29.744, Mel-Spec. Error : 0.368, s/b : 0.719
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02504000
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02504000
+Complete.
+Steps : 2504005, Gen Loss Total : 31.863, Mel-Spec. Error : 0.392, s/b : 0.706
+Steps : 2504010, Gen Loss Total : 31.061, Mel-Spec. Error : 0.390, s/b : 0.716
+Steps : 2504015, Gen Loss Total : 31.538, Mel-Spec. Error : 0.388, s/b : 0.722
+Steps : 2504020, Gen Loss Total : 29.139, Mel-Spec. Error : 0.370, s/b : 0.723
+Steps : 2504025, Gen Loss Total : 31.723, Mel-Spec. Error : 0.385, s/b : 0.723
+Steps : 2504030, Gen Loss Total : 26.007, Mel-Spec. Error : 0.317, s/b : 0.711
+Steps : 2504035, Gen Loss Total : 30.194, Mel-Spec. Error : 0.380, s/b : 0.714
+Steps : 2504040, Gen Loss Total : 30.116, Mel-Spec. Error : 0.366, s/b : 0.722
+Steps : 2504045, Gen Loss Total : 32.754, Mel-Spec. Error : 0.397, s/b : 0.722
+Steps : 2504050, Gen Loss Total : 28.089, Mel-Spec. Error : 0.334, s/b : 0.729
+Steps : 2504055, Gen Loss Total : 31.007, Mel-Spec. Error : 0.377, s/b : 0.728
+Steps : 2504060, Gen Loss Total : 30.093, Mel-Spec. Error : 0.370, s/b : 0.722
+Steps : 2504065, Gen Loss Total : 28.133, Mel-Spec. Error : 0.357, s/b : 0.720
+Steps : 2504070, Gen Loss Total : 28.878, Mel-Spec. Error : 0.343, s/b : 0.710
+Steps : 2504075, Gen Loss Total : 31.176, Mel-Spec. Error : 0.377, s/b : 0.712
+Time taken for epoch 110 is 184 sec
+
+Epoch: 111
+Steps : 2504080, Gen Loss Total : 22.919, Mel-Spec. Error : 0.314, s/b : 0.722
+Steps : 2504085, Gen Loss Total : 31.512, Mel-Spec. Error : 0.376, s/b : 0.712
+Steps : 2504090, Gen Loss Total : 27.479, Mel-Spec. Error : 0.360, s/b : 0.711
+Steps : 2504095, Gen Loss Total : 33.541, Mel-Spec. Error : 0.399, s/b : 0.717
+Steps : 2504100, Gen Loss Total : 25.249, Mel-Spec. Error : 0.310, s/b : 0.724
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02504100
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02504100
+Complete.
+Steps : 2504105, Gen Loss Total : 29.097, Mel-Spec. Error : 0.360, s/b : 0.719
+Steps : 2504110, Gen Loss Total : 30.676, Mel-Spec. Error : 0.383, s/b : 0.733
+Steps : 2504115, Gen Loss Total : 31.278, Mel-Spec. Error : 0.382, s/b : 0.722
+Steps : 2504120, Gen Loss Total : 26.267, Mel-Spec. Error : 0.336, s/b : 0.708
+Steps : 2504125, Gen Loss Total : 27.844, Mel-Spec. Error : 0.357, s/b : 0.724
+Steps : 2504130, Gen Loss Total : 28.921, Mel-Spec. Error : 0.358, s/b : 0.726
+Steps : 2504135, Gen Loss Total : 30.232, Mel-Spec. Error : 0.376, s/b : 0.729
+Steps : 2504140, Gen Loss Total : 29.471, Mel-Spec. Error : 0.371, s/b : 0.730
+Steps : 2504145, Gen Loss Total : 30.740, Mel-Spec. Error : 0.370, s/b : 0.715
+Steps : 2504150, Gen Loss Total : 27.841, Mel-Spec. Error : 0.366, s/b : 0.719
+Steps : 2504155, Gen Loss Total : 28.594, Mel-Spec. Error : 0.353, s/b : 0.722
+Steps : 2504160, Gen Loss Total : 30.977, Mel-Spec. Error : 0.370, s/b : 0.711
+Steps : 2504165, Gen Loss Total : 28.476, Mel-Spec. Error : 0.367, s/b : 0.706
+Steps : 2504170, Gen Loss Total : 33.151, Mel-Spec. Error : 0.405, s/b : 0.715
+Steps : 2504175, Gen Loss Total : 32.919, Mel-Spec. Error : 0.407, s/b : 0.720
+Steps : 2504180, Gen Loss Total : 32.251, Mel-Spec. Error : 0.391, s/b : 0.714
+Steps : 2504185, Gen Loss Total : 29.765, Mel-Spec. Error : 0.370, s/b : 0.719
+Steps : 2504190, Gen Loss Total : 32.763, Mel-Spec. Error : 0.387, s/b : 0.714
+Steps : 2504195, Gen Loss Total : 31.321, Mel-Spec. Error : 0.387, s/b : 0.714
+Steps : 2504200, Gen Loss Total : 30.704, Mel-Spec. Error : 0.376, s/b : 0.711
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02504200
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02504200
+Complete.
+Steps : 2504205, Gen Loss Total : 32.716, Mel-Spec. Error : 0.392, s/b : 0.711
+Steps : 2504210, Gen Loss Total : 33.963, Mel-Spec. Error : 0.405, s/b : 0.735
+Steps : 2504215, Gen Loss Total : 28.516, Mel-Spec. Error : 0.346, s/b : 0.727
+Steps : 2504220, Gen Loss Total : 31.306, Mel-Spec. Error : 0.414, s/b : 0.726
+Steps : 2504225, Gen Loss Total : 30.811, Mel-Spec. Error : 0.382, s/b : 0.742
+Steps : 2504230, Gen Loss Total : 30.262, Mel-Spec. Error : 0.366, s/b : 0.741
+Steps : 2504235, Gen Loss Total : 30.440, Mel-Spec. Error : 0.371, s/b : 0.722
+Steps : 2504240, Gen Loss Total : 26.836, Mel-Spec. Error : 0.341, s/b : 0.720
+Steps : 2504245, Gen Loss Total : 25.246, Mel-Spec. Error : 0.308, s/b : 0.728
+Steps : 2504250, Gen Loss Total : 29.057, Mel-Spec. Error : 0.357, s/b : 0.720
+Steps : 2504255, Gen Loss Total : 28.347, Mel-Spec. Error : 0.363, s/b : 0.720
+Steps : 2504260, Gen Loss Total : 28.751, Mel-Spec. Error : 0.334, s/b : 0.720
+Steps : 2504265, Gen Loss Total : 30.024, Mel-Spec. Error : 0.376, s/b : 0.719
+Steps : 2504270, Gen Loss Total : 29.169, Mel-Spec. Error : 0.357, s/b : 0.715
+Steps : 2504275, Gen Loss Total : 29.432, Mel-Spec. Error : 0.364, s/b : 0.714
+Steps : 2504280, Gen Loss Total : 31.831, Mel-Spec. Error : 0.378, s/b : 0.724
+Steps : 2504285, Gen Loss Total : 26.691, Mel-Spec. Error : 0.353, s/b : 0.721
+Steps : 2504290, Gen Loss Total : 30.679, Mel-Spec. Error : 0.371, s/b : 0.705
+Steps : 2504295, Gen Loss Total : 27.809, Mel-Spec. Error : 0.341, s/b : 0.711
+Time taken for epoch 111 is 184 sec
+
+Epoch: 112
+Steps : 2504300, Gen Loss Total : 28.179, Mel-Spec. Error : 0.357, s/b : 0.740
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02504300
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02504300
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2504305, Gen Loss Total : 29.119, Mel-Spec. Error : 0.350, s/b : 0.733
+Steps : 2504310, Gen Loss Total : 30.260, Mel-Spec. Error : 0.363, s/b : 0.736
+Steps : 2504315, Gen Loss Total : 27.321, Mel-Spec. Error : 0.335, s/b : 0.722
+Steps : 2504320, Gen Loss Total : 25.461, Mel-Spec. Error : 0.317, s/b : 0.724
+Steps : 2504325, Gen Loss Total : 30.978, Mel-Spec. Error : 0.381, s/b : 0.725
+Steps : 2504330, Gen Loss Total : 31.602, Mel-Spec. Error : 0.391, s/b : 0.720
+Steps : 2504335, Gen Loss Total : 26.491, Mel-Spec. Error : 0.323, s/b : 0.710
+Steps : 2504340, Gen Loss Total : 28.663, Mel-Spec. Error : 0.365, s/b : 0.716
+Steps : 2504345, Gen Loss Total : 29.685, Mel-Spec. Error : 0.380, s/b : 0.731
+Steps : 2504350, Gen Loss Total : 29.424, Mel-Spec. Error : 0.364, s/b : 0.717
+Steps : 2504355, Gen Loss Total : 31.317, Mel-Spec. Error : 0.360, s/b : 0.717
+Steps : 2504360, Gen Loss Total : 32.458, Mel-Spec. Error : 0.377, s/b : 0.725
+Steps : 2504365, Gen Loss Total : 32.202, Mel-Spec. Error : 0.390, s/b : 0.723
+Steps : 2504370, Gen Loss Total : 28.847, Mel-Spec. Error : 0.349, s/b : 0.722
+Steps : 2504375, Gen Loss Total : 32.304, Mel-Spec. Error : 0.388, s/b : 0.716
+Steps : 2504380, Gen Loss Total : 31.421, Mel-Spec. Error : 0.382, s/b : 0.727
+Steps : 2504385, Gen Loss Total : 24.043, Mel-Spec. Error : 0.300, s/b : 0.710
+Steps : 2504390, Gen Loss Total : 26.868, Mel-Spec. Error : 0.341, s/b : 0.718
+Steps : 2504395, Gen Loss Total : 28.276, Mel-Spec. Error : 0.353, s/b : 0.722
+Steps : 2504400, Gen Loss Total : 31.063, Mel-Spec. Error : 0.371, s/b : 0.720
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02504400
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02504400
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2504405, Gen Loss Total : 28.919, Mel-Spec. Error : 0.345, s/b : 0.725
+Steps : 2504410, Gen Loss Total : 31.816, Mel-Spec. Error : 0.388, s/b : 0.718
+Steps : 2504415, Gen Loss Total : 27.602, Mel-Spec. Error : 0.336, s/b : 0.720
+Steps : 2504420, Gen Loss Total : 29.929, Mel-Spec. Error : 0.360, s/b : 0.715
+Steps : 2504425, Gen Loss Total : 34.017, Mel-Spec. Error : 0.396, s/b : 0.725
+Steps : 2504430, Gen Loss Total : 33.098, Mel-Spec. Error : 0.387, s/b : 0.719
+Steps : 2504435, Gen Loss Total : 28.183, Mel-Spec. Error : 0.343, s/b : 0.728
+Steps : 2504440, Gen Loss Total : 30.077, Mel-Spec. Error : 0.372, s/b : 0.733
+Steps : 2504445, Gen Loss Total : 27.956, Mel-Spec. Error : 0.354, s/b : 0.711
+Steps : 2504450, Gen Loss Total : 30.593, Mel-Spec. Error : 0.385, s/b : 0.734
+Steps : 2504455, Gen Loss Total : 30.151, Mel-Spec. Error : 0.376, s/b : 0.719
+Steps : 2504460, Gen Loss Total : 27.920, Mel-Spec. Error : 0.335, s/b : 0.710
+Steps : 2504465, Gen Loss Total : 31.001, Mel-Spec. Error : 0.386, s/b : 0.730
+Steps : 2504470, Gen Loss Total : 29.691, Mel-Spec. Error : 0.367, s/b : 0.704
+Steps : 2504475, Gen Loss Total : 29.806, Mel-Spec. Error : 0.374, s/b : 0.723
+Steps : 2504480, Gen Loss Total : 26.197, Mel-Spec. Error : 0.319, s/b : 0.719
+Steps : 2504485, Gen Loss Total : 30.574, Mel-Spec. Error : 0.360, s/b : 0.716
+Steps : 2504490, Gen Loss Total : 27.060, Mel-Spec. Error : 0.345, s/b : 0.707
+Steps : 2504495, Gen Loss Total : 29.152, Mel-Spec. Error : 0.348, s/b : 0.715
+Steps : 2504500, Gen Loss Total : 30.777, Mel-Spec. Error : 0.369, s/b : 0.708
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02504500
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02504500
+Complete.
+Steps : 2504505, Gen Loss Total : 31.107, Mel-Spec. Error : 0.373, s/b : 0.736
+Steps : 2504510, Gen Loss Total : 31.985, Mel-Spec. Error : 0.375, s/b : 0.734
+Steps : 2504515, Gen Loss Total : 28.619, Mel-Spec. Error : 0.350, s/b : 0.715
+Steps : 2504520, Gen Loss Total : 29.484, Mel-Spec. Error : 0.361, s/b : 0.713
+Time taken for epoch 112 is 206 sec
+
+Epoch: 113
+Steps : 2504525, Gen Loss Total : 27.591, Mel-Spec. Error : 0.358, s/b : 0.713
+Steps : 2504530, Gen Loss Total : 24.806, Mel-Spec. Error : 0.321, s/b : 0.717
+Steps : 2504535, Gen Loss Total : 31.078, Mel-Spec. Error : 0.383, s/b : 0.732
+Steps : 2504540, Gen Loss Total : 32.836, Mel-Spec. Error : 0.390, s/b : 0.715
+Steps : 2504545, Gen Loss Total : 28.433, Mel-Spec. Error : 0.352, s/b : 0.713
+Steps : 2504550, Gen Loss Total : 33.148, Mel-Spec. Error : 0.399, s/b : 0.717
+Steps : 2504555, Gen Loss Total : 32.787, Mel-Spec. Error : 0.381, s/b : 0.730
+Steps : 2504560, Gen Loss Total : 28.749, Mel-Spec. Error : 0.340, s/b : 0.719
+Steps : 2504565, Gen Loss Total : 27.487, Mel-Spec. Error : 0.337, s/b : 0.709
+Steps : 2504570, Gen Loss Total : 28.892, Mel-Spec. Error : 0.357, s/b : 0.705
+Steps : 2504575, Gen Loss Total : 28.520, Mel-Spec. Error : 0.352, s/b : 0.717
+Steps : 2504580, Gen Loss Total : 30.416, Mel-Spec. Error : 0.360, s/b : 0.718
+Steps : 2504585, Gen Loss Total : 30.463, Mel-Spec. Error : 0.377, s/b : 0.717
+Steps : 2504590, Gen Loss Total : 24.720, Mel-Spec. Error : 0.302, s/b : 0.722
+Steps : 2504595, Gen Loss Total : 29.260, Mel-Spec. Error : 0.353, s/b : 0.717
+Steps : 2504600, Gen Loss Total : 27.522, Mel-Spec. Error : 0.334, s/b : 0.713
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02504600
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02504600
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2504605, Gen Loss Total : 30.886, Mel-Spec. Error : 0.376, s/b : 0.714
+Steps : 2504610, Gen Loss Total : 31.742, Mel-Spec. Error : 0.369, s/b : 0.720
+Steps : 2504615, Gen Loss Total : 28.693, Mel-Spec. Error : 0.365, s/b : 0.718
+Steps : 2504620, Gen Loss Total : 29.009, Mel-Spec. Error : 0.355, s/b : 0.720
+Steps : 2504625, Gen Loss Total : 33.097, Mel-Spec. Error : 0.407, s/b : 0.726
+Steps : 2504630, Gen Loss Total : 30.287, Mel-Spec. Error : 0.363, s/b : 0.719
+Steps : 2504635, Gen Loss Total : 24.456, Mel-Spec. Error : 0.295, s/b : 0.719
+Steps : 2504640, Gen Loss Total : 28.576, Mel-Spec. Error : 0.350, s/b : 0.729
+Steps : 2504645, Gen Loss Total : 31.752, Mel-Spec. Error : 0.377, s/b : 0.716
+Steps : 2504650, Gen Loss Total : 29.473, Mel-Spec. Error : 0.364, s/b : 0.722
+Steps : 2504655, Gen Loss Total : 28.812, Mel-Spec. Error : 0.358, s/b : 0.730
+Steps : 2504660, Gen Loss Total : 27.387, Mel-Spec. Error : 0.321, s/b : 0.723
+Steps : 2504665, Gen Loss Total : 33.611, Mel-Spec. Error : 0.419, s/b : 0.726
+Steps : 2504670, Gen Loss Total : 28.608, Mel-Spec. Error : 0.356, s/b : 0.713
+Steps : 2504675, Gen Loss Total : 29.249, Mel-Spec. Error : 0.358, s/b : 0.715
+Steps : 2504680, Gen Loss Total : 30.183, Mel-Spec. Error : 0.362, s/b : 0.721
+Steps : 2504685, Gen Loss Total : 29.484, Mel-Spec. Error : 0.361, s/b : 0.713
+Steps : 2504690, Gen Loss Total : 30.636, Mel-Spec. Error : 0.369, s/b : 0.725
+Steps : 2504695, Gen Loss Total : 28.579, Mel-Spec. Error : 0.362, s/b : 0.714
+Steps : 2504700, Gen Loss Total : 30.856, Mel-Spec. Error : 0.373, s/b : 0.729
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02504700
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02504700
+Complete.
+Steps : 2504705, Gen Loss Total : 31.934, Mel-Spec. Error : 0.370, s/b : 0.720
+Steps : 2504710, Gen Loss Total : 27.988, Mel-Spec. Error : 0.341, s/b : 0.722
+Steps : 2504715, Gen Loss Total : 29.164, Mel-Spec. Error : 0.372, s/b : 0.724
+Steps : 2504720, Gen Loss Total : 28.418, Mel-Spec. Error : 0.344, s/b : 0.712
+Steps : 2504725, Gen Loss Total : 28.451, Mel-Spec. Error : 0.352, s/b : 0.722
+Steps : 2504730, Gen Loss Total : 33.994, Mel-Spec. Error : 0.408, s/b : 0.729
+Steps : 2504735, Gen Loss Total : 30.396, Mel-Spec. Error : 0.355, s/b : 0.711
+Steps : 2504740, Gen Loss Total : 26.639, Mel-Spec. Error : 0.327, s/b : 0.711
+Time taken for epoch 113 is 188 sec
+
+Epoch: 114
+Steps : 2504745, Gen Loss Total : 27.601, Mel-Spec. Error : 0.352, s/b : 0.721
+Steps : 2504750, Gen Loss Total : 32.847, Mel-Spec. Error : 0.390, s/b : 0.720
+Steps : 2504755, Gen Loss Total : 30.673, Mel-Spec. Error : 0.379, s/b : 0.718
+Steps : 2504760, Gen Loss Total : 31.637, Mel-Spec. Error : 0.389, s/b : 0.718
+Steps : 2504765, Gen Loss Total : 30.028, Mel-Spec. Error : 0.354, s/b : 0.724
+Steps : 2504770, Gen Loss Total : 27.197, Mel-Spec. Error : 0.330, s/b : 0.716
+Steps : 2504775, Gen Loss Total : 28.761, Mel-Spec. Error : 0.356, s/b : 0.711
+Steps : 2504780, Gen Loss Total : 31.720, Mel-Spec. Error : 0.378, s/b : 0.724
+Steps : 2504785, Gen Loss Total : 26.626, Mel-Spec. Error : 0.319, s/b : 0.720
+Steps : 2504790, Gen Loss Total : 31.797, Mel-Spec. Error : 0.376, s/b : 0.712
+Steps : 2504795, Gen Loss Total : 28.866, Mel-Spec. Error : 0.349, s/b : 0.712
+Steps : 2504800, Gen Loss Total : 28.359, Mel-Spec. Error : 0.365, s/b : 0.713
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02504800
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02504800
+Complete.
+Steps : 2504805, Gen Loss Total : 29.513, Mel-Spec. Error : 0.367, s/b : 0.728
+Steps : 2504810, Gen Loss Total : 29.601, Mel-Spec. Error : 0.358, s/b : 0.713
+Steps : 2504815, Gen Loss Total : 29.620, Mel-Spec. Error : 0.355, s/b : 0.721
+Steps : 2504820, Gen Loss Total : 28.894, Mel-Spec. Error : 0.359, s/b : 0.697
+Steps : 2504825, Gen Loss Total : 32.488, Mel-Spec. Error : 0.390, s/b : 0.727
+Steps : 2504830, Gen Loss Total : 27.389, Mel-Spec. Error : 0.340, s/b : 0.710
+Steps : 2504835, Gen Loss Total : 31.888, Mel-Spec. Error : 0.390, s/b : 0.722
+Steps : 2504840, Gen Loss Total : 30.192, Mel-Spec. Error : 0.364, s/b : 0.722
+Steps : 2504845, Gen Loss Total : 26.834, Mel-Spec. Error : 0.332, s/b : 0.726
+Steps : 2504850, Gen Loss Total : 26.943, Mel-Spec. Error : 0.339, s/b : 0.713
+Steps : 2504855, Gen Loss Total : 30.179, Mel-Spec. Error : 0.373, s/b : 0.723
+Steps : 2504860, Gen Loss Total : 28.386, Mel-Spec. Error : 0.360, s/b : 0.724
+Steps : 2504865, Gen Loss Total : 28.195, Mel-Spec. Error : 0.360, s/b : 0.718
+Steps : 2504870, Gen Loss Total : 31.156, Mel-Spec. Error : 0.373, s/b : 0.716
+Steps : 2504875, Gen Loss Total : 27.238, Mel-Spec. Error : 0.333, s/b : 0.715
+Steps : 2504880, Gen Loss Total : 31.639, Mel-Spec. Error : 0.378, s/b : 0.707
+Steps : 2504885, Gen Loss Total : 25.674, Mel-Spec. Error : 0.311, s/b : 0.715
+Steps : 2504890, Gen Loss Total : 26.087, Mel-Spec. Error : 0.323, s/b : 0.710
+Steps : 2504895, Gen Loss Total : 30.935, Mel-Spec. Error : 0.376, s/b : 0.709
+Steps : 2504900, Gen Loss Total : 29.508, Mel-Spec. Error : 0.369, s/b : 0.706
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02504900
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02504900
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2504905, Gen Loss Total : 31.052, Mel-Spec. Error : 0.386, s/b : 0.725
+Steps : 2504910, Gen Loss Total : 29.140, Mel-Spec. Error : 0.356, s/b : 0.716
+Steps : 2504915, Gen Loss Total : 25.808, Mel-Spec. Error : 0.326, s/b : 0.724
+Steps : 2504920, Gen Loss Total : 30.522, Mel-Spec. Error : 0.361, s/b : 0.715
+Steps : 2504925, Gen Loss Total : 30.764, Mel-Spec. Error : 0.369, s/b : 0.729
+Steps : 2504930, Gen Loss Total : 27.213, Mel-Spec. Error : 0.338, s/b : 0.718
+Steps : 2504935, Gen Loss Total : 33.025, Mel-Spec. Error : 0.387, s/b : 0.710
+Steps : 2504940, Gen Loss Total : 31.210, Mel-Spec. Error : 0.367, s/b : 0.723
+Steps : 2504945, Gen Loss Total : 30.321, Mel-Spec. Error : 0.364, s/b : 0.723
+Steps : 2504950, Gen Loss Total : 28.342, Mel-Spec. Error : 0.352, s/b : 0.731
+Steps : 2504955, Gen Loss Total : 31.173, Mel-Spec. Error : 0.372, s/b : 0.713
+Steps : 2504960, Gen Loss Total : 27.962, Mel-Spec. Error : 0.355, s/b : 0.716
+Time taken for epoch 114 is 187 sec
+
+Epoch: 115
+Steps : 2504965, Gen Loss Total : 32.190, Mel-Spec. Error : 0.394, s/b : 0.708
+Steps : 2504970, Gen Loss Total : 25.447, Mel-Spec. Error : 0.313, s/b : 0.721
+Steps : 2504975, Gen Loss Total : 29.078, Mel-Spec. Error : 0.354, s/b : 0.708
+Steps : 2504980, Gen Loss Total : 27.726, Mel-Spec. Error : 0.354, s/b : 0.722
+Steps : 2504985, Gen Loss Total : 27.248, Mel-Spec. Error : 0.349, s/b : 0.724
+Steps : 2504990, Gen Loss Total : 27.168, Mel-Spec. Error : 0.355, s/b : 0.706
+Steps : 2504995, Gen Loss Total : 26.681, Mel-Spec. Error : 0.340, s/b : 0.710
+Steps : 2505000, Gen Loss Total : 32.286, Mel-Spec. Error : 0.399, s/b : 0.726
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02505000
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02505000
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2505005, Gen Loss Total : 31.730, Mel-Spec. Error : 0.377, s/b : 0.734
+Steps : 2505010, Gen Loss Total : 27.768, Mel-Spec. Error : 0.357, s/b : 0.720
+Steps : 2505015, Gen Loss Total : 32.951, Mel-Spec. Error : 0.387, s/b : 0.732
+Steps : 2505020, Gen Loss Total : 27.048, Mel-Spec. Error : 0.352, s/b : 0.719
+Steps : 2505025, Gen Loss Total : 28.103, Mel-Spec. Error : 0.329, s/b : 0.719
+Steps : 2505030, Gen Loss Total : 28.663, Mel-Spec. Error : 0.353, s/b : 0.742
+Steps : 2505035, Gen Loss Total : 26.873, Mel-Spec. Error : 0.315, s/b : 0.722
+Steps : 2505040, Gen Loss Total : 30.898, Mel-Spec. Error : 0.384, s/b : 0.709
+Steps : 2505045, Gen Loss Total : 28.921, Mel-Spec. Error : 0.358, s/b : 0.725
+Steps : 2505050, Gen Loss Total : 29.241, Mel-Spec. Error : 0.367, s/b : 0.720
+Steps : 2505055, Gen Loss Total : 31.160, Mel-Spec. Error : 0.387, s/b : 0.728
+Steps : 2505060, Gen Loss Total : 32.526, Mel-Spec. Error : 0.391, s/b : 0.717
+Steps : 2505065, Gen Loss Total : 30.187, Mel-Spec. Error : 0.365, s/b : 0.711
+Steps : 2505070, Gen Loss Total : 30.282, Mel-Spec. Error : 0.372, s/b : 0.717
+Steps : 2505075, Gen Loss Total : 24.939, Mel-Spec. Error : 0.327, s/b : 0.717
+Steps : 2505080, Gen Loss Total : 27.337, Mel-Spec. Error : 0.335, s/b : 0.719
+Steps : 2505085, Gen Loss Total : 31.276, Mel-Spec. Error : 0.397, s/b : 0.733
+Steps : 2505090, Gen Loss Total : 29.323, Mel-Spec. Error : 0.359, s/b : 0.716
+Steps : 2505095, Gen Loss Total : 28.957, Mel-Spec. Error : 0.335, s/b : 0.717
+Steps : 2505100, Gen Loss Total : 27.440, Mel-Spec. Error : 0.341, s/b : 0.714
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02505100
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02505100
+Complete.
+Steps : 2505105, Gen Loss Total : 28.495, Mel-Spec. Error : 0.333, s/b : 0.717
+Steps : 2505110, Gen Loss Total : 31.603, Mel-Spec. Error : 0.384, s/b : 0.722
+Steps : 2505115, Gen Loss Total : 26.327, Mel-Spec. Error : 0.338, s/b : 0.724
+Steps : 2505120, Gen Loss Total : 30.145, Mel-Spec. Error : 0.357, s/b : 0.738
+Steps : 2505125, Gen Loss Total : 33.241, Mel-Spec. Error : 0.391, s/b : 0.730
+Steps : 2505130, Gen Loss Total : 32.029, Mel-Spec. Error : 0.386, s/b : 0.719
+Steps : 2505135, Gen Loss Total : 27.833, Mel-Spec. Error : 0.348, s/b : 0.734
+Steps : 2505140, Gen Loss Total : 27.702, Mel-Spec. Error : 0.351, s/b : 0.723
+Steps : 2505145, Gen Loss Total : 29.317, Mel-Spec. Error : 0.353, s/b : 0.724
+Steps : 2505150, Gen Loss Total : 34.490, Mel-Spec. Error : 0.388, s/b : 0.720
+Steps : 2505155, Gen Loss Total : 28.235, Mel-Spec. Error : 0.352, s/b : 0.709
+Steps : 2505160, Gen Loss Total : 27.304, Mel-Spec. Error : 0.348, s/b : 0.716
+Steps : 2505165, Gen Loss Total : 26.546, Mel-Spec. Error : 0.322, s/b : 0.716
+Steps : 2505170, Gen Loss Total : 26.943, Mel-Spec. Error : 0.351, s/b : 0.715
+Steps : 2505175, Gen Loss Total : 27.540, Mel-Spec. Error : 0.340, s/b : 0.713
+Steps : 2505180, Gen Loss Total : 26.955, Mel-Spec. Error : 0.343, s/b : 0.711
+Time taken for epoch 115 is 187 sec
+
+Epoch: 116
+Steps : 2505185, Gen Loss Total : 32.175, Mel-Spec. Error : 0.396, s/b : 0.712
+Steps : 2505190, Gen Loss Total : 26.680, Mel-Spec. Error : 0.340, s/b : 0.712
+Steps : 2505195, Gen Loss Total : 26.360, Mel-Spec. Error : 0.334, s/b : 0.718
+Steps : 2505200, Gen Loss Total : 28.514, Mel-Spec. Error : 0.356, s/b : 0.723
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02505200
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02505200
+Complete.
+Steps : 2505205, Gen Loss Total : 28.024, Mel-Spec. Error : 0.350, s/b : 0.712
+Steps : 2505210, Gen Loss Total : 30.514, Mel-Spec. Error : 0.364, s/b : 0.706
+Steps : 2505215, Gen Loss Total : 30.641, Mel-Spec. Error : 0.362, s/b : 0.723
+Steps : 2505220, Gen Loss Total : 31.127, Mel-Spec. Error : 0.379, s/b : 0.717
+Steps : 2505225, Gen Loss Total : 22.011, Mel-Spec. Error : 0.283, s/b : 0.724
+Steps : 2505230, Gen Loss Total : 28.715, Mel-Spec. Error : 0.354, s/b : 0.717
+Steps : 2505235, Gen Loss Total : 27.936, Mel-Spec. Error : 0.336, s/b : 0.730
+Steps : 2505240, Gen Loss Total : 27.944, Mel-Spec. Error : 0.350, s/b : 0.709
+Steps : 2505245, Gen Loss Total : 28.898, Mel-Spec. Error : 0.361, s/b : 0.715
+Steps : 2505250, Gen Loss Total : 26.379, Mel-Spec. Error : 0.341, s/b : 0.723
+Steps : 2505255, Gen Loss Total : 27.693, Mel-Spec. Error : 0.355, s/b : 0.724
+Steps : 2505260, Gen Loss Total : 28.978, Mel-Spec. Error : 0.360, s/b : 0.708
+Steps : 2505265, Gen Loss Total : 27.483, Mel-Spec. Error : 0.350, s/b : 0.703
+Steps : 2505270, Gen Loss Total : 30.598, Mel-Spec. Error : 0.378, s/b : 0.712
+Steps : 2505275, Gen Loss Total : 29.887, Mel-Spec. Error : 0.378, s/b : 0.701
+Steps : 2505280, Gen Loss Total : 28.725, Mel-Spec. Error : 0.348, s/b : 0.715
+Steps : 2505285, Gen Loss Total : 31.322, Mel-Spec. Error : 0.376, s/b : 0.715
+Steps : 2505290, Gen Loss Total : 29.302, Mel-Spec. Error : 0.370, s/b : 0.705
+Steps : 2505295, Gen Loss Total : 32.719, Mel-Spec. Error : 0.379, s/b : 0.716
+Steps : 2505300, Gen Loss Total : 33.956, Mel-Spec. Error : 0.408, s/b : 0.715
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02505300
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02505300
+Complete.
+Steps : 2505305, Gen Loss Total : 31.602, Mel-Spec. Error : 0.381, s/b : 0.714
+Steps : 2505310, Gen Loss Total : 28.294, Mel-Spec. Error : 0.351, s/b : 0.736
+Steps : 2505315, Gen Loss Total : 33.940, Mel-Spec. Error : 0.399, s/b : 0.714
+Steps : 2505320, Gen Loss Total : 28.826, Mel-Spec. Error : 0.373, s/b : 0.736
+Steps : 2505325, Gen Loss Total : 35.414, Mel-Spec. Error : 0.421, s/b : 0.730
+Steps : 2505330, Gen Loss Total : 28.077, Mel-Spec. Error : 0.341, s/b : 0.711
+Steps : 2505335, Gen Loss Total : 27.441, Mel-Spec. Error : 0.317, s/b : 0.712
+Steps : 2505340, Gen Loss Total : 29.897, Mel-Spec. Error : 0.348, s/b : 0.728
+Steps : 2505345, Gen Loss Total : 27.985, Mel-Spec. Error : 0.351, s/b : 0.717
+Steps : 2505350, Gen Loss Total : 25.559, Mel-Spec. Error : 0.309, s/b : 0.715
+Steps : 2505355, Gen Loss Total : 30.343, Mel-Spec. Error : 0.377, s/b : 0.715
+Steps : 2505360, Gen Loss Total : 28.039, Mel-Spec. Error : 0.352, s/b : 0.723
+Steps : 2505365, Gen Loss Total : 28.319, Mel-Spec. Error : 0.338, s/b : 0.725
+Steps : 2505370, Gen Loss Total : 30.677, Mel-Spec. Error : 0.380, s/b : 0.727
+Steps : 2505375, Gen Loss Total : 25.869, Mel-Spec. Error : 0.316, s/b : 0.722
+Steps : 2505380, Gen Loss Total : 28.883, Mel-Spec. Error : 0.345, s/b : 0.729
+Steps : 2505385, Gen Loss Total : 30.982, Mel-Spec. Error : 0.378, s/b : 0.703
+Steps : 2505390, Gen Loss Total : 24.882, Mel-Spec. Error : 0.313, s/b : 0.714
+Steps : 2505395, Gen Loss Total : 28.586, Mel-Spec. Error : 0.337, s/b : 0.714
+Steps : 2505400, Gen Loss Total : 23.647, Mel-Spec. Error : 0.297, s/b : 0.711
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02505400
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02505400
+Complete.
+Time taken for epoch 116 is 194 sec
+
+Epoch: 117
+Steps : 2505405, Gen Loss Total : 27.302, Mel-Spec. Error : 0.337, s/b : 0.737
+Steps : 2505410, Gen Loss Total : 30.812, Mel-Spec. Error : 0.371, s/b : 0.733
+Steps : 2505415, Gen Loss Total : 28.493, Mel-Spec. Error : 0.336, s/b : 0.716
+Steps : 2505420, Gen Loss Total : 27.884, Mel-Spec. Error : 0.350, s/b : 0.722
+Steps : 2505425, Gen Loss Total : 27.860, Mel-Spec. Error : 0.343, s/b : 0.715
+Steps : 2505430, Gen Loss Total : 33.646, Mel-Spec. Error : 0.397, s/b : 0.725
+Steps : 2505435, Gen Loss Total : 30.057, Mel-Spec. Error : 0.357, s/b : 0.706
+Steps : 2505440, Gen Loss Total : 27.858, Mel-Spec. Error : 0.326, s/b : 0.705
+Steps : 2505445, Gen Loss Total : 26.994, Mel-Spec. Error : 0.336, s/b : 0.713
+Steps : 2505450, Gen Loss Total : 26.856, Mel-Spec. Error : 0.340, s/b : 0.712
+Steps : 2505455, Gen Loss Total : 26.653, Mel-Spec. Error : 0.331, s/b : 0.715
+Steps : 2505460, Gen Loss Total : 34.544, Mel-Spec. Error : 0.401, s/b : 0.711
+Steps : 2505465, Gen Loss Total : 26.667, Mel-Spec. Error : 0.338, s/b : 0.720
+Steps : 2505470, Gen Loss Total : 29.945, Mel-Spec. Error : 0.379, s/b : 0.718
+Steps : 2505475, Gen Loss Total : 25.662, Mel-Spec. Error : 0.305, s/b : 0.712
+Steps : 2505480, Gen Loss Total : 31.049, Mel-Spec. Error : 0.377, s/b : 0.715
+Steps : 2505485, Gen Loss Total : 34.984, Mel-Spec. Error : 0.406, s/b : 0.709
+Steps : 2505490, Gen Loss Total : 31.166, Mel-Spec. Error : 0.372, s/b : 0.711
+Steps : 2505495, Gen Loss Total : 29.248, Mel-Spec. Error : 0.365, s/b : 0.707
+Steps : 2505500, Gen Loss Total : 27.791, Mel-Spec. Error : 0.353, s/b : 0.705
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02505500
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02505500
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2505505, Gen Loss Total : 31.992, Mel-Spec. Error : 0.390, s/b : 0.710
+Steps : 2505510, Gen Loss Total : 26.987, Mel-Spec. Error : 0.333, s/b : 0.729
+Steps : 2505515, Gen Loss Total : 29.163, Mel-Spec. Error : 0.366, s/b : 0.720
+Steps : 2505520, Gen Loss Total : 25.621, Mel-Spec. Error : 0.294, s/b : 0.721
+Steps : 2505525, Gen Loss Total : 28.265, Mel-Spec. Error : 0.347, s/b : 0.725
+Steps : 2505530, Gen Loss Total : 30.279, Mel-Spec. Error : 0.363, s/b : 0.737
+Steps : 2505535, Gen Loss Total : 29.600, Mel-Spec. Error : 0.357, s/b : 0.722
+Steps : 2505540, Gen Loss Total : 28.988, Mel-Spec. Error : 0.353, s/b : 0.722
+Steps : 2505545, Gen Loss Total : 31.299, Mel-Spec. Error : 0.364, s/b : 0.717
+Steps : 2505550, Gen Loss Total : 31.311, Mel-Spec. Error : 0.368, s/b : 0.723
+Steps : 2505555, Gen Loss Total : 28.798, Mel-Spec. Error : 0.369, s/b : 0.731
+Steps : 2505560, Gen Loss Total : 30.920, Mel-Spec. Error : 0.375, s/b : 0.726
+Steps : 2505565, Gen Loss Total : 27.988, Mel-Spec. Error : 0.349, s/b : 0.715
+Steps : 2505570, Gen Loss Total : 29.006, Mel-Spec. Error : 0.342, s/b : 0.716
+Steps : 2505575, Gen Loss Total : 31.678, Mel-Spec. Error : 0.379, s/b : 0.721
+Steps : 2505580, Gen Loss Total : 27.681, Mel-Spec. Error : 0.341, s/b : 0.697
+Steps : 2505585, Gen Loss Total : 30.418, Mel-Spec. Error : 0.363, s/b : 0.706
+Steps : 2505590, Gen Loss Total : 26.874, Mel-Spec. Error : 0.344, s/b : 0.720
+Steps : 2505595, Gen Loss Total : 30.425, Mel-Spec. Error : 0.372, s/b : 0.707
+Steps : 2505600, Gen Loss Total : 26.362, Mel-Spec. Error : 0.319, s/b : 0.710
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02505600
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02505600
+Complete.
+Steps : 2505605, Gen Loss Total : 32.336, Mel-Spec. Error : 0.353, s/b : 0.723
+Steps : 2505610, Gen Loss Total : 27.234, Mel-Spec. Error : 0.338, s/b : 0.722
+Steps : 2505615, Gen Loss Total : 26.513, Mel-Spec. Error : 0.328, s/b : 0.708
+Steps : 2505620, Gen Loss Total : 29.060, Mel-Spec. Error : 0.353, s/b : 0.715
+Steps : 2505625, Gen Loss Total : 25.372, Mel-Spec. Error : 0.329, s/b : 0.713
+Time taken for epoch 117 is 186 sec
+
+Epoch: 118
+Steps : 2505630, Gen Loss Total : 30.329, Mel-Spec. Error : 0.362, s/b : 0.721
+Steps : 2505635, Gen Loss Total : 29.814, Mel-Spec. Error : 0.347, s/b : 0.722
+Steps : 2505640, Gen Loss Total : 24.920, Mel-Spec. Error : 0.314, s/b : 0.705
+Steps : 2505645, Gen Loss Total : 29.604, Mel-Spec. Error : 0.365, s/b : 0.722
+Steps : 2505650, Gen Loss Total : 30.341, Mel-Spec. Error : 0.375, s/b : 0.716
+Steps : 2505655, Gen Loss Total : 30.611, Mel-Spec. Error : 0.365, s/b : 0.711
+Steps : 2505660, Gen Loss Total : 27.319, Mel-Spec. Error : 0.321, s/b : 0.706
+Steps : 2505665, Gen Loss Total : 29.538, Mel-Spec. Error : 0.345, s/b : 0.717
+Steps : 2505670, Gen Loss Total : 29.547, Mel-Spec. Error : 0.370, s/b : 0.710
+Steps : 2505675, Gen Loss Total : 27.378, Mel-Spec. Error : 0.326, s/b : 0.713
+Steps : 2505680, Gen Loss Total : 29.841, Mel-Spec. Error : 0.368, s/b : 0.735
+Steps : 2505685, Gen Loss Total : 29.809, Mel-Spec. Error : 0.356, s/b : 0.722
+Steps : 2505690, Gen Loss Total : 31.562, Mel-Spec. Error : 0.372, s/b : 0.712
+Steps : 2505695, Gen Loss Total : 25.293, Mel-Spec. Error : 0.306, s/b : 0.710
+Steps : 2505700, Gen Loss Total : 29.402, Mel-Spec. Error : 0.349, s/b : 0.720
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02505700
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02505700
+Complete.
+Steps : 2505705, Gen Loss Total : 28.836, Mel-Spec. Error : 0.338, s/b : 0.718
+Steps : 2505710, Gen Loss Total : 28.758, Mel-Spec. Error : 0.356, s/b : 0.717
+Steps : 2505715, Gen Loss Total : 29.552, Mel-Spec. Error : 0.339, s/b : 0.713
+Steps : 2505720, Gen Loss Total : 30.734, Mel-Spec. Error : 0.382, s/b : 0.733
+Steps : 2505725, Gen Loss Total : 26.393, Mel-Spec. Error : 0.347, s/b : 0.733
+Steps : 2505730, Gen Loss Total : 26.633, Mel-Spec. Error : 0.325, s/b : 0.734
+Steps : 2505735, Gen Loss Total : 29.406, Mel-Spec. Error : 0.356, s/b : 0.719
+Steps : 2505740, Gen Loss Total : 27.131, Mel-Spec. Error : 0.321, s/b : 0.711
+Steps : 2505745, Gen Loss Total : 30.345, Mel-Spec. Error : 0.376, s/b : 0.718
+Steps : 2505750, Gen Loss Total : 33.576, Mel-Spec. Error : 0.383, s/b : 0.727
+Steps : 2505755, Gen Loss Total : 33.539, Mel-Spec. Error : 0.379, s/b : 0.708
+Steps : 2505760, Gen Loss Total : 24.733, Mel-Spec. Error : 0.305, s/b : 0.710
+Steps : 2505765, Gen Loss Total : 25.940, Mel-Spec. Error : 0.320, s/b : 0.701
+Steps : 2505770, Gen Loss Total : 28.857, Mel-Spec. Error : 0.371, s/b : 0.708
+Steps : 2505775, Gen Loss Total : 29.122, Mel-Spec. Error : 0.366, s/b : 0.728
+Steps : 2505780, Gen Loss Total : 26.874, Mel-Spec. Error : 0.316, s/b : 0.719
+Steps : 2505785, Gen Loss Total : 32.259, Mel-Spec. Error : 0.385, s/b : 0.712
+Steps : 2505790, Gen Loss Total : 26.450, Mel-Spec. Error : 0.326, s/b : 0.710
+Steps : 2505795, Gen Loss Total : 32.649, Mel-Spec. Error : 0.381, s/b : 0.707
+Steps : 2505800, Gen Loss Total : 27.864, Mel-Spec. Error : 0.337, s/b : 0.711
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02505800
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02505800
+Complete.
+Steps : 2505805, Gen Loss Total : 30.060, Mel-Spec. Error : 0.365, s/b : 0.716
+Steps : 2505810, Gen Loss Total : 30.816, Mel-Spec. Error : 0.363, s/b : 0.721
+Steps : 2505815, Gen Loss Total : 25.249, Mel-Spec. Error : 0.312, s/b : 0.723
+Steps : 2505820, Gen Loss Total : 28.427, Mel-Spec. Error : 0.349, s/b : 0.714
+Steps : 2505825, Gen Loss Total : 29.509, Mel-Spec. Error : 0.353, s/b : 0.714
+Steps : 2505830, Gen Loss Total : 28.004, Mel-Spec. Error : 0.350, s/b : 0.721
+Steps : 2505835, Gen Loss Total : 25.737, Mel-Spec. Error : 0.339, s/b : 0.723
+Steps : 2505840, Gen Loss Total : 30.143, Mel-Spec. Error : 0.355, s/b : 0.701
+Steps : 2505845, Gen Loss Total : 25.564, Mel-Spec. Error : 0.313, s/b : 0.719
+Time taken for epoch 118 is 183 sec
+
+Epoch: 119
+Steps : 2505850, Gen Loss Total : 27.790, Mel-Spec. Error : 0.357, s/b : 0.715
+Steps : 2505855, Gen Loss Total : 27.799, Mel-Spec. Error : 0.352, s/b : 0.719
+Steps : 2505860, Gen Loss Total : 29.025, Mel-Spec. Error : 0.352, s/b : 0.718
+Steps : 2505865, Gen Loss Total : 29.176, Mel-Spec. Error : 0.350, s/b : 0.718
+Steps : 2505870, Gen Loss Total : 27.124, Mel-Spec. Error : 0.340, s/b : 0.715
+Steps : 2505875, Gen Loss Total : 27.554, Mel-Spec. Error : 0.327, s/b : 0.713
+Steps : 2505880, Gen Loss Total : 28.048, Mel-Spec. Error : 0.331, s/b : 0.705
+Steps : 2505885, Gen Loss Total : 31.958, Mel-Spec. Error : 0.379, s/b : 0.718
+Steps : 2505890, Gen Loss Total : 28.050, Mel-Spec. Error : 0.336, s/b : 0.705
+Steps : 2505895, Gen Loss Total : 32.173, Mel-Spec. Error : 0.391, s/b : 0.712
+Steps : 2505900, Gen Loss Total : 26.858, Mel-Spec. Error : 0.325, s/b : 0.719
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02505900
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02505900
+Complete.
+Steps : 2505905, Gen Loss Total : 29.660, Mel-Spec. Error : 0.349, s/b : 0.734
+Steps : 2505910, Gen Loss Total : 27.504, Mel-Spec. Error : 0.347, s/b : 0.715
+Steps : 2505915, Gen Loss Total : 26.713, Mel-Spec. Error : 0.322, s/b : 0.718
+Steps : 2505920, Gen Loss Total : 29.910, Mel-Spec. Error : 0.362, s/b : 0.722
+Steps : 2505925, Gen Loss Total : 26.592, Mel-Spec. Error : 0.320, s/b : 0.716
+Steps : 2505930, Gen Loss Total : 30.518, Mel-Spec. Error : 0.380, s/b : 0.716
+Steps : 2505935, Gen Loss Total : 29.078, Mel-Spec. Error : 0.355, s/b : 0.711
+Steps : 2505940, Gen Loss Total : 30.453, Mel-Spec. Error : 0.379, s/b : 0.729
+Steps : 2505945, Gen Loss Total : 31.463, Mel-Spec. Error : 0.390, s/b : 0.705
+Steps : 2505950, Gen Loss Total : 30.065, Mel-Spec. Error : 0.371, s/b : 0.720
+Steps : 2505955, Gen Loss Total : 28.180, Mel-Spec. Error : 0.350, s/b : 0.708
+Steps : 2505960, Gen Loss Total : 29.919, Mel-Spec. Error : 0.357, s/b : 0.716
+Steps : 2505965, Gen Loss Total : 24.669, Mel-Spec. Error : 0.320, s/b : 0.716
+Steps : 2505970, Gen Loss Total : 27.341, Mel-Spec. Error : 0.345, s/b : 0.713
+Steps : 2505975, Gen Loss Total : 27.572, Mel-Spec. Error : 0.345, s/b : 0.729
+Steps : 2505980, Gen Loss Total : 29.616, Mel-Spec. Error : 0.363, s/b : 0.719
+Steps : 2505985, Gen Loss Total : 28.031, Mel-Spec. Error : 0.348, s/b : 0.708
+Steps : 2505990, Gen Loss Total : 28.222, Mel-Spec. Error : 0.353, s/b : 0.713
+Steps : 2505995, Gen Loss Total : 25.739, Mel-Spec. Error : 0.323, s/b : 0.732
+Steps : 2506000, Gen Loss Total : 27.169, Mel-Spec. Error : 0.341, s/b : 0.720
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02506000
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02506000
+Complete.
+Steps : 2506005, Gen Loss Total : 29.518, Mel-Spec. Error : 0.369, s/b : 0.712
+Steps : 2506010, Gen Loss Total : 26.610, Mel-Spec. Error : 0.337, s/b : 0.708
+Steps : 2506015, Gen Loss Total : 29.846, Mel-Spec. Error : 0.373, s/b : 0.706
+Steps : 2506020, Gen Loss Total : 24.707, Mel-Spec. Error : 0.300, s/b : 0.720
+Steps : 2506025, Gen Loss Total : 28.751, Mel-Spec. Error : 0.345, s/b : 0.716
+Steps : 2506030, Gen Loss Total : 32.484, Mel-Spec. Error : 0.376, s/b : 0.722
+Steps : 2506035, Gen Loss Total : 29.236, Mel-Spec. Error : 0.355, s/b : 0.712
+Steps : 2506040, Gen Loss Total : 30.738, Mel-Spec. Error : 0.382, s/b : 0.727
+Steps : 2506045, Gen Loss Total : 33.076, Mel-Spec. Error : 0.382, s/b : 0.716
+Steps : 2506050, Gen Loss Total : 32.345, Mel-Spec. Error : 0.382, s/b : 0.725
+Steps : 2506055, Gen Loss Total : 27.644, Mel-Spec. Error : 0.345, s/b : 0.711
+Steps : 2506060, Gen Loss Total : 26.545, Mel-Spec. Error : 0.340, s/b : 0.709
+Steps : 2506065, Gen Loss Total : 28.848, Mel-Spec. Error : 0.350, s/b : 0.716
+Time taken for epoch 119 is 183 sec
+
+Epoch: 120
+Steps : 2506070, Gen Loss Total : 26.886, Mel-Spec. Error : 0.325, s/b : 0.712
+Steps : 2506075, Gen Loss Total : 24.083, Mel-Spec. Error : 0.296, s/b : 0.712
+Steps : 2506080, Gen Loss Total : 29.591, Mel-Spec. Error : 0.364, s/b : 0.719
+Steps : 2506085, Gen Loss Total : 25.436, Mel-Spec. Error : 0.321, s/b : 0.716
+Steps : 2506090, Gen Loss Total : 26.358, Mel-Spec. Error : 0.318, s/b : 0.716
+Steps : 2506095, Gen Loss Total : 29.972, Mel-Spec. Error : 0.361, s/b : 0.711
+Steps : 2506100, Gen Loss Total : 28.215, Mel-Spec. Error : 0.332, s/b : 0.707
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02506100
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02506100
+Complete.
+Steps : 2506105, Gen Loss Total : 31.363, Mel-Spec. Error : 0.388, s/b : 0.710
+Steps : 2506110, Gen Loss Total : 25.533, Mel-Spec. Error : 0.310, s/b : 0.715
+Steps : 2506115, Gen Loss Total : 28.137, Mel-Spec. Error : 0.361, s/b : 0.716
+Steps : 2506120, Gen Loss Total : 28.673, Mel-Spec. Error : 0.354, s/b : 0.716
+Steps : 2506125, Gen Loss Total : 28.244, Mel-Spec. Error : 0.346, s/b : 0.738
+Steps : 2506130, Gen Loss Total : 26.763, Mel-Spec. Error : 0.333, s/b : 0.728
+Steps : 2506135, Gen Loss Total : 30.601, Mel-Spec. Error : 0.384, s/b : 0.716
+Steps : 2506140, Gen Loss Total : 28.399, Mel-Spec. Error : 0.350, s/b : 0.717
+Steps : 2506145, Gen Loss Total : 28.757, Mel-Spec. Error : 0.347, s/b : 0.709
+Steps : 2506150, Gen Loss Total : 28.064, Mel-Spec. Error : 0.340, s/b : 0.708
+Steps : 2506155, Gen Loss Total : 27.972, Mel-Spec. Error : 0.350, s/b : 0.723
+Steps : 2506160, Gen Loss Total : 27.431, Mel-Spec. Error : 0.366, s/b : 0.722
+Steps : 2506165, Gen Loss Total : 25.850, Mel-Spec. Error : 0.325, s/b : 0.716
+Steps : 2506170, Gen Loss Total : 29.551, Mel-Spec. Error : 0.356, s/b : 0.715
+Steps : 2506175, Gen Loss Total : 28.399, Mel-Spec. Error : 0.346, s/b : 0.737
+Steps : 2506180, Gen Loss Total : 24.946, Mel-Spec. Error : 0.305, s/b : 0.717
+Steps : 2506185, Gen Loss Total : 28.277, Mel-Spec. Error : 0.327, s/b : 0.710
+Steps : 2506190, Gen Loss Total : 25.774, Mel-Spec. Error : 0.319, s/b : 0.722
+Steps : 2506195, Gen Loss Total : 28.415, Mel-Spec. Error : 0.327, s/b : 0.714
+Steps : 2506200, Gen Loss Total : 26.524, Mel-Spec. Error : 0.324, s/b : 0.732
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02506200
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02506200
+Complete.
+Steps : 2506205, Gen Loss Total : 27.298, Mel-Spec. Error : 0.334, s/b : 0.709
+Steps : 2506210, Gen Loss Total : 28.253, Mel-Spec. Error : 0.344, s/b : 0.718
+Steps : 2506215, Gen Loss Total : 29.849, Mel-Spec. Error : 0.362, s/b : 0.736
+Steps : 2506220, Gen Loss Total : 28.651, Mel-Spec. Error : 0.361, s/b : 0.710
+Steps : 2506225, Gen Loss Total : 26.591, Mel-Spec. Error : 0.342, s/b : 0.716
+Steps : 2506230, Gen Loss Total : 30.270, Mel-Spec. Error : 0.372, s/b : 0.717
+Steps : 2506235, Gen Loss Total : 30.558, Mel-Spec. Error : 0.379, s/b : 0.734
+Steps : 2506240, Gen Loss Total : 24.838, Mel-Spec. Error : 0.304, s/b : 0.722
+Steps : 2506245, Gen Loss Total : 29.285, Mel-Spec. Error : 0.354, s/b : 0.716
+Steps : 2506250, Gen Loss Total : 31.632, Mel-Spec. Error : 0.365, s/b : 0.715
+Steps : 2506255, Gen Loss Total : 33.422, Mel-Spec. Error : 0.395, s/b : 0.719
+Steps : 2506260, Gen Loss Total : 31.166, Mel-Spec. Error : 0.376, s/b : 0.712
+Steps : 2506265, Gen Loss Total : 26.709, Mel-Spec. Error : 0.343, s/b : 0.711
+Steps : 2506270, Gen Loss Total : 31.905, Mel-Spec. Error : 0.371, s/b : 0.721
+Steps : 2506275, Gen Loss Total : 30.534, Mel-Spec. Error : 0.360, s/b : 0.716
+Steps : 2506280, Gen Loss Total : 28.504, Mel-Spec. Error : 0.336, s/b : 0.707
+Steps : 2506285, Gen Loss Total : 26.754, Mel-Spec. Error : 0.341, s/b : 0.711
+Time taken for epoch 120 is 183 sec
+
+Epoch: 121
+Steps : 2506290, Gen Loss Total : 26.385, Mel-Spec. Error : 0.333, s/b : 0.717
+Steps : 2506295, Gen Loss Total : 28.125, Mel-Spec. Error : 0.350, s/b : 0.721
+Steps : 2506300, Gen Loss Total : 26.093, Mel-Spec. Error : 0.321, s/b : 0.715
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02506300
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02506300
+Complete.
+Steps : 2506305, Gen Loss Total : 28.776, Mel-Spec. Error : 0.370, s/b : 0.724
+Steps : 2506310, Gen Loss Total : 23.273, Mel-Spec. Error : 0.295, s/b : 0.722
+Steps : 2506315, Gen Loss Total : 30.349, Mel-Spec. Error : 0.364, s/b : 0.718
+Steps : 2506320, Gen Loss Total : 30.410, Mel-Spec. Error : 0.346, s/b : 0.726
+Steps : 2506325, Gen Loss Total : 30.339, Mel-Spec. Error : 0.364, s/b : 0.725
+Steps : 2506330, Gen Loss Total : 29.205, Mel-Spec. Error : 0.352, s/b : 0.716
+Steps : 2506335, Gen Loss Total : 27.821, Mel-Spec. Error : 0.342, s/b : 0.739
+Steps : 2506340, Gen Loss Total : 29.636, Mel-Spec. Error : 0.362, s/b : 0.717
+Steps : 2506345, Gen Loss Total : 25.291, Mel-Spec. Error : 0.310, s/b : 0.710
+Steps : 2506350, Gen Loss Total : 30.927, Mel-Spec. Error : 0.377, s/b : 0.717
+Steps : 2506355, Gen Loss Total : 27.113, Mel-Spec. Error : 0.320, s/b : 0.711
+Steps : 2506360, Gen Loss Total : 31.094, Mel-Spec. Error : 0.379, s/b : 0.716
+Steps : 2506365, Gen Loss Total : 28.020, Mel-Spec. Error : 0.343, s/b : 0.712
+Steps : 2506370, Gen Loss Total : 24.749, Mel-Spec. Error : 0.317, s/b : 0.725
+Steps : 2506375, Gen Loss Total : 28.217, Mel-Spec. Error : 0.349, s/b : 0.713
+Steps : 2506380, Gen Loss Total : 27.940, Mel-Spec. Error : 0.347, s/b : 0.713
+Steps : 2506385, Gen Loss Total : 31.235, Mel-Spec. Error : 0.362, s/b : 0.725
+Steps : 2506390, Gen Loss Total : 29.030, Mel-Spec. Error : 0.342, s/b : 0.717
+Steps : 2506395, Gen Loss Total : 31.362, Mel-Spec. Error : 0.392, s/b : 0.727
+Steps : 2506400, Gen Loss Total : 26.438, Mel-Spec. Error : 0.331, s/b : 0.720
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02506400
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02506400
+Complete.
+Steps : 2506405, Gen Loss Total : 30.210, Mel-Spec. Error : 0.348, s/b : 0.719
+Steps : 2506410, Gen Loss Total : 32.913, Mel-Spec. Error : 0.395, s/b : 0.711
+Steps : 2506415, Gen Loss Total : 26.318, Mel-Spec. Error : 0.314, s/b : 0.741
+Steps : 2506420, Gen Loss Total : 31.319, Mel-Spec. Error : 0.380, s/b : 0.732
+Steps : 2506425, Gen Loss Total : 32.509, Mel-Spec. Error : 0.384, s/b : 0.726
+Steps : 2506430, Gen Loss Total : 31.576, Mel-Spec. Error : 0.373, s/b : 0.712
+Steps : 2506435, Gen Loss Total : 29.317, Mel-Spec. Error : 0.358, s/b : 0.721
+Steps : 2506440, Gen Loss Total : 25.006, Mel-Spec. Error : 0.301, s/b : 0.710
+Steps : 2506445, Gen Loss Total : 31.056, Mel-Spec. Error : 0.358, s/b : 0.717
+Steps : 2506450, Gen Loss Total : 30.135, Mel-Spec. Error : 0.359, s/b : 0.709
+Steps : 2506455, Gen Loss Total : 28.882, Mel-Spec. Error : 0.342, s/b : 0.708
+Steps : 2506460, Gen Loss Total : 27.577, Mel-Spec. Error : 0.330, s/b : 0.706
+Steps : 2506465, Gen Loss Total : 29.350, Mel-Spec. Error : 0.336, s/b : 0.717
+Steps : 2506470, Gen Loss Total : 30.589, Mel-Spec. Error : 0.365, s/b : 0.722
+Steps : 2506475, Gen Loss Total : 28.813, Mel-Spec. Error : 0.358, s/b : 0.719
+Steps : 2506480, Gen Loss Total : 25.145, Mel-Spec. Error : 0.306, s/b : 0.716
+Steps : 2506485, Gen Loss Total : 31.690, Mel-Spec. Error : 0.371, s/b : 0.715
+Steps : 2506490, Gen Loss Total : 29.924, Mel-Spec. Error : 0.366, s/b : 0.706
+Steps : 2506495, Gen Loss Total : 27.144, Mel-Spec. Error : 0.332, s/b : 0.717
+Steps : 2506500, Gen Loss Total : 28.370, Mel-Spec. Error : 0.354, s/b : 0.721
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02506500
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02506500
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2506505, Gen Loss Total : 29.174, Mel-Spec. Error : 0.356, s/b : 0.715
+Time taken for epoch 121 is 198 sec
+
+Epoch: 122
+Steps : 2506510, Gen Loss Total : 27.879, Mel-Spec. Error : 0.343, s/b : 0.762
+Steps : 2506515, Gen Loss Total : 32.694, Mel-Spec. Error : 0.389, s/b : 0.716
+Steps : 2506520, Gen Loss Total : 27.540, Mel-Spec. Error : 0.333, s/b : 0.724
+Steps : 2506525, Gen Loss Total : 27.804, Mel-Spec. Error : 0.329, s/b : 0.722
+Steps : 2506530, Gen Loss Total : 30.333, Mel-Spec. Error : 0.355, s/b : 0.715
+Steps : 2506535, Gen Loss Total : 32.942, Mel-Spec. Error : 0.385, s/b : 0.715
+Steps : 2506540, Gen Loss Total : 27.778, Mel-Spec. Error : 0.328, s/b : 0.712
+Steps : 2506545, Gen Loss Total : 30.555, Mel-Spec. Error : 0.365, s/b : 0.720
+Steps : 2506550, Gen Loss Total : 27.867, Mel-Spec. Error : 0.344, s/b : 0.720
+Steps : 2506555, Gen Loss Total : 28.459, Mel-Spec. Error : 0.345, s/b : 0.729
+Steps : 2506560, Gen Loss Total : 29.174, Mel-Spec. Error : 0.374, s/b : 0.720
+Steps : 2506565, Gen Loss Total : 30.637, Mel-Spec. Error : 0.377, s/b : 0.715
+Steps : 2506570, Gen Loss Total : 32.277, Mel-Spec. Error : 0.389, s/b : 0.714
+Steps : 2506575, Gen Loss Total : 30.469, Mel-Spec. Error : 0.361, s/b : 0.711
+Steps : 2506580, Gen Loss Total : 29.491, Mel-Spec. Error : 0.350, s/b : 0.712
+Steps : 2506585, Gen Loss Total : 27.929, Mel-Spec. Error : 0.347, s/b : 0.709
+Steps : 2506590, Gen Loss Total : 30.628, Mel-Spec. Error : 0.367, s/b : 0.720
+Steps : 2506595, Gen Loss Total : 25.577, Mel-Spec. Error : 0.294, s/b : 0.708
+Steps : 2506600, Gen Loss Total : 29.387, Mel-Spec. Error : 0.371, s/b : 0.715
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02506600
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02506600
+Complete.
+Steps : 2506605, Gen Loss Total : 27.311, Mel-Spec. Error : 0.342, s/b : 0.712
+Steps : 2506610, Gen Loss Total : 32.754, Mel-Spec. Error : 0.372, s/b : 0.706
+Steps : 2506615, Gen Loss Total : 25.617, Mel-Spec. Error : 0.308, s/b : 0.710
+Steps : 2506620, Gen Loss Total : 21.482, Mel-Spec. Error : 0.264, s/b : 0.714
+Steps : 2506625, Gen Loss Total : 25.205, Mel-Spec. Error : 0.301, s/b : 0.718
+Steps : 2506630, Gen Loss Total : 32.004, Mel-Spec. Error : 0.382, s/b : 0.725
+Steps : 2506635, Gen Loss Total : 30.093, Mel-Spec. Error : 0.373, s/b : 0.716
+Steps : 2506640, Gen Loss Total : 30.321, Mel-Spec. Error : 0.361, s/b : 0.714
+Steps : 2506645, Gen Loss Total : 26.045, Mel-Spec. Error : 0.329, s/b : 0.706
+Steps : 2506650, Gen Loss Total : 28.583, Mel-Spec. Error : 0.344, s/b : 0.727
+Steps : 2506655, Gen Loss Total : 28.626, Mel-Spec. Error : 0.365, s/b : 0.717
+Steps : 2506660, Gen Loss Total : 29.644, Mel-Spec. Error : 0.365, s/b : 0.729
+Steps : 2506665, Gen Loss Total : 28.918, Mel-Spec. Error : 0.343, s/b : 0.727
+Steps : 2506670, Gen Loss Total : 25.299, Mel-Spec. Error : 0.322, s/b : 0.706
+Steps : 2506675, Gen Loss Total : 29.114, Mel-Spec. Error : 0.350, s/b : 0.718
+Steps : 2506680, Gen Loss Total : 31.017, Mel-Spec. Error : 0.360, s/b : 0.716
+Steps : 2506685, Gen Loss Total : 31.626, Mel-Spec. Error : 0.364, s/b : 0.723
+Steps : 2506690, Gen Loss Total : 28.303, Mel-Spec. Error : 0.332, s/b : 0.709
+Steps : 2506695, Gen Loss Total : 25.392, Mel-Spec. Error : 0.310, s/b : 0.710
+Steps : 2506700, Gen Loss Total : 27.045, Mel-Spec. Error : 0.331, s/b : 0.719
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02506700
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02506700
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2506705, Gen Loss Total : 25.096, Mel-Spec. Error : 0.298, s/b : 0.719
+Steps : 2506710, Gen Loss Total : 32.869, Mel-Spec. Error : 0.375, s/b : 0.715
+Steps : 2506715, Gen Loss Total : 32.073, Mel-Spec. Error : 0.381, s/b : 0.721
+Steps : 2506720, Gen Loss Total : 30.048, Mel-Spec. Error : 0.357, s/b : 0.720
+Steps : 2506725, Gen Loss Total : 28.715, Mel-Spec. Error : 0.354, s/b : 0.724
+Steps : 2506730, Gen Loss Total : 23.515, Mel-Spec. Error : 0.294, s/b : 0.706
+Time taken for epoch 122 is 186 sec
+
+Epoch: 123
+Steps : 2506735, Gen Loss Total : 28.025, Mel-Spec. Error : 0.352, s/b : 0.716
+Steps : 2506740, Gen Loss Total : 27.345, Mel-Spec. Error : 0.327, s/b : 0.713
+Steps : 2506745, Gen Loss Total : 21.522, Mel-Spec. Error : 0.279, s/b : 0.715
+Steps : 2506750, Gen Loss Total : 29.230, Mel-Spec. Error : 0.366, s/b : 0.720
+Steps : 2506755, Gen Loss Total : 28.968, Mel-Spec. Error : 0.362, s/b : 0.718
+Steps : 2506760, Gen Loss Total : 31.341, Mel-Spec. Error : 0.369, s/b : 0.711
+Steps : 2506765, Gen Loss Total : 32.590, Mel-Spec. Error : 0.379, s/b : 0.718
+Steps : 2506770, Gen Loss Total : 27.710, Mel-Spec. Error : 0.326, s/b : 0.714
+Steps : 2506775, Gen Loss Total : 30.359, Mel-Spec. Error : 0.366, s/b : 0.728
+Steps : 2506780, Gen Loss Total : 30.278, Mel-Spec. Error : 0.368, s/b : 0.718
+Steps : 2506785, Gen Loss Total : 33.693, Mel-Spec. Error : 0.383, s/b : 0.702
+Steps : 2506790, Gen Loss Total : 24.930, Mel-Spec. Error : 0.306, s/b : 0.714
+Steps : 2506795, Gen Loss Total : 29.337, Mel-Spec. Error : 0.373, s/b : 0.714
+Steps : 2506800, Gen Loss Total : 30.851, Mel-Spec. Error : 0.358, s/b : 0.717
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02506800
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02506800
+Complete.
+Steps : 2506805, Gen Loss Total : 32.029, Mel-Spec. Error : 0.381, s/b : 0.725
+Steps : 2506810, Gen Loss Total : 30.277, Mel-Spec. Error : 0.361, s/b : 0.715
+Steps : 2506815, Gen Loss Total : 31.641, Mel-Spec. Error : 0.367, s/b : 0.715
+Steps : 2506820, Gen Loss Total : 25.589, Mel-Spec. Error : 0.320, s/b : 0.721
+Steps : 2506825, Gen Loss Total : 29.080, Mel-Spec. Error : 0.366, s/b : 0.726
+Steps : 2506830, Gen Loss Total : 27.567, Mel-Spec. Error : 0.343, s/b : 0.726
+Steps : 2506835, Gen Loss Total : 26.389, Mel-Spec. Error : 0.324, s/b : 0.718
+Steps : 2506840, Gen Loss Total : 31.628, Mel-Spec. Error : 0.386, s/b : 0.712
+Steps : 2506845, Gen Loss Total : 23.235, Mel-Spec. Error : 0.287, s/b : 0.716
+Steps : 2506850, Gen Loss Total : 28.996, Mel-Spec. Error : 0.353, s/b : 0.719
+Steps : 2506855, Gen Loss Total : 34.965, Mel-Spec. Error : 0.409, s/b : 0.725
+Steps : 2506860, Gen Loss Total : 31.490, Mel-Spec. Error : 0.366, s/b : 0.707
+Steps : 2506865, Gen Loss Total : 26.453, Mel-Spec. Error : 0.318, s/b : 0.722
+Steps : 2506870, Gen Loss Total : 25.891, Mel-Spec. Error : 0.310, s/b : 0.721
+Steps : 2506875, Gen Loss Total : 31.411, Mel-Spec. Error : 0.380, s/b : 0.728
+Steps : 2506880, Gen Loss Total : 29.954, Mel-Spec. Error : 0.366, s/b : 0.719
+Steps : 2506885, Gen Loss Total : 25.832, Mel-Spec. Error : 0.312, s/b : 0.723
+Steps : 2506890, Gen Loss Total : 33.645, Mel-Spec. Error : 0.388, s/b : 0.726
+Steps : 2506895, Gen Loss Total : 27.263, Mel-Spec. Error : 0.341, s/b : 0.730
+Steps : 2506900, Gen Loss Total : 30.110, Mel-Spec. Error : 0.366, s/b : 1.176
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02506900
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02506900
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2506905, Gen Loss Total : 26.466, Mel-Spec. Error : 0.332, s/b : 0.714
+Steps : 2506910, Gen Loss Total : 26.177, Mel-Spec. Error : 0.326, s/b : 0.732
+Steps : 2506915, Gen Loss Total : 31.214, Mel-Spec. Error : 0.378, s/b : 0.714
+Steps : 2506920, Gen Loss Total : 28.683, Mel-Spec. Error : 0.350, s/b : 0.709
+Steps : 2506925, Gen Loss Total : 27.267, Mel-Spec. Error : 0.327, s/b : 0.721
+Steps : 2506930, Gen Loss Total : 27.770, Mel-Spec. Error : 0.324, s/b : 0.725
+Steps : 2506935, Gen Loss Total : 31.068, Mel-Spec. Error : 0.376, s/b : 0.726
+Steps : 2506940, Gen Loss Total : 25.202, Mel-Spec. Error : 0.332, s/b : 0.724
+Steps : 2506945, Gen Loss Total : 29.454, Mel-Spec. Error : 0.348, s/b : 0.710
+Steps : 2506950, Gen Loss Total : 27.583, Mel-Spec. Error : 0.328, s/b : 0.715
+Time taken for epoch 123 is 188 sec
+
+Epoch: 124
+Steps : 2506955, Gen Loss Total : 23.772, Mel-Spec. Error : 0.303, s/b : 0.721
+Steps : 2506960, Gen Loss Total : 30.371, Mel-Spec. Error : 0.358, s/b : 0.714
+Steps : 2506965, Gen Loss Total : 25.732, Mel-Spec. Error : 0.319, s/b : 0.718
+Steps : 2506970, Gen Loss Total : 27.300, Mel-Spec. Error : 0.335, s/b : 0.714
+Steps : 2506975, Gen Loss Total : 28.793, Mel-Spec. Error : 0.358, s/b : 0.717
+Steps : 2506980, Gen Loss Total : 24.949, Mel-Spec. Error : 0.308, s/b : 0.711
+Steps : 2506985, Gen Loss Total : 28.708, Mel-Spec. Error : 0.346, s/b : 0.713
+Steps : 2506990, Gen Loss Total : 29.097, Mel-Spec. Error : 0.335, s/b : 0.712
+Steps : 2506995, Gen Loss Total : 29.170, Mel-Spec. Error : 0.341, s/b : 0.725
+Steps : 2507000, Gen Loss Total : 30.675, Mel-Spec. Error : 0.366, s/b : 0.714
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02507000
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02507000
+Complete.
+Steps : 2507005, Gen Loss Total : 25.494, Mel-Spec. Error : 0.307, s/b : 0.724
+Steps : 2507010, Gen Loss Total : 27.937, Mel-Spec. Error : 0.341, s/b : 0.727
+Steps : 2507015, Gen Loss Total : 32.124, Mel-Spec. Error : 0.375, s/b : 0.727
+Steps : 2507020, Gen Loss Total : 30.551, Mel-Spec. Error : 0.365, s/b : 0.725
+Steps : 2507025, Gen Loss Total : 32.011, Mel-Spec. Error : 0.370, s/b : 0.730
+Steps : 2507030, Gen Loss Total : 28.844, Mel-Spec. Error : 0.351, s/b : 0.718
+Steps : 2507035, Gen Loss Total : 30.731, Mel-Spec. Error : 0.354, s/b : 0.728
+Steps : 2507040, Gen Loss Total : 31.346, Mel-Spec. Error : 0.362, s/b : 0.716
+Steps : 2507045, Gen Loss Total : 34.438, Mel-Spec. Error : 0.404, s/b : 0.708
+Steps : 2507050, Gen Loss Total : 32.838, Mel-Spec. Error : 0.394, s/b : 0.717
+Steps : 2507055, Gen Loss Total : 32.006, Mel-Spec. Error : 0.386, s/b : 0.713
+Steps : 2507060, Gen Loss Total : 27.460, Mel-Spec. Error : 0.332, s/b : 0.715
+Steps : 2507065, Gen Loss Total : 31.083, Mel-Spec. Error : 0.348, s/b : 0.707
+Steps : 2507070, Gen Loss Total : 29.738, Mel-Spec. Error : 0.356, s/b : 0.711
+Steps : 2507075, Gen Loss Total : 29.149, Mel-Spec. Error : 0.351, s/b : 0.714
+Steps : 2507080, Gen Loss Total : 32.531, Mel-Spec. Error : 0.376, s/b : 0.710
+Steps : 2507085, Gen Loss Total : 31.165, Mel-Spec. Error : 0.363, s/b : 0.715
+Steps : 2507090, Gen Loss Total : 34.085, Mel-Spec. Error : 0.393, s/b : 0.716
+Steps : 2507095, Gen Loss Total : 24.978, Mel-Spec. Error : 0.307, s/b : 0.711
+Steps : 2507100, Gen Loss Total : 23.672, Mel-Spec. Error : 0.295, s/b : 0.707
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02507100
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02507100
+Complete.
+Steps : 2507105, Gen Loss Total : 26.161, Mel-Spec. Error : 0.310, s/b : 0.716
+Steps : 2507110, Gen Loss Total : 29.235, Mel-Spec. Error : 0.357, s/b : 0.712
+Steps : 2507115, Gen Loss Total : 26.932, Mel-Spec. Error : 0.328, s/b : 0.723
+Steps : 2507120, Gen Loss Total : 24.983, Mel-Spec. Error : 0.312, s/b : 0.712
+Steps : 2507125, Gen Loss Total : 27.672, Mel-Spec. Error : 0.339, s/b : 0.723
+Steps : 2507130, Gen Loss Total : 29.971, Mel-Spec. Error : 0.357, s/b : 0.737
+Steps : 2507135, Gen Loss Total : 31.292, Mel-Spec. Error : 0.371, s/b : 0.713
+Steps : 2507140, Gen Loss Total : 29.439, Mel-Spec. Error : 0.327, s/b : 0.730
+Steps : 2507145, Gen Loss Total : 28.403, Mel-Spec. Error : 0.359, s/b : 0.714
+Steps : 2507150, Gen Loss Total : 29.957, Mel-Spec. Error : 0.348, s/b : 0.718
+Steps : 2507155, Gen Loss Total : 30.142, Mel-Spec. Error : 0.363, s/b : 0.723
+Steps : 2507160, Gen Loss Total : 28.539, Mel-Spec. Error : 0.342, s/b : 0.720
+Steps : 2507165, Gen Loss Total : 29.819, Mel-Spec. Error : 0.367, s/b : 0.722
+Steps : 2507170, Gen Loss Total : 29.916, Mel-Spec. Error : 0.348, s/b : 0.712
+Time taken for epoch 124 is 182 sec
+
+Epoch: 125
+Steps : 2507175, Gen Loss Total : 29.632, Mel-Spec. Error : 0.361, s/b : 0.712
+Steps : 2507180, Gen Loss Total : 28.215, Mel-Spec. Error : 0.325, s/b : 0.722
+Steps : 2507185, Gen Loss Total : 30.649, Mel-Spec. Error : 0.363, s/b : 0.714
+Steps : 2507190, Gen Loss Total : 25.140, Mel-Spec. Error : 0.309, s/b : 0.719
+Steps : 2507195, Gen Loss Total : 27.599, Mel-Spec. Error : 0.334, s/b : 0.726
+Steps : 2507200, Gen Loss Total : 29.316, Mel-Spec. Error : 0.361, s/b : 0.713
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02507200
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02507200
+Complete.
+Steps : 2507205, Gen Loss Total : 27.681, Mel-Spec. Error : 0.327, s/b : 0.717
+Steps : 2507210, Gen Loss Total : 33.109, Mel-Spec. Error : 0.387, s/b : 0.714
+Steps : 2507215, Gen Loss Total : 24.343, Mel-Spec. Error : 0.301, s/b : 0.720
+Steps : 2507220, Gen Loss Total : 30.539, Mel-Spec. Error : 0.370, s/b : 0.702
+Steps : 2507225, Gen Loss Total : 28.898, Mel-Spec. Error : 0.344, s/b : 0.712
+Steps : 2507230, Gen Loss Total : 23.795, Mel-Spec. Error : 0.311, s/b : 0.721
+Steps : 2507235, Gen Loss Total : 23.970, Mel-Spec. Error : 0.288, s/b : 0.717
+Steps : 2507240, Gen Loss Total : 28.426, Mel-Spec. Error : 0.354, s/b : 0.723
+Steps : 2507245, Gen Loss Total : 25.755, Mel-Spec. Error : 0.310, s/b : 0.713
+Steps : 2507250, Gen Loss Total : 28.595, Mel-Spec. Error : 0.357, s/b : 0.729
+Steps : 2507255, Gen Loss Total : 29.389, Mel-Spec. Error : 0.332, s/b : 0.716
+Steps : 2507260, Gen Loss Total : 27.756, Mel-Spec. Error : 0.346, s/b : 0.707
+Steps : 2507265, Gen Loss Total : 29.266, Mel-Spec. Error : 0.366, s/b : 0.713
+Steps : 2507270, Gen Loss Total : 28.673, Mel-Spec. Error : 0.358, s/b : 0.727
+Steps : 2507275, Gen Loss Total : 29.102, Mel-Spec. Error : 0.353, s/b : 0.710
+Steps : 2507280, Gen Loss Total : 28.425, Mel-Spec. Error : 0.360, s/b : 0.715
+Steps : 2507285, Gen Loss Total : 26.208, Mel-Spec. Error : 0.344, s/b : 0.718
+Steps : 2507290, Gen Loss Total : 30.604, Mel-Spec. Error : 0.369, s/b : 0.721
+Steps : 2507295, Gen Loss Total : 27.286, Mel-Spec. Error : 0.346, s/b : 0.719
+Steps : 2507300, Gen Loss Total : 24.558, Mel-Spec. Error : 0.301, s/b : 0.713
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02507300
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02507300
+Complete.
+Steps : 2507305, Gen Loss Total : 29.598, Mel-Spec. Error : 0.349, s/b : 0.713
+Steps : 2507310, Gen Loss Total : 27.397, Mel-Spec. Error : 0.335, s/b : 0.725
+Steps : 2507315, Gen Loss Total : 27.081, Mel-Spec. Error : 0.338, s/b : 0.711
+Steps : 2507320, Gen Loss Total : 30.841, Mel-Spec. Error : 0.365, s/b : 0.718
+Steps : 2507325, Gen Loss Total : 26.702, Mel-Spec. Error : 0.346, s/b : 0.724
+Steps : 2507330, Gen Loss Total : 25.723, Mel-Spec. Error : 0.308, s/b : 0.716
+Steps : 2507335, Gen Loss Total : 31.446, Mel-Spec. Error : 0.379, s/b : 0.711
+Steps : 2507340, Gen Loss Total : 29.403, Mel-Spec. Error : 0.362, s/b : 0.714
+Steps : 2507345, Gen Loss Total : 28.512, Mel-Spec. Error : 0.343, s/b : 0.725
+Steps : 2507350, Gen Loss Total : 29.186, Mel-Spec. Error : 0.348, s/b : 0.714
+Steps : 2507355, Gen Loss Total : 29.598, Mel-Spec. Error : 0.349, s/b : 0.713
+Steps : 2507360, Gen Loss Total : 31.291, Mel-Spec. Error : 0.358, s/b : 0.703
+Steps : 2507365, Gen Loss Total : 29.423, Mel-Spec. Error : 0.359, s/b : 0.722
+Steps : 2507370, Gen Loss Total : 27.929, Mel-Spec. Error : 0.335, s/b : 0.718
+Steps : 2507375, Gen Loss Total : 28.150, Mel-Spec. Error : 0.342, s/b : 0.725
+Steps : 2507380, Gen Loss Total : 30.079, Mel-Spec. Error : 0.364, s/b : 0.730
+Steps : 2507385, Gen Loss Total : 29.902, Mel-Spec. Error : 0.353, s/b : 0.716
+Steps : 2507390, Gen Loss Total : 29.669, Mel-Spec. Error : 0.355, s/b : 0.718
+Time taken for epoch 125 is 184 sec
+
+Epoch: 126
+Steps : 2507395, Gen Loss Total : 26.442, Mel-Spec. Error : 0.330, s/b : 0.716
+Steps : 2507400, Gen Loss Total : 30.857, Mel-Spec. Error : 0.372, s/b : 0.719
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02507400
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02507400
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2507405, Gen Loss Total : 26.708, Mel-Spec. Error : 0.312, s/b : 0.717
+Steps : 2507410, Gen Loss Total : 28.795, Mel-Spec. Error : 0.346, s/b : 0.714
+Steps : 2507415, Gen Loss Total : 28.403, Mel-Spec. Error : 0.331, s/b : 0.715
+Steps : 2507420, Gen Loss Total : 28.879, Mel-Spec. Error : 0.341, s/b : 0.716
+Steps : 2507425, Gen Loss Total : 29.729, Mel-Spec. Error : 0.346, s/b : 0.718
+Steps : 2507430, Gen Loss Total : 28.123, Mel-Spec. Error : 0.344, s/b : 0.712
+Steps : 2507435, Gen Loss Total : 24.386, Mel-Spec. Error : 0.293, s/b : 0.708
+Steps : 2507440, Gen Loss Total : 29.730, Mel-Spec. Error : 0.352, s/b : 0.708
+Steps : 2507445, Gen Loss Total : 30.537, Mel-Spec. Error : 0.363, s/b : 0.720
+Steps : 2507450, Gen Loss Total : 28.965, Mel-Spec. Error : 0.349, s/b : 0.712
+Steps : 2507455, Gen Loss Total : 30.486, Mel-Spec. Error : 0.368, s/b : 0.733
+Steps : 2507460, Gen Loss Total : 28.822, Mel-Spec. Error : 0.335, s/b : 0.713
+Steps : 2507465, Gen Loss Total : 25.750, Mel-Spec. Error : 0.315, s/b : 0.723
+Steps : 2507470, Gen Loss Total : 23.777, Mel-Spec. Error : 0.305, s/b : 0.715
+Steps : 2507475, Gen Loss Total : 27.428, Mel-Spec. Error : 0.347, s/b : 0.730
+Steps : 2507480, Gen Loss Total : 28.201, Mel-Spec. Error : 0.328, s/b : 0.725
+Steps : 2507485, Gen Loss Total : 31.462, Mel-Spec. Error : 0.360, s/b : 0.702
+Steps : 2507490, Gen Loss Total : 30.060, Mel-Spec. Error : 0.352, s/b : 0.708
+Steps : 2507495, Gen Loss Total : 29.213, Mel-Spec. Error : 0.350, s/b : 0.705
+Steps : 2507500, Gen Loss Total : 25.645, Mel-Spec. Error : 0.320, s/b : 0.721
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02507500
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02507500
+Complete.
+Steps : 2507505, Gen Loss Total : 26.208, Mel-Spec. Error : 0.319, s/b : 0.711
+Steps : 2507510, Gen Loss Total : 27.098, Mel-Spec. Error : 0.341, s/b : 0.711
+Steps : 2507515, Gen Loss Total : 29.900, Mel-Spec. Error : 0.358, s/b : 0.714
+Steps : 2507520, Gen Loss Total : 29.569, Mel-Spec. Error : 0.357, s/b : 0.721
+Steps : 2507525, Gen Loss Total : 32.105, Mel-Spec. Error : 0.376, s/b : 0.712
+Steps : 2507530, Gen Loss Total : 29.325, Mel-Spec. Error : 0.340, s/b : 0.719
+Steps : 2507535, Gen Loss Total : 29.060, Mel-Spec. Error : 0.354, s/b : 0.731
+Steps : 2507540, Gen Loss Total : 27.324, Mel-Spec. Error : 0.354, s/b : 0.713
+Steps : 2507545, Gen Loss Total : 26.345, Mel-Spec. Error : 0.327, s/b : 0.716
+Steps : 2507550, Gen Loss Total : 28.872, Mel-Spec. Error : 0.348, s/b : 0.726
+Steps : 2507555, Gen Loss Total : 27.400, Mel-Spec. Error : 0.334, s/b : 0.725
+Steps : 2507560, Gen Loss Total : 26.193, Mel-Spec. Error : 0.325, s/b : 0.726
+Steps : 2507565, Gen Loss Total : 32.888, Mel-Spec. Error : 0.374, s/b : 0.713
+Steps : 2507570, Gen Loss Total : 28.788, Mel-Spec. Error : 0.336, s/b : 0.720
+Steps : 2507575, Gen Loss Total : 33.257, Mel-Spec. Error : 0.378, s/b : 0.724
+Steps : 2507580, Gen Loss Total : 30.734, Mel-Spec. Error : 0.360, s/b : 0.724
+Steps : 2507585, Gen Loss Total : 29.367, Mel-Spec. Error : 0.331, s/b : 0.714
+Steps : 2507590, Gen Loss Total : 27.977, Mel-Spec. Error : 0.340, s/b : 0.720
+Steps : 2507595, Gen Loss Total : 31.348, Mel-Spec. Error : 0.355, s/b : 0.718
+Steps : 2507600, Gen Loss Total : 26.667, Mel-Spec. Error : 0.329, s/b : 0.711
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02507600
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02507600
+Complete.
+Steps : 2507605, Gen Loss Total : 29.120, Mel-Spec. Error : 0.346, s/b : 0.734
+Steps : 2507610, Gen Loss Total : 25.992, Mel-Spec. Error : 0.322, s/b : 0.721
+Time taken for epoch 126 is 198 sec
+
+Epoch: 127
+Steps : 2507615, Gen Loss Total : 25.596, Mel-Spec. Error : 0.322, s/b : 0.754
+Steps : 2507620, Gen Loss Total : 30.488, Mel-Spec. Error : 0.373, s/b : 0.727
+Steps : 2507625, Gen Loss Total : 29.122, Mel-Spec. Error : 0.369, s/b : 0.716
+Steps : 2507630, Gen Loss Total : 23.095, Mel-Spec. Error : 0.293, s/b : 0.719
+Steps : 2507635, Gen Loss Total : 25.353, Mel-Spec. Error : 0.310, s/b : 0.708
+Steps : 2507640, Gen Loss Total : 32.148, Mel-Spec. Error : 0.390, s/b : 0.715
+Steps : 2507645, Gen Loss Total : 28.478, Mel-Spec. Error : 0.334, s/b : 0.718
+Steps : 2507650, Gen Loss Total : 27.810, Mel-Spec. Error : 0.328, s/b : 0.723
+Steps : 2507655, Gen Loss Total : 28.052, Mel-Spec. Error : 0.334, s/b : 0.710
+Steps : 2507660, Gen Loss Total : 29.754, Mel-Spec. Error : 0.364, s/b : 0.721
+Steps : 2507665, Gen Loss Total : 29.971, Mel-Spec. Error : 0.369, s/b : 0.724
+Steps : 2507670, Gen Loss Total : 30.052, Mel-Spec. Error : 0.357, s/b : 0.722
+Steps : 2507675, Gen Loss Total : 26.917, Mel-Spec. Error : 0.323, s/b : 0.718
+Steps : 2507680, Gen Loss Total : 29.995, Mel-Spec. Error : 0.364, s/b : 0.712
+Steps : 2507685, Gen Loss Total : 25.306, Mel-Spec. Error : 0.310, s/b : 0.715
+Steps : 2507690, Gen Loss Total : 27.249, Mel-Spec. Error : 0.340, s/b : 0.722
+Steps : 2507695, Gen Loss Total : 32.998, Mel-Spec. Error : 0.392, s/b : 0.716
+Steps : 2507700, Gen Loss Total : 25.892, Mel-Spec. Error : 0.330, s/b : 0.716
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02507700
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02507700
+Complete.
+Steps : 2507705, Gen Loss Total : 31.995, Mel-Spec. Error : 0.421, s/b : 0.717
+Steps : 2507710, Gen Loss Total : 25.743, Mel-Spec. Error : 0.317, s/b : 0.736
+Steps : 2507715, Gen Loss Total : 31.257, Mel-Spec. Error : 0.363, s/b : 0.721
+Steps : 2507720, Gen Loss Total : 27.204, Mel-Spec. Error : 0.321, s/b : 0.717
+Steps : 2507725, Gen Loss Total : 27.507, Mel-Spec. Error : 0.341, s/b : 0.708
+Steps : 2507730, Gen Loss Total : 27.482, Mel-Spec. Error : 0.313, s/b : 0.725
+Steps : 2507735, Gen Loss Total : 28.223, Mel-Spec. Error : 0.341, s/b : 0.726
+Steps : 2507740, Gen Loss Total : 29.509, Mel-Spec. Error : 0.355, s/b : 0.724
+Steps : 2507745, Gen Loss Total : 28.742, Mel-Spec. Error : 0.350, s/b : 0.720
+Steps : 2507750, Gen Loss Total : 25.099, Mel-Spec. Error : 0.309, s/b : 0.715
+Steps : 2507755, Gen Loss Total : 30.306, Mel-Spec. Error : 0.355, s/b : 0.731
+Steps : 2507760, Gen Loss Total : 23.943, Mel-Spec. Error : 0.291, s/b : 0.709
+Steps : 2507765, Gen Loss Total : 28.557, Mel-Spec. Error : 0.350, s/b : 0.715
+Steps : 2507770, Gen Loss Total : 30.987, Mel-Spec. Error : 0.351, s/b : 0.729
+Steps : 2507775, Gen Loss Total : 30.374, Mel-Spec. Error : 0.365, s/b : 0.726
+Steps : 2507780, Gen Loss Total : 29.869, Mel-Spec. Error : 0.350, s/b : 0.711
+Steps : 2507785, Gen Loss Total : 28.766, Mel-Spec. Error : 0.342, s/b : 0.736
+Steps : 2507790, Gen Loss Total : 28.813, Mel-Spec. Error : 0.337, s/b : 0.716
+Steps : 2507795, Gen Loss Total : 29.925, Mel-Spec. Error : 0.351, s/b : 0.714
+Steps : 2507800, Gen Loss Total : 28.264, Mel-Spec. Error : 0.329, s/b : 0.711
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02507800
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02507800
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2507805, Gen Loss Total : 30.779, Mel-Spec. Error : 0.363, s/b : 0.728
+Steps : 2507810, Gen Loss Total : 25.941, Mel-Spec. Error : 0.309, s/b : 0.711
+Steps : 2507815, Gen Loss Total : 30.028, Mel-Spec. Error : 0.356, s/b : 0.717
+Steps : 2507820, Gen Loss Total : 27.306, Mel-Spec. Error : 0.338, s/b : 0.719
+Steps : 2507825, Gen Loss Total : 28.868, Mel-Spec. Error : 0.340, s/b : 0.721
+Steps : 2507830, Gen Loss Total : 26.114, Mel-Spec. Error : 0.318, s/b : 0.710
+Steps : 2507835, Gen Loss Total : 24.990, Mel-Spec. Error : 0.318, s/b : 0.707
+Time taken for epoch 127 is 186 sec
+
+Epoch: 128
+Steps : 2507840, Gen Loss Total : 27.990, Mel-Spec. Error : 0.348, s/b : 0.733
+Steps : 2507845, Gen Loss Total : 27.537, Mel-Spec. Error : 0.329, s/b : 0.734
+Steps : 2507850, Gen Loss Total : 24.801, Mel-Spec. Error : 0.301, s/b : 0.709
+Steps : 2507855, Gen Loss Total : 27.334, Mel-Spec. Error : 0.332, s/b : 0.714
+Steps : 2507860, Gen Loss Total : 29.535, Mel-Spec. Error : 0.359, s/b : 0.708
+Steps : 2507865, Gen Loss Total : 29.422, Mel-Spec. Error : 0.353, s/b : 0.711
+Steps : 2507870, Gen Loss Total : 27.870, Mel-Spec. Error : 0.327, s/b : 0.715
+Steps : 2507875, Gen Loss Total : 28.246, Mel-Spec. Error : 0.330, s/b : 0.715
+Steps : 2507880, Gen Loss Total : 26.928, Mel-Spec. Error : 0.320, s/b : 0.713
+Steps : 2507885, Gen Loss Total : 29.773, Mel-Spec. Error : 0.356, s/b : 0.713
+Steps : 2507890, Gen Loss Total : 31.774, Mel-Spec. Error : 0.368, s/b : 0.710
+Steps : 2507895, Gen Loss Total : 26.224, Mel-Spec. Error : 0.322, s/b : 0.713
+Steps : 2507900, Gen Loss Total : 28.682, Mel-Spec. Error : 0.347, s/b : 0.731
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02507900
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02507900
+Complete.
+Steps : 2507905, Gen Loss Total : 26.836, Mel-Spec. Error : 0.315, s/b : 0.721
+Steps : 2507910, Gen Loss Total : 27.652, Mel-Spec. Error : 0.331, s/b : 0.708
+Steps : 2507915, Gen Loss Total : 28.080, Mel-Spec. Error : 0.338, s/b : 0.715
+Steps : 2507920, Gen Loss Total : 31.215, Mel-Spec. Error : 0.354, s/b : 0.716
+Steps : 2507925, Gen Loss Total : 26.694, Mel-Spec. Error : 0.305, s/b : 0.712
+Steps : 2507930, Gen Loss Total : 28.763, Mel-Spec. Error : 0.349, s/b : 0.727
+Steps : 2507935, Gen Loss Total : 24.331, Mel-Spec. Error : 0.290, s/b : 0.721
+Steps : 2507940, Gen Loss Total : 26.293, Mel-Spec. Error : 0.319, s/b : 0.704
+Steps : 2507945, Gen Loss Total : 27.704, Mel-Spec. Error : 0.335, s/b : 0.709
+Steps : 2507950, Gen Loss Total : 25.646, Mel-Spec. Error : 0.310, s/b : 0.712
+Steps : 2507955, Gen Loss Total : 30.537, Mel-Spec. Error : 0.376, s/b : 0.716
+Steps : 2507960, Gen Loss Total : 33.282, Mel-Spec. Error : 0.386, s/b : 0.724
+Steps : 2507965, Gen Loss Total : 30.967, Mel-Spec. Error : 0.379, s/b : 0.721
+Steps : 2507970, Gen Loss Total : 25.638, Mel-Spec. Error : 0.315, s/b : 0.700
+Steps : 2507975, Gen Loss Total : 25.796, Mel-Spec. Error : 0.307, s/b : 0.711
+Steps : 2507980, Gen Loss Total : 29.531, Mel-Spec. Error : 0.381, s/b : 0.718
+Steps : 2507985, Gen Loss Total : 26.297, Mel-Spec. Error : 0.321, s/b : 0.722
+Steps : 2507990, Gen Loss Total : 27.234, Mel-Spec. Error : 0.346, s/b : 0.713
+Steps : 2507995, Gen Loss Total : 29.943, Mel-Spec. Error : 0.355, s/b : 0.709
+Steps : 2508000, Gen Loss Total : 29.235, Mel-Spec. Error : 0.347, s/b : 0.710
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02508000
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02508000
+Complete.
+Steps : 2508005, Gen Loss Total : 31.343, Mel-Spec. Error : 0.365, s/b : 0.707
+Steps : 2508010, Gen Loss Total : 26.184, Mel-Spec. Error : 0.326, s/b : 0.731
+Steps : 2508015, Gen Loss Total : 26.430, Mel-Spec. Error : 0.326, s/b : 0.727
+Steps : 2508020, Gen Loss Total : 29.218, Mel-Spec. Error : 0.348, s/b : 0.726
+Steps : 2508025, Gen Loss Total : 26.231, Mel-Spec. Error : 0.323, s/b : 0.719
+Steps : 2508030, Gen Loss Total : 28.005, Mel-Spec. Error : 0.342, s/b : 0.722
+Steps : 2508035, Gen Loss Total : 28.246, Mel-Spec. Error : 0.331, s/b : 0.724
+Steps : 2508040, Gen Loss Total : 26.098, Mel-Spec. Error : 0.313, s/b : 0.730
+Steps : 2508045, Gen Loss Total : 30.978, Mel-Spec. Error : 0.373, s/b : 0.722
+Steps : 2508050, Gen Loss Total : 30.116, Mel-Spec. Error : 0.345, s/b : 0.708
+Steps : 2508055, Gen Loss Total : 29.762, Mel-Spec. Error : 0.366, s/b : 0.716
+Time taken for epoch 128 is 184 sec
+
+Epoch: 129
+Steps : 2508060, Gen Loss Total : 26.934, Mel-Spec. Error : 0.320, s/b : 0.719
+Steps : 2508065, Gen Loss Total : 24.908, Mel-Spec. Error : 0.304, s/b : 0.716
+Steps : 2508070, Gen Loss Total : 27.562, Mel-Spec. Error : 0.327, s/b : 0.719
+Steps : 2508075, Gen Loss Total : 28.914, Mel-Spec. Error : 0.331, s/b : 0.715
+Steps : 2508080, Gen Loss Total : 24.758, Mel-Spec. Error : 0.316, s/b : 0.712
+Steps : 2508085, Gen Loss Total : 27.247, Mel-Spec. Error : 0.331, s/b : 0.725
+Steps : 2508090, Gen Loss Total : 26.514, Mel-Spec. Error : 0.317, s/b : 0.713
+Steps : 2508095, Gen Loss Total : 30.707, Mel-Spec. Error : 0.374, s/b : 0.715
+Steps : 2508100, Gen Loss Total : 27.466, Mel-Spec. Error : 0.320, s/b : 0.710
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02508100
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02508100
+Complete.
+Steps : 2508105, Gen Loss Total : 30.824, Mel-Spec. Error : 0.372, s/b : 0.720
+Steps : 2508110, Gen Loss Total : 28.295, Mel-Spec. Error : 0.342, s/b : 0.726
+Steps : 2508115, Gen Loss Total : 28.280, Mel-Spec. Error : 0.352, s/b : 0.721
+Steps : 2508120, Gen Loss Total : 26.958, Mel-Spec. Error : 0.337, s/b : 0.717
+Steps : 2508125, Gen Loss Total : 26.787, Mel-Spec. Error : 0.336, s/b : 0.713
+Steps : 2508130, Gen Loss Total : 25.592, Mel-Spec. Error : 0.301, s/b : 0.730
+Steps : 2508135, Gen Loss Total : 30.053, Mel-Spec. Error : 0.369, s/b : 0.722
+Steps : 2508140, Gen Loss Total : 30.658, Mel-Spec. Error : 0.357, s/b : 0.706
+Steps : 2508145, Gen Loss Total : 31.253, Mel-Spec. Error : 0.365, s/b : 0.714
+Steps : 2508150, Gen Loss Total : 30.497, Mel-Spec. Error : 0.372, s/b : 0.723
+Steps : 2508155, Gen Loss Total : 30.287, Mel-Spec. Error : 0.367, s/b : 0.715
+Steps : 2508160, Gen Loss Total : 27.882, Mel-Spec. Error : 0.338, s/b : 0.711
+Steps : 2508165, Gen Loss Total : 31.327, Mel-Spec. Error : 0.367, s/b : 0.721
+Steps : 2508170, Gen Loss Total : 30.952, Mel-Spec. Error : 0.362, s/b : 0.707
+Steps : 2508175, Gen Loss Total : 30.403, Mel-Spec. Error : 0.361, s/b : 0.713
+Steps : 2508180, Gen Loss Total : 27.248, Mel-Spec. Error : 0.337, s/b : 0.715
+Steps : 2508185, Gen Loss Total : 28.569, Mel-Spec. Error : 0.330, s/b : 0.720
+Steps : 2508190, Gen Loss Total : 26.264, Mel-Spec. Error : 0.303, s/b : 0.713
+Steps : 2508195, Gen Loss Total : 30.262, Mel-Spec. Error : 0.354, s/b : 0.708
+Steps : 2508200, Gen Loss Total : 27.268, Mel-Spec. Error : 0.317, s/b : 0.711
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02508200
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02508200
+Complete.
+Steps : 2508205, Gen Loss Total : 22.285, Mel-Spec. Error : 0.274, s/b : 0.728
+Steps : 2508210, Gen Loss Total : 30.456, Mel-Spec. Error : 0.367, s/b : 0.730
+Steps : 2508215, Gen Loss Total : 28.545, Mel-Spec. Error : 0.342, s/b : 0.719
+Steps : 2508220, Gen Loss Total : 32.760, Mel-Spec. Error : 0.398, s/b : 0.730
+Steps : 2508225, Gen Loss Total : 30.403, Mel-Spec. Error : 0.357, s/b : 0.719
+Steps : 2508230, Gen Loss Total : 27.741, Mel-Spec. Error : 0.329, s/b : 0.720
+Steps : 2508235, Gen Loss Total : 28.101, Mel-Spec. Error : 0.346, s/b : 0.724
+Steps : 2508240, Gen Loss Total : 29.542, Mel-Spec. Error : 0.353, s/b : 0.715
+Steps : 2508245, Gen Loss Total : 31.095, Mel-Spec. Error : 0.355, s/b : 0.724
+Steps : 2508250, Gen Loss Total : 30.995, Mel-Spec. Error : 0.370, s/b : 0.709
+Steps : 2508255, Gen Loss Total : 28.371, Mel-Spec. Error : 0.334, s/b : 0.716
+Steps : 2508260, Gen Loss Total : 26.379, Mel-Spec. Error : 0.313, s/b : 0.715
+Steps : 2508265, Gen Loss Total : 28.527, Mel-Spec. Error : 0.350, s/b : 0.706
+Steps : 2508270, Gen Loss Total : 31.476, Mel-Spec. Error : 0.374, s/b : 0.710
+Steps : 2508275, Gen Loss Total : 27.234, Mel-Spec. Error : 0.322, s/b : 0.713
+Time taken for epoch 129 is 182 sec
+
+Epoch: 130
+Steps : 2508280, Gen Loss Total : 26.967, Mel-Spec. Error : 0.342, s/b : 0.710
+Steps : 2508285, Gen Loss Total : 23.436, Mel-Spec. Error : 0.280, s/b : 0.723
+Steps : 2508290, Gen Loss Total : 29.190, Mel-Spec. Error : 0.341, s/b : 0.720
+Steps : 2508295, Gen Loss Total : 27.706, Mel-Spec. Error : 0.335, s/b : 0.728
+Steps : 2508300, Gen Loss Total : 21.746, Mel-Spec. Error : 0.272, s/b : 0.720
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02508300
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02508300
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/g_best
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/best/do_best
+Complete.
+Steps : 2508305, Gen Loss Total : 29.458, Mel-Spec. Error : 0.350, s/b : 0.713
+Steps : 2508310, Gen Loss Total : 26.531, Mel-Spec. Error : 0.330, s/b : 0.711
+Steps : 2508315, Gen Loss Total : 34.697, Mel-Spec. Error : 0.407, s/b : 0.712
+Steps : 2508320, Gen Loss Total : 32.092, Mel-Spec. Error : 0.372, s/b : 0.731
+Steps : 2508325, Gen Loss Total : 27.202, Mel-Spec. Error : 0.337, s/b : 0.722
+Steps : 2508330, Gen Loss Total : 29.013, Mel-Spec. Error : 0.362, s/b : 0.722
+Steps : 2508335, Gen Loss Total : 28.522, Mel-Spec. Error : 0.349, s/b : 0.735
+Steps : 2508340, Gen Loss Total : 25.907, Mel-Spec. Error : 0.316, s/b : 0.717
+Steps : 2508345, Gen Loss Total : 28.561, Mel-Spec. Error : 0.353, s/b : 0.718
+Steps : 2508350, Gen Loss Total : 23.990, Mel-Spec. Error : 0.288, s/b : 0.715
+Steps : 2508355, Gen Loss Total : 24.854, Mel-Spec. Error : 0.308, s/b : 0.715
+Steps : 2508360, Gen Loss Total : 26.338, Mel-Spec. Error : 0.308, s/b : 0.718
+Steps : 2508365, Gen Loss Total : 26.747, Mel-Spec. Error : 0.330, s/b : 0.710
+Steps : 2508370, Gen Loss Total : 31.498, Mel-Spec. Error : 0.390, s/b : 0.716
+Steps : 2508375, Gen Loss Total : 27.769, Mel-Spec. Error : 0.332, s/b : 0.708
+Steps : 2508380, Gen Loss Total : 28.709, Mel-Spec. Error : 0.356, s/b : 0.721
+Steps : 2508385, Gen Loss Total : 26.167, Mel-Spec. Error : 0.322, s/b : 0.709
+Steps : 2508390, Gen Loss Total : 25.278, Mel-Spec. Error : 0.307, s/b : 0.712
+Steps : 2508395, Gen Loss Total : 31.737, Mel-Spec. Error : 0.371, s/b : 0.714
+Steps : 2508400, Gen Loss Total : 28.430, Mel-Spec. Error : 0.349, s/b : 0.717
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02508400
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02508400
+Complete.
+Steps : 2508405, Gen Loss Total : 25.642, Mel-Spec. Error : 0.298, s/b : 0.709
+Steps : 2508410, Gen Loss Total : 25.380, Mel-Spec. Error : 0.306, s/b : 0.721
+Steps : 2508415, Gen Loss Total : 27.396, Mel-Spec. Error : 0.339, s/b : 0.728
+Steps : 2508420, Gen Loss Total : 26.707, Mel-Spec. Error : 0.329, s/b : 0.716
+Steps : 2508425, Gen Loss Total : 27.499, Mel-Spec. Error : 0.332, s/b : 0.711
+Steps : 2508430, Gen Loss Total : 29.751, Mel-Spec. Error : 0.346, s/b : 0.720
+Steps : 2508435, Gen Loss Total : 23.526, Mel-Spec. Error : 0.281, s/b : 0.716
+Steps : 2508440, Gen Loss Total : 28.826, Mel-Spec. Error : 0.352, s/b : 0.708
+Steps : 2508445, Gen Loss Total : 31.668, Mel-Spec. Error : 0.373, s/b : 0.721
+Steps : 2508450, Gen Loss Total : 30.665, Mel-Spec. Error : 0.367, s/b : 0.725
+Steps : 2508455, Gen Loss Total : 28.046, Mel-Spec. Error : 0.339, s/b : 0.710
+Steps : 2508460, Gen Loss Total : 29.073, Mel-Spec. Error : 0.344, s/b : 0.726
+Steps : 2508465, Gen Loss Total : 30.949, Mel-Spec. Error : 0.358, s/b : 0.719
+Steps : 2508470, Gen Loss Total : 27.548, Mel-Spec. Error : 0.346, s/b : 0.722
+Steps : 2508475, Gen Loss Total : 25.085, Mel-Spec. Error : 0.316, s/b : 0.721
+Steps : 2508480, Gen Loss Total : 28.916, Mel-Spec. Error : 0.337, s/b : 0.709
+Steps : 2508485, Gen Loss Total : 26.500, Mel-Spec. Error : 0.330, s/b : 0.708
+Steps : 2508490, Gen Loss Total : 25.057, Mel-Spec. Error : 0.294, s/b : 0.720
+Steps : 2508495, Gen Loss Total : 28.433, Mel-Spec. Error : 0.351, s/b : 0.718
+Time taken for epoch 130 is 188 sec
+
+Epoch: 131
+Steps : 2508500, Gen Loss Total : 25.833, Mel-Spec. Error : 0.322, s/b : 0.730
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02508500
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02508500
+Complete.
+Steps : 2508505, Gen Loss Total : 23.202, Mel-Spec. Error : 0.285, s/b : 0.733
+Steps : 2508510, Gen Loss Total : 22.912, Mel-Spec. Error : 0.291, s/b : 0.718
+Steps : 2508515, Gen Loss Total : 29.362, Mel-Spec. Error : 0.345, s/b : 0.728
+Steps : 2508520, Gen Loss Total : 24.735, Mel-Spec. Error : 0.302, s/b : 0.733
+Steps : 2508525, Gen Loss Total : 28.605, Mel-Spec. Error : 0.358, s/b : 0.732
+Steps : 2508530, Gen Loss Total : 30.772, Mel-Spec. Error : 0.358, s/b : 0.719
+Steps : 2508535, Gen Loss Total : 29.369, Mel-Spec. Error : 0.367, s/b : 0.716
+Steps : 2508540, Gen Loss Total : 26.027, Mel-Spec. Error : 0.344, s/b : 0.714
+Steps : 2508545, Gen Loss Total : 29.051, Mel-Spec. Error : 0.361, s/b : 0.723
+Steps : 2508550, Gen Loss Total : 29.253, Mel-Spec. Error : 0.338, s/b : 0.728
+Steps : 2508555, Gen Loss Total : 29.825, Mel-Spec. Error : 0.349, s/b : 0.715
+Steps : 2508560, Gen Loss Total : 30.969, Mel-Spec. Error : 0.373, s/b : 0.723
+Steps : 2508565, Gen Loss Total : 25.130, Mel-Spec. Error : 0.311, s/b : 0.729
+Steps : 2508570, Gen Loss Total : 27.795, Mel-Spec. Error : 0.351, s/b : 0.719
+Steps : 2508575, Gen Loss Total : 27.365, Mel-Spec. Error : 0.345, s/b : 0.720
+Steps : 2508580, Gen Loss Total : 27.448, Mel-Spec. Error : 0.329, s/b : 0.727
+Steps : 2508585, Gen Loss Total : 28.302, Mel-Spec. Error : 0.349, s/b : 0.710
+Steps : 2508590, Gen Loss Total : 28.571, Mel-Spec. Error : 0.346, s/b : 0.714
+Steps : 2508595, Gen Loss Total : 29.077, Mel-Spec. Error : 0.346, s/b : 0.719
+Steps : 2508600, Gen Loss Total : 32.128, Mel-Spec. Error : 0.383, s/b : 0.718
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02508600
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02508600
+Complete.
+Steps : 2508605, Gen Loss Total : 29.523, Mel-Spec. Error : 0.352, s/b : 0.709
+Steps : 2508610, Gen Loss Total : 30.236, Mel-Spec. Error : 0.334, s/b : 0.721
+Steps : 2508615, Gen Loss Total : 30.952, Mel-Spec. Error : 0.362, s/b : 0.721
+Steps : 2508620, Gen Loss Total : 26.032, Mel-Spec. Error : 0.327, s/b : 0.728
+Steps : 2508625, Gen Loss Total : 28.379, Mel-Spec. Error : 0.348, s/b : 0.740
+Steps : 2508630, Gen Loss Total : 30.749, Mel-Spec. Error : 0.371, s/b : 0.737
+Steps : 2508635, Gen Loss Total : 25.159, Mel-Spec. Error : 0.321, s/b : 0.741
+Steps : 2508640, Gen Loss Total : 29.247, Mel-Spec. Error : 0.358, s/b : 0.709
+Steps : 2508645, Gen Loss Total : 25.684, Mel-Spec. Error : 0.334, s/b : 0.722
+Steps : 2508650, Gen Loss Total : 27.608, Mel-Spec. Error : 0.323, s/b : 0.731
+Steps : 2508655, Gen Loss Total : 28.025, Mel-Spec. Error : 0.333, s/b : 0.716
+Steps : 2508660, Gen Loss Total : 24.334, Mel-Spec. Error : 0.316, s/b : 0.712
+Steps : 2508665, Gen Loss Total : 26.487, Mel-Spec. Error : 0.326, s/b : 0.701
+Steps : 2508670, Gen Loss Total : 29.395, Mel-Spec. Error : 0.354, s/b : 0.711
+Steps : 2508675, Gen Loss Total : 27.773, Mel-Spec. Error : 0.338, s/b : 0.712
+Steps : 2508680, Gen Loss Total : 30.737, Mel-Spec. Error : 0.359, s/b : 0.723
+Steps : 2508685, Gen Loss Total : 32.835, Mel-Spec. Error : 0.376, s/b : 0.736
+Steps : 2508690, Gen Loss Total : 25.442, Mel-Spec. Error : 0.303, s/b : 0.720
+Steps : 2508695, Gen Loss Total : 28.995, Mel-Spec. Error : 0.336, s/b : 0.707
+Steps : 2508700, Gen Loss Total : 31.905, Mel-Spec. Error : 0.363, s/b : 0.725
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02508700
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02508700
+Complete.
+Steps : 2508705, Gen Loss Total : 25.778, Mel-Spec. Error : 0.323, s/b : 0.730
+Steps : 2508710, Gen Loss Total : 26.993, Mel-Spec. Error : 0.331, s/b : 0.728
+Steps : 2508715, Gen Loss Total : 28.013, Mel-Spec. Error : 0.321, s/b : 0.729
+Time taken for epoch 131 is 194 sec
+
+Epoch: 132
+Steps : 2508720, Gen Loss Total : 28.951, Mel-Spec. Error : 0.363, s/b : 0.777
+Steps : 2508725, Gen Loss Total : 29.525, Mel-Spec. Error : 0.366, s/b : 0.726
+Steps : 2508730, Gen Loss Total : 21.071, Mel-Spec. Error : 0.278, s/b : 0.715
+Steps : 2508735, Gen Loss Total : 29.476, Mel-Spec. Error : 0.350, s/b : 0.716
+Steps : 2508740, Gen Loss Total : 26.047, Mel-Spec. Error : 0.308, s/b : 0.721
+Steps : 2508745, Gen Loss Total : 26.047, Mel-Spec. Error : 0.323, s/b : 0.717
+Steps : 2508750, Gen Loss Total : 26.579, Mel-Spec. Error : 0.316, s/b : 0.706
+Steps : 2508755, Gen Loss Total : 32.317, Mel-Spec. Error : 0.383, s/b : 0.721
+Steps : 2508760, Gen Loss Total : 26.205, Mel-Spec. Error : 0.318, s/b : 0.715
+Steps : 2508765, Gen Loss Total : 29.150, Mel-Spec. Error : 0.347, s/b : 0.738
+Steps : 2508770, Gen Loss Total : 29.943, Mel-Spec. Error : 0.367, s/b : 0.719
+Steps : 2508775, Gen Loss Total : 28.955, Mel-Spec. Error : 0.343, s/b : 0.719
+Steps : 2508780, Gen Loss Total : 27.565, Mel-Spec. Error : 0.326, s/b : 0.721
+Steps : 2508785, Gen Loss Total : 32.108, Mel-Spec. Error : 0.380, s/b : 0.713
+Steps : 2508790, Gen Loss Total : 25.471, Mel-Spec. Error : 0.291, s/b : 0.715
+Steps : 2508795, Gen Loss Total : 30.175, Mel-Spec. Error : 0.351, s/b : 0.716
+Steps : 2508800, Gen Loss Total : 29.482, Mel-Spec. Error : 0.350, s/b : 0.721
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/g_02508800
+Complete.
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Hifi_GAN/ckpt/do_02508800
+Complete.
+Steps : 2508805, Gen Loss Total : 26.646, Mel-Spec. Error : 0.305, s/b : 0.712
+Steps : 2508810, Gen Loss Total : 27.255, Mel-Spec. Error : 0.349, s/b : 0.719
+Steps : 2508815, Gen Loss Total : 26.316, Mel-Spec. Error : 0.341, s/b : 0.721
+Steps : 2508820, Gen Loss Total : 30.086, Mel-Spec. Error : 0.346, s/b : 0.717
+Steps : 2508825, Gen Loss Total : 27.376, Mel-Spec. Error : 0.322, s/b : 0.711
