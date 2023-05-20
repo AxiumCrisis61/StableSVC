@@ -1,12 +1,18 @@
-# MDS6002, SLP Course Project: StableSVC
+# MDS6002, SLP Course Project
+
+## StableSVC: Latend Diffusion Model for Singing Voice Conversion
 
 #### Jiahao Chen, 222041038
 
 
 
+
+
 Propose **Latent Diffusion Model (LDM)**[1] for Singing Voice Conversion (SVC)
 
-![Model Pipeline](E:\.MScDS\MDS6002_Natural%20Language%20Processing\StableSVC\StableSVC.jpg)
+![image](https://github.com/SLPcourse/MDS6002-222041038-JiahaoChen/blob/main/StableSVC.jpg)
+
+
 
 
 
@@ -14,21 +20,27 @@ Propose **Latent Diffusion Model (LDM)**[1] for Singing Voice Conversion (SVC)
 
 Simple diffusion for SVC (Denosing Diffusion Probabilistic Model, DDPM[2])
 
-![avatar](E:\.MScDS\MDS6002_Natural%20Language%20Processing\StableSVC\simple_diffusion.jpg)
+![image](https://github.com/SLPcourse/MDS6002-222041038-JiahaoChen/blob/main/simple_diffusion.jpg)
+
+
 
 
 
 **Tentative Results** (see /demo for audios)
 
-![avtar](E:\.MScDS\MDS6002_Natural%20Language%20Processing\StableSVC\denoising_process.jpg)
+![image](https://github.com/SLPcourse/MDS6002-222041038-JiahaoChen/blob/main/denoising_process.jpg)
+
+
 
 
 
 **See Report for more details**
 
-![avtar](E:\.MScDS\MDS6002_Natural%20Language%20Processing\StableSVC\poster_1.jpg)
+![image](https://github.com/SLPcourse/MDS6002-222041038-JiahaoChen/blob/main/poster_1.jpg)
 
-![avatar](E:\.MScDS\MDS6002_Natural%20Language%20Processing\StableSVC\poster_2.jpg)
+![image](https://github.com/SLPcourse/MDS6002-222041038-JiahaoChen/blob/main/poster_2.jpg)
+
+
 
 
 
