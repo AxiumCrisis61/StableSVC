@@ -1,8 +1,4 @@
-# MDS6002, SLP Course Project
-
-## StableSVC: Latend Diffusion Model for Singing Voice Conversion
-
-#### Jiahao Chen, 222041038
+# StableSVC: Latent Diffusion Model for Singing Voice Conversion
 
 **TODO:**
 
