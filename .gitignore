@@ -5,3 +5,5 @@
 *.pth
 *.npy
 **/ckpt
+/model_backup
+/results
