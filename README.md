@@ -1,4 +1,4 @@
-# StableSVC: Latend Diffusion Model for Singing Voice Conversion
+# StableSVC: Latent Diffusion Model for Singing Voice Conversion
 
 **TODO:**
 
