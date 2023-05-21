@@ -521,5 +521,3 @@ if __name__ == '__main__':
     in_out = list(zip(channel_dimensions[:-1], channel_dimensions[1:]))
     print(in_out)
     print(list(reversed(in_out)))
-
-    print('114514.wav'[:-3])
