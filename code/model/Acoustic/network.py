@@ -4,12 +4,11 @@ from functools import partial
 import math
 import torch
 from torch import nn, einsum
-import torch.nn.functional as F
 from einops import rearrange
 import sys
 sys.path.append("../../")
 from config import CHANNELS_BASE, CHANNELS_MULT_FACTORS, CHANNELS_INPUT, CHANNELS_OUTPUT, \
-    BASIC_BLOCK, POSITION_EMBED_DIM
+    BASIC_BLOCK, POSITION_ENC_DIM
 
 
 # ################################# Denoising Network: U-Net ##################################
@@ -103,9 +102,9 @@ class Swish(nn.Module):
         return x * torch.sigmoid(x)
 
 
-class PositionalEmbedding(nn.Module):
+class PositionalEncoding(nn.Module):
     """
-        Sinusoidal Positional Embeddings of diffusion steps;
+        Sinusoidal Positional Encodings of diffusion steps;
         INPUT: diffusion steps tensor of shape (batch, 1);
         OUTPUT: diffusion steps embedding tensor of shape (batch, dim).
     """
@@ -116,7 +115,7 @@ class PositionalEmbedding(nn.Module):
 
     def forward(self, time):
         """
-            Sinusoidal Positional Embeddings of diffusion steps
+            Sinusoidal Positional Encodings of diffusion steps
 
         Args:
             time: diffusion steps tensor of shape (batch, 1)
@@ -362,7 +361,7 @@ class UNet(nn.Module):
             channels_mults=CHANNELS_MULT_FACTORS,
             init_channels=CHANNELS_BASE,
             with_time_emb=True,
-            position_emb_dim=POSITION_EMBED_DIM,
+            position_enc_dim=POSITION_ENC_DIM,
             time_emd_dim=None,
             basic_block=BASIC_BLOCK,
             resnet_block_groups=8,
@@ -382,7 +381,7 @@ class UNet(nn.Module):
             channels_mults: output channel dimension multiplying factors during down-sampling
             init_channels: output channel dimension for the initial convolution block
             with_time_emb: whether to use time embedding
-            position_emb_dim: dimension of raw positional embedding of the diffusion steps
+            position_enc_dim: dimension of raw positional embedding of the diffusion steps
             time_emd_dim: dimension of time embedding, processed from positional embedding with an MLP
             basic_block: type of basic blocks for feature extraction, ('resnet', 'convnext')
             resnet_block_groups: number of ResNeXt channel groups
@@ -420,8 +419,8 @@ class UNet(nn.Module):
         time_emd_dim = default(time_emd_dim, 4 * base_channels)
         if with_time_emb:
             self.time_mlp = nn.Sequential(
-                PositionalEmbedding(position_emb_dim),
-                nn.Linear(position_emb_dim, time_emd_dim),
+                PositionalEncoding(position_enc_dim),
+                nn.Linear(position_enc_dim, time_emd_dim),
                 activation_time,
                 nn.Linear(time_emd_dim, time_emd_dim),
             )

@@ -13,7 +13,7 @@ import warnings
 import os
 import sys
 sys.path.append("../../")
-from config import CKPT_ACOUSTIC, FRAMEWORK, USE_CROSS_ATTN, USE_EMA, NOISE_SCHEDULE
+from config import CKPT_ACOUSTIC, FRAMEWORK, USE_EMA, NOISE_SCHEDULE
 
 
 if __name__ == '__main__':
@@ -27,8 +27,6 @@ if __name__ == '__main__':
                             help='choice of conversion framework')
     arg_parser.add_argument('--use-ema', type=bool, default=USE_EMA,
                             help='whether to use Exponential Moving Average to the model')
-    arg_parser.add_argument('--use-cross-attn', type=bool, default=USE_CROSS_ATTN,
-                            help='whether to use MSA layer to project conditioning features to mel feature space')
     arg_parser.add_argument('--noise-schedule', type=str, choices=('linear', 'cosine'), default=NOISE_SCHEDULE,
                             help='noise scheduling strategy for the DDPM')
 
@@ -90,7 +88,7 @@ if __name__ == '__main__':
     val_loader = DataLoader(val_set, batch_size=args.batch_size, shuffle=False, drop_last=True)
 
     # models and optimizer
-    model = DiffusionConverter(cross_attention=args.use_cross_attn).to(device)
+    model = DiffusionConverter().to(device)
     if args.use_ema:
         ema = EMA(model).to(device)
     else:

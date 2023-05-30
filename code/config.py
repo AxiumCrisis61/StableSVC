@@ -43,7 +43,7 @@ NUMS_OF_SINGER = 5
 
 
 # Acoustic features hyperparameters
-MEL_PADDING_LENGTH = 496         # roughly 8s of audio under the above settings
+MEL_PADDING_LENGTH = 500         # equivalently 8s of audio under the above settings
 WHISPER_PADDING_LENGTH = 30      # padding length of the Whisper input audios, not changeable
 RE_SAMPLE_RATE = 16000
 MEL_FREQ_BINS = 80               # frequency bins for mel-spectrograms
@@ -65,8 +65,8 @@ LOUDNESS_MIN = -11.512925464970229
 # Whisper hyperparameters
 WHISPER_SEQ = 1500
 WHISPER_DIM = 512             # 512 for 'base', 1024 for 'medium'
-WHISPER_MAPPED_RATE = 3       # temporal-average-pooling rate for whisper feature maps
 WHISPER_MODEL_SIZE = 'base'
+WHISPER_CHANNELS = 4          # number of channels of Whisper embedding with reduced dimension
 
 
 # Hifi-GAN training settings (for default)
@@ -86,16 +86,15 @@ VAE_DIMENSIONS = {}
 # Acoustic Model settings
 # Framework
 FRAMEWORK = 'simple_diffusion'                  # conversion framework, ('simple diffusion', )
-USE_CROSS_ATTN = False                          # cross-attention mechanism to project conditioning features
 USE_EMA = True                                  # Exponential Moving Average of the model
 
 # UNet
-CHANNELS_INPUT = 4                              # Mel + Whisper + F0 + Loudness
+CHANNELS_INPUT = 3 + WHISPER_CHANNELS           # Mel + Whisper + F0 + Loudness
 CHANNELS_OUTPUT = 1                             # Mel
 CHANNELS_BASE = 40                              # base channel for UNet (the output channel for the first block)
 CHANNELS_MULT_FACTORS = (2, 4, 8, 8)            # from official DDPM, (320, 640, 1280, 1280) channels for 'AUDIT'
 BASIC_BLOCK = 'convnext'                        # basic block of the denoising UNet: ('resnet', 'convnext')
-POSITION_EMBED_DIM = 128                        # dimension of raw time embedding, same as 'DiffSVC'
+POSITION_ENC_DIM = 128                          # dimension of raw time embedding, same as 'DiffSVC'
 # DDPM
 NOISE_SCHEDULE = 'cosine'
 DIFFUSION_STEPS = 100

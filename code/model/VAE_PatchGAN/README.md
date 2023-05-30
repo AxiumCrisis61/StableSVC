@@ -1,8 +1,10 @@
 ### TODO: Variational AutoEncoder - PatchGAN for moving DDPM into Latent Space (Perceptual Encoder of LDM)
 
-- Loss: L1 reconstruction loss + L2 reconstruction loss + VAE KL loss + PatchGAN Discriminator loss
+- Loss: L1 reconstruction loss + L2 reconstruction loss + VAE KL loss + PatchGAN Discriminator loss;
 
-- Use 4 Residual Blocks with SiLU activation to construct Encoder and Decoder respectively.
+- Use 4 Residual Blocks with SiLU activation to construct Encoder and Decoder respectively;
+
+- Try Swin as backbone;
 
 - Only load Decoder for inference.
 

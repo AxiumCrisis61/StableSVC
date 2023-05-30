@@ -8,10 +8,10 @@ from argparse import ArgumentParser
 import sys
 sys.path.append("../")
 from config import data_path, dataset2wavpath, WHISPER_SEQ, WHISPER_DIM, WHISPER_MODEL_SIZE, WHISPER_PADDING_LENGTH, \
-    WHISPER_MAPPED_RATE
+    MEL_PADDING_LENGTH
 
 
-def whisper_encoder(audio_paths, arguments):
+def whisper_encoder(audio_paths):
     batch = len(audio_paths)
     batch_mel = torch.zeros((batch, 80, WHISPER_PADDING_LENGTH*100), dtype=torch.float, device=model.device)
 
@@ -30,8 +30,9 @@ def whisper_encoder(audio_paths, arguments):
         # transpose the feature maps to align with mel-spectrograms
         # (batch, WHISPER_DIM, WHISPER_SEQ): (batch, 512, 1500)
         features = torch.transpose(features, 1, 2)
-        # (batch, WHISPER_DIM, WHISPER_SEQ/ave_rate): (batch, 512, 500)
-        features = F.avg_pool1d(features, kernel_size=arguments.ave_rate, stride=arguments.ave_rate)
+        # take non-zero part corresponding to the original input (proportion: MEL_PADDING_LENGTH/1500)
+        # (batch, WHISPER_DIM, WHISPER_SEQ * MEL_PADDING_LENGTH / 1500): (batch, 512, 400)
+        features = features[:, :, WHISPER_PADDING_LENGTH * 50 * MEL_PADDING_LENGTH / 1875]
 
     del batch_mel
     for i in range(5):
@@ -79,7 +80,7 @@ def extract_whisper_features(dataset, dataset_type, arguments):
         print("{}/{}...".format(min(len(audio_paths), end), len(audio_paths)))
 
         # extract Whisper features
-        whisper_features = whisper_encoder(audio_paths[start:end], arguments)
+        whisper_features = whisper_encoder(audio_paths[start:end])
 
         # save each sample's Whisper embedding respectively
         if arguments.save_separate:
@@ -99,8 +100,6 @@ if __name__ == "__main__":
     parser.add_argument("--dataset", type=str, choices=('Opencpop', 'M4Singer'))
     parser.add_argument("--dataset-type", type=str, choices=('train', 'test'))
     parser.add_argument("--start-point", type=int, default=0)
-    parser.add_argument("--ave-rate", type=int, default=WHISPER_MAPPED_RATE,
-                        help='kernel size of temporal average pooling to the Whisper feature maps')
     parser.add_argument("--save-separate", type=bool, default=True,
                         help='whether to save each feature map of the audio as separate file')
     args = parser.parse_args()

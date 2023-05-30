@@ -198,7 +198,7 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=Tr
     # models
     if arguments.framework == 'simple_diffusion':
         # load backbone
-        backbone = DiffusionConverter(cross_attention=False)
+        backbone = DiffusionConverter()
         if arguments.use_ema:
             arguments.use_ema = 'ema'
             backbone = EMA(backbone)
@@ -215,7 +215,7 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=Tr
         converter = GaussianDiffusionSampler(backbone, T=DIFFUSION_STEPS,
                                              noise_schedule=NOISE_SCHEDULE, plot_nums=plot_nums)
     else:
-        raise ValueError('Other types of SVC framework not supported')
+        raise ValueError('Other types of SVC framework not supported yet')
 
     # conversion
     backbone.to(device)

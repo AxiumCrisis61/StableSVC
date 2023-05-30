@@ -115,10 +115,9 @@ class SVCDataset(Dataset):
         f0 = self.f0_standardizer(torch.Tensor(self.f0[index]))
         loudness = self.loudness_standardizer(torch.Tensor(self.loudness[index]))
 
-        # temporally pad or trim
-        # TODO: modify the input
-        # Mels extracted by codes from Hifi-GAN will be have the temporal dimension less than f0 and loudness
-        # extracted by torchaudio than 1
+        # temporally pad or trim the acoustic features
+        # Mels extracted by codes from Hifi-GAN will have the temporal dimension less than f0 and loudness
+        # extracted by torchaudio than 1 ?
         # Different lengths of f0 and loudness ?
         length = mel.shape[-1]
         if length <= MEL_PADDING_LENGTH:
@@ -137,13 +136,6 @@ class SVCDataset(Dataset):
             loudness = F.pad(loudness, (0, MEL_PADDING_LENGTH - length), 'constant', 0)
         else:
             loudness = loudness[:MEL_PADDING_LENGTH]
-
-        if whisper.shape[1] > MEL_PADDING_LENGTH:
-            trim_len_whisper = (whisper.shape[1] - MEL_PADDING_LENGTH) // 2
-            whisper = whisper[:, trim_len_whisper:-trim_len_whisper]
-        else:
-            pad_len_whisper = (MEL_PADDING_LENGTH - whisper.shape[1]) // 2
-            whisper = F.pad(whisper, (pad_len_whisper, pad_len_whisper), 'replicate')
 
         return mel, whisper, f0, loudness
 

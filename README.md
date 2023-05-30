@@ -2,13 +2,12 @@
 
 **TODO:**
 
-- [ ]  Debug Whisper Embedding module;
-- [ ]  Debug cross-attention module;
-- [ ]  Implement classifier-free guidance;
-- [ ]  Implement VAE-PatchGAN;
-- [ ]  Implement LDM.
-  
-  
+- [x] Debug cross-attention module;
+- [ ] Debug Whisper Embedding module;
+- [ ] Remove dimensionality reduction in UNet;
+- [ ] Implement classifier-free guidance;
+- [ ] Implement VAE-PatchGAN;
+- [ ] Implement LDM.
 
 Propose **Latent Diffusion Model (LDM)**[1] for Singing Voice Conversion (SVC)
 
@@ -18,17 +17,17 @@ Propose **Latent Diffusion Model (LDM)**[1] for Singing Voice Conversion (SVC)
 
 Simple diffusion for SVC (Denosing Diffusion Probabilistic Model, DDPM[2])
 
-![image](https://github.com/SLPcourse/MDS6002-222041038-JiahaoChen/blob/main/simple_diffusion.jpg)
+![image](https://github.com/AxiumCrisis61/StableSVC/blob/main/simple_diffusion.jpg)
 
 **Tentative Results** (see /demo for audios)
 
-![image](https://github.com/SLPcourse/MDS6002-222041038-JiahaoChen/blob/main/denoising_process.jpg)
+![image](https://github.com/AxiumCrisis61/StableSVC/blob/main/denoising_process.jpg)
 
 **See Report for more details**
 
-![image](https://github.com/SLPcourse/MDS6002-222041038-JiahaoChen/blob/main/poster_1.jpg)
+![image](https://github.com/AxiumCrisis61/StableSVC/blob/main/poster_1.jpg)
 
-![image](https://github.com/SLPcourse/MDS6002-222041038-JiahaoChen/blob/main/poster_2.jpg)
+![image](https://github.com/AxiumCrisis61/StableSVC/blob/main/poster_2.jpg)
 
 **Link for Google Drive working directory:**
 https://drive.google.com/drive/folders/1hY9YPVmqGFB9UIN0WWdJQCAfGAP9-G-1?usp=sharing
