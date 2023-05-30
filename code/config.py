@@ -86,7 +86,7 @@ VAE_DIMENSIONS = {}
 # Acoustic Model settings
 # Framework
 FRAMEWORK = 'simple_diffusion'                  # conversion framework, ('simple diffusion', )
-USE_EMA = True                                  # Exponential Moving Average of the model
+USE_EMA = False                                 # Exponential Moving Average of the model
 
 # UNet
 CHANNELS_INPUT = 3 + WHISPER_CHANNELS           # Mel + Whisper + F0 + Loudness
