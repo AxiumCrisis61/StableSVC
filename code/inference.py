@@ -197,7 +197,7 @@ def inference(input_dir, output_type='all', output_dir=OUTPUT_DIR, evaluation=Tr
             arguments.use_ema = 'ema'
             backbone = EMA(backbone)
         else:
-            arguments.use_ema = 'whisper_model'
+            arguments.use_ema = 'model'
         backbone.load_state_dict(load_checkpoint(os.path.join(CKPT_ACOUSTIC, arguments.framework, arguments.epoch),
                                                  device)[arguments.use_ema])
         if arguments.use_ema == 'ema':

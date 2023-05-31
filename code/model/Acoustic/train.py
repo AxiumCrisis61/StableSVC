@@ -39,9 +39,6 @@ if __name__ == '__main__':
                             help='checkpoint interval (steps); set as 0 to cancel checkpointing')
     arg_parser.add_argument('--print-interval', type=int, default=5,
                             help='checkpoint interval (steps); set as 0 to cancel printing training information')
-    arg_parser.add_argument('--val-batch-num', type=int, default=2,
-                            help='number of batches for one time of validation. set as 0 to use full val set,'
-                                 '[NOTE] the validation process of DDPM is slow')
 
     # training and validations set, and checkpoint
     arg_parser.add_argument('--training-set', type=str, choices=('Opencpop', 'M4Singer'), default='Opencpop',
@@ -56,6 +53,11 @@ if __name__ == '__main__':
                             help='number of training epochs')
     arg_parser.add_argument('--batch-size', type=int, default=8,
                             help='batch size for mini-batch optimization')
+    arg_parser.add_argument('--val-batch-size', type=int, default=4,
+                            help='batch size for validation')
+    arg_parser.add_argument('--val-batch-num', type=int, default=4,
+                            help='number of batches for one time of validation. set as 0 to use full val set,'
+                                 '[NOTE] the validation process of DDPM is slow')
 
     # AdamW optimizer hyper-parameters
     arg_parser.add_argument("--lr", type=float, default=5e-5,
@@ -85,7 +87,7 @@ if __name__ == '__main__':
     train_set = SVCDataset(args.training_set, 'train')
     val_set = SVCDataset(args.validation_set, 'test')
     train_loader = DataLoader(train_set, batch_size=args.batch_size, shuffle=True, drop_last=True)
-    val_loader = DataLoader(val_set, batch_size=args.batch_size, shuffle=False, drop_last=True)
+    val_loader = DataLoader(val_set, batch_size=args.val_batch_size, shuffle=False, drop_last=True)
 
     # models and optimizer
     model = DiffusionConverter().to(device)
