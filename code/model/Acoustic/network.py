@@ -512,9 +512,6 @@ class UNet(nn.Module):
 
         # up-sample
         for block1, block2, attn, up_sample in self.ups:
-            print(x.shape)
-            for temp in h:
-                print(temp.shape)
             x = torch.cat((x, h.pop()), dim=1)
             x = block1(x, t)
             x = block2(x, t)
