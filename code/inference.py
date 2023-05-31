@@ -20,7 +20,7 @@ import whisper
 import diffsptk
 from config import CKPT_ACOUSTIC, CKPT_VOCODER, VOCODER_CONFIG_PATH, INFERENCE_DATA_PATH, OUTPUT_DIR, \
     DIFFUSION_STEPS, NOISE_SCHEDULE, MEL_FREQ_BINS, MEL_PADDING_LENGTH, RE_SAMPLE_RATE, WHISPER_MODEL_SIZE, \
-    WHISPER_PADDING_LENGTH, STFT_HOP_SIZE, STFT_WINDOW_SIZE, STFT_N, FRAMEWORK, MEL_MAX_LENGTH
+    WHISPER_PADDING_LENGTH, STFT_HOP_SIZE, STFT_WINDOW_SIZE, STFT_N, FRAMEWORK, MEL_MAX_LENGTH, USE_EMA
 
 
 MAX_WAV_VALUE = 32768
@@ -321,9 +321,9 @@ if __name__ == '__main__':
 
     # models configuration
     arg_parser.add_argument('--seed', type=int, default=0, help='random seed')
-    arg_parser.add_argument('--batch-size', type=int, default=4, help='inference batch size')
+    arg_parser.add_argument('--batch-size', type=int, default=8, help='inference batch size')
     arg_parser.add_argument('--epoch', type=str, choices=('latest', 'best'), default='best')
-    arg_parser.add_argument('--use-ema', type=bool, default=True)
+    arg_parser.add_argument('--use-ema', type=bool, default=USE_EMA)
     arg_parser.add_argument('--framework', type=str, choices=('simple_diffusion', ), default=FRAMEWORK,
                                   help='conversion framework')
 

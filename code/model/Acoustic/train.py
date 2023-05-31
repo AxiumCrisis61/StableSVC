@@ -138,7 +138,8 @@ if __name__ == '__main__':
         print('-'*15 + f'epoch {epoch}' + '-'*15)
         for x, whisper, f0, loudness in train_loader:
             model.train()
-            ema.train()
+            if args.use_ema:
+                ema.train()
 
             step += 1
             optimizer.zero_grad()
@@ -157,7 +158,8 @@ if __name__ == '__main__':
             # optimization
             optimizer.step()
             # update EMA model
-            ema.update()
+            if args.use_ema:
+                ema.update()
 
             # print training information
             if args.print_interval > 0 and step % args.print_interval == 0:
@@ -170,19 +172,29 @@ if __name__ == '__main__':
 
             # save latest checkpoint
             if args.checkpoint_interval > 0 and step % args.checkpoint_interval == 0:
-                save_checkpoint(os.path.join(ckpt_path, 'latest'), {
-                    'model': model.state_dict(),
-                    'ema': ema.state_dict(),
-                    'optimizer': optimizer.state_dict(),
-                    'epoch': epoch,
-                    'step': step,
-                    'best_val_error': best_val_error
-                })
+                if args.use_ema:
+                    save_checkpoint(os.path.join(ckpt_path, 'latest'), {
+                        'model': model.state_dict(),
+                        'ema': ema.state_dict(),
+                        'optimizer': optimizer.state_dict(),
+                        'epoch': epoch,
+                        'step': step,
+                        'best_val_error': best_val_error
+                    })
+                else:
+                    save_checkpoint(os.path.join(ckpt_path, 'latest'), {
+                        'model': model.state_dict(),
+                        'optimizer': optimizer.state_dict(),
+                        'epoch': epoch,
+                        'step': step,
+                        'best_val_error': best_val_error
+                    })
 
             # validation and save best checkpoint
             if args.val_interval > 0 and step % args.val_interval == 0:
                 model.eval()
-                ema.eval()
+                if args.use_ema:
+                    ema.eval()
                 val_error_list = []
                 iter_val = 0
 
@@ -211,13 +223,22 @@ if __name__ == '__main__':
 
                 if val_error < best_val_error:
                     best_val_error = val_error
-                    save_checkpoint(os.path.join(ckpt_path, 'best'), {
-                        'model': model.state_dict(),
-                        'ema': ema.state_dict(),
-                        'optimizer': optimizer.state_dict(),
-                        'epoch': epoch,
-                        'step': step,
-                        'best_val_error': best_val_error,
-                    })
+                    if args.use_ema:
+                        save_checkpoint(os.path.join(ckpt_path, 'best'), {
+                            'model': model.state_dict(),
+                            'ema': ema.state_dict(),
+                            'optimizer': optimizer.state_dict(),
+                            'epoch': epoch,
+                            'step': step,
+                            'best_val_error': best_val_error,
+                        })
+                    else:
+                        save_checkpoint(os.path.join(ckpt_path, 'best'), {
+                            'model': model.state_dict(),
+                            'optimizer': optimizer.state_dict(),
+                            'epoch': epoch,
+                            'step': step,
+                            'best_val_error': best_val_error,
+                        })
 
         print('Time taken for epoch {} is {} sec\n'.format(epoch + 1, int(time.time() - start)))
