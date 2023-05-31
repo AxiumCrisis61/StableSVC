@@ -113,6 +113,7 @@ class DiffusionConverter(nn.Module):
         f0 = f0.unsqueeze(1).repeat(1, 1, MEL_FREQ_BINS, 1)
         loudness = loudness.unsqueeze(1).repeat(1, 1, MEL_FREQ_BINS, 1)
 
+        print(xt.shape, whisper.shape, f0.shape, loudness.shape)
         return torch.squeeze(self.unet(torch.concat((xt, whisper, f0, loudness), dim=1), t), 1)
 
 
