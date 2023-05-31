@@ -264,6 +264,7 @@ class GaussianDiffusionSampler(nn.Module):
 
 # for testing functionality
 if __name__ == '__main__':
+    # cosine noise scheduling rate
     alpha_bar = get_cosine_noise_schedule(DIFFUSION_STEPS)
     alpha = torch.zeros(len(alpha_bar))
     for i in reversed(range(1, len(alpha))):
@@ -275,3 +276,6 @@ if __name__ == '__main__':
     alpha_bar_prev = F.pad(alpha_bar, [1, 0], value=1)[:DIFFUSION_STEPS+1]
     print('alpha_bar_prev', alpha_bar_prev)
     print(alpha.shape == alpha_bar_prev.shape)
+
+    # draw denoising process
+
