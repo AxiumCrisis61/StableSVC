@@ -511,14 +511,14 @@ class UNet(nn.Module):
         x = self.mid_block2(x, t)
 
         # up-sample
-        # count = 0
+        count = 0
         for block1, block2, attn, up_sample in self.ups:
-            # count += 1
-            # print('Up-sampling block', count)
-            # print('Shape of x', x.shape)
-            # print('Shapes of h')
-            # for temp in h:
-            #     print(temp.shape)
+            count += 1
+            print('Up-sampling block', count)
+            print('Shape of x', x.shape)
+            print('Shapes of h')
+            for temp in h:
+                print(temp.shape)
             x = up_sample(x)
             x = torch.cat((x, h.pop()), dim=1)
             x = block1(x, t)
