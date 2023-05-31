@@ -519,11 +519,11 @@ class UNet(nn.Module):
             # print('Shapes of h')
             # for temp in h:
             #     print(temp.shape)
+            x = up_sample(x)
             x = torch.cat((x, h.pop()), dim=1)
             x = block1(x, t)
             x = block2(x, t)
             x = attn(x)
-            x = up_sample(x)
 
         return self.final_conv(x)
 
