@@ -20,7 +20,7 @@ import whisper
 import diffsptk
 from config import CKPT_ACOUSTIC, CKPT_VOCODER, VOCODER_CONFIG_PATH, INFERENCE_DATA_PATH, OUTPUT_DIR, \
     DIFFUSION_STEPS, NOISE_SCHEDULE, MEL_FREQ_BINS, MEL_PADDING_LENGTH, RE_SAMPLE_RATE, WHISPER_MODEL_SIZE, \
-    WHISPER_PADDING_LENGTH, WHISPER_MAPPED_RATE, STFT_HOP_SIZE, STFT_WINDOW_SIZE, STFT_N, FRAMEWORK
+    WHISPER_PADDING_LENGTH, STFT_HOP_SIZE, STFT_WINDOW_SIZE, STFT_N, FRAMEWORK, MEL_MAX_LENGTH
 
 
 MAX_WAV_VALUE = 32768
@@ -69,7 +69,7 @@ def whisper_encoder(waveform_list):
     with torch.no_grad():
         features = whisper_model.embed_audio(batch_mel)
         features = torch.transpose(features, 1, 2)
-        features = F.avg_pool1d(features, kernel_size=WHISPER_MAPPED_RATE, stride=WHISPER_MAPPED_RATE)
+        features = features[:, :, :WHISPER_PADDING_LENGTH * 50 * MEL_PADDING_LENGTH // MEL_MAX_LENGTH]
 
     del batch_mel, whisper_model
     for i in range(5):

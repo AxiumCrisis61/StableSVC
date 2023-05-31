@@ -43,9 +43,9 @@ NUMS_OF_SINGER = 5
 
 
 # Acoustic features hyperparameters
-MEL_PADDING_LENGTH = 500         # equivalently 8s of audio under the above settings
-WHISPER_PADDING_LENGTH = 30      # padding length of the Whisper input audios, not changeable
 RE_SAMPLE_RATE = 16000
+MEL_PADDING_LENGTH = 500         # equivalently 8s of audio under the above settings
+MEL_MAX_LENGTH = 1875            # number of frames of a 30s audio under above settings to align with Whisper
 MEL_FREQ_BINS = 80               # frequency bins for mel-spectrograms
 STFT_N = 1024                    # size of FFT in STFT
 STFT_WINDOW_SIZE = 1024          # window size of STFT
@@ -63,10 +63,12 @@ LOUDNESS_MIN = -11.512925464970229
 
 
 # Whisper hyperparameters
-WHISPER_SEQ = 1500
-WHISPER_DIM = 512             # 512 for 'base', 1024 for 'medium'
+WHISPER_PADDING_LENGTH = 30             # padding length of the Whisper input audios, not changeable
+WHISPER_SEQ = WHISPER_PADDING_LENGTH * 50
+WHISPER_DIM = 512                       # 512 for 'base', 1024 for 'medium'
 WHISPER_MODEL_SIZE = 'base'
-WHISPER_CHANNELS = 4          # number of channels of Whisper embedding with reduced dimension
+WHISPER_CHANNELS = 4                    # number of channels of Whisper embedding with reduced dimension
+WHISPER_ALIGN = 'offline'               # ('offline', 'online'), 'online' learnable
 
 
 # Hifi-GAN training settings (for default)

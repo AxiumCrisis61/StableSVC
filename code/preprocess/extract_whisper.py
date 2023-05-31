@@ -8,7 +8,7 @@ from argparse import ArgumentParser
 import sys
 sys.path.append("../")
 from config import data_path, dataset2wavpath, WHISPER_SEQ, WHISPER_DIM, WHISPER_MODEL_SIZE, WHISPER_PADDING_LENGTH, \
-    MEL_PADDING_LENGTH
+    MEL_PADDING_LENGTH, MEL_MAX_LENGTH
 
 
 def whisper_encoder(audio_paths):
@@ -32,7 +32,7 @@ def whisper_encoder(audio_paths):
         features = torch.transpose(features, 1, 2)
         # take non-zero part corresponding to the original input (proportion: MEL_PADDING_LENGTH/1500)
         # (batch, WHISPER_DIM, WHISPER_SEQ * MEL_PADDING_LENGTH / 1500): (batch, 512, 400)
-        features = features[:, :, :WHISPER_PADDING_LENGTH * 50 * MEL_PADDING_LENGTH // 1875]
+        features = features[:, :, :WHISPER_PADDING_LENGTH * 50 * MEL_PADDING_LENGTH // MEL_MAX_LENGTH]
 
     del batch_mel
     for i in range(5):
