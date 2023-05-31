@@ -470,7 +470,7 @@ class UNet(nn.Module):
                         block_klass(dim_out * 2, dim_in, time_emb_dim=time_emd_dim),
                         block_klass(dim_in, dim_in, time_emb_dim=time_emd_dim),
                         Residual(PreNorm(dim_in, LinearAttention(dim_in, heads=msa_heads, dim_head=msa_head_dim))),
-                        UpSample(dim_in, SHAPE_CHANGE[ind]) if not is_last else nn.Identity(),
+                        UpSample(dim_in, tuple(reversed(SHAPE_CHANGE))[ind]) if not is_last else nn.Identity(),
                     ]
                 )
             )

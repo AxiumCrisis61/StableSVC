@@ -245,7 +245,7 @@ class GaussianDiffusionSampler(nn.Module):
             if self.plot_nums > 0:
                 if time_step == plot_times[plot_index]:
                     plt.subplot(5, 2, plot_index + 1)
-                    plt.imshow(x_t[0].cpu().numpy())
+                    plt.imshow(np.flip(x_t[0].cpu().numpy(), 0))
                     plt.title('T={}'.format(plot_times[plot_index]), fontsize='small')
                     plt.axis('off')
                     plot_index += 1
@@ -277,5 +277,7 @@ if __name__ == '__main__':
     print('alpha_bar_prev', alpha_bar_prev)
     print(alpha.shape == alpha_bar_prev.shape)
 
-    # draw denoising process
-
+    # # draw denoising process
+    # test = np.arange(20).reshape(4, 5)
+    # print(test)
+    # print(np.flip(test, 0))
