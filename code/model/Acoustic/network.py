@@ -449,7 +449,7 @@ class UNet(nn.Module):
                         block_klass(dim_in, dim_out, time_emb_dim=time_emd_dim),
                         block_klass(dim_out, dim_out, time_emb_dim=time_emd_dim),
                         Residual(PreNorm(dim_out, LinearAttention(dim_out, heads=msa_heads, dim_head=msa_head_dim))),
-                        DownSample(dim_out, SHAPE_CHANGE[ind]) if not is_last else nn.Identity(),
+                        DownSample(dim_out, SHAPE_CHANGE) if not is_last else nn.Identity(),
                     ]
                 )
             )
@@ -461,8 +461,7 @@ class UNet(nn.Module):
         self.mid_block2 = block_klass(mid_dim, mid_dim, time_emb_dim=time_emd_dim)
 
         # up-sampling blocks
-        # for ind, (dim_in, dim_out) in enumerate(reversed(in_out[1:])):        # why abandon the last block?
-        for ind, (dim_in, dim_out) in enumerate(reversed(in_out)):
+        for ind, (dim_in, dim_out) in enumerate(reversed(in_out[1:])):        # why abandon the last block?
             is_last = ind >= (num_resolutions - 1)
             self.ups.append(
                 nn.ModuleList(
@@ -470,7 +469,7 @@ class UNet(nn.Module):
                         block_klass(dim_out * 2, dim_in, time_emb_dim=time_emd_dim),
                         block_klass(dim_in, dim_in, time_emb_dim=time_emd_dim),
                         Residual(PreNorm(dim_in, LinearAttention(dim_in, heads=msa_heads, dim_head=msa_head_dim))),
-                        UpSample(dim_in, tuple(reversed(SHAPE_CHANGE))[ind]) if not is_last else nn.Identity(),
+                        UpSample(dim_in, SHAPE_CHANGE) if not is_last else nn.Identity(),
                     ]
                 )
             )
@@ -511,20 +510,19 @@ class UNet(nn.Module):
         x = self.mid_block2(x, t)
 
         # up-sample
-        count = 0
+        # count = 0
         for block1, block2, attn, up_sample in self.ups:
-            count += 1
-            print('Up-sampling block', count)
-            print('Shape of x', x.shape)
-            print('Shapes of h')
-            for temp in h:
-                print(temp.shape)
-            x = up_sample(x)
+            # count += 1
+            # print('Up-sampling block', count)
+            # print('Shape of x', x.shape)
+            # print('Shapes of h')
+            # for temp in h:
+            #     print(temp.shape)
             x = torch.cat((x, h.pop()), dim=1)
             x = block1(x, t)
             x = block2(x, t)
             x = attn(x)
-            # x = up_sample(x)  original up-sampling place
+            x = up_sample(x)
 
         return self.final_conv(x)
 
