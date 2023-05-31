@@ -460,11 +460,9 @@ class UNet(nn.Module):
         self.mid_attn = Residual(PreNorm(mid_dim, Attention(mid_dim, heads=msa_heads, dim_head=msa_head_dim)))
         self.mid_block2 = block_klass(mid_dim, mid_dim, time_emb_dim=time_emd_dim)
 
-        # up-sampling blocks
-        # for ind, (dim_in, dim_out) in enumerate(reversed(in_out[1:])):        # why abandon the last block ?
-        for ind, (dim_in, dim_out) in enumerate(reversed(in_out)):
-            # is_last = ind >= (num_resolutions - 1)
-            is_last = ind == 0
+        # up-sampling blocks (abandon the last one when up-sampling)
+        for ind, (dim_in, dim_out) in enumerate(reversed(in_out[1:])):
+            is_last = ind >= (num_resolutions - 1)
             self.ups.append(
                 nn.ModuleList(
                     [
@@ -526,6 +524,7 @@ class UNet(nn.Module):
             x = attn(x)
             x = up_sample(x)
 
+        print(x.shape)
         return self.final_conv(x)
 
 
