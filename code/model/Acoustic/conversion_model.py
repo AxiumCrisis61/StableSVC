@@ -54,29 +54,27 @@ class DiffusionConverter(nn.Module):
                                                                   batch_first=True)
 
         # whisper CNN module
-        # align the temporal length of Whisper embedding and Mel-spectrograms, and then reduce the dimension of Whisper
-        # to the same size of Mel-spectrogram (increase channels at the same time)
+        """ align the temporal length of Whisper embedding and Mel-spectrograms, and then reduce the dimension of Whisper
+            to the same size of Mel-spectrogram (increase channels at the same time) """
         self.mel_factor = np.lcm(MEL_MAX_LENGTH, WHISPER_SEQ) // MEL_MAX_LENGTH
         self.whisper_factor = np.lcm(MEL_MAX_LENGTH, WHISPER_SEQ) // WHISPER_SEQ
+        # temporal alignment: 'Online strategy' to align the temporal length
+        if whisper_alignment_strategy == 'online':
+            self.whisper_conv1d_temporal = nn.Sequential(OrderedDict([
+                ('temporal_up_sample',
+                 nn.ConvTranspose1d(WHISPER_DIM, WHISPER_DIM, self.whisper_factor, self.whisper_factor)),
+                ('temporal_down_sample',
+                 nn.Conv1d(WHISPER_DIM, WHISPER_DIM, self.mel_factor, self.mel_factor)),
+            ]))
+        # dimensionality reduction
         # 1d convolution
-        whisper_conv1d_dict = OrderedDict([
-            # 'Online strategy' to align the temporal length
-            ('temporal_up_sample', nn.ConvTranspose1d(WHISPER_DIM, WHISPER_DIM, self.whisper_factor, self.whisper_factor)),
-            ('temporal_down_sample', nn.Conv1d(WHISPER_DIM, WHISPER_DIM, self.mel_factor, self.mel_factor)),
-            # dimensionality reduction
-            ('dim_reduction_1', nn.Conv1d(in_channels=WHISPER_DIM, out_channels=MEL_FREQ_BINS * 4,
-                                          kernel_size=3, stride=1, padding=1)),
-        ])
-        if whisper_alignment_strategy == 'offline':
-            del whisper_conv1d_dict['temporal_up_sample']
-            del whisper_conv1d_dict['temporal_down_sample']
-        self.whisper_conv1d = nn.Sequential(whisper_conv1d_dict)
+        self.whisper_conv1d = nn.Conv1d(WHISPER_DIM, MEL_FREQ_BINS*4, 1, 1)
         # 2d convolution
         self.whisper_conv2d = nn.Sequential(OrderedDict([
             # dimensionality reduction
-            ('dim_reduction_2', nn.Conv2d(in_channels=1, out_channels=WHISPER_CHANNELS // 2,
+            ('dim_reduction_1', nn.Conv2d(in_channels=1, out_channels=WHISPER_CHANNELS // 2,
                                           kernel_size=(2, 3), stride=(2, 1), padding=(0, 1))),
-            ('dim_reduction_3', nn.Conv2d(in_channels=WHISPER_CHANNELS // 2, out_channels=WHISPER_CHANNELS,
+            ('dim_reduction_2', nn.Conv2d(in_channels=WHISPER_CHANNELS // 2, out_channels=WHISPER_CHANNELS,
                                           kernel_size=(2, 3), stride=(2, 1), padding=(0, 1))),
         ]))
 
@@ -97,6 +95,8 @@ class DiffusionConverter(nn.Module):
         if self.whisper_alignment_strategy == 'offline':
             whisper = whisper.repeat_interleave(self.whisper_factor, 2)
             whisper = F.avg_pool1d(whisper, self.mel_factor, self.mel_factor)
+        else:
+            whisper = self.whisper_conv1d_temporal(whisper)
 
         if self.cross_attention:
             whisper, _ = self.cross_attention_whisper(transpose(whisper), transpose(xt), transpose(xt))
