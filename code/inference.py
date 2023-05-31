@@ -75,7 +75,7 @@ def whisper_encoder(waveform_list):
     for i in range(5):
         torch.cuda.empty_cache()
 
-    return features.cpu().detach().numpy()
+    return features.cpu().detach()
 
 
 class InferenceDataset(Dataset):
@@ -131,12 +131,6 @@ class InferenceDataset(Dataset):
             else:
                 loudness = loudness[:MEL_PADDING_LENGTH]
             self.loudness_list.append(loudness)
-        if self.whisper_features.shape[2] > MEL_PADDING_LENGTH:
-            trim_len_whisper = (self.whisper_features.shape[2] - MEL_PADDING_LENGTH) // 2
-            self.whisper_features = self.whisper_features[:, :, trim_len_whisper:-trim_len_whisper]
-        else:
-            pad_len_whisper = (MEL_PADDING_LENGTH - self.whisper_features.shape[2]) // 2
-            self.whisper_features = F.pad(self.whisper_features, (pad_len_whisper, pad_len_whisper), 'replicate')
 
     def __getitem__(self, index):
         return self.whisper_features[index], \
