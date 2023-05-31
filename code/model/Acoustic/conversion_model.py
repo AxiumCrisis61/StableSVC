@@ -58,22 +58,27 @@ class DiffusionConverter(nn.Module):
         # to the same size of Mel-spectrogram (increase channels at the same time)
         self.mel_factor = np.lcm(MEL_MAX_LENGTH, WHISPER_SEQ) // MEL_MAX_LENGTH
         self.whisper_factor = np.lcm(MEL_MAX_LENGTH, WHISPER_SEQ) // WHISPER_SEQ
-        whisper_conv_dict = OrderedDict([
+        # 1d convolution
+        whisper_conv1d_dict = OrderedDict([
             # 'Online strategy' to align the temporal length
             ('temporal_up_sample', nn.ConvTranspose1d(WHISPER_DIM, WHISPER_DIM, self.whisper_factor, self.whisper_factor)),
             ('temporal_down_sample', nn.Conv1d(WHISPER_DIM, WHISPER_DIM, self.mel_factor, self.mel_factor)),
             # dimensionality reduction
             ('dim_reduction_1', nn.Conv1d(in_channels=WHISPER_DIM, out_channels=MEL_FREQ_BINS * 4,
                                           kernel_size=3, stride=1, padding=1)),
+        ])
+        if whisper_alignment_strategy == 'offline':
+            del whisper_conv1d_dict['temporal_up_sample']
+            del whisper_conv1d_dict['temporal_down_sample']
+        self.whisper_conv1d = nn.Sequential(whisper_conv1d_dict)
+        # 2d convolution
+        self.whisper_conv2d = nn.Sequential(OrderedDict([
+            # dimensionality reduction
             ('dim_reduction_2', nn.Conv2d(in_channels=1, out_channels=WHISPER_CHANNELS // 2,
                                           kernel_size=(2, 3), stride=(2, 1), padding=(0, 1))),
             ('dim_reduction_3', nn.Conv2d(in_channels=WHISPER_CHANNELS // 2, out_channels=WHISPER_CHANNELS,
                                           kernel_size=(2, 3), stride=(2, 1), padding=(0, 1))),
-        ])
-        if whisper_alignment_strategy == 'offline':
-            del whisper_conv_dict['temporal_up_sample']
-            del whisper_conv_dict['temporal_down_sample']
-        self.whisper_conv = nn.Sequential(whisper_conv_dict)
+        ]))
 
     def forward(self, xt, t, whisper, f0, loudness):
         """
@@ -101,7 +106,8 @@ class DiffusionConverter(nn.Module):
             loudness, _ = self.cross_attention_loudness(transpose(loudness), transpose(xt), transpose(xt))
             loudness = transpose(loudness)
 
-        whisper = self.whisper_conv(whisper.unsqueeze(1))
+        whisper = self.whisper_conv1d(whisper)
+        whisper = self.whisper_conv2d(whisper.unsqueeze(1))
         xt = xt.unsqueeze(1)
         whisper = whisper.unsqueeze(1)
         f0 = f0.unsqueeze(1).repeat(1, 1, MEL_FREQ_BINS, 1)
