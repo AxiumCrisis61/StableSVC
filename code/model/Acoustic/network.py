@@ -524,6 +524,7 @@ class UNet(nn.Module):
             x = block1(x, t)
             x = block2(x, t)
             x = attn(x)
+            # x = up_sample(x)  original up-sampling place
 
         return self.final_conv(x)
 
