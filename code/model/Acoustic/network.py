@@ -147,7 +147,7 @@ def UpSample(dim, shape_change=True):
     if shape_change:
         return nn.ConvTranspose2d(dim, dim, 4, 2, 1)
     else:
-        return nn.ConvTranspose2d(dim, dim, 3, 1, 1)
+        return nn.ConvTranspose2d(dim, dim, 5, 1, 2)
 
 
 def DownSample(dim, shape_change=True):
@@ -165,7 +165,7 @@ def DownSample(dim, shape_change=True):
     if shape_change:
         return nn.Conv2d(dim, dim, 4, 2, 1)
     else:
-        return nn.Conv2d(dim, dim, 3, 1, 1)
+        return nn.Conv2d(dim, dim, 5, 1, 2)
 
 
 class ConvBlock(nn.Module):
