@@ -1,7 +1,6 @@
 import whisper
 import numpy as np
 import torch
-import torch.nn.functional as F
 import os
 import json
 from argparse import ArgumentParser

@@ -8,7 +8,7 @@ from einops import rearrange
 import sys
 sys.path.append("../../")
 from config import CHANNELS_BASE, CHANNELS_MULT_FACTORS, CHANNELS_INPUT, CHANNELS_OUTPUT, \
-    BASIC_BLOCK, POSITION_ENC_DIM
+    BASIC_BLOCK, POSITION_ENC_DIM, SHAPE_CHANGE
 
 
 # ################################# Denoising Network: U-Net ##################################
@@ -132,32 +132,40 @@ class PositionalEncoding(nn.Module):
         return embeddings
 
 
-def UpSample(dim):
+def UpSample(dim, shape_change=True):
     """
         Up-sampling block for UNet
         Different traditional UNet, change of channel dimension is done during extraction block
 
     Args:
         dim: output dimension of up-sampling block
+        shape_change: whether to shrink the height and width of the input feature map by 0.5 or not
 
     Returns:
         an up-sampling block nn.Module
     """
-    return nn.ConvTranspose2d(dim, dim, 4, 2, 1)
+    if shape_change:
+        return nn.ConvTranspose2d(dim, dim, 4, 2, 1)
+    else:
+        return nn.ConvTranspose2d(dim, dim, 3, 1, 1)
 
 
-def DownSample(dim):
+def DownSample(dim, shape_change=True):
     """
         Down-sampling block for UNet
         Different traditional UNet, change of channel dimension is done during extraction block
 
     Args:
         dim: output dimension of down-sampling block
+        shape_change: whether to spand the height and width of the input feature map by 2 or not
 
     Returns:
         a down sampling block nn.Module
     """
-    return nn.Conv2d(dim, dim, 4, 2, 1)
+    if shape_change:
+        return nn.Conv2d(dim, dim, 4, 2, 1)
+    else:
+        return nn.Conv2d(dim, dim, 3, 1, 1)
 
 
 class ConvBlock(nn.Module):
@@ -441,7 +449,7 @@ class UNet(nn.Module):
                         block_klass(dim_in, dim_out, time_emb_dim=time_emd_dim),
                         block_klass(dim_out, dim_out, time_emb_dim=time_emd_dim),
                         Residual(PreNorm(dim_out, LinearAttention(dim_out, heads=msa_heads, dim_head=msa_head_dim))),
-                        DownSample(dim_out) if not is_last else nn.Identity(),
+                        DownSample(dim_out, SHAPE_CHANGE[ind]) if not is_last else nn.Identity(),
                     ]
                 )
             )
@@ -462,7 +470,7 @@ class UNet(nn.Module):
                         block_klass(dim_out * 2, dim_in, time_emb_dim=time_emd_dim),
                         block_klass(dim_in, dim_in, time_emb_dim=time_emd_dim),
                         Residual(PreNorm(dim_in, LinearAttention(dim_in, heads=msa_heads, dim_head=msa_head_dim))),
-                        UpSample(dim_in) if not is_last else nn.Identity(),
+                        UpSample(dim_in, SHAPE_CHANGE[ind]) if not is_last else nn.Identity(),
                     ]
                 )
             )

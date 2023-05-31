@@ -3,8 +3,8 @@
 **TODO:**
 
 - [x] Debug cross-attention module;
+- [x] Make dimensionality reduction adjustable in UNet;
 - [ ] Debug Whisper Embedding module;
-- [ ] Remove dimensionality reduction in UNet;
 - [ ] Implement classifier-free guidance;
 - [ ] Implement VAE-PatchGAN;
 - [ ] Implement LDM.
