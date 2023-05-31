@@ -463,7 +463,8 @@ class UNet(nn.Module):
         # up-sampling blocks
         # for ind, (dim_in, dim_out) in enumerate(reversed(in_out[1:])):        # why abandon the last block ?
         for ind, (dim_in, dim_out) in enumerate(reversed(in_out)):
-            is_last = ind >= (num_resolutions - 1)
+            # is_last = ind >= (num_resolutions - 1)
+            is_last = ind == 0
             self.ups.append(
                 nn.ModuleList(
                     [
