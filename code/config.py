@@ -96,6 +96,7 @@ CHANNELS_OUTPUT = 1                             # Mel
 CHANNELS_BASE = 40                              # base channel for UNet (the output channel for the first block)
 CHANNELS_MULT_FACTORS = (1, 1, 2, 2)            # from official DDPM, (320, 640, 1280, 1280) channels for 'AUDIT'
 SHAPE_CHANGE = (False, False, False, False)     # whether to change the shape of feature maps in down/up blocks
+# [WARNING] to make shape changing different across blocks will make UNet fail
 BASIC_BLOCK = 'convnext'                        # basic block of the denoising UNet: ('resnet', 'convnext')
 POSITION_ENC_DIM = 128                          # dimension of raw time embedding, same as 'DiffSVC'
 # DDPM
