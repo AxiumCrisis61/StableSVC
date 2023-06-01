@@ -4,8 +4,8 @@
 
 - [x] Debug cross-attention module;
 - [x] Make dimensionality reduction adjustable in UNet;
-- [ ] Debug Whisper Embedding module;
-- [ ] Implement classifier-free guidance;
+- [x] Debug Whisper Embedding module;
+- [ ] Implement Classifier-Free Guidance (CFG);
 - [ ] Implement VAE-PatchGAN;
 - [ ] Implement LDM.
 

@@ -22,7 +22,6 @@ from config import CKPT_ACOUSTIC, CKPT_VOCODER, VOCODER_CONFIG_PATH, INFERENCE_D
     DIFFUSION_STEPS, NOISE_SCHEDULE, MEL_FREQ_BINS, MEL_PADDING_LENGTH, RE_SAMPLE_RATE, WHISPER_MODEL_SIZE, \
     WHISPER_PADDING_LENGTH, STFT_HOP_SIZE, STFT_WINDOW_SIZE, STFT_N, FRAMEWORK, MEL_MAX_LENGTH, USE_EMA
 
-
 MAX_WAV_VALUE = 32768
 
 
@@ -60,10 +59,10 @@ def whisper_encoder(waveform_list):
     whisper_model = whisper_model.eval()
 
     batch = len(waveform_list)
-    batch_mel = torch.zeros((batch, 80, WHISPER_PADDING_LENGTH*100), dtype=torch.float, device=whisper_model.device)
+    batch_mel = torch.zeros((batch, 80, WHISPER_PADDING_LENGTH * 100), dtype=torch.float, device=whisper_model.device)
 
     for i, audio in enumerate(waveform_list):
-        audio = whisper.pad_or_trim(audio, length=WHISPER_PADDING_LENGTH*16000)
+        audio = whisper.pad_or_trim(audio, length=WHISPER_PADDING_LENGTH * 16000)
         batch_mel[i] = whisper.log_mel_spectrogram(audio).to(whisper_model.device)
 
     with torch.no_grad():
@@ -109,7 +108,7 @@ class InferenceDataset(Dataset):
         loudness_list = []
         crepe = diffsptk.Pitch(STFT_HOP_SIZE, RE_SAMPLE_RATE, out_format='pitch', model='tiny')
         for waveform in waveform_list:
-            acoustic_feature = extract_acoustic_features(waveform,  crepe, acoustic_arguments)
+            acoustic_feature = extract_acoustic_features(waveform, crepe, acoustic_arguments)
             f0_list.append(torch.Tensor(acoustic_feature[1]))
             loudness_list.append(torch.Tensor(acoustic_feature[2]))
         del crepe, acoustic_feature
@@ -303,23 +302,23 @@ if __name__ == '__main__':
     # inference settings
     arg_parser = ArgumentParser(description='Settings for inference')
     arg_parser.add_argument('--input-dir', type=str, default=INFERENCE_DATA_PATH,
-                                     help='input wav files directory')
+                            help='input wav files directory')
     arg_parser.add_argument('--output-type', type=str, choices=('audio', 'mel', 'all'), default='all',
-                                     help='contents to output')
+                            help='contents to output')
     arg_parser.add_argument('--output-dir', type=str, default=OUTPUT_DIR,
-                                     help='output directory')
+                            help='output directory')
     arg_parser.add_argument('--plot-nums', type=int, default=10,
-                                     help='numbers of the plots in the denoising demonstration plot')
+                            help='numbers of the plots in the denoising demonstration plot')
     arg_parser.add_argument('--evaluation', type=bool, default=True,
-                                     help='whether to evaluate the results')
+                            help='whether to evaluate the results')
 
     # models configuration
     arg_parser.add_argument('--seed', type=int, default=0, help='random seed')
     arg_parser.add_argument('--batch-size', type=int, default=8, help='inference batch size')
     arg_parser.add_argument('--epoch', type=str, choices=('latest', 'best'), default='best')
     arg_parser.add_argument('--use-ema', type=bool, default=USE_EMA)
-    arg_parser.add_argument('--framework', type=str, choices=('simple_diffusion', ), default=FRAMEWORK,
-                                  help='conversion framework')
+    arg_parser.add_argument('--framework', type=str, choices=('simple_diffusion',), default=FRAMEWORK,
+                            help='conversion framework')
 
     arguments = arg_parser.parse_args()
 

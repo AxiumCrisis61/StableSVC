@@ -1,62 +1,3573 @@
 Starting training from scratch...
 ---------------epoch 1---------------
-Step: 5, loss: 1.2599687576293945
-Step: 10, loss: 0.9491144418716431
-Step: 15, loss: 0.8838435411453247
-Step: 20, loss: 0.8332281112670898
+Step: 5, loss: 1.0822259187698364
+Step: 10, loss: 0.9125351309776306
+Step: 15, loss: 0.7997774481773376
+Step: 20, loss: 0.5550408959388733
 Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
 Complete.
-Step: 25, loss: 0.5932010412216187
-Step: 30, loss: 0.3675471544265747
-Step: 35, loss: 0.2828599512577057
-Step: 40, loss: 0.21830043196678162
+Step: 25, loss: 0.49968045949935913
+Step: 30, loss: 0.1738675832748413
+Step: 35, loss: 0.6028796434402466
+Step: 40, loss: 0.1895018070936203
 Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
 Complete.
-Step: 45, loss: 0.12589611113071442
-Step: 50, loss: 0.13775616884231567
-Step: 55, loss: 0.16271552443504333
-Step: 60, loss: 0.23936758935451508
+Step: 45, loss: 0.3541315197944641
+Step: 50, loss: 0.147559255361557
+Step: 55, loss: 0.10205551236867905
+Step: 60, loss: 0.12238278239965439
 Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
 Complete.
-Step: 65, loss: 0.17768055200576782
-Step: 70, loss: 0.18869459629058838
-Step: 75, loss: 0.10530181974172592
-Step: 80, loss: 0.18327906727790833
+Step: 65, loss: 0.18463605642318726
+Step: 70, loss: 0.15308357775211334
+Step: 75, loss: 0.12210983783006668
+Step: 80, loss: 0.12659794092178345
 Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
 Complete.
-Step: 85, loss: 0.2013755738735199
-Step: 90, loss: 0.29490581154823303
-Step: 95, loss: 0.1746269315481186
-Step: 100, loss: 0.122430719435215
+Step: 85, loss: 0.07891898602247238
+Step: 90, loss: 0.22498807311058044
+Step: 95, loss: 0.09023942053318024
+Step: 100, loss: 0.20596429705619812
 Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
 Complete.
-Step: 105, loss: 0.21127396821975708
-Step: 110, loss: 0.22747069597244263
-Step: 115, loss: 0.23115174472332
-Step: 120, loss: 0.14263950288295746
+Step: 105, loss: 0.1515614539384842
+Step: 110, loss: 0.15897658467292786
+Step: 115, loss: 0.13214224576950073
+Step: 120, loss: 0.09900451451539993
 Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
 Complete.
-Step: 125, loss: 0.17444665729999542
-Step: 130, loss: 0.22160519659519196
-Step: 135, loss: 0.07876241207122803
-Step: 140, loss: 0.10640374571084976
+Step: 125, loss: 0.08965577185153961
+Step: 130, loss: 0.22459539771080017
+Step: 135, loss: 0.14372526109218597
+Step: 140, loss: 0.08734963089227676
 Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
 Complete.
-Step: 145, loss: 0.1375347524881363
-Step: 150, loss: 0.21395084261894226
-Step: 155, loss: 0.16129297018051147
-Step: 160, loss: 0.131692036986351
+Step: 145, loss: 0.16635720431804657
+Step: 150, loss: 0.09165714681148529
+Step: 155, loss: 0.10382425040006638
+Step: 160, loss: 0.1897711306810379
 Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
 Complete.
-Step: 165, loss: 0.0893411859869957
-Step: 170, loss: 0.08860330283641815
-Step: 175, loss: 0.2346648871898651
-Step: 180, loss: 0.118055060505867
+Step: 165, loss: 0.11099202930927277
+Step: 170, loss: 0.07241687178611755
+Step: 175, loss: 0.13327303528785706
+Step: 180, loss: 0.12997469305992126
 Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
 Complete.
-Step: 185, loss: 0.23052924871444702
-Step: 190, loss: 0.11232436448335648
-Step: 195, loss: 0.0650211051106453
-Step: 200, loss: 0.1377304345369339
+Step: 185, loss: 0.28739863634109497
+Step: 190, loss: 0.1407545804977417
+Step: 195, loss: 0.07427243143320084
+Step: 200, loss: 0.14632296562194824
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 200: 0.7872041463851929
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/best
+Complete.
+Step: 205, loss: 0.12985433638095856
+Step: 210, loss: 0.1979651302099228
+Step: 215, loss: 0.16721178591251373
+Step: 220, loss: 0.15038295090198517
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 225, loss: 0.1636037975549698
+Step: 230, loss: 0.08803392201662064
+Step: 235, loss: 0.11917178332805634
+Step: 240, loss: 0.09667463600635529
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 245, loss: 0.11220072954893112
+Step: 250, loss: 0.11340852826833725
+Step: 255, loss: 0.08725683391094208
+Step: 260, loss: 0.14164721965789795
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 265, loss: 0.14685654640197754
+Step: 270, loss: 0.19369696080684662
+Step: 275, loss: 0.1415359526872635
+Step: 280, loss: 0.18382616341114044
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 285, loss: 0.08894801139831543
+Step: 290, loss: 0.1661950945854187
+Step: 295, loss: 0.07879190146923065
+Step: 300, loss: 0.12241708487272263
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 305, loss: 0.09742192178964615
+Step: 310, loss: 0.1985556185245514
+Step: 315, loss: 0.06280666589736938
+Step: 320, loss: 0.16995836794376373
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 325, loss: 0.10557518899440765
+Step: 330, loss: 0.043402642011642456
+Step: 335, loss: 0.053796347230672836
+Step: 340, loss: 0.06764139980077744
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 345, loss: 0.055760663002729416
+Step: 350, loss: 0.07610131800174713
+Step: 355, loss: 0.05832372233271599
+Step: 360, loss: 0.13057807087898254
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 365, loss: 0.15232650935649872
+Step: 370, loss: 0.053657449781894684
+Step: 375, loss: 0.08067303150892258
+Step: 380, loss: 0.1115138903260231
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 385, loss: 0.076969675719738
+Step: 390, loss: 0.07696367800235748
+Step: 395, loss: 0.08847357332706451
+Step: 400, loss: 0.07610336691141129
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 400: 0.6781927347183228
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/best
+Complete.
+Step: 405, loss: 0.1799633800983429
+Step: 410, loss: 0.10132639855146408
+Step: 415, loss: 0.11633473634719849
+Step: 420, loss: 0.08674314618110657
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 425, loss: 0.08654714375734329
+Step: 430, loss: 0.10090235620737076
+Step: 435, loss: 0.06254184991121292
+Step: 440, loss: 0.06696611642837524
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Time taken for epoch 2 is 6517 sec
+
+---------------epoch 2---------------
+Step: 445, loss: 0.17791518568992615
+Step: 450, loss: 0.1301514059305191
+Step: 455, loss: 0.05350611358880997
+Step: 460, loss: 0.06762298941612244
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 465, loss: 0.053106456995010376
+Step: 470, loss: 0.055320944637060165
+Step: 475, loss: 0.09513016790151596
+Step: 480, loss: 0.08591935783624649
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 485, loss: 0.05635777488350868
+Step: 490, loss: 0.04943119361996651
+Step: 495, loss: 0.0659404918551445
+Step: 500, loss: 0.0650685504078865
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 505, loss: 0.046994034200906754
+Step: 510, loss: 0.10397005081176758
+Step: 515, loss: 0.03865618631243706
+Step: 520, loss: 0.07008267939090729
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 525, loss: 0.0545189306139946
+Step: 530, loss: 0.2117605358362198
+Step: 535, loss: 0.12992489337921143
+Step: 540, loss: 0.08423864841461182
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 545, loss: 0.027650276198983192
+Step: 550, loss: 0.11014358699321747
+Step: 555, loss: 0.2642245888710022
+Step: 560, loss: 0.07986524701118469
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 565, loss: 0.03203820809721947
+Step: 570, loss: 0.052708689123392105
+Step: 575, loss: 0.05032525584101677
+Step: 580, loss: 0.1729879528284073
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 585, loss: 0.051642898470163345
+Step: 590, loss: 0.08145087212324142
+Step: 595, loss: 0.0383792482316494
+Step: 600, loss: 0.07822909951210022
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 600: 0.49667200446128845
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/best
+Complete.
+Step: 605, loss: 0.048420120030641556
+Step: 610, loss: 0.07790403813123703
+Step: 615, loss: 0.142727792263031
+Step: 620, loss: 0.0723276436328888
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 625, loss: 0.08478397130966187
+Step: 630, loss: 0.03384222835302353
+Step: 635, loss: 0.08418679982423782
+Step: 640, loss: 0.10059564560651779
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 645, loss: 0.07263460755348206
+Step: 650, loss: 0.05010183900594711
+Step: 655, loss: 0.04517042264342308
+Step: 660, loss: 0.05683248117566109
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 665, loss: 0.030168499797582626
+Step: 670, loss: 0.044316861778497696
+Step: 675, loss: 0.03895153850317001
+Step: 680, loss: 0.05565447732806206
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 685, loss: 0.10216023027896881
+Step: 690, loss: 0.13268889486789703
+Step: 695, loss: 0.0825461894273758
+Step: 700, loss: 0.11462827026844025
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 705, loss: 0.08383689075708389
+Step: 710, loss: 0.18025578558444977
+Step: 715, loss: 0.14449375867843628
+Step: 720, loss: 0.13926947116851807
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 725, loss: 0.0552714541554451
+Step: 730, loss: 0.04783032834529877
+Step: 735, loss: 0.09609776735305786
+Step: 740, loss: 0.03816498443484306
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 745, loss: 0.12777377665042877
+Step: 750, loss: 0.06184525042772293
+Step: 755, loss: 0.06150159612298012
+Step: 760, loss: 0.0770411267876625
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 765, loss: 0.05353182926774025
+Step: 770, loss: 0.042455922812223434
+Step: 775, loss: 0.05991218611598015
+Step: 780, loss: 0.18690140545368195
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 785, loss: 0.09416691958904266
+Step: 790, loss: 0.12290839850902557
+Step: 795, loss: 0.11688554286956787
+Step: 800, loss: 0.037838492542505264
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 800: 0.28427252173423767
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/best
+Complete.
+Step: 805, loss: 0.05745482072234154
+Step: 810, loss: 0.1892791986465454
+Step: 815, loss: 0.03716422989964485
+Step: 820, loss: 0.11140568554401398
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 825, loss: 0.12635532021522522
+Step: 830, loss: 0.039237529039382935
+Step: 835, loss: 0.0602039098739624
+Step: 840, loss: 0.03454551473259926
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 845, loss: 0.034910835325717926
+Step: 850, loss: 0.12798462808132172
+Step: 855, loss: 0.09112101793289185
+Step: 860, loss: 0.1215151846408844
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 865, loss: 0.12270040065050125
+Step: 870, loss: 0.1131005734205246
+Step: 875, loss: 0.06218740716576576
+Step: 880, loss: 0.05914674699306488
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 885, loss: 0.05404726415872574
+Time taken for epoch 3 is 1120 sec
+
+---------------epoch 3---------------
+Step: 890, loss: 0.04637865349650383
+Step: 895, loss: 0.06330334395170212
+Step: 900, loss: 0.022796468809247017
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 905, loss: 0.06723415106534958
+Step: 910, loss: 0.04257504642009735
+Step: 915, loss: 0.02841266058385372
+Step: 920, loss: 0.10280933231115341
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 925, loss: 0.040598560124635696
+Step: 930, loss: 0.15061424672603607
+Step: 935, loss: 0.048754096031188965
+Step: 940, loss: 0.1519310474395752
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 945, loss: 0.09172304719686508
+Step: 950, loss: 0.051956869661808014
+Step: 955, loss: 0.06433646380901337
+Step: 960, loss: 0.0447988286614418
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 965, loss: 0.05762896686792374
+Step: 970, loss: 0.040179576724767685
+Step: 975, loss: 0.0477248951792717
+Step: 980, loss: 0.12689021229743958
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 985, loss: 0.04802684858441353
+Step: 990, loss: 0.0879717767238617
+Step: 995, loss: 0.054837487637996674
+Step: 1000, loss: 0.04002802446484566
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 1000: 0.16849932074546814
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/best
+Complete.
+Step: 1005, loss: 0.09827536344528198
+Step: 1010, loss: 0.03786875680088997
+Step: 1015, loss: 0.08663377165794373
+Step: 1020, loss: 0.025162173435091972
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1025, loss: 0.09101465344429016
+Step: 1030, loss: 0.1194748505949974
+Step: 1035, loss: 0.04216732829809189
+Step: 1040, loss: 0.05541885271668434
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1045, loss: 0.02022944577038288
+Step: 1050, loss: 0.09603186696767807
+Step: 1055, loss: 0.10453697293996811
+Step: 1060, loss: 0.06769497692584991
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1065, loss: 0.03385307639837265
+Step: 1070, loss: 0.033393699675798416
+Step: 1075, loss: 0.023094436153769493
+Step: 1080, loss: 0.11684383451938629
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1085, loss: 0.16360419988632202
+Step: 1090, loss: 0.07236552238464355
+Step: 1095, loss: 0.15560664236545563
+Step: 1100, loss: 0.03628376126289368
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1105, loss: 0.02203160710632801
+Step: 1110, loss: 0.07281861454248428
+Step: 1115, loss: 0.05267183110117912
+Step: 1120, loss: 0.04490901902318001
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1125, loss: 0.03886263072490692
+Step: 1130, loss: 0.17368629574775696
+Step: 1135, loss: 0.0789545476436615
+Step: 1140, loss: 0.06548594683408737
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1145, loss: 0.06285955011844635
+Step: 1150, loss: 0.08644985407590866
+Step: 1155, loss: 0.027008043602108955
+Step: 1160, loss: 0.042809635400772095
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1165, loss: 0.09782694280147552
+Step: 1170, loss: 0.07196071743965149
+Step: 1175, loss: 0.03697975352406502
+Step: 1180, loss: 0.04723715782165527
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1185, loss: 0.12743937969207764
+Step: 1190, loss: 0.09803537279367447
+Step: 1195, loss: 0.0506424680352211
+Step: 1200, loss: 0.04565951228141785
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 1200: 0.1344437450170517
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/best
+Complete.
+Step: 1205, loss: 0.06942693889141083
+Step: 1210, loss: 0.06995446234941483
+Step: 1215, loss: 0.117760568857193
+Step: 1220, loss: 0.043409314006567
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1225, loss: 0.031818173825740814
+Step: 1230, loss: 0.04946943745017052
+Step: 1235, loss: 0.09521782398223877
+Step: 1240, loss: 0.03685148060321808
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1245, loss: 0.050881776958703995
+Step: 1250, loss: 0.09826251119375229
+Step: 1255, loss: 0.10164771229028702
+Step: 1260, loss: 0.16513514518737793
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1265, loss: 0.04464232549071312
+Step: 1270, loss: 0.028111806139349937
+Step: 1275, loss: 0.0903720110654831
+Step: 1280, loss: 0.04463563859462738
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1285, loss: 0.12208106368780136
+Step: 1290, loss: 0.1449500024318695
+Step: 1295, loss: 0.12157385051250458
+Step: 1300, loss: 0.139535054564476
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1305, loss: 0.05063847452402115
+Step: 1310, loss: 0.02843593992292881
+Step: 1315, loss: 0.09234631061553955
+Step: 1320, loss: 0.018425874412059784
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1325, loss: 0.07336607575416565
+Time taken for epoch 4 is 1111 sec
+
+---------------epoch 4---------------
+Step: 1330, loss: 0.180503711104393
+Step: 1335, loss: 0.042850345373153687
+Step: 1340, loss: 0.05057536065578461
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1345, loss: 0.025795647874474525
+Step: 1350, loss: 0.03963649645447731
+Step: 1355, loss: 0.02833266742527485
+Step: 1360, loss: 0.07045149803161621
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1365, loss: 0.055264122784137726
+Step: 1370, loss: 0.0279646348208189
+Step: 1375, loss: 0.038309723138809204
+Step: 1380, loss: 0.0446111261844635
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1385, loss: 0.07614857703447342
+Step: 1390, loss: 0.05245107412338257
+Step: 1395, loss: 0.03026578202843666
+Step: 1400, loss: 0.05847303941845894
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 1400: 0.13038846850395203
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/best
+Complete.
+Step: 1405, loss: 0.057286448776721954
+Step: 1410, loss: 0.030585289001464844
+Step: 1415, loss: 0.11183908581733704
+Step: 1420, loss: 0.11059528589248657
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1425, loss: 0.05893874540925026
+Step: 1430, loss: 0.043850816786289215
+Step: 1435, loss: 0.05266926810145378
+Step: 1440, loss: 0.04886743798851967
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1445, loss: 0.0893571525812149
+Step: 1450, loss: 0.06370014697313309
+Step: 1455, loss: 0.16385646164417267
+Step: 1460, loss: 0.12185252457857132
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1465, loss: 0.026330232620239258
+Step: 1470, loss: 0.02033495344221592
+Step: 1475, loss: 0.07608731091022491
+Step: 1480, loss: 0.08929650485515594
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1485, loss: 0.062286827713251114
+Step: 1490, loss: 0.07187188416719437
+Step: 1495, loss: 0.04671887680888176
+Step: 1500, loss: 0.03376545384526253
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1505, loss: 0.03836372122168541
+Step: 1510, loss: 0.11421888321638107
+Step: 1515, loss: 0.12554843723773956
+Step: 1520, loss: 0.06299915164709091
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1525, loss: 0.041542064398527145
+Step: 1530, loss: 0.020856136456131935
+Step: 1535, loss: 0.0433175303041935
+Step: 1540, loss: 0.06438473612070084
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1545, loss: 0.06977862119674683
+Step: 1550, loss: 0.02097323164343834
+Step: 1555, loss: 0.024630995467305183
+Step: 1560, loss: 0.04439924657344818
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1565, loss: 0.050124090164899826
+Step: 1570, loss: 0.025856390595436096
+Step: 1575, loss: 0.05304662883281708
+Step: 1580, loss: 0.04943634569644928
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1585, loss: 0.05712476745247841
+Step: 1590, loss: 0.057133886963129044
+Step: 1595, loss: 0.07524781674146652
+Step: 1600, loss: 0.05265682190656662
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 1600: 0.1265679895877838
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/best
+Complete.
+Step: 1605, loss: 0.030562618747353554
+Step: 1610, loss: 0.05641328543424606
+Step: 1615, loss: 0.10890907794237137
+Step: 1620, loss: 0.038147732615470886
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1625, loss: 0.02009390853345394
+Step: 1630, loss: 0.044411249458789825
+Step: 1635, loss: 0.02267342619597912
+Step: 1640, loss: 0.0323767364025116
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1645, loss: 0.06582335382699966
+Step: 1650, loss: 0.02115188166499138
+Step: 1655, loss: 0.070903480052948
+Step: 1660, loss: 0.059891581535339355
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1665, loss: 0.029304631054401398
+Step: 1670, loss: 0.049750760197639465
+Step: 1675, loss: 0.0541987419128418
+Step: 1680, loss: 0.14328859746456146
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1685, loss: 0.06288783252239227
+Step: 1690, loss: 0.052740488201379776
+Step: 1695, loss: 0.06523217260837555
+Step: 1700, loss: 0.07626817375421524
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1705, loss: 0.0365627259016037
+Step: 1710, loss: 0.10772097110748291
+Step: 1715, loss: 0.04804861173033714
+Step: 1720, loss: 0.10466068983078003
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1725, loss: 0.057157523930072784
+Step: 1730, loss: 0.06502959132194519
+Step: 1735, loss: 0.0331115685403347
+Step: 1740, loss: 0.012854598462581635
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1745, loss: 0.03827197104692459
+Step: 1750, loss: 0.028316698968410492
+Step: 1755, loss: 0.031382665038108826
+Step: 1760, loss: 0.13512484729290009
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1765, loss: 0.05455007031559944
+Step: 1770, loss: 0.03729182109236717
+Time taken for epoch 5 is 1110 sec
+
+---------------epoch 5---------------
+Step: 1775, loss: 0.14237406849861145
+Step: 1780, loss: 0.06906350702047348
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1785, loss: 0.035991594195365906
+Step: 1790, loss: 0.08168606460094452
+Step: 1795, loss: 0.027766363695263863
+Step: 1800, loss: 0.017491519451141357
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 1800: 0.125200092792511
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/best
+Complete.
+Step: 1805, loss: 0.06265474855899811
+Step: 1810, loss: 0.02676813304424286
+Step: 1815, loss: 0.07684492319822311
+Step: 1820, loss: 0.03898845613002777
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1825, loss: 0.06248781457543373
+Step: 1830, loss: 0.06060418486595154
+Step: 1835, loss: 0.031819507479667664
+Step: 1840, loss: 0.09102015942335129
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1845, loss: 0.06754837185144424
+Step: 1850, loss: 0.07398941367864609
+Step: 1855, loss: 0.1184232160449028
+Step: 1860, loss: 0.05392706021666527
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1865, loss: 0.06196893751621246
+Step: 1870, loss: 0.09891945868730545
+Step: 1875, loss: 0.05119188874959946
+Step: 1880, loss: 0.014745433814823627
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1885, loss: 0.11069461703300476
+Step: 1890, loss: 0.053763438016176224
+Step: 1895, loss: 0.028023909777402878
+Step: 1900, loss: 0.11641595512628555
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1905, loss: 0.04575071111321449
+Step: 1910, loss: 0.11200577020645142
+Step: 1915, loss: 0.02220872789621353
+Step: 1920, loss: 0.019123390316963196
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1925, loss: 0.028798876330256462
+Step: 1930, loss: 0.040692076086997986
+Step: 1935, loss: 0.07711153477430344
+Step: 1940, loss: 0.08784058690071106
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1945, loss: 0.11006564646959305
+Step: 1950, loss: 0.0675663948059082
+Step: 1955, loss: 0.03184833750128746
+Step: 1960, loss: 0.03841722384095192
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1965, loss: 0.034093163907527924
+Step: 1970, loss: 0.04665149375796318
+Step: 1975, loss: 0.0465797483921051
+Step: 1980, loss: 0.032289694994688034
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 1985, loss: 0.05986398831009865
+Step: 1990, loss: 0.09892544895410538
+Step: 1995, loss: 0.019371459260582924
+Step: 2000, loss: 0.12432689964771271
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 2000: 0.1250053495168686
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/best
+Complete.
+Step: 2005, loss: 0.028750335797667503
+Step: 2010, loss: 0.1545005589723587
+Step: 2015, loss: 0.05580233037471771
+Step: 2020, loss: 0.19202536344528198
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2025, loss: 0.028620153665542603
+Step: 2030, loss: 0.024079803377389908
+Step: 2035, loss: 0.02511957287788391
+Step: 2040, loss: 0.03722105547785759
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2045, loss: 0.017974000424146652
+Step: 2050, loss: 0.05638343468308449
+Step: 2055, loss: 0.03259972482919693
+Step: 2060, loss: 0.08535544574260712
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2065, loss: 0.06036864593625069
+Step: 2070, loss: 0.07762855291366577
+Step: 2075, loss: 0.1554017812013626
+Step: 2080, loss: 0.032752860337495804
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2085, loss: 0.03362506628036499
+Step: 2090, loss: 0.03755133971571922
+Step: 2095, loss: 0.05226481333374977
+Step: 2100, loss: 0.05856843292713165
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2105, loss: 0.056369561702013016
+Step: 2110, loss: 0.0285172238945961
+Step: 2115, loss: 0.09319167584180832
+Step: 2120, loss: 0.018005941063165665
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2125, loss: 0.035632770508527756
+Step: 2130, loss: 0.10576896369457245
+Step: 2135, loss: 0.14177435636520386
+Step: 2140, loss: 0.11622562259435654
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2145, loss: 0.015980031341314316
+Step: 2150, loss: 0.08286511898040771
+Step: 2155, loss: 0.019368380308151245
+Step: 2160, loss: 0.05304326117038727
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2165, loss: 0.03593764454126358
+Step: 2170, loss: 0.05322834476828575
+Step: 2175, loss: 0.13021764159202576
+Step: 2180, loss: 0.12654274702072144
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2185, loss: 0.1021263599395752
+Step: 2190, loss: 0.09289125353097916
+Step: 2195, loss: 0.10465036332607269
+Step: 2200, loss: 0.13120220601558685
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 2200: 0.12035299837589264
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/best
+Complete.
+Step: 2205, loss: 0.14029182493686676
+Step: 2210, loss: 0.025787316262722015
+Step: 2215, loss: 0.03250584751367569
+Time taken for epoch 6 is 1252 sec
+
+---------------epoch 6---------------
+Step: 2220, loss: 0.02303510159254074
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2225, loss: 0.03609202802181244
+Step: 2230, loss: 0.06150897219777107
+Step: 2235, loss: 0.02135924994945526
+Step: 2240, loss: 0.06758911162614822
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2245, loss: 0.06754734367132187
+Step: 2250, loss: 0.02609492465853691
+Step: 2255, loss: 0.03676967695355415
+Step: 2260, loss: 0.039651140570640564
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2265, loss: 0.07655446976423264
+Step: 2270, loss: 0.0727325975894928
+Step: 2275, loss: 0.043130308389663696
+Step: 2280, loss: 0.0328192301094532
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2285, loss: 0.018487922847270966
+Step: 2290, loss: 0.0379088930785656
+Step: 2295, loss: 0.0890943855047226
+Step: 2300, loss: 0.057278819382190704
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2305, loss: 0.06074899062514305
+Step: 2310, loss: 0.11035988479852676
+Step: 2315, loss: 0.05810442194342613
+Step: 2320, loss: 0.03065996617078781
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2325, loss: 0.055228788405656815
+Step: 2330, loss: 0.04956846684217453
+Step: 2335, loss: 0.03950512781739235
+Step: 2340, loss: 0.029426397755742073
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2345, loss: 0.12318859249353409
+Step: 2350, loss: 0.026437368243932724
+Step: 2355, loss: 0.08378775417804718
+Step: 2360, loss: 0.06572594493627548
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2365, loss: 0.02534041926264763
+Step: 2370, loss: 0.0336858332157135
+Step: 2375, loss: 0.03655686601996422
+Step: 2380, loss: 0.10031221807003021
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2385, loss: 0.1049368605017662
+Step: 2390, loss: 0.08984468132257462
+Step: 2395, loss: 0.047914572060108185
+Step: 2400, loss: 0.03272344917058945
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 2400: 0.11982786655426025
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/best
+Complete.
+Step: 2405, loss: 0.07564913481473923
+Step: 2410, loss: 0.07136540114879608
+Step: 2415, loss: 0.04463854432106018
+Step: 2420, loss: 0.05591534823179245
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2425, loss: 0.03307759761810303
+Step: 2430, loss: 0.16905707120895386
+Step: 2435, loss: 0.10391440242528915
+Step: 2440, loss: 0.019200410693883896
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2445, loss: 0.08056392520666122
+Step: 2450, loss: 0.06950751692056656
+Step: 2455, loss: 0.03478902950882912
+Step: 2460, loss: 0.02318386174738407
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2465, loss: 0.055262643843889236
+Step: 2470, loss: 0.07194595038890839
+Step: 2475, loss: 0.12380551546812057
+Step: 2480, loss: 0.030714690685272217
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2485, loss: 0.02561011351644993
+Step: 2490, loss: 0.09712277352809906
+Step: 2495, loss: 0.026537658646702766
+Step: 2500, loss: 0.13551081717014313
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2505, loss: 0.049912698566913605
+Step: 2510, loss: 0.041519895195961
+Step: 2515, loss: 0.013618108816444874
+Step: 2520, loss: 0.1531931310892105
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2525, loss: 0.08194512873888016
+Step: 2530, loss: 0.08605920523405075
+Step: 2535, loss: 0.029019378125667572
+Step: 2540, loss: 0.054985545575618744
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2545, loss: 0.025483785197138786
+Step: 2550, loss: 0.06415099650621414
+Step: 2555, loss: 0.07250995934009552
+Step: 2560, loss: 0.10361792892217636
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2565, loss: 0.04063437506556511
+Step: 2570, loss: 0.0646938681602478
+Step: 2575, loss: 0.0636085569858551
+Step: 2580, loss: 0.05059681087732315
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2585, loss: 0.03704903647303581
+Step: 2590, loss: 0.06892099231481552
+Step: 2595, loss: 0.05164274945855141
+Step: 2600, loss: 0.099427729845047
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 2600: 0.11789467185735703
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/best
+Complete.
+Step: 2605, loss: 0.031210774555802345
+Step: 2610, loss: 0.033605363219976425
+Step: 2615, loss: 0.014403061009943485
+Step: 2620, loss: 0.04289591684937477
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2625, loss: 0.057586655020713806
+Step: 2630, loss: 0.04790373519062996
+Step: 2635, loss: 0.012702333740890026
+Step: 2640, loss: 0.11701437830924988
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2645, loss: 0.10218342393636703
+Step: 2650, loss: 0.03342333436012268
+Step: 2655, loss: 0.10383040457963943
+Time taken for epoch 7 is 1114 sec
+
+---------------epoch 7---------------
+Step: 2660, loss: 0.036637045443058014
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2665, loss: 0.06537140905857086
+Step: 2670, loss: 0.04033149778842926
+Step: 2675, loss: 0.04870026186108589
+Step: 2680, loss: 0.02010149136185646
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2685, loss: 0.05451014265418053
+Step: 2690, loss: 0.0864100530743599
+Step: 2695, loss: 0.07801202684640884
+Step: 2700, loss: 0.05547650158405304
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2705, loss: 0.039583731442689896
+Step: 2710, loss: 0.04912364110350609
+Step: 2715, loss: 0.06513433903455734
+Step: 2720, loss: 0.12319379299879074
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2725, loss: 0.03471635282039642
+Step: 2730, loss: 0.07710446417331696
+Step: 2735, loss: 0.0382409431040287
+Step: 2740, loss: 0.08502545207738876
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2745, loss: 0.08899456262588501
+Step: 2750, loss: 0.023399362340569496
+Step: 2755, loss: 0.0779954046010971
+Step: 2760, loss: 0.14238625764846802
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2765, loss: 0.06415081769227982
+Step: 2770, loss: 0.0478752963244915
+Step: 2775, loss: 0.05095073580741882
+Step: 2780, loss: 0.06624855846166611
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2785, loss: 0.05923688784241676
+Step: 2790, loss: 0.07550188153982162
+Step: 2795, loss: 0.03861843794584274
+Step: 2800, loss: 0.05747919902205467
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 2800: 0.11330859363079071
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/best
+Complete.
+Step: 2805, loss: 0.06677550822496414
+Step: 2810, loss: 0.02025030553340912
+Step: 2815, loss: 0.03759024664759636
+Step: 2820, loss: 0.07343406975269318
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2825, loss: 0.08871446549892426
+Step: 2830, loss: 0.08171055465936661
+Step: 2835, loss: 0.02308158576488495
+Step: 2840, loss: 0.052534349262714386
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2845, loss: 0.028056874871253967
+Step: 2850, loss: 0.04184010624885559
+Step: 2855, loss: 0.07959800213575363
+Step: 2860, loss: 0.024383261799812317
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2865, loss: 0.09441246837377548
+Step: 2870, loss: 0.01838577166199684
+Step: 2875, loss: 0.1748589128255844
+Step: 2880, loss: 0.030824212357401848
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2885, loss: 0.09065668284893036
+Step: 2890, loss: 0.09801500290632248
+Step: 2895, loss: 0.05371001362800598
+Step: 2900, loss: 0.048466745764017105
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2905, loss: 0.0487348847091198
+Step: 2910, loss: 0.08016964793205261
+Step: 2915, loss: 0.091115802526474
+Step: 2920, loss: 0.01625680737197399
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2925, loss: 0.05191907659173012
+Step: 2930, loss: 0.061601486057043076
+Step: 2935, loss: 0.04389875754714012
+Step: 2940, loss: 0.04121420904994011
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2945, loss: 0.03254504129290581
+Step: 2950, loss: 0.1511094570159912
+Step: 2955, loss: 0.03263166546821594
+Step: 2960, loss: 0.11315719783306122
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2965, loss: 0.09457755833864212
+Step: 2970, loss: 0.02557419426739216
+Step: 2975, loss: 0.03203316405415535
+Step: 2980, loss: 0.09641629457473755
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 2985, loss: 0.07474495470523834
+Step: 2990, loss: 0.058068420737981796
+Step: 2995, loss: 0.09448660910129547
+Step: 3000, loss: 0.022825313732028008
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 3000: 0.11325190961360931
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/best
+Complete.
+Step: 3005, loss: 0.05889314413070679
+Step: 3010, loss: 0.05790871009230614
+Step: 3015, loss: 0.07206259667873383
+Step: 3020, loss: 0.037395477294921875
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3025, loss: 0.05025657266378403
+Step: 3030, loss: 0.042203765362501144
+Step: 3035, loss: 0.07233825325965881
+Step: 3040, loss: 0.14627233147621155
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3045, loss: 0.037832871079444885
+Step: 3050, loss: 0.14139284193515778
+Step: 3055, loss: 0.09753980487585068
+Step: 3060, loss: 0.07517752796411514
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3065, loss: 0.089066281914711
+Step: 3070, loss: 0.025259187445044518
+Step: 3075, loss: 0.05547211691737175
+Step: 3080, loss: 0.041036564856767654
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3085, loss: 0.019601784646511078
+Step: 3090, loss: 0.04237830638885498
+Step: 3095, loss: 0.012437860481441021
+Step: 3100, loss: 0.03933098539710045
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Time taken for epoch 8 is 1115 sec
+
+---------------epoch 8---------------
+Step: 3105, loss: 0.07213582843542099
+Step: 3110, loss: 0.21809124946594238
+Step: 3115, loss: 0.030368762090802193
+Step: 3120, loss: 0.0427413247525692
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3125, loss: 0.11748822033405304
+Step: 3130, loss: 0.07332967221736908
+Step: 3135, loss: 0.05764025077223778
+Step: 3140, loss: 0.03397615998983383
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3145, loss: 0.05238262191414833
+Step: 3150, loss: 0.03629513457417488
+Step: 3155, loss: 0.07787677645683289
+Step: 3160, loss: 0.030146349221467972
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3165, loss: 0.12214458733797073
+Step: 3170, loss: 0.027838271111249924
+Step: 3175, loss: 0.07517585903406143
+Step: 3180, loss: 0.04538222402334213
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3185, loss: 0.1052980050444603
+Step: 3190, loss: 0.0497039295732975
+Step: 3195, loss: 0.08676537871360779
+Step: 3200, loss: 0.09651771932840347
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 3200: 0.11045137047767639
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/best
+Complete.
+Step: 3205, loss: 0.04268447682261467
+Step: 3210, loss: 0.06615566462278366
+Step: 3215, loss: 0.09590622037649155
+Step: 3220, loss: 0.10494377464056015
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3225, loss: 0.022464370355010033
+Step: 3230, loss: 0.05329446867108345
+Step: 3235, loss: 0.08714713901281357
+Step: 3240, loss: 0.07942547649145126
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3245, loss: 0.17419886589050293
+Step: 3250, loss: 0.07095900177955627
+Step: 3255, loss: 0.10700872540473938
+Step: 3260, loss: 0.09759923070669174
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3265, loss: 0.11520136147737503
+Step: 3270, loss: 0.05210365355014801
+Step: 3275, loss: 0.03449913114309311
+Step: 3280, loss: 0.02762708067893982
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3285, loss: 0.0291732344776392
+Step: 3290, loss: 0.03150176629424095
+Step: 3295, loss: 0.02443145588040352
+Step: 3300, loss: 0.04257194325327873
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3305, loss: 0.013863488100469112
+Step: 3310, loss: 0.10285881161689758
+Step: 3315, loss: 0.04096972569823265
+Step: 3320, loss: 0.05985284224152565
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3325, loss: 0.03513263911008835
+Step: 3330, loss: 0.08414845913648605
+Step: 3335, loss: 0.06824738532304764
+Step: 3340, loss: 0.02090134285390377
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3345, loss: 0.02178695984184742
+Step: 3350, loss: 0.1542636752128601
+Step: 3355, loss: 0.021065568551421165
+Step: 3360, loss: 0.008521996438503265
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3365, loss: 0.02270040288567543
+Step: 3370, loss: 0.043510448187589645
+Step: 3375, loss: 0.02056775987148285
+Step: 3380, loss: 0.06232365593314171
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3385, loss: 0.06007608398795128
+Step: 3390, loss: 0.07502652704715729
+Step: 3395, loss: 0.10375320911407471
+Step: 3400, loss: 0.0300906952470541
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 3400: 0.10685689002275467
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/best
+Complete.
+Step: 3405, loss: 0.022482022643089294
+Step: 3410, loss: 0.0955953598022461
+Step: 3415, loss: 0.025160880759358406
+Step: 3420, loss: 0.03692486882209778
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3425, loss: 0.0687771812081337
+Step: 3430, loss: 0.0694328099489212
+Step: 3435, loss: 0.11238962411880493
+Step: 3440, loss: 0.014755532145500183
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3445, loss: 0.04153544083237648
+Step: 3450, loss: 0.05953619256615639
+Step: 3455, loss: 0.04952121153473854
+Step: 3460, loss: 0.03822382539510727
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3465, loss: 0.09984918683767319
+Step: 3470, loss: 0.05300692096352577
+Step: 3475, loss: 0.04636179655790329
+Step: 3480, loss: 0.035697128623723984
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3485, loss: 0.1228569820523262
+Step: 3490, loss: 0.03163406252861023
+Step: 3495, loss: 0.04464898630976677
+Step: 3500, loss: 0.017397234216332436
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3505, loss: 0.02217779867351055
+Step: 3510, loss: 0.03196708858013153
+Step: 3515, loss: 0.10752460360527039
+Step: 3520, loss: 0.025545235723257065
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3525, loss: 0.043024808168411255
+Step: 3530, loss: 0.09454669803380966
+Step: 3535, loss: 0.016165129840373993
+Step: 3540, loss: 0.01871701329946518
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Time taken for epoch 9 is 1119 sec
+
+---------------epoch 9---------------
+Step: 3545, loss: 0.05074441432952881
+Step: 3550, loss: 0.05120905488729477
+Step: 3555, loss: 0.08505139499902725
+Step: 3560, loss: 0.015012746676802635
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3565, loss: 0.019336428493261337
+Step: 3570, loss: 0.0798986405134201
+Step: 3575, loss: 0.03326624631881714
+Step: 3580, loss: 0.04717963933944702
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3585, loss: 0.06928897649049759
+Step: 3590, loss: 0.06472229212522507
+Step: 3595, loss: 0.030031563714146614
+Step: 3600, loss: 0.041451603174209595
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 3600: 0.11112356185913086
+Step: 3605, loss: 0.0993952825665474
+Step: 3610, loss: 0.045558862388134
+Step: 3615, loss: 0.056679632514715195
+Step: 3620, loss: 0.0683821365237236
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3625, loss: 0.039069995284080505
+Step: 3630, loss: 0.061162956058979034
+Step: 3635, loss: 0.023007716983556747
+Step: 3640, loss: 0.019134996458888054
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3645, loss: 0.11174476891756058
+Step: 3650, loss: 0.09878215938806534
+Step: 3655, loss: 0.0525803379714489
+Step: 3660, loss: 0.029872331768274307
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3665, loss: 0.03996570408344269
+Step: 3670, loss: 0.019368527457118034
+Step: 3675, loss: 0.06580408662557602
+Step: 3680, loss: 0.08758392930030823
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3685, loss: 0.20326532423496246
+Step: 3690, loss: 0.05631791055202484
+Step: 3695, loss: 0.03495946153998375
+Step: 3700, loss: 0.054173242300748825
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3705, loss: 0.11497807502746582
+Step: 3710, loss: 0.02618224360048771
+Step: 3715, loss: 0.1022927314043045
+Step: 3720, loss: 0.09687880426645279
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3725, loss: 0.0601118803024292
+Step: 3730, loss: 0.0628833994269371
+Step: 3735, loss: 0.02295972779393196
+Step: 3740, loss: 0.03690773621201515
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3745, loss: 0.026632335036993027
+Step: 3750, loss: 0.04881282150745392
+Step: 3755, loss: 0.0816967785358429
+Step: 3760, loss: 0.04048563912510872
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3765, loss: 0.12994374334812164
+Step: 3770, loss: 0.042182061821222305
+Step: 3775, loss: 0.021383807063102722
+Step: 3780, loss: 0.05211813747882843
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3785, loss: 0.01080180611461401
+Step: 3790, loss: 0.041201151907444
+Step: 3795, loss: 0.02395201101899147
+Step: 3800, loss: 0.04901697114109993
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 3800: 0.1086491048336029
+Step: 3805, loss: 0.03339545056223869
+Step: 3810, loss: 0.026053179055452347
+Step: 3815, loss: 0.06238758936524391
+Step: 3820, loss: 0.08105030655860901
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3825, loss: 0.021278247237205505
+Step: 3830, loss: 0.030930519104003906
+Step: 3835, loss: 0.03234783932566643
+Step: 3840, loss: 0.07509782165288925
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3845, loss: 0.02532515674829483
+Step: 3850, loss: 0.02656470239162445
+Step: 3855, loss: 0.044553790241479874
+Step: 3860, loss: 0.039758335798978806
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3865, loss: 0.013087240047752857
+Step: 3870, loss: 0.028011653572320938
+Step: 3875, loss: 0.012891746126115322
+Step: 3880, loss: 0.07126545161008835
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3885, loss: 0.03412274643778801
+Step: 3890, loss: 0.030925676226615906
+Step: 3895, loss: 0.13146212697029114
+Step: 3900, loss: 0.04980358108878136
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3905, loss: 0.045369602739810944
+Step: 3910, loss: 0.039020050317049026
+Step: 3915, loss: 0.02594800293445587
+Step: 3920, loss: 0.03825443983078003
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3925, loss: 0.05053207278251648
+Step: 3930, loss: 0.031853653490543365
+Step: 3935, loss: 0.032109860330820084
+Step: 3940, loss: 0.07461871951818466
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3945, loss: 0.07916104048490524
+Step: 3950, loss: 0.04304400086402893
+Step: 3955, loss: 0.0677594244480133
+Step: 3960, loss: 0.03754749149084091
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3965, loss: 0.01661570742726326
+Step: 3970, loss: 0.03414108231663704
+Step: 3975, loss: 0.03279375657439232
+Step: 3980, loss: 0.05168695002794266
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 3985, loss: 0.05883091315627098
+Time taken for epoch 10 is 1118 sec
+
+---------------epoch 10---------------
+Step: 3990, loss: 0.02080252207815647
+Step: 3995, loss: 0.044267360121011734
+Step: 4000, loss: 0.03135029599070549
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 4000: 0.10858552157878876
+Step: 4005, loss: 0.03743263706564903
+Step: 4010, loss: 0.06779135763645172
+Step: 4015, loss: 0.07034707814455032
+Step: 4020, loss: 0.05388251692056656
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4025, loss: 0.01537443045526743
+Step: 4030, loss: 0.08145610243082047
+Step: 4035, loss: 0.02955450303852558
+Step: 4040, loss: 0.022299665957689285
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4045, loss: 0.04146179184317589
+Step: 4050, loss: 0.09539466351270676
+Step: 4055, loss: 0.03568625450134277
+Step: 4060, loss: 0.04461917653679848
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4065, loss: 0.03646542876958847
+Step: 4070, loss: 0.13185782730579376
+Step: 4075, loss: 0.04636600241065025
+Step: 4080, loss: 0.05176873505115509
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4085, loss: 0.09373140335083008
+Step: 4090, loss: 0.014570045284926891
+Step: 4095, loss: 0.13185890018939972
+Step: 4100, loss: 0.04423796758055687
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4105, loss: 0.11959806829690933
+Step: 4110, loss: 0.05854273587465286
+Step: 4115, loss: 0.013367827981710434
+Step: 4120, loss: 0.044065169990062714
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4125, loss: 0.03691641241312027
+Step: 4130, loss: 0.03547719866037369
+Step: 4135, loss: 0.02710270695388317
+Step: 4140, loss: 0.03434165194630623
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4145, loss: 0.022412316873669624
+Step: 4150, loss: 0.051041919738054276
+Step: 4155, loss: 0.03163164481520653
+Step: 4160, loss: 0.029068786650896072
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4165, loss: 0.09655370563268661
+Step: 4170, loss: 0.12065187841653824
+Step: 4175, loss: 0.06606324017047882
+Step: 4180, loss: 0.08575412631034851
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4185, loss: 0.1239093467593193
+Step: 4190, loss: 0.02971010096371174
+Step: 4195, loss: 0.11474936455488205
+Step: 4200, loss: 0.030515357851982117
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 4200: 0.10910474509000778
+Step: 4205, loss: 0.040378961712121964
+Step: 4210, loss: 0.19996008276939392
+Step: 4215, loss: 0.04829304292798042
+Step: 4220, loss: 0.03564058616757393
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4225, loss: 0.03134554997086525
+Step: 4230, loss: 0.0191813912242651
+Step: 4235, loss: 0.02231544815003872
+Step: 4240, loss: 0.020396769046783447
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4245, loss: 0.02017153799533844
+Step: 4250, loss: 0.1131671816110611
+Step: 4255, loss: 0.07768719643354416
+Step: 4260, loss: 0.08796767145395279
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4265, loss: 0.03904758766293526
+Step: 4270, loss: 0.048183623701334
+Step: 4275, loss: 0.061175305396318436
+Step: 4280, loss: 0.12304668873548508
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4285, loss: 0.08324570953845978
+Step: 4290, loss: 0.064170241355896
+Step: 4295, loss: 0.05203940346837044
+Step: 4300, loss: 0.027127647772431374
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4305, loss: 0.030140507966279984
+Step: 4310, loss: 0.053401585668325424
+Step: 4315, loss: 0.18677787482738495
+Step: 4320, loss: 0.02328304387629032
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4325, loss: 0.04841716215014458
+Step: 4330, loss: 0.01894991472363472
+Step: 4335, loss: 0.046222418546676636
+Step: 4340, loss: 0.03684787079691887
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4345, loss: 0.0158535148948431
+Step: 4350, loss: 0.03301851823925972
+Step: 4355, loss: 0.010882685892283916
+Step: 4360, loss: 0.12606772780418396
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4365, loss: 0.034666430205106735
+Step: 4370, loss: 0.02556072548031807
+Step: 4375, loss: 0.03741210699081421
+Step: 4380, loss: 0.056143179535865784
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4385, loss: 0.03237787261605263
+Step: 4390, loss: 0.02659490890800953
+Step: 4395, loss: 0.05532931908965111
+Step: 4400, loss: 0.08441602438688278
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 4400: 0.10414330661296844
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/best
+Complete.
+Step: 4405, loss: 0.03250497207045555
+Step: 4410, loss: 0.07113278657197952
+Step: 4415, loss: 0.11135462671518326
+Step: 4420, loss: 0.030529765412211418
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4425, loss: 0.018888084217905998
+Step: 4430, loss: 0.06199340522289276
+Time taken for epoch 11 is 1251 sec
+
+---------------epoch 11---------------
+Step: 4435, loss: 0.09577850997447968
+Step: 4440, loss: 0.055538397282361984
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4445, loss: 0.10437434911727905
+Step: 4450, loss: 0.032226260751485825
+Step: 4455, loss: 0.14015479385852814
+Step: 4460, loss: 0.014367684721946716
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4465, loss: 0.03610139712691307
+Step: 4470, loss: 0.013878176920115948
+Step: 4475, loss: 0.04257242754101753
+Step: 4480, loss: 0.03698060289025307
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4485, loss: 0.10848178714513779
+Step: 4490, loss: 0.0480070598423481
+Step: 4495, loss: 0.049820780754089355
+Step: 4500, loss: 0.020656822249293327
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4505, loss: 0.08210545778274536
+Step: 4510, loss: 0.012705129571259022
+Step: 4515, loss: 0.05037565529346466
+Step: 4520, loss: 0.049476295709609985
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4525, loss: 0.06739817559719086
+Step: 4530, loss: 0.04268183559179306
+Step: 4535, loss: 0.1618345081806183
+Step: 4540, loss: 0.04250768944621086
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4545, loss: 0.0268472321331501
+Step: 4550, loss: 0.13229884207248688
+Step: 4555, loss: 0.08144822716712952
+Step: 4560, loss: 0.05348477512598038
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4565, loss: 0.0666569322347641
+Step: 4570, loss: 0.021775120869278908
+Step: 4575, loss: 0.044918861240148544
+Step: 4580, loss: 0.029213517904281616
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4585, loss: 0.031720615923404694
+Step: 4590, loss: 0.02886003628373146
+Step: 4595, loss: 0.1344677060842514
+Step: 4600, loss: 0.016878563910722733
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 4600: 0.10381696373224258
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/best
+Complete.
+Step: 4605, loss: 0.05748466029763222
+Step: 4610, loss: 0.06735600531101227
+Step: 4615, loss: 0.0731072947382927
+Step: 4620, loss: 0.03465833514928818
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4625, loss: 0.08126091957092285
+Step: 4630, loss: 0.03776630759239197
+Step: 4635, loss: 0.015613958239555359
+Step: 4640, loss: 0.03284353017807007
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4645, loss: 0.03651135787367821
+Step: 4650, loss: 0.09730415791273117
+Step: 4655, loss: 0.01640291139483452
+Step: 4660, loss: 0.012042565271258354
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4665, loss: 0.04010244086384773
+Step: 4670, loss: 0.03306235000491142
+Step: 4675, loss: 0.10414917021989822
+Step: 4680, loss: 0.0231902115046978
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4685, loss: 0.037397485226392746
+Step: 4690, loss: 0.033126991242170334
+Step: 4695, loss: 0.038906000554561615
+Step: 4700, loss: 0.07083474099636078
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4705, loss: 0.13637106120586395
+Step: 4710, loss: 0.0616295263171196
+Step: 4715, loss: 0.04656153917312622
+Step: 4720, loss: 0.044901978224515915
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4725, loss: 0.03581903502345085
+Step: 4730, loss: 0.048311926424503326
+Step: 4735, loss: 0.046152085065841675
+Step: 4740, loss: 0.027106555178761482
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4745, loss: 0.024139370769262314
+Step: 4750, loss: 0.09691184014081955
+Step: 4755, loss: 0.06981067359447479
+Step: 4760, loss: 0.041333142668008804
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4765, loss: 0.1383829563856125
+Step: 4770, loss: 0.031472064554691315
+Step: 4775, loss: 0.053433019667863846
+Step: 4780, loss: 0.11254376918077469
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4785, loss: 0.041814882308244705
+Step: 4790, loss: 0.04705667495727539
+Step: 4795, loss: 0.07127420604228973
+Step: 4800, loss: 0.034131381660699844
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 4800: 0.10804387927055359
+Step: 4805, loss: 0.09628447145223618
+Step: 4810, loss: 0.05529511719942093
+Step: 4815, loss: 0.062181755900382996
+Step: 4820, loss: 0.06183044984936714
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4825, loss: 0.03447448089718819
+Step: 4830, loss: 0.03250347077846527
+Step: 4835, loss: 0.05389038100838661
+Step: 4840, loss: 0.07547751814126968
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4845, loss: 0.027797337621450424
+Step: 4850, loss: 0.07719650864601135
+Step: 4855, loss: 0.03702707588672638
+Step: 4860, loss: 0.0228008683770895
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4865, loss: 0.03509155660867691
+Step: 4870, loss: 0.12450763583183289
+Time taken for epoch 12 is 1107 sec
+
+---------------epoch 12---------------
+Step: 4875, loss: 0.09007253497838974
+Step: 4880, loss: 0.10441897064447403
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4885, loss: 0.03553234785795212
+Step: 4890, loss: 0.03871205076575279
+Step: 4895, loss: 0.08793529868125916
+Step: 4900, loss: 0.020778020843863487
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4905, loss: 0.07148777693510056
+Step: 4910, loss: 0.023457234725356102
+Step: 4915, loss: 0.06998284161090851
+Step: 4920, loss: 0.0532100573182106
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4925, loss: 0.045133575797080994
+Step: 4930, loss: 0.08718542009592056
+Step: 4935, loss: 0.05734531208872795
+Step: 4940, loss: 0.05509012192487717
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4945, loss: 0.015596440061926842
+Step: 4950, loss: 0.01642007566988468
+Step: 4955, loss: 0.033920787274837494
+Step: 4960, loss: 0.11000371724367142
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4965, loss: 0.10685558617115021
+Step: 4970, loss: 0.1138676106929779
+Step: 4975, loss: 0.06786303967237473
+Step: 4980, loss: 0.06577983498573303
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 4985, loss: 0.0416220985352993
+Step: 4990, loss: 0.06416010856628418
+Step: 4995, loss: 0.058987267315387726
+Step: 5000, loss: 0.060095272958278656
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 5000: 0.10500527918338776
+Step: 5005, loss: 0.0560663603246212
+Step: 5010, loss: 0.10751232504844666
+Step: 5015, loss: 0.022143399342894554
+Step: 5020, loss: 0.07034522294998169
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5025, loss: 0.013678585179150105
+Step: 5030, loss: 0.017332639545202255
+Step: 5035, loss: 0.06726685911417007
+Step: 5040, loss: 0.024782584980130196
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5045, loss: 0.028140654787421227
+Step: 5050, loss: 0.04944015294313431
+Step: 5055, loss: 0.08486215025186539
+Step: 5060, loss: 0.02871936559677124
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5065, loss: 0.0276318471878767
+Step: 5070, loss: 0.0744524598121643
+Step: 5075, loss: 0.06308642774820328
+Step: 5080, loss: 0.12887856364250183
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5085, loss: 0.05461287125945091
+Step: 5090, loss: 0.04577120393514633
+Step: 5095, loss: 0.06432667374610901
+Step: 5100, loss: 0.14754152297973633
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5105, loss: 0.13185957074165344
+Step: 5110, loss: 0.02631513960659504
+Step: 5115, loss: 0.09263817220926285
+Step: 5120, loss: 0.10464929789304733
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5125, loss: 0.021381722763180733
+Step: 5130, loss: 0.041900839656591415
+Step: 5135, loss: 0.06066766381263733
+Step: 5140, loss: 0.04073920473456383
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5145, loss: 0.029606914147734642
+Step: 5150, loss: 0.030083851888775826
+Step: 5155, loss: 0.017175886780023575
+Step: 5160, loss: 0.02833903394639492
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5165, loss: 0.03536349907517433
+Step: 5170, loss: 0.041750699281692505
+Step: 5175, loss: 0.030334295704960823
+Step: 5180, loss: 0.08677778393030167
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5185, loss: 0.1091720461845398
+Step: 5190, loss: 0.09516210854053497
+Step: 5195, loss: 0.06670646369457245
+Step: 5200, loss: 0.14773093163967133
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 5200: 0.10247594118118286
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/best
+Complete.
+Step: 5205, loss: 0.04313921555876732
+Step: 5210, loss: 0.012446251697838306
+Step: 5215, loss: 0.019285773858428
+Step: 5220, loss: 0.013811767101287842
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5225, loss: 0.13144856691360474
+Step: 5230, loss: 0.023694276809692383
+Step: 5235, loss: 0.06462617963552475
+Step: 5240, loss: 0.04667922854423523
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5245, loss: 0.026951318606734276
+Step: 5250, loss: 0.04115942120552063
+Step: 5255, loss: 0.043291375041007996
+Step: 5260, loss: 0.07679452002048492
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5265, loss: 0.07159337401390076
+Step: 5270, loss: 0.14257757365703583
+Step: 5275, loss: 0.09685006737709045
+Step: 5280, loss: 0.012899734079837799
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5285, loss: 0.028683165088295937
+Step: 5290, loss: 0.07448700815439224
+Step: 5295, loss: 0.021081265062093735
+Step: 5300, loss: 0.0492880716919899
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5305, loss: 0.05420137941837311
+Step: 5310, loss: 0.027685677632689476
+Step: 5315, loss: 0.047802362591028214
+Time taken for epoch 13 is 1107 sec
+
+---------------epoch 13---------------
+Step: 5320, loss: 0.03333956375718117
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5325, loss: 0.04228364676237106
+Step: 5330, loss: 0.08365382999181747
+Step: 5335, loss: 0.07851991057395935
+Step: 5340, loss: 0.10249575972557068
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5345, loss: 0.09735629707574844
+Step: 5350, loss: 0.04059086740016937
+Step: 5355, loss: 0.02335168421268463
+Step: 5360, loss: 0.08182067424058914
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5365, loss: 0.05456965044140816
+Step: 5370, loss: 0.039822984486818314
+Step: 5375, loss: 0.042533665895462036
+Step: 5380, loss: 0.07383373379707336
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5385, loss: 0.10941196233034134
+Step: 5390, loss: 0.043463852256536484
+Step: 5395, loss: 0.03286640718579292
+Step: 5400, loss: 0.06841149181127548
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 5400: 0.10187862813472748
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/best
+Complete.
+Step: 5405, loss: 0.023258550092577934
+Step: 5410, loss: 0.02685314044356346
+Step: 5415, loss: 0.017103368416428566
+Step: 5420, loss: 0.09081144630908966
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5425, loss: 0.04630599543452263
+Step: 5430, loss: 0.03293989226222038
+Step: 5435, loss: 0.08085622638463974
+Step: 5440, loss: 0.04687719792127609
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5445, loss: 0.05964444577693939
+Step: 5450, loss: 0.07526123523712158
+Step: 5455, loss: 0.04284200072288513
+Step: 5460, loss: 0.05398348718881607
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5465, loss: 0.023194532841444016
+Step: 5470, loss: 0.03683293238282204
+Step: 5475, loss: 0.017607690766453743
+Step: 5480, loss: 0.014034902676939964
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5485, loss: 0.023574499413371086
+Step: 5490, loss: 0.12281587719917297
+Step: 5495, loss: 0.024869844317436218
+Step: 5500, loss: 0.07859382778406143
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5505, loss: 0.0789034515619278
+Step: 5510, loss: 0.05100473016500473
+Step: 5515, loss: 0.042901549488306046
+Step: 5520, loss: 0.00838097371160984
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5525, loss: 0.01789669692516327
+Step: 5530, loss: 0.07987939566373825
+Step: 5535, loss: 0.03147384896874428
+Step: 5540, loss: 0.022565195336937904
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5545, loss: 0.009107139892876148
+Step: 5550, loss: 0.1777992695569992
+Step: 5555, loss: 0.024013476446270943
+Step: 5560, loss: 0.05518905445933342
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5565, loss: 0.07088660448789597
+Step: 5570, loss: 0.022659432142972946
+Step: 5575, loss: 0.010388907976448536
+Step: 5580, loss: 0.12733522057533264
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5585, loss: 0.012147116474807262
+Step: 5590, loss: 0.13655847311019897
+Step: 5595, loss: 0.08933815360069275
+Step: 5600, loss: 0.17694653570652008
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 5600: 0.10279184579849243
+Step: 5605, loss: 0.033011294901371
+Step: 5610, loss: 0.03932419791817665
+Step: 5615, loss: 0.023067282512784004
+Step: 5620, loss: 0.07403378188610077
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5625, loss: 0.055560894310474396
+Step: 5630, loss: 0.028068147599697113
+Step: 5635, loss: 0.07053865492343903
+Step: 5640, loss: 0.02587718516588211
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5645, loss: 0.05390794575214386
+Step: 5650, loss: 0.01932373084127903
+Step: 5655, loss: 0.020332787185907364
+Step: 5660, loss: 0.1344814896583557
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5665, loss: 0.02405976504087448
+Step: 5670, loss: 0.021383583545684814
+Step: 5675, loss: 0.08241500705480576
+Step: 5680, loss: 0.0766637921333313
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5685, loss: 0.11379057168960571
+Step: 5690, loss: 0.04009753465652466
+Step: 5695, loss: 0.1020357608795166
+Step: 5700, loss: 0.022023193538188934
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5705, loss: 0.058927714824676514
+Step: 5710, loss: 0.12631317973136902
+Step: 5715, loss: 0.0218887310475111
+Step: 5720, loss: 0.029519088566303253
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5725, loss: 0.12815800309181213
+Step: 5730, loss: 0.09276381134986877
+Step: 5735, loss: 0.04345451667904854
+Step: 5740, loss: 0.11181914061307907
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5745, loss: 0.0222301185131073
+Step: 5750, loss: 0.018343068659305573
+Step: 5755, loss: 0.02936907857656479
+Time taken for epoch 14 is 1105 sec
+
+---------------epoch 14---------------
+Step: 5760, loss: 0.05151373893022537
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5765, loss: 0.07052264362573624
+Step: 5770, loss: 0.057370640337467194
+Step: 5775, loss: 0.04418748617172241
+Step: 5780, loss: 0.018731769174337387
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5785, loss: 0.051808200776576996
+Step: 5790, loss: 0.16930148005485535
+Step: 5795, loss: 0.04740133136510849
+Step: 5800, loss: 0.1558070331811905
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 5800: 0.09692047536373138
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/best
+Complete.
+Step: 5805, loss: 0.10713896155357361
+Step: 5810, loss: 0.07073525339365005
+Step: 5815, loss: 0.050930771976709366
+Step: 5820, loss: 0.03160833194851875
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5825, loss: 0.02967214211821556
+Step: 5830, loss: 0.016023119911551476
+Step: 5835, loss: 0.07639496773481369
+Step: 5840, loss: 0.03149290010333061
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5845, loss: 0.015330384485423565
+Step: 5850, loss: 0.11623889207839966
+Step: 5855, loss: 0.046227987855672836
+Step: 5860, loss: 0.03644990921020508
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5865, loss: 0.04348038136959076
+Step: 5870, loss: 0.02464575506746769
+Step: 5875, loss: 0.02964295819401741
+Step: 5880, loss: 0.022418025881052017
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5885, loss: 0.01942724920809269
+Step: 5890, loss: 0.03363226354122162
+Step: 5895, loss: 0.08977779746055603
+Step: 5900, loss: 0.028379274532198906
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5905, loss: 0.03204590454697609
+Step: 5910, loss: 0.01674746721982956
+Step: 5915, loss: 0.06986919045448303
+Step: 5920, loss: 0.08875693380832672
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5925, loss: 0.11102844029664993
+Step: 5930, loss: 0.03665976598858833
+Step: 5935, loss: 0.01750277169048786
+Step: 5940, loss: 0.017569636926054955
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5945, loss: 0.044351719319820404
+Step: 5950, loss: 0.05555099993944168
+Step: 5955, loss: 0.03780212253332138
+Step: 5960, loss: 0.10528358817100525
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5965, loss: 0.016539068892598152
+Step: 5970, loss: 0.01702852174639702
+Step: 5975, loss: 0.07775398343801498
+Step: 5980, loss: 0.08809199929237366
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 5985, loss: 0.01065858080983162
+Step: 5990, loss: 0.018023371696472168
+Step: 5995, loss: 0.01494176872074604
+Step: 6000, loss: 0.04838639870285988
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 6000: 0.10098633170127869
+Step: 6005, loss: 0.024224352091550827
+Step: 6010, loss: 0.02178316004574299
+Step: 6015, loss: 0.021035168319940567
+Step: 6020, loss: 0.03554118424654007
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6025, loss: 0.05576155334711075
+Step: 6030, loss: 0.02552860789000988
+Step: 6035, loss: 0.03385743498802185
+Step: 6040, loss: 0.030766839161515236
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6045, loss: 0.05810130387544632
+Step: 6050, loss: 0.03736868128180504
+Step: 6055, loss: 0.05708172917366028
+Step: 6060, loss: 0.07029902189970016
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6065, loss: 0.031154552474617958
+Step: 6070, loss: 0.0251311082392931
+Step: 6075, loss: 0.06982722878456116
+Step: 6080, loss: 0.15339966118335724
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6085, loss: 0.05253174901008606
+Step: 6090, loss: 0.06275825947523117
+Step: 6095, loss: 0.022982267662882805
+Step: 6100, loss: 0.07731591910123825
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6105, loss: 0.07567694038152695
+Step: 6110, loss: 0.03698398172855377
+Step: 6115, loss: 0.026616252958774567
+Step: 6120, loss: 0.055180419236421585
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6125, loss: 0.02095905877649784
+Step: 6130, loss: 0.011623884551227093
+Step: 6135, loss: 0.034360796213150024
+Step: 6140, loss: 0.1469658464193344
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6145, loss: 0.09024752676486969
+Step: 6150, loss: 0.015079096890985966
+Step: 6155, loss: 0.036831628531217575
+Step: 6160, loss: 0.024927008897066116
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6165, loss: 0.026128482073545456
+Step: 6170, loss: 0.029876302927732468
+Step: 6175, loss: 0.07771012932062149
+Step: 6180, loss: 0.021937428042292595
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6185, loss: 0.06400994956493378
+Step: 6190, loss: 0.11546920239925385
+Step: 6195, loss: 0.018644118681550026
+Step: 6200, loss: 0.036479827016592026
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 6200: 0.09900175034999847
+Time taken for epoch 15 is 1246 sec
+
+---------------epoch 15---------------
+Step: 6205, loss: 0.026217089965939522
+Step: 6210, loss: 0.01783602498471737
+Step: 6215, loss: 0.03365879878401756
+Step: 6220, loss: 0.07904868572950363
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6225, loss: 0.05600768327713013
+Step: 6230, loss: 0.04608061909675598
+Step: 6235, loss: 0.07685728371143341
+Step: 6240, loss: 0.049982860684394836
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6245, loss: 0.056949347257614136
+Step: 6250, loss: 0.03051741234958172
+Step: 6255, loss: 0.023333018645644188
+Step: 6260, loss: 0.010222215205430984
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6265, loss: 0.048769086599349976
+Step: 6270, loss: 0.062332749366760254
+Step: 6275, loss: 0.01574285514652729
+Step: 6280, loss: 0.03566152602434158
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6285, loss: 0.037427861243486404
+Step: 6290, loss: 0.1707175225019455
+Step: 6295, loss: 0.03116443380713463
+Step: 6300, loss: 0.01607518270611763
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6305, loss: 0.02652004361152649
+Step: 6310, loss: 0.12775275111198425
+Step: 6315, loss: 0.11517344415187836
+Step: 6320, loss: 0.09919232130050659
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6325, loss: 0.03107352741062641
+Step: 6330, loss: 0.038930363953113556
+Step: 6335, loss: 0.02415311522781849
+Step: 6340, loss: 0.03576095402240753
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6345, loss: 0.09016517549753189
+Step: 6350, loss: 0.026860332116484642
+Step: 6355, loss: 0.02884586714208126
+Step: 6360, loss: 0.07868022471666336
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6365, loss: 0.050921715795993805
+Step: 6370, loss: 0.05191699042916298
+Step: 6375, loss: 0.007518032565712929
+Step: 6380, loss: 0.047092705965042114
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6385, loss: 0.06478267163038254
+Step: 6390, loss: 0.015218658372759819
+Step: 6395, loss: 0.0903438851237297
+Step: 6400, loss: 0.028668783605098724
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 6400: 0.10032055526971817
+Step: 6405, loss: 0.020229574292898178
+Step: 6410, loss: 0.021981365978717804
+Step: 6415, loss: 0.058707449585199356
+Step: 6420, loss: 0.08549819886684418
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6425, loss: 0.06822415441274643
+Step: 6430, loss: 0.03054257109761238
+Step: 6435, loss: 0.05634549260139465
+Step: 6440, loss: 0.060896873474121094
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6445, loss: 0.12848147749900818
+Step: 6450, loss: 0.02357400581240654
+Step: 6455, loss: 0.03574343025684357
+Step: 6460, loss: 0.03905220329761505
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6465, loss: 0.018468447029590607
+Step: 6470, loss: 0.03427404537796974
+Step: 6475, loss: 0.03736059367656708
+Step: 6480, loss: 0.05716266483068466
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6485, loss: 0.032185148447752
+Step: 6490, loss: 0.08465031534433365
+Step: 6495, loss: 0.039775650948286057
+Step: 6500, loss: 0.027688845992088318
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6505, loss: 0.05258703976869583
+Step: 6510, loss: 0.10899970680475235
+Step: 6515, loss: 0.05552702397108078
+Step: 6520, loss: 0.01437847875058651
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6525, loss: 0.029409095644950867
+Step: 6530, loss: 0.08495403826236725
+Step: 6535, loss: 0.0692790299654007
+Step: 6540, loss: 0.018753644078969955
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6545, loss: 0.03784015774726868
+Step: 6550, loss: 0.09504575282335281
+Step: 6555, loss: 0.027779869735240936
+Step: 6560, loss: 0.04906284436583519
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6565, loss: 0.02379266358911991
+Step: 6570, loss: 0.038471098989248276
+Step: 6575, loss: 0.014802422374486923
+Step: 6580, loss: 0.0270673967897892
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6585, loss: 0.028219906613230705
+Step: 6590, loss: 0.01680540107190609
+Step: 6595, loss: 0.045336492359638214
+Step: 6600, loss: 0.04392467066645622
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 6600: 0.09774503111839294
+Step: 6605, loss: 0.05968080461025238
+Step: 6610, loss: 0.058901116251945496
+Step: 6615, loss: 0.0322902537882328
+Step: 6620, loss: 0.026500903069972992
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6625, loss: 0.08863521367311478
+Step: 6630, loss: 0.037110358476638794
+Step: 6635, loss: 0.04379836469888687
+Step: 6640, loss: 0.09866910427808762
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6645, loss: 0.07746345549821854
+Time taken for epoch 16 is 1105 sec
+
+---------------epoch 16---------------
+Step: 6650, loss: 0.02359420619904995
+Step: 6655, loss: 0.04303954169154167
+Step: 6660, loss: 0.04994546249508858
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6665, loss: 0.019136296585202217
+Step: 6670, loss: 0.04797527194023132
+Step: 6675, loss: 0.03192870318889618
+Step: 6680, loss: 0.01734965480864048
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6685, loss: 0.09563583880662918
+Step: 6690, loss: 0.06286758929491043
+Step: 6695, loss: 0.052413903176784515
+Step: 6700, loss: 0.10104455053806305
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6705, loss: 0.06191496551036835
+Step: 6710, loss: 0.019098062068223953
+Step: 6715, loss: 0.06438196450471878
+Step: 6720, loss: 0.04341256245970726
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6725, loss: 0.009732167236506939
+Step: 6730, loss: 0.028061969205737114
+Step: 6735, loss: 0.020781973376870155
+Step: 6740, loss: 0.02730838768184185
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6745, loss: 0.05169990658760071
+Step: 6750, loss: 0.05895579233765602
+Step: 6755, loss: 0.07693228870630264
+Step: 6760, loss: 0.021191293373703957
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6765, loss: 0.06688646972179413
+Step: 6770, loss: 0.09159243106842041
+Step: 6775, loss: 0.10016857832670212
+Step: 6780, loss: 0.02861197479069233
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6785, loss: 0.0315968357026577
+Step: 6790, loss: 0.04791708290576935
+Step: 6795, loss: 0.09471657127141953
+Step: 6800, loss: 0.09021371603012085
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 6800: 0.10258583724498749
+Step: 6805, loss: 0.07242553681135178
+Step: 6810, loss: 0.07207542657852173
+Step: 6815, loss: 0.037887755781412125
+Step: 6820, loss: 0.03353022411465645
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6825, loss: 0.02063305675983429
+Step: 6830, loss: 0.05717412754893303
+Step: 6835, loss: 0.06205325946211815
+Step: 6840, loss: 0.03944941237568855
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6845, loss: 0.07755350321531296
+Step: 6850, loss: 0.07255261391401291
+Step: 6855, loss: 0.08439033478498459
+Step: 6860, loss: 0.07988079637289047
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6865, loss: 0.07951837033033371
+Step: 6870, loss: 0.022811315953731537
+Step: 6875, loss: 0.044033050537109375
+Step: 6880, loss: 0.04423736780881882
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6885, loss: 0.011899080127477646
+Step: 6890, loss: 0.18936166167259216
+Step: 6895, loss: 0.02618979662656784
+Step: 6900, loss: 0.059713639318943024
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6905, loss: 0.033319830894470215
+Step: 6910, loss: 0.06846121698617935
+Step: 6915, loss: 0.1148134097456932
+Step: 6920, loss: 0.010868133045732975
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6925, loss: 0.047843869775533676
+Step: 6930, loss: 0.016737595200538635
+Step: 6935, loss: 0.02717626839876175
+Step: 6940, loss: 0.015130330808460712
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6945, loss: 0.015750521793961525
+Step: 6950, loss: 0.031015507876873016
+Step: 6955, loss: 0.18601903319358826
+Step: 6960, loss: 0.08826150745153427
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6965, loss: 0.06879110634326935
+Step: 6970, loss: 0.033553484827280045
+Step: 6975, loss: 0.04045422747731209
+Step: 6980, loss: 0.01050043199211359
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 6985, loss: 0.22669166326522827
+Step: 6990, loss: 0.02148047275841236
+Step: 6995, loss: 0.05287940055131912
+Step: 7000, loss: 0.030539778992533684
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 7000: 0.10137555003166199
+Step: 7005, loss: 0.03449663147330284
+Step: 7010, loss: 0.0160487312823534
+Step: 7015, loss: 0.08381646126508713
+Step: 7020, loss: 0.21059417724609375
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7025, loss: 0.04794454202055931
+Step: 7030, loss: 0.046690020710229874
+Step: 7035, loss: 0.04051746055483818
+Step: 7040, loss: 0.09699098765850067
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7045, loss: 0.04335572570562363
+Step: 7050, loss: 0.03814070671796799
+Step: 7055, loss: 0.023768896237015724
+Step: 7060, loss: 0.05986221879720688
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7065, loss: 0.046382226049900055
+Step: 7070, loss: 0.050781942903995514
+Step: 7075, loss: 0.027412639930844307
+Step: 7080, loss: 0.06337866932153702
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7085, loss: 0.1509377360343933
+Time taken for epoch 17 is 1105 sec
+
+---------------epoch 17---------------
+Step: 7090, loss: 0.05705590546131134
+Step: 7095, loss: 0.06709962338209152
+Step: 7100, loss: 0.035586949437856674
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7105, loss: 0.06369863450527191
+Step: 7110, loss: 0.037468962371349335
+Step: 7115, loss: 0.021341471001505852
+Step: 7120, loss: 0.08451375365257263
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7125, loss: 0.024485722184181213
+Step: 7130, loss: 0.030389556661248207
+Step: 7135, loss: 0.018449194729328156
+Step: 7140, loss: 0.020416202023625374
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7145, loss: 0.021759726107120514
+Step: 7150, loss: 0.03333504498004913
+Step: 7155, loss: 0.03197166323661804
+Step: 7160, loss: 0.016523245722055435
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7165, loss: 0.03500043600797653
+Step: 7170, loss: 0.16334250569343567
+Step: 7175, loss: 0.07067321240901947
+Step: 7180, loss: 0.04585450887680054
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7185, loss: 0.04447218030691147
+Step: 7190, loss: 0.036658622324466705
+Step: 7195, loss: 0.01798129640519619
+Step: 7200, loss: 0.01522458903491497
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 7200: 0.10514169931411743
+Step: 7205, loss: 0.04701996594667435
+Step: 7210, loss: 0.02381465956568718
+Step: 7215, loss: 0.119759202003479
+Step: 7220, loss: 0.04986933246254921
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7225, loss: 0.10154582560062408
+Step: 7230, loss: 0.06977394223213196
+Step: 7235, loss: 0.10813839733600616
+Step: 7240, loss: 0.014487965032458305
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7245, loss: 0.06545567512512207
+Step: 7250, loss: 0.08338650315999985
+Step: 7255, loss: 0.030950939282774925
+Step: 7260, loss: 0.05656750872731209
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7265, loss: 0.0212745051831007
+Step: 7270, loss: 0.04076315090060234
+Step: 7275, loss: 0.04161487892270088
+Step: 7280, loss: 0.08658784627914429
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7285, loss: 0.020083390176296234
+Step: 7290, loss: 0.10815246403217316
+Step: 7295, loss: 0.015934808179736137
+Step: 7300, loss: 0.022810759022831917
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7305, loss: 0.03680185601115227
+Step: 7310, loss: 0.0375409834086895
+Step: 7315, loss: 0.04616067558526993
+Step: 7320, loss: 0.02899099700152874
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7325, loss: 0.05549906939268112
+Step: 7330, loss: 0.08156469464302063
+Step: 7335, loss: 0.04794606566429138
+Step: 7340, loss: 0.05659233406186104
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7345, loss: 0.06563609838485718
+Step: 7350, loss: 0.06119482219219208
+Step: 7355, loss: 0.05879714712500572
+Step: 7360, loss: 0.05037901923060417
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7365, loss: 0.025315480306744576
+Step: 7370, loss: 0.10369013249874115
+Step: 7375, loss: 0.01831548660993576
+Step: 7380, loss: 0.024876754730939865
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7385, loss: 0.020915081724524498
+Step: 7390, loss: 0.06056852266192436
+Step: 7395, loss: 0.014374719001352787
+Step: 7400, loss: 0.022883618250489235
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 7400: 0.10146436095237732
+Step: 7405, loss: 0.07127043604850769
+Step: 7410, loss: 0.01847809925675392
+Step: 7415, loss: 0.036273784935474396
+Step: 7420, loss: 0.07983122766017914
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7425, loss: 0.04561745002865791
+Step: 7430, loss: 0.038821980357170105
+Step: 7435, loss: 0.035812634974718094
+Step: 7440, loss: 0.1131172850728035
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7445, loss: 0.016374019905924797
+Step: 7450, loss: 0.042957231402397156
+Step: 7455, loss: 0.11255580931901932
+Step: 7460, loss: 0.04874904826283455
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7465, loss: 0.070647694170475
+Step: 7470, loss: 0.02440488338470459
+Step: 7475, loss: 0.02571503445506096
+Step: 7480, loss: 0.019867492839694023
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7485, loss: 0.07109831273555756
+Step: 7490, loss: 0.013662458397448063
+Step: 7495, loss: 0.036516495048999786
+Step: 7500, loss: 0.04398698732256889
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7505, loss: 0.01767364889383316
+Step: 7510, loss: 0.027196750044822693
+Step: 7515, loss: 0.023745588958263397
+Step: 7520, loss: 0.015276537276804447
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7525, loss: 0.05000032112002373
+Step: 7530, loss: 0.035377513617277145
+Time taken for epoch 18 is 1105 sec
+
+---------------epoch 18---------------
+Step: 7535, loss: 0.023746298626065254
+Step: 7540, loss: 0.024440597742795944
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7545, loss: 0.061191070824861526
+Step: 7550, loss: 0.02394070290029049
+Step: 7555, loss: 0.04439859464764595
+Step: 7560, loss: 0.043692395091056824
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7565, loss: 0.03102145344018936
+Step: 7570, loss: 0.04046362265944481
+Step: 7575, loss: 0.046763826161623
+Step: 7580, loss: 0.11281295120716095
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7585, loss: 0.09197136014699936
+Step: 7590, loss: 0.04492916911840439
+Step: 7595, loss: 0.11840224266052246
+Step: 7600, loss: 0.05011232942342758
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 7600: 0.10074186325073242
+Step: 7605, loss: 0.013439802452921867
+Step: 7610, loss: 0.023824211210012436
+Step: 7615, loss: 0.013142228126525879
+Step: 7620, loss: 0.08829788118600845
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7625, loss: 0.0641755610704422
+Step: 7630, loss: 0.062419433146715164
+Step: 7635, loss: 0.1156243160367012
+Step: 7640, loss: 0.06092711538076401
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7645, loss: 0.01724485494196415
+Step: 7650, loss: 0.0741751492023468
+Step: 7655, loss: 0.042724430561065674
+Step: 7660, loss: 0.020495383068919182
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7665, loss: 0.03241242095828056
+Step: 7670, loss: 0.04387917369604111
+Step: 7675, loss: 0.07563014328479767
+Step: 7680, loss: 0.10780026763677597
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7685, loss: 0.13022378087043762
+Step: 7690, loss: 0.07874555140733719
+Step: 7695, loss: 0.01688964292407036
+Step: 7700, loss: 0.014698855578899384
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7705, loss: 0.09834826737642288
+Step: 7710, loss: 0.03186716139316559
+Step: 7715, loss: 0.013331083580851555
+Step: 7720, loss: 0.08338682353496552
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7725, loss: 0.06465686857700348
+Step: 7730, loss: 0.05161083862185478
+Step: 7735, loss: 0.02354518510401249
+Step: 7740, loss: 0.05621364712715149
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7745, loss: 0.025724025443196297
+Step: 7750, loss: 0.01695098914206028
+Step: 7755, loss: 0.04181475192308426
+Step: 7760, loss: 0.05912566930055618
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7765, loss: 0.04133457690477371
+Step: 7770, loss: 0.05806252360343933
+Step: 7775, loss: 0.041904233396053314
+Step: 7780, loss: 0.022875020280480385
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7785, loss: 0.01407872885465622
+Step: 7790, loss: 0.07137086987495422
+Step: 7795, loss: 0.028470756486058235
+Step: 7800, loss: 0.15145045518875122
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 7800: 0.09644906967878342
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/best
+Complete.
+Step: 7805, loss: 0.08424267917871475
+Step: 7810, loss: 0.05936214327812195
+Step: 7815, loss: 0.0697997659444809
+Step: 7820, loss: 0.08309891074895859
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7825, loss: 0.026375433430075645
+Step: 7830, loss: 0.06402558088302612
+Step: 7835, loss: 0.05419371277093887
+Step: 7840, loss: 0.08037573844194412
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7845, loss: 0.01864185929298401
+Step: 7850, loss: 0.010743454098701477
+Step: 7855, loss: 0.11796054244041443
+Step: 7860, loss: 0.06816716492176056
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7865, loss: 0.030324092134833336
+Step: 7870, loss: 0.03936648368835449
+Step: 7875, loss: 0.018999218940734863
+Step: 7880, loss: 0.055031668394804
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7885, loss: 0.08106648921966553
+Step: 7890, loss: 0.03522917255759239
+Step: 7895, loss: 0.043493449687957764
+Step: 7900, loss: 0.014412221498787403
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7905, loss: 0.020442845299839973
+Step: 7910, loss: 0.0883769541978836
+Step: 7915, loss: 0.025971056893467903
+Step: 7920, loss: 0.02789280004799366
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7925, loss: 0.06038311496376991
+Step: 7930, loss: 0.03240099921822548
+Step: 7935, loss: 0.019002510234713554
+Step: 7940, loss: 0.05325693264603615
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7945, loss: 0.06510195881128311
+Step: 7950, loss: 0.029309917241334915
+Step: 7955, loss: 0.011428557336330414
+Step: 7960, loss: 0.03385578468441963
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7965, loss: 0.05683206766843796
+Step: 7970, loss: 0.054006773978471756
+Time taken for epoch 19 is 1106 sec
+
+---------------epoch 19---------------
+Step: 7975, loss: 0.028102507814764977
+Step: 7980, loss: 0.104916512966156
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 7985, loss: 0.022854898124933243
+Step: 7990, loss: 0.01590997353196144
+Step: 7995, loss: 0.05908217653632164
+Step: 8000, loss: 0.04421696811914444
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 8000: 0.10169576108455658
+Step: 8005, loss: 0.03708913177251816
+Step: 8010, loss: 0.05962810665369034
+Step: 8015, loss: 0.04992197826504707
+Step: 8020, loss: 0.06372978538274765
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8025, loss: 0.008907576091587543
+Step: 8030, loss: 0.035655271261930466
+Step: 8035, loss: 0.010204585269093513
+Step: 8040, loss: 0.013375894166529179
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8045, loss: 0.014661547727882862
+Step: 8050, loss: 0.04730072245001793
+Step: 8055, loss: 0.025693615898489952
+Step: 8060, loss: 0.07021559029817581
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8065, loss: 0.03278924524784088
+Step: 8070, loss: 0.07311269640922546
+Step: 8075, loss: 0.05263509228825569
+Step: 8080, loss: 0.08717193454504013
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8085, loss: 0.03347025066614151
+Step: 8090, loss: 0.04801620543003082
+Step: 8095, loss: 0.034399744123220444
+Step: 8100, loss: 0.10090062767267227
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8105, loss: 0.020172100514173508
+Step: 8110, loss: 0.0405215360224247
+Step: 8115, loss: 0.04337964206933975
+Step: 8120, loss: 0.1469731479883194
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8125, loss: 0.05289401859045029
+Step: 8130, loss: 0.05768638849258423
+Step: 8135, loss: 0.03012753836810589
+Step: 8140, loss: 0.017051875591278076
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8145, loss: 0.05629284679889679
+Step: 8150, loss: 0.010010470636188984
+Step: 8155, loss: 0.022737786173820496
+Step: 8160, loss: 0.02191701903939247
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8165, loss: 0.008942870423197746
+Step: 8170, loss: 0.035603635013103485
+Step: 8175, loss: 0.04545743763446808
+Step: 8180, loss: 0.016892269253730774
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8185, loss: 0.08324045687913895
+Step: 8190, loss: 0.008527743630111217
+Step: 8195, loss: 0.040586844086647034
+Step: 8200, loss: 0.0168955996632576
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 8200: 0.09772229939699173
+Step: 8205, loss: 0.19575689733028412
+Step: 8210, loss: 0.028914321213960648
+Step: 8215, loss: 0.06898194551467896
+Step: 8220, loss: 0.016538448631763458
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8225, loss: 0.05130778253078461
+Step: 8230, loss: 0.04326882213354111
+Step: 8235, loss: 0.14770875871181488
+Step: 8240, loss: 0.01915925182402134
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8245, loss: 0.0373220220208168
+Step: 8250, loss: 0.024679619818925858
+Step: 8255, loss: 0.0916951447725296
+Step: 8260, loss: 0.021480150520801544
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8265, loss: 0.07623513787984848
+Step: 8270, loss: 0.11371297389268875
+Step: 8275, loss: 0.12979786098003387
+Step: 8280, loss: 0.035305656492710114
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8285, loss: 0.06240804120898247
+Step: 8290, loss: 0.06972945481538773
+Step: 8295, loss: 0.048638537526130676
+Step: 8300, loss: 0.048951007425785065
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8305, loss: 0.03555775433778763
+Step: 8310, loss: 0.030720237642526627
+Step: 8315, loss: 0.09718424081802368
+Step: 8320, loss: 0.044553861021995544
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8325, loss: 0.01600770838558674
+Step: 8330, loss: 0.07268505543470383
+Step: 8335, loss: 0.03517535328865051
+Step: 8340, loss: 0.010569745674729347
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8345, loss: 0.03352413699030876
+Step: 8350, loss: 0.02416318841278553
+Step: 8355, loss: 0.009290358982980251
+Step: 8360, loss: 0.05365001782774925
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8365, loss: 0.07003183662891388
+Step: 8370, loss: 0.06222810596227646
+Step: 8375, loss: 0.010821876116096973
+Step: 8380, loss: 0.030625121667981148
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8385, loss: 0.08926810324192047
+Step: 8390, loss: 0.026530474424362183
+Step: 8395, loss: 0.02515047788619995
+Step: 8400, loss: 0.09878642112016678
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 8400: 0.09913384914398193
+Step: 8405, loss: 0.07849276810884476
+Step: 8410, loss: 0.09989068657159805
+Step: 8415, loss: 0.01790875941514969
+Time taken for epoch 20 is 1246 sec
+
+---------------epoch 20---------------
+Step: 8420, loss: 0.03818156570196152
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8425, loss: 0.015491701662540436
+Step: 8430, loss: 0.049648020416498184
+Step: 8435, loss: 0.03248605132102966
+Step: 8440, loss: 0.05753950774669647
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8445, loss: 0.03946191072463989
+Step: 8450, loss: 0.024714186787605286
+Step: 8455, loss: 0.021680662408471107
+Step: 8460, loss: 0.19627977907657623
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8465, loss: 0.02707986906170845
+Step: 8470, loss: 0.05171867460012436
+Step: 8475, loss: 0.08280722796916962
+Step: 8480, loss: 0.07505457103252411
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8485, loss: 0.04528263211250305
+Step: 8490, loss: 0.10910589247941971
+Step: 8495, loss: 0.05181140452623367
+Step: 8500, loss: 0.06129389628767967
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8505, loss: 0.014452459290623665
+Step: 8510, loss: 0.07511021196842194
+Step: 8515, loss: 0.0386713370680809
+Step: 8520, loss: 0.0841604471206665
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8525, loss: 0.02259846404194832
+Step: 8530, loss: 0.022799883037805557
+Step: 8535, loss: 0.031959373503923416
+Step: 8540, loss: 0.10355032980442047
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8545, loss: 0.039187848567962646
+Step: 8550, loss: 0.013081450946629047
+Step: 8555, loss: 0.018600016832351685
+Step: 8560, loss: 0.07312791794538498
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8565, loss: 0.015981322154402733
+Step: 8570, loss: 0.09172136336565018
+Step: 8575, loss: 0.027264287695288658
+Step: 8580, loss: 0.03164694830775261
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8585, loss: 0.022615283727645874
+Step: 8590, loss: 0.016050295904278755
+Step: 8595, loss: 0.03896979242563248
+Step: 8600, loss: 0.023857995867729187
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 8600: 0.09764993190765381
+Step: 8605, loss: 0.03926399350166321
+Step: 8610, loss: 0.009233783930540085
+Step: 8615, loss: 0.02129059098660946
+Step: 8620, loss: 0.04108646139502525
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8625, loss: 0.016046281903982162
+Step: 8630, loss: 0.016601962968707085
+Step: 8635, loss: 0.0700298473238945
+Step: 8640, loss: 0.09778586030006409
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8645, loss: 0.020519819110631943
+Step: 8650, loss: 0.023490965366363525
+Step: 8655, loss: 0.011546396650373936
+Step: 8660, loss: 0.0651729553937912
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8665, loss: 0.10680560022592545
+Step: 8670, loss: 0.05153859779238701
+Step: 8675, loss: 0.09510811418294907
+Step: 8680, loss: 0.031090611591935158
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8685, loss: 0.014718632213771343
+Step: 8690, loss: 0.1040152907371521
+Step: 8695, loss: 0.13348224759101868
+Step: 8700, loss: 0.11393854767084122
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8705, loss: 0.1061287596821785
+Step: 8710, loss: 0.053946610540151596
+Step: 8715, loss: 0.022394903004169464
+Step: 8720, loss: 0.058276303112506866
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8725, loss: 0.017745034769177437
+Step: 8730, loss: 0.08754556626081467
+Step: 8735, loss: 0.07490693032741547
+Step: 8740, loss: 0.01534207072108984
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8745, loss: 0.08839892596006393
+Step: 8750, loss: 0.02729916386306286
+Step: 8755, loss: 0.029762962833046913
+Step: 8760, loss: 0.07558680325746536
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8765, loss: 0.07514331489801407
+Step: 8770, loss: 0.02151547558605671
+Step: 8775, loss: 0.03813539445400238
+Step: 8780, loss: 0.03389100357890129
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8785, loss: 0.028025297448039055
+Step: 8790, loss: 0.03081352449953556
+Step: 8795, loss: 0.07304168492555618
+Step: 8800, loss: 0.045667558908462524
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 8800: 0.09945672750473022
+Step: 8805, loss: 0.0479733981192112
+Step: 8810, loss: 0.017313849180936813
+Step: 8815, loss: 0.01948166824877262
+Step: 8820, loss: 0.05652084946632385
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8825, loss: 0.058198582381010056
+Step: 8830, loss: 0.015699803829193115
+Step: 8835, loss: 0.02935323491692543
+Step: 8840, loss: 0.10450481623411179
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8845, loss: 0.017091086134314537
+Step: 8850, loss: 0.11665607243776321
+Step: 8855, loss: 0.015679750591516495
+Step: 8860, loss: 0.02877163700759411
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Time taken for epoch 21 is 1106 sec
+
+---------------epoch 21---------------
+Step: 8865, loss: 0.014868151396512985
+Step: 8870, loss: 0.023411422967910767
+Step: 8875, loss: 0.011705807410180569
+Step: 8880, loss: 0.016785552725195885
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8885, loss: 0.05127443000674248
+Step: 8890, loss: 0.06281112134456635
+Step: 8895, loss: 0.06510589271783829
+Step: 8900, loss: 0.07483278959989548
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8905, loss: 0.1472659856081009
+Step: 8910, loss: 0.046533387154340744
+Step: 8915, loss: 0.12005026638507843
+Step: 8920, loss: 0.028106102719902992
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8925, loss: 0.032966498285532
+Step: 8930, loss: 0.09085933864116669
+Step: 8935, loss: 0.02211872860789299
+Step: 8940, loss: 0.02300325594842434
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8945, loss: 0.06615305691957474
+Step: 8950, loss: 0.045852355659008026
+Step: 8955, loss: 0.041583530604839325
+Step: 8960, loss: 0.18531595170497894
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8965, loss: 0.01661587506532669
+Step: 8970, loss: 0.011312638409435749
+Step: 8975, loss: 0.07982504367828369
+Step: 8980, loss: 0.02991466224193573
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 8985, loss: 0.032141491770744324
+Step: 8990, loss: 0.0382678247988224
+Step: 8995, loss: 0.03932098671793938
+Step: 9000, loss: 0.03422512114048004
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 9000: 0.09910005331039429
+Step: 9005, loss: 0.0903075784444809
+Step: 9010, loss: 0.08163455128669739
+Step: 9015, loss: 0.01968817226588726
+Step: 9020, loss: 0.04860851168632507
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9025, loss: 0.023833805695176125
+Step: 9030, loss: 0.06696539372205734
+Step: 9035, loss: 0.04651385918259621
+Step: 9040, loss: 0.27395686507225037
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9045, loss: 0.012354523874819279
+Step: 9050, loss: 0.0697207823395729
+Step: 9055, loss: 0.011137346737086773
+Step: 9060, loss: 0.08545234799385071
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9065, loss: 0.07648713141679764
+Step: 9070, loss: 0.029187774285674095
+Step: 9075, loss: 0.019807403907179832
+Step: 9080, loss: 0.016952887177467346
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9085, loss: 0.04775369167327881
+Step: 9090, loss: 0.025268709287047386
+Step: 9095, loss: 0.034327179193496704
+Step: 9100, loss: 0.01575760543346405
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9105, loss: 0.05646987631917
+Step: 9110, loss: 0.04194236919283867
+Step: 9115, loss: 0.013823657296597958
+Step: 9120, loss: 0.023821868002414703
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9125, loss: 0.014167217537760735
+Step: 9130, loss: 0.019428834319114685
+Step: 9135, loss: 0.03545309230685234
+Step: 9140, loss: 0.010208412073552608
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9145, loss: 0.07604072988033295
+Step: 9150, loss: 0.0491754412651062
+Step: 9155, loss: 0.0301457941532135
+Step: 9160, loss: 0.03811686113476753
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9165, loss: 0.031033996492624283
+Step: 9170, loss: 0.045229341834783554
+Step: 9175, loss: 0.01564030721783638
+Step: 9180, loss: 0.07861726731061935
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9185, loss: 0.028952278196811676
+Step: 9190, loss: 0.03257118910551071
+Step: 9195, loss: 0.06857319176197052
+Step: 9200, loss: 0.08356236666440964
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 9200: 0.09938690066337585
+Step: 9205, loss: 0.017076151445508003
+Step: 9210, loss: 0.023302923887968063
+Step: 9215, loss: 0.03607671335339546
+Step: 9220, loss: 0.028061453253030777
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9225, loss: 0.031047038733959198
+Step: 9230, loss: 0.020256852731108665
+Step: 9235, loss: 0.014416500926017761
+Step: 9240, loss: 0.07138936221599579
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9245, loss: 0.07853993773460388
+Step: 9250, loss: 0.08520758152008057
+Step: 9255, loss: 0.047834984958171844
+Step: 9260, loss: 0.028878143057227135
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9265, loss: 0.013874007388949394
+Step: 9270, loss: 0.07269918918609619
+Step: 9275, loss: 0.012711642310023308
+Step: 9280, loss: 0.019567547366023064
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9285, loss: 0.028556566685438156
+Step: 9290, loss: 0.015589695423841476
+Step: 9295, loss: 0.1359318494796753
+Step: 9300, loss: 0.0664966031908989
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Time taken for epoch 22 is 1107 sec
+
+---------------epoch 22---------------
+Step: 9305, loss: 0.05269975960254669
+Step: 9310, loss: 0.05900995805859566
+Step: 9315, loss: 0.03157520666718483
+Step: 9320, loss: 0.024447627365589142
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9325, loss: 0.12475793063640594
+Step: 9330, loss: 0.12531323730945587
+Step: 9335, loss: 0.0695742517709732
+Step: 9340, loss: 0.02520217001438141
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9345, loss: 0.057651303708553314
+Step: 9350, loss: 0.0162982027977705
+Step: 9355, loss: 0.03566727414727211
+Step: 9360, loss: 0.03747614473104477
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9365, loss: 0.017347827553749084
+Step: 9370, loss: 0.015154320746660233
+Step: 9375, loss: 0.08193366229534149
+Step: 9380, loss: 0.08009836077690125
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9385, loss: 0.03438534587621689
+Step: 9390, loss: 0.02576369233429432
+Step: 9395, loss: 0.02711610309779644
+Step: 9400, loss: 0.0631447583436966
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 9400: 0.10003235936164856
+Step: 9405, loss: 0.04972666874527931
+Step: 9410, loss: 0.019726725295186043
+Step: 9415, loss: 0.040412481874227524
+Step: 9420, loss: 0.017532434314489365
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9425, loss: 0.027382867410779
+Step: 9430, loss: 0.11223025619983673
+Step: 9435, loss: 0.05070318654179573
+Step: 9440, loss: 0.05684477463364601
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9445, loss: 0.0752301886677742
+Step: 9450, loss: 0.04241519421339035
+Step: 9455, loss: 0.07696305960416794
+Step: 9460, loss: 0.02205127850174904
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9465, loss: 0.030183598399162292
+Step: 9470, loss: 0.09139464050531387
+Step: 9475, loss: 0.020840851590037346
+Step: 9480, loss: 0.06691017001867294
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9485, loss: 0.08291859924793243
+Step: 9490, loss: 0.03732887655496597
+Step: 9495, loss: 0.015602733939886093
+Step: 9500, loss: 0.03361979499459267
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9505, loss: 0.039495162665843964
+Step: 9510, loss: 0.046484049409627914
+Step: 9515, loss: 0.08042532205581665
+Step: 9520, loss: 0.05692903324961662
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9525, loss: 0.11253383755683899
+Step: 9530, loss: 0.11598671227693558
+Step: 9535, loss: 0.03563239052891731
+Step: 9540, loss: 0.018925942480564117
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9545, loss: 0.038411807268857956
+Step: 9550, loss: 0.02814602665603161
+Step: 9555, loss: 0.04155532270669937
+Step: 9560, loss: 0.10319916903972626
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9565, loss: 0.015139867551624775
+Step: 9570, loss: 0.06137079745531082
+Step: 9575, loss: 0.10011537373065948
+Step: 9580, loss: 0.02056913450360298
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9585, loss: 0.01702101156115532
+Step: 9590, loss: 0.056308940052986145
+Step: 9595, loss: 0.06749478727579117
+Step: 9600, loss: 0.05679299309849739
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 9600: 0.09784544259309769
+Step: 9605, loss: 0.00979235116392374
+Step: 9610, loss: 0.06425372511148453
+Step: 9615, loss: 0.09830176830291748
+Step: 9620, loss: 0.09588594734668732
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9625, loss: 0.07285617291927338
+Step: 9630, loss: 0.0228920616209507
+Step: 9635, loss: 0.06760504841804504
+Step: 9640, loss: 0.012175275944173336
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9645, loss: 0.012720553204417229
+Step: 9650, loss: 0.028576867654919624
+Step: 9655, loss: 0.07698623090982437
+Step: 9660, loss: 0.01426951214671135
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9665, loss: 0.03467104211449623
+Step: 9670, loss: 0.0342138446867466
+Step: 9675, loss: 0.05065172538161278
+Step: 9680, loss: 0.09173482656478882
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9685, loss: 0.0977853462100029
+Step: 9690, loss: 0.05495873838663101
+Step: 9695, loss: 0.01645663008093834
+Step: 9700, loss: 0.02468254417181015
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9705, loss: 0.07640790939331055
+Step: 9710, loss: 0.09843450784683228
+Step: 9715, loss: 0.019003847613930702
+Step: 9720, loss: 0.0762399360537529
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9725, loss: 0.02382580190896988
+Step: 9730, loss: 0.09254729747772217
+Step: 9735, loss: 0.04107605665922165
+Step: 9740, loss: 0.0671268180012703
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9745, loss: 0.08196249604225159
+Time taken for epoch 23 is 1103 sec
+
+---------------epoch 23---------------
+Step: 9750, loss: 0.017638258635997772
+Step: 9755, loss: 0.07130058109760284
+Step: 9760, loss: 0.10828457027673721
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9765, loss: 0.04387034848332405
+Step: 9770, loss: 0.09310976415872574
+Step: 9775, loss: 0.030658408999443054
+Step: 9780, loss: 0.0675378367304802
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9785, loss: 0.06725684553384781
+Step: 9790, loss: 0.09552136808633804
+Step: 9795, loss: 0.022193538025021553
+Step: 9800, loss: 0.02373683825135231
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 9800: 0.09852543473243713
+Step: 9805, loss: 0.021302392706274986
+Step: 9810, loss: 0.042646221816539764
+Step: 9815, loss: 0.03320727497339249
+Step: 9820, loss: 0.08571445196866989
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9825, loss: 0.0336303785443306
+Step: 9830, loss: 0.01870550960302353
+Step: 9835, loss: 0.027699971571564674
+Step: 9840, loss: 0.08654125034809113
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9845, loss: 0.0639861598610878
+Step: 9850, loss: 0.032792169600725174
+Step: 9855, loss: 0.055499009788036346
+Step: 9860, loss: 0.0797608271241188
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9865, loss: 0.10062449425458908
+Step: 9870, loss: 0.08802531659603119
+Step: 9875, loss: 0.022607769817113876
+Step: 9880, loss: 0.09986525028944016
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9885, loss: 0.030906395986676216
+Step: 9890, loss: 0.03157876059412956
+Step: 9895, loss: 0.07098544389009476
+Step: 9900, loss: 0.011073121801018715
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9905, loss: 0.013328521512448788
+Step: 9910, loss: 0.04329678788781166
+Step: 9915, loss: 0.037312101572752
+Step: 9920, loss: 0.02056271582841873
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9925, loss: 0.028667451813817024
+Step: 9930, loss: 0.0924118310213089
+Step: 9935, loss: 0.06773576885461807
+Step: 9940, loss: 0.04836186766624451
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9945, loss: 0.046190958470106125
+Step: 9950, loss: 0.23223991692066193
+Step: 9955, loss: 0.040102217346429825
+Step: 9960, loss: 0.07253772765398026
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9965, loss: 0.010879072360694408
+Step: 9970, loss: 0.020153138786554337
+Step: 9975, loss: 0.019923977553844452
+Step: 9980, loss: 0.09492076188325882
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 9985, loss: 0.016420040279626846
+Step: 9990, loss: 0.03396756201982498
+Step: 9995, loss: 0.03001425974071026
+Step: 10000, loss: 0.03204646334052086
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 10000: 0.09932298958301544
+Step: 10005, loss: 0.056131511926651
+Step: 10010, loss: 0.026778435334563255
+Step: 10015, loss: 0.0361064076423645
+Step: 10020, loss: 0.03215300291776657
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10025, loss: 0.03733358159661293
+Step: 10030, loss: 0.013170985504984856
+Step: 10035, loss: 0.08602655678987503
+Step: 10040, loss: 0.023679547011852264
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10045, loss: 0.026215676218271255
+Step: 10050, loss: 0.012380750849843025
+Step: 10055, loss: 0.04517378658056259
+Step: 10060, loss: 0.012982354499399662
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10065, loss: 0.08443079888820648
+Step: 10070, loss: 0.06825672090053558
+Step: 10075, loss: 0.055233996361494064
+Step: 10080, loss: 0.05412215366959572
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10085, loss: 0.0173177570104599
+Step: 10090, loss: 0.033948760479688644
+Step: 10095, loss: 0.023343654349446297
+Step: 10100, loss: 0.053471580147743225
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10105, loss: 0.08347010612487793
+Step: 10110, loss: 0.03371868282556534
+Step: 10115, loss: 0.057411279529333115
+Step: 10120, loss: 0.03362584859132767
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10125, loss: 0.05281830206513405
+Step: 10130, loss: 0.046738140285015106
+Step: 10135, loss: 0.09824123978614807
+Step: 10140, loss: 0.01861649937927723
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10145, loss: 0.021286576986312866
+Step: 10150, loss: 0.08664766699075699
+Step: 10155, loss: 0.17302729189395905
+Step: 10160, loss: 0.027658682316541672
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10165, loss: 0.07168391346931458
+Step: 10170, loss: 0.013206487521529198
+Step: 10175, loss: 0.06497935950756073
+Step: 10180, loss: 0.0578271821141243
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10185, loss: 0.017795568332076073
+Time taken for epoch 24 is 1108 sec
+
+---------------epoch 24---------------
+Step: 10190, loss: 0.041803084313869476
+Step: 10195, loss: 0.1082148626446724
+Step: 10200, loss: 0.03229129686951637
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 10200: 0.10029816627502441
+Step: 10205, loss: 0.08871874213218689
+Step: 10210, loss: 0.01079323049634695
+Step: 10215, loss: 0.04163661226630211
+Step: 10220, loss: 0.10781759768724442
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10225, loss: 0.01800178550183773
+Step: 10230, loss: 0.02401476353406906
+Step: 10235, loss: 0.017676008865237236
+Step: 10240, loss: 0.09051338583230972
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10245, loss: 0.04789319634437561
+Step: 10250, loss: 0.09096713364124298
+Step: 10255, loss: 0.025504078716039658
+Step: 10260, loss: 0.0404689684510231
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10265, loss: 0.13632577657699585
+Step: 10270, loss: 0.028708891943097115
+Step: 10275, loss: 0.04302414134144783
+Step: 10280, loss: 0.049235861748456955
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10285, loss: 0.03173055499792099
+Step: 10290, loss: 0.054579608142375946
+Step: 10295, loss: 0.05071645230054855
+Step: 10300, loss: 0.12449048459529877
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10305, loss: 0.06847023218870163
+Step: 10310, loss: 0.02446346916258335
+Step: 10315, loss: 0.09783035516738892
+Step: 10320, loss: 0.09426572918891907
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10325, loss: 0.027118835598230362
+Step: 10330, loss: 0.03580647334456444
+Step: 10335, loss: 0.01863977685570717
+Step: 10340, loss: 0.12800589203834534
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10345, loss: 0.024220939725637436
+Step: 10350, loss: 0.09714465588331223
+Step: 10355, loss: 0.01888379082083702
+Step: 10360, loss: 0.019123602658510208
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10365, loss: 0.02019202522933483
+Step: 10370, loss: 0.04227862134575844
+Step: 10375, loss: 0.09751573204994202
+Step: 10380, loss: 0.013062198646366596
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10385, loss: 0.06658538430929184
+Step: 10390, loss: 0.04574217274785042
+Step: 10395, loss: 0.01545779686421156
+Step: 10400, loss: 0.010610159486532211
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 10400: 0.09799525141716003
+Step: 10405, loss: 0.012561515904963017
+Step: 10410, loss: 0.045037269592285156
+Step: 10415, loss: 0.033748529851436615
+Step: 10420, loss: 0.09151410311460495
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10425, loss: 0.0665576308965683
+Step: 10430, loss: 0.01518668606877327
+Step: 10435, loss: 0.05315461754798889
+Step: 10440, loss: 0.07493868470191956
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10445, loss: 0.023971837013959885
+Step: 10450, loss: 0.02004525437951088
+Step: 10455, loss: 0.10298652946949005
+Step: 10460, loss: 0.01875576190650463
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10465, loss: 0.03686182200908661
+Step: 10470, loss: 0.015618303790688515
+Step: 10475, loss: 0.028311297297477722
+Step: 10480, loss: 0.07535625994205475
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10485, loss: 0.022834058851003647
+Step: 10490, loss: 0.07015632092952728
+Step: 10495, loss: 0.03389395773410797
+Step: 10500, loss: 0.08701445907354355
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10505, loss: 0.08824948221445084
+Step: 10510, loss: 0.026096807792782784
+Step: 10515, loss: 0.027241772040724754
+Step: 10520, loss: 0.030073152855038643
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10525, loss: 0.17011208832263947
+Step: 10530, loss: 0.03537125885486603
+Step: 10535, loss: 0.02345789037644863
+Step: 10540, loss: 0.07114900648593903
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10545, loss: 0.07980513572692871
+Step: 10550, loss: 0.043181005865335464
+Step: 10555, loss: 0.07483323663473129
+Step: 10560, loss: 0.021719109266996384
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10565, loss: 0.04812455177307129
+Step: 10570, loss: 0.017174551263451576
+Step: 10575, loss: 0.04300178959965706
+Step: 10580, loss: 0.042274851351976395
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10585, loss: 0.0431692861020565
+Step: 10590, loss: 0.09566324204206467
+Step: 10595, loss: 0.03826573118567467
+Step: 10600, loss: 0.03780385106801987
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 10600: 0.0951763466000557
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/best
+Complete.
+Step: 10605, loss: 0.03874269500374794
+Step: 10610, loss: 0.02903650514781475
+Step: 10615, loss: 0.05305594950914383
+Step: 10620, loss: 0.10761814564466476
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10625, loss: 0.09836647659540176
+Step: 10630, loss: 0.04374568909406662
+Time taken for epoch 25 is 1248 sec
+
+---------------epoch 25---------------
+Step: 10635, loss: 0.06184537708759308
+Step: 10640, loss: 0.024090493097901344
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10645, loss: 0.01897912099957466
+Step: 10650, loss: 0.0136672742664814
+Step: 10655, loss: 0.017399299889802933
+Step: 10660, loss: 0.04777434468269348
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10665, loss: 0.010116481222212315
+Step: 10670, loss: 0.037939757108688354
+Step: 10675, loss: 0.02979118563234806
+Step: 10680, loss: 0.06849213689565659
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10685, loss: 0.02396075427532196
+Step: 10690, loss: 0.02221016027033329
+Step: 10695, loss: 0.08317945897579193
+Step: 10700, loss: 0.02866816334426403
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10705, loss: 0.06749071180820465
+Step: 10710, loss: 0.02775217778980732
+Step: 10715, loss: 0.03846575692296028
+Step: 10720, loss: 0.041034094989299774
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10725, loss: 0.03950278088450432
+Step: 10730, loss: 0.027872631326317787
+Step: 10735, loss: 0.018654802814126015
+Step: 10740, loss: 0.02463579922914505
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10745, loss: 0.022487550973892212
+Step: 10750, loss: 0.05550409480929375
+Step: 10755, loss: 0.041395965963602066
+Step: 10760, loss: 0.14214062690734863
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10765, loss: 0.15879523754119873
+Step: 10770, loss: 0.026682469993829727
+Step: 10775, loss: 0.03178711608052254
+Step: 10780, loss: 0.027574507519602776
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10785, loss: 0.015735091641545296
+Step: 10790, loss: 0.04766000062227249
+Step: 10795, loss: 0.03241836652159691
+Step: 10800, loss: 0.06550029665231705
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 10800: 0.09773923456668854
+Step: 10805, loss: 0.04971262440085411
+Step: 10810, loss: 0.10216852277517319
+Step: 10815, loss: 0.05932969972491264
+Step: 10820, loss: 0.014789034612476826
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10825, loss: 0.035531848669052124
+Step: 10830, loss: 0.031068017706274986
+Step: 10835, loss: 0.04973003268241882
+Step: 10840, loss: 0.03855232521891594
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10845, loss: 0.029394036158919334
+Step: 10850, loss: 0.07942835241556168
+Step: 10855, loss: 0.024214770644903183
+Step: 10860, loss: 0.019756898283958435
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10865, loss: 0.07591240108013153
+Step: 10870, loss: 0.04904989153146744
+Step: 10875, loss: 0.012436126358807087
+Step: 10880, loss: 0.032316990196704865
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10885, loss: 0.044537074863910675
+Step: 10890, loss: 0.10886207222938538
+Step: 10895, loss: 0.021431323140859604
+Step: 10900, loss: 0.03632661700248718
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10905, loss: 0.08074399083852768
+Step: 10910, loss: 0.011314884759485722
+Step: 10915, loss: 0.07127653062343597
+Step: 10920, loss: 0.10477558523416519
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10925, loss: 0.03739446401596069
+Step: 10930, loss: 0.07951446622610092
+Step: 10935, loss: 0.01632174663245678
+Step: 10940, loss: 0.0735144317150116
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10945, loss: 0.013574677519500256
+Step: 10950, loss: 0.0670265182852745
+Step: 10955, loss: 0.09075362980365753
+Step: 10960, loss: 0.02173183485865593
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10965, loss: 0.08081464469432831
+Step: 10970, loss: 0.052876126021146774
+Step: 10975, loss: 0.05509774014353752
+Step: 10980, loss: 0.0304410457611084
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 10985, loss: 0.016498995944857597
+Step: 10990, loss: 0.040801431983709335
+Step: 10995, loss: 0.10943451523780823
+Step: 11000, loss: 0.017914434894919395
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 11000: 0.09718898683786392
+Step: 11005, loss: 0.09067525714635849
+Step: 11010, loss: 0.04375975579023361
+Step: 11015, loss: 0.05274846777319908
+Step: 11020, loss: 0.0464843288064003
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 11025, loss: 0.020861180499196053
+Step: 11030, loss: 0.0938265323638916
+Step: 11035, loss: 0.06689710170030594
+Step: 11040, loss: 0.01711304672062397
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 11045, loss: 0.02315494790673256
+Step: 11050, loss: 0.04791839048266411
+Step: 11055, loss: 0.045824382454156876
+Step: 11060, loss: 0.040283624082803726
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 11065, loss: 0.010802422650158405
+Step: 11070, loss: 0.160747230052948
+Step: 11075, loss: 0.02772471308708191
+Time taken for epoch 26 is 1108 sec
+
+---------------epoch 26---------------
+Step: 11080, loss: 0.05241484194993973
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 11085, loss: 0.02552500180900097
+Step: 11090, loss: 0.01729930005967617
+Step: 11095, loss: 0.032279081642627716
+Step: 11100, loss: 0.033889178186655045
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 11105, loss: 0.03255150094628334
+Step: 11110, loss: 0.023487312719225883
+Step: 11115, loss: 0.06302535533905029
+Step: 11120, loss: 0.10505864024162292
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 11125, loss: 0.04055393114686012
+Step: 11130, loss: 0.02674774080514908
+Step: 11135, loss: 0.023508047685027122
+Step: 11140, loss: 0.033353812992572784
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 11145, loss: 0.021951433271169662
+Step: 11150, loss: 0.03862947225570679
+Step: 11155, loss: 0.06113555654883385
+Step: 11160, loss: 0.028942491859197617
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 11165, loss: 0.01610381156206131
+Step: 11170, loss: 0.05013354495167732
+Step: 11175, loss: 0.0361173041164875
+Step: 11180, loss: 0.02832883782684803
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 11185, loss: 0.053398650139570236
+Step: 11190, loss: 0.038805894553661346
+Step: 11195, loss: 0.0839058980345726
+Step: 11200, loss: 0.03988790884613991
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Validation error at step 11200: 0.09407487511634827
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/best
+Complete.
+Step: 11205, loss: 0.036440856754779816
+Step: 11210, loss: 0.033052414655685425
+Step: 11215, loss: 0.010277031920850277
+Step: 11220, loss: 0.028238000348210335
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 11225, loss: 0.09782781451940536
+Step: 11230, loss: 0.0943150445818901
+Step: 11235, loss: 0.027107195928692818
+Step: 11240, loss: 0.08639468997716904
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 11245, loss: 0.023621052503585815
+Step: 11250, loss: 0.07152196019887924
+Step: 11255, loss: 0.011198682710528374
+Step: 11260, loss: 0.015815502032637596
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 11265, loss: 0.05977848917245865
+Step: 11270, loss: 0.07491131871938705
+Step: 11275, loss: 0.02657824009656906
+Step: 11280, loss: 0.10674086958169937
+Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
+Complete.
+Step: 11285, loss: 0.05431973561644554
+Step: 11290, loss: 0.022433830425143242
+Step: 11295, loss: 0.028084849938750267
+Step: 11300, loss: 0.02069023624062538
 Saving checkpoint to /content/drive/MyDrive/MDS_6002_SVC/StableSVC/code/model/Acoustic/ckpt/simple_diffusion/latest
 Complete.

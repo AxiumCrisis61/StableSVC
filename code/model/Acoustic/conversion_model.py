@@ -54,11 +54,11 @@ class DiffusionConverter(nn.Module):
                                                                   batch_first=True)
 
         # whisper CNN module
-        """ align the temporal length of Whisper embedding and Mel-spectrograms, and then reduce the dimension of Whisper
-            to the same size of Mel-spectrogram (increase channels at the same time) """
+        """ align the temporal length of Whisper embedding and Mel-spectrograms, and then reduce the dimension of 
+            Whisper to the same size of Mel-spectrogram (increase channels at the same time) """
         self.mel_factor = np.lcm(MEL_MAX_LENGTH, WHISPER_SEQ) // MEL_MAX_LENGTH
         self.whisper_factor = np.lcm(MEL_MAX_LENGTH, WHISPER_SEQ) // WHISPER_SEQ
-        # temporal alignment: 'Online strategy' to align the temporal length
+        # temporal alignment: 'online strategy' to align the temporal length
         if whisper_alignment_strategy == 'online':
             self.whisper_conv1d_temporal = nn.Sequential(OrderedDict([
                 ('temporal_up_sample',

@@ -87,6 +87,7 @@ class SVCDataset(Dataset):
         self.data_dir = os.path.join(data_path, dataset)
         with open(os.path.join(self.data_dir, "{}.json".format(dataset_type)), "r") as f:
             self.transcription = json.load(f)
+        self.length = len(self.transcription)
 
         # feature paths
         self.wav_path = dataset2wavpath[dataset]
@@ -116,21 +117,22 @@ class SVCDataset(Dataset):
         loudness = self.loudness_standardizer(torch.Tensor(self.loudness[index]))
 
         # temporally pad or trim the acoustic features
-        # Mels extracted by codes from Hifi-GAN will have the temporal dimension less than f0 and loudness
-        # extracted by torchaudio than 1 ?
-        # Different lengths of f0 and loudness ?
+        """ Mel-spectrograms extracted by codes from Hifi-GAN will have the temporal dimension less than f0 and loudness
+            extracted by torchaudio than 1 ?
+            Different lengths of f0 and loudness ? """
+        # Mel-spectrogram
         length = mel.shape[-1]
         if length <= MEL_PADDING_LENGTH:
             mel = F.pad(mel, (0, MEL_PADDING_LENGTH - length), 'constant', 0)
         else:
             mel = mel[:, :MEL_PADDING_LENGTH]
-
+        # F0
         length = f0.shape[-1]
         if length <= MEL_PADDING_LENGTH:
             f0 = F.pad(f0, (0, MEL_PADDING_LENGTH - length), 'constant', 0)
         else:
             f0 = f0[:MEL_PADDING_LENGTH]
-
+        # Loudness
         length = loudness.shape[-1]
         if length <= MEL_PADDING_LENGTH:
             loudness = F.pad(loudness, (0, MEL_PADDING_LENGTH - length), 'constant', 0)
@@ -140,7 +142,7 @@ class SVCDataset(Dataset):
         return mel, whisper, f0, loudness
 
     def __len__(self):
-        return len(self.transcription)
+        return self.length
 
 
 class EMA(nn.Module):
@@ -191,9 +193,3 @@ class EMA(nn.Module):
             return self.model(**inputs)
         else:
             return self.shadow(**inputs)
-
-
-# for testing functionality
-if __name__ == '__main__':
-    print(torch.Tensor(torch.Tensor(torch.zeros((5, 5)))))
-    print(3 == 2 > 0)

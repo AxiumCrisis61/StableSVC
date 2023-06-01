@@ -87,7 +87,7 @@ if __name__ == '__main__':
     train_set = SVCDataset(args.training_set, 'train')
     val_set = SVCDataset(args.validation_set, 'test')
     train_loader = DataLoader(train_set, batch_size=args.batch_size, shuffle=True, drop_last=True)
-    val_loader = DataLoader(val_set, batch_size=args.val_batch_size, shuffle=False, drop_last=True)
+    val_loader = DataLoader(val_set, batch_size=args.val_batch_size, shuffle=True, drop_last=True)
 
     # models and optimizer
     model = DiffusionConverter().to(device)
@@ -243,4 +243,4 @@ if __name__ == '__main__':
                             'best_val_error': best_val_error,
                         })
 
-        print('Time taken for epoch {} is {} sec\n'.format(epoch + 1, int(time.time() - start)))
+        print('Time taken for epoch {} is {} sec\n'.format(epoch, int(time.time() - start)))
