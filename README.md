@@ -1,3 +1,5 @@
+
+
 # StableSVC: Latent Diffusion Model for Singing Voice Conversion
 
 **TODO:**
@@ -18,6 +20,10 @@ Propose **Latent Diffusion Model (LDM)**[1] for Singing Voice Conversion (SVC)
 Simple diffusion for SVC (Denosing Diffusion Probabilistic Model, DDPM[2])
 
 ![image](https://github.com/AxiumCrisis61/StableSVC/blob/main/simple_diffusion.jpg)
+
+Whisper CNN module for processing Whisper embedding:
+
+![avatar](https://github.com/AxiumCrisis61/StableSVC/blob/main/Whisper%20CNN.jpg)
 
 **Tentative Results** (see /demo for audios)
 
