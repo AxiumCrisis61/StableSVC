@@ -93,7 +93,7 @@ USE_EMA = True                                 # Exponential Moving Average of t
 # UNet
 CHANNELS_INPUT = 3 + WHISPER_CHANNELS           # Mel + Whisper + F0 + Loudness
 CHANNELS_OUTPUT = 1                             # Mel
-CHANNELS_BASE = 60                              # base channel for UNet (the output channel for the first block)
+CHANNELS_BASE = 40                              # base channel for UNet (the output channel for the first block)
 CHANNELS_MULT_FACTORS = (2, 4, 4)               # from official DDPM, (320, 640, 1280, 1280) channels for 'AUDIT'
 SHAPE_CHANGE = True                             # whether to change the shape of feature maps in down/up blocks
 BASIC_BLOCK = 'convnext'                        # basic block of the denoising UNet: ('resnet', 'convnext')
